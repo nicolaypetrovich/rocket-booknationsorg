@@ -110,8 +110,14 @@
         width: 450px;
         margin-bottom: 30px;
     }
-
     /* Event page end*/
+     /*Wish wall page*/
+    .wish_wall_form{
+        align-self: center;
+        max-width: 100%;
+    }
+    /*Wish wall page end*/
+
 }
 
 
@@ -124,6 +130,12 @@
 }
 
 @media only screen and (max-width : 767px){
+    /* Wish wall page*/
+    .media_edit{
+        max-width: 100%;
+    }
+
+    /* Wish wall page*/
     /*Personal Setting page */
     .personal_content_lp label, .personal_content_rp label{
         width: 300px;
@@ -311,6 +323,11 @@
 
 
 @media (max-width:575px){
+    /*Wish wall page */
+    .wish_wall_form{
+        padding: 45px
+    }
+    /*Wish wall page end*/
     /*Personal Setting page */
     .personal_content_lp label, .personal_content_rp label{
         width: 100%;
@@ -365,6 +382,13 @@
 
 
 @media only screen and (max-width : 480px){
+    /*Wish wall page */
+    .wish_wall_form{
+        padding: 45px 0;
+        box-shadow: none;
+    }
+
+    /*Wish wall page end*/
     .container{
         padding: 0 7px
     }
