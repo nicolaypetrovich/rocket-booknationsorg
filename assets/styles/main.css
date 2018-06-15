@@ -1588,6 +1588,9 @@ a {
     color: #f5283b;
     font-weight: 700;
 }
+.tabcontent_login_form label div.error{
+    padding-top: 10px;
+}
 .inp_styling{
     width: 100%;
     border: 1px solid #bababa;
@@ -2180,3 +2183,114 @@ a {
 }
 
 /*Personal Settings Ebd*/
+
+/* Wish Wall Start */
+.wish_wall_wrap{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.wish_wall_form{
+    width: 653px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(89,88,89,0.45);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(89,88,89,0.45);
+    box-shadow: 0px 0px 15px 0px rgba(89,88,89,0.45);
+}
+.wish_wall_form .home_titles{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.wish_wall_form{
+    padding: 45px 90px;
+    margin-bottom: 50px;
+}
+.wish_wall_form form label{
+    display: block;
+    margin-bottom: 20px;
+}
+.wish_wall_form form label span{
+    font-size: 14px;
+    line-height: 14px;
+    color: #181818;
+    display: inline-block;
+    padding-bottom: 7px;
+}
+.wish_wall_form form label input,.wish_wall_form form label textarea{
+    display: block;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #787878;
+}
+
+.wish_wall_form form label textarea{
+    height: 120px;
+    padding-top: 10px;
+}
+.recaptcha_wrap{
+    padding-top: 30px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+.wish_wall_form form label div.error{
+    padding-top: 10px;
+}
+.wish_wall_massage .home_titles{
+    margin-bottom: 25px;
+    display: block;
+}
+.wishes_list{
+    padding: 15px;
+    border: 1px solid #898989;
+    max-width: 850px;
+    width: 100%;
+    margin-bottom: 18px;
+}
+.wishes_list_in{
+    display: flex;
+}
+.wishes_list_in li:first-child{
+    padding-right: 5px;
+}
+.wishes_list li{
+    font-size: 12px;
+    line-height: 24px;
+    color: #787878;
+}
+.wishes_list_in p{
+    margin: 0;
+    text-align: justify;
+}
+.wishes_pagination{
+    display: inline-flex;
+    border: 1px solid #bababa;
+    border-radius: 5px;
+    height: 30px
+}
+.wishes_pagination li{
+    border-right: 1px solid #bababa;
+    width: 29px;
+    height: 100%;
+    color: #bababa;
+    font-size: 15px;
+}
+.wishes_pagination li a{
+    color: #bababa;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wishes_pagination li:last-child{
+    border-right: none;
+}
+.wishes_pagination li.active_wish_page a{
+    background-color: #bababa;
+    color: #fff;
+}
+/* Wish Wall Start End*/
