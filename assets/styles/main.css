@@ -129,6 +129,7 @@ body {
     line-height: 1;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    position: relative;
 }
 a {
     background: transparent;
@@ -2293,4 +2294,99 @@ a {
     background-color: #bababa;
     color: #fff;
 }
-/* Wish Wall Start End*/
+/* Wish Wall  End*/
+
+/* Partners */
+.partners_wrap{
+    display: flex;
+    padding-top: 20px;
+}
+.partners_list{
+    width: 910px;
+}
+.partners_list ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.partners_list ul li{
+    width: 24%;
+    display: flex;
+    align-items: center;
+    margin: 0 12px 40px 0;
+}
+.partners_list ul li:nth-child(4n){
+    margin-right: 0;
+}
+.partners_list ul li span{
+    width: 158px;
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.partners_list ul li span img{
+    width: 100%;
+    height: auto;
+}
+.become_partner button{
+    background-color: #f5283b;
+    width: 165px;
+    height: 52px;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color ease .5s;
+}
+.become_partner button:hover{
+    background-color: #1d1d1e;
+    transition: background-color ease .5s;
+}
+/*Modal styles*/
+/* -- Needed CSS -- */
+.modal__wrap{
+    width:  870px;
+    height: auto;
+    background: #f2eee6;
+    top: 0;
+    bottom: auto;
+    display: none;
+    opacity: 0;
+    z-index: 12;
+    padding: 55px 80px 65px 80px;
+    box-shadow: 0 0 25px rgba(68, 60, 34, 0.3);
+    margin: 0 auto 40px;
+    position: relative;
+}
+.modal__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal__overlay{
+    margin-right: -15px;
+    z-index: 12;
+    position: fixed;
+    background-color: rgba(35, 45, 53, .5);
+    filter: alpha(opacity=80);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+    overflow-y: auto;
+}
+.modal_open{
+    overflow: hidden;
+    max-width: 99.15%;
+    margin-right: 0;
+}
+.modal_left_side,.modal_right_side{
+    width: 300px;
+}
+.modal__content form{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Popup End*/
+/* Partners End */
