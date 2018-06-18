@@ -1687,7 +1687,7 @@ a {
     line-height: 16px;
     color: #f5283b;
     font-weight: 500;
-    display: inline-block;
+    display: block;
     margin-right: 5px;
 }
 .activeTab{
@@ -2103,6 +2103,12 @@ a {
     display: flex;
     padding-bottom: 0;
 }
+.date_label .date_select_wrap .error{
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    padding-top: 0;
+}
 .personal_content_rp label span.date_select_wrap input{
     display: flex;
     border-left: none;
@@ -2341,11 +2347,10 @@ a {
     transition: background-color ease .5s;
 }
 /*Modal styles*/
-/* -- Needed CSS -- */
 .modal__wrap{
     width:  870px;
     height: auto;
-    background: #f2eee6;
+    background: #fff;
     top: 0;
     bottom: auto;
     display: none;
@@ -2353,13 +2358,12 @@ a {
     z-index: 12;
     padding: 55px 80px 65px 80px;
     box-shadow: 0 0 25px rgba(68, 60, 34, 0.3);
-    margin: 0 auto 40px;
+    margin: 0 auto;
     position: relative;
 }
 .modal__content{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .modal__overlay{
     margin-right: -15px;
@@ -2382,11 +2386,65 @@ a {
 }
 .modal_left_side,.modal_right_side{
     width: 300px;
-}
-.modal__content form{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
+.similar_form label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.similar_form label span{
+    align-self: flex-start;
+    padding-bottom: 7px;
+}
+.similar_form label input{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #787878;
+}
+.similar_form textarea{
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    font-size: 14px;
+    line-height: 14px;
+    color: #787878;
+}
+.similar_form label input[type = submit]{
+    width: 150px;
+    height: 50px;
+    align-self: center;
+    color: #fff;
+    background-color: #f5283b;
+    transition: background-color ease .5s;
+}
+.similar_form label input[type = submit]:hover{
+    background-color: #1d1d1e;
+    transition: background-color ease .5s;
+}
+.modal__content .modal_title{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
+    color: #181818;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.partners_form_in{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.similar_form .error,.similar_form .error{
+    padding-top: 10px;
+}
 /*Popup End*/
 /* Partners End */

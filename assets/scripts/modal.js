@@ -1,4 +1,5 @@
 $(function() {
+
     var __curModal ;
     $('.js-modal').on('click', function(){
         __curModal = $(this).data('href');
