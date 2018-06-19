@@ -1,5 +1,16 @@
 $(function() {
-
+    /*
+    Для создания модального окна необходимо создать элемент (ссылку, кнопку),
+    присвоить ей класс js-modal а так же data-href ="#modalKa",
+    при клике на эту кнопку(ссылку) происходит поиск по дата атрибуту
+    если дата атрибут и айдишник обёртки схожи то вызывается попап окно
+    Пример структуры:
+    <button class="js-modal" data-href="#myModal2">test</button>
+    <div id="modalKa" class="modal__wrap">
+        some text
+    </div>
+    Не забываем менять айдишники
+    */
     var __curModal ;
     $('.js-modal').on('click', function(){
         __curModal = $(this).data('href');

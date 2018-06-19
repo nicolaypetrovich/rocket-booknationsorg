@@ -1687,7 +1687,7 @@ a {
     line-height: 16px;
     color: #f5283b;
     font-weight: 500;
-    display: block;
+    display: inline-block;
     margin-right: 5px;
 }
 .activeTab{
@@ -2375,7 +2375,7 @@ a {
     height: 100%;
     top: 0;
     left: 0;
-    cursor: pointer;
+    /*cursor: pointer;*/
     display: none;
     overflow-y: auto;
 }
@@ -2394,6 +2394,13 @@ a {
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+}
+.similar_form .partners_send_btn label{
+    margin-bottom: 0;
+}
+.partners_send_btn{
+    display: flex;
+    justify-content: center;
 }
 .similar_form label span{
     align-self: flex-start;
@@ -2446,5 +2453,65 @@ a {
 .similar_form .error,.similar_form .error{
     padding-top: 10px;
 }
+
+/*Load_file*/
+.file-load span.req_field{
+    padding-bottom: 7px;
+    display: inline-block;
+}
+.file-load label span{
+    padding-bottom: 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: #bababa;
+}
+.file-load label{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #787878;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.similar_form .file-load label{
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.load_file-target{
+    display: none;
+}
+.load_hint{
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    padding-right: 25px;
+}
+.load_hint:before{
+    content: '\f019';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    line-height: 14px;
+    color: #787878;
+    font-weight: 700;
+}
+.cur_file-name{
+    white-space:pre;
+    overflow: hidden;
+    display: block;
+    max-width: 100%;
+    text-overflow:ellipsis;
+}
+/*Load_file*/
+
 /*Popup End*/
 /* Partners End */

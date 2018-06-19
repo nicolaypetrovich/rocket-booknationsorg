@@ -180,7 +180,7 @@
             </div>
         </nav>
     </div>
-    <div class="container media_edit">
+    <div class="container remove_default_styles">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
                 <a href="/" class="breadcrumbs__link">Главная</a>
@@ -401,22 +401,29 @@
                                 </label>
                                 <label>
                                     <span class="req_field">Why become a partner</span>
-                                    <textarea></textarea>
+                                    <textarea class="required"></textarea>
                                 </label>
-                                <label>
+                                <div class="file-load">
                                     <span class="req_field">Image File</span>
-                                    <input type="text" class="required">
-                                </label>
+                                    <input type="file" class=" load_file-target " id="load-file" data-multiple-caption="{count} files selected">
+                                    <label for="load-file" class="set_req">
+                                        <span class="cur_file-name">Select file...</span>
+                                        <span class="load_hint ">Upload file</span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
-                        <label>
-                            <input type="submit" value="Send" class="send_btn">
-                        </label>
+                       <div class="partners_send_btn">
+                           <label >
+                               <input type="submit" value="Send" class="send_btn partners_form-send">
+                           </label>
+                       </div>
                     </form>
                 </section>
             </div>
         </div>
     </div>
+
 </footer>
 <div class="fixed-aside">
     <div class="slideout fixed-aside__item">
