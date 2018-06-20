@@ -445,6 +445,10 @@
     .events .mobile__table div.date-box>label {
         width: 78%;
     }
+
+    .p-0 {
+        padding: 0;
+    }
     /*Event/Events end*/
 }
 
