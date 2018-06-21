@@ -1498,6 +1498,9 @@ a {
 
 
 /* Forum start */
+.forum_table-mobile{
+    display: none;
+}
 
 .forum .layout__title{
     margin-bottom: 0;
