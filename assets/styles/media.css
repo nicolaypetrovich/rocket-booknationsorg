@@ -7,15 +7,11 @@
         height: auto;
     }
 }
-
-
 @media (min-width: 1200px){
     .container {
         width: auto;
     }
 }
-
-
 @media (max-width:1289px){
     /* Banner */
     .banner__label {
@@ -62,9 +58,12 @@
     }
     /*Partners Page End*/
 }
-
-
 @media only screen and (max-width : 1200px){
+    /*Forum page*/
+    .layout__title{
+        font-size: 16px;
+    }
+    /*Forum page End*/
     /*Personal Setting page*/
     .personal_setting_wrap{
         flex-wrap: wrap;
@@ -92,8 +91,6 @@
     }
     /*Personal Setting page end*/
 }
-
-
 @media (max-width: 1024px){
     /*Personal Setting page*/
     .personal_form_in{
@@ -109,9 +106,12 @@
         min-width: 40px;
     }
 }
-
-
 @media only screen and (max-width : 991px){
+    /*Forum page*/
+    .form_post_details{
+        left: -58px;
+    }
+    /*Forum End*/
     /*Partners Page*/
     .partners_list ul li{
         width: 21%
@@ -194,8 +194,6 @@
 
     /* Events page end */
 }
-
-
 @media only screen and (max-width : 850px){
     /*Personal Setting page */
     .personal_content_lp label, .personal_content_rp label{
@@ -209,9 +207,28 @@
         padding: 55px 55px 65px 55px;
     }
     /*Partners Page End*/
-}
 
+}
+@media only screen and (max-width : 768px){
+    /*Forum page*/
+    .user-email{
+        display: block;
+    }
+    .layout__title{
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+    .forum .table-content_thead th:nth-child(2){
+        width: 18%;
+    }
+    /*Forum End*/
+}
 @media only screen and (max-width : 767px){
+    /*Forum page*/
+    .form_post_details{
+        left: -100px
+    }
+    /*Forum page End*/
     /*Partners Page */
     .modal__wrap{
         width: 100%;
@@ -403,9 +420,40 @@
 
     /* Event page end*/
 }
-
-
 @media only screen and (max-width : 635px){
+    /*Forum page*/
+    .forum_table-desktop{
+        display: none;
+    }
+    .forum_table-mobile{
+        display: block;
+    }
+    .forum_table-mobile table tr td{
+        border: 1px solid #bababa;
+        padding: 7px;
+    }
+    .forum_table-mobile table{
+        width: 100%;
+        margin-bottom: 7px;
+    }
+    .forum_table-mobile table:last-child{
+        margin-bottom: 0;
+    }
+    .forum_table-mobile table tr td:first-child{
+        width: 30%;
+        background-color: #f9f9f9;
+    }
+    .form_post_details{
+        left: -89px;
+    }
+    .forum_table-mobile table tr:first-child td:first-child:hover .badge{
+        background-color: #1d1d1e;
+    }
+    .forum_mobile{
+        border-collapse: collapse;
+        /*border: 1px solid #bababa*/
+    }
+    /*Forum page End*/
     /*Partners Page*/
     .partners_list ul li{
         width: 26%
@@ -417,8 +465,6 @@
     }
     /*Personal Setting page End*/
 }
-
-
 @media (max-width:575px){
     /*Wish wall page */
     .wish_wall_form{
@@ -476,8 +522,6 @@
         min-width: 190px;
     }
 }
-
-
 @media only screen and (max-width : 480px){
     /*Partners Page*/
     .modal__wrap{
@@ -539,8 +583,6 @@
     }
     /*Event/Events end*/
 }
-
-
 @media only screen and (max-width : 340px){
     .profile_photo_info{
         width: 100%;
@@ -552,8 +594,6 @@
         width: 75%;
     }
 }
-
-
 @media only screen and (max-width : 320px){
 
 }
