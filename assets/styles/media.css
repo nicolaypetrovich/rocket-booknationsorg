@@ -11,13 +11,6 @@
     }
 }
 
-/*Changing Bootstrap-grid container*/
-@media (min-width: 768px){
-    .container {
-        max-width: 770px;
-    }
-}
-
 
 @media (max-width:1289px){
 
@@ -133,7 +126,7 @@
     }
 
     .events .table-content .date-box>label {
-        width: 150px;
+        width: 140px;
     }
 
     .events .table-content .date-box>label:last-child {
