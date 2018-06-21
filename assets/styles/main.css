@@ -2598,7 +2598,7 @@ a {
 .similar_form .error,.similar_form .error{
     padding-top: 10px;
 }
-
+/*Popup End*/
 /*Load_file*/
 .file-load span.req_field{
     padding-bottom: 7px;
@@ -2656,7 +2656,134 @@ a {
     max-width: 100%;
     text-overflow:ellipsis;
 }
-/*Load_file*/
-
-/*Popup End*/
+/*Load_file End*/
 /* Partners End */
+
+/*Create Forum*/
+.create_forum_wrap{
+    padding-top: 15px;
+}
+.create_forum_wrap .similar_form{
+    max-width: 490px;
+    width: 100%;
+}
+.create_forum_wrap .similar_form label{
+    flex-direction: row;
+}
+.create_forum_wrap .similar_form label:nth-child(2){
+    margin-bottom: 35px;
+}
+.create_forum_wrap .similar_form label:nth-child(4){
+    margin-bottom: 60px;
+}
+.create_forum_wrap .similar_form label input,.create_forum_wrap .similar_form label textarea{
+    width: 390px;
+}
+.create_forum_wrap .similar_form label span.req_field{
+    display: block;
+    width: 100px;
+    padding-right: 27px;
+    padding-bottom: 0;
+    align-self: center;
+}
+.create_forum_wrap .similar_form label input,.create_forum_wrap .similar_form .forum_editable_field label span.req_field{
+    align-self: flex-start;
+}
+.create_forum_wrap .similar_form label span.req_field:before{
+    display: none;
+}
+.create_forum_wrap .similar_form label .send_btn{
+    width: 165px;
+    height: 35px;
+    background-color: #161313;
+    color: #fff;
+    transition: background-color ease .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    cursor: pointer;
+    position: relative;
+}
+.create_forum_wrap .similar_form label .send_btn:hover{
+    background-color: #e11f46;
+    transition: background-color ease .5s;
+}
+.editable_field-info{
+    padding-left: 100px;
+    margin-bottom: 50px;
+    font-size: 12px;
+    line-height: 12px;
+}
+.editable_field-info ul li:nth-child(1){
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.editable_field_info-in{
+    display: inline-block;
+    position: relative;
+    padding-right: 15px;
+}
+.info_file-name,.info_file-size,.info_file-mb{
+    display: inline-block;
+    line-height: 16px;
+}
+.info_file-name{
+    margin-right: 30px;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: pre;
+}
+.info_file-size{
+    color: #bababa;
+}
+.info_file-mb{
+    text-transform: uppercase;
+    color: #bababa;
+}
+.editable_field-info ul{
+    display: flex;
+    flex-direction: column;
+}
+.editable_field-info ul li{
+    align-self: flex-start;
+    padding-right: 30px;
+    position: relative;
+    min-width: 135px;
+    display: flex;
+}
+.editable_field-info ul li:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 12px;
+    color: #bababa;
+    font-weight: 900;
+    top: 53%;
+    transform: translateY(-50%);
+}
+.editable_field-info ul li:nth-child(2):before{
+    content: '\f03d';
+
+}
+.editable_field-info ul li:nth-child(3):before{
+    content: '\f03e'
+}
+.create_forum_wrap .similar_form label:last-child .send_btn{
+    width: 120px;
+    height: 45px;
+    background-color: #f5283b;
+
+}
+.create_forum_wrap .similar_form label:last-child{
+    align-self: flex-start;
+    display: inline-flex;
+}
+.create_forum_wrap .similar_form label:last-child .send_btn:hover{
+    background-color: #1d1d1e;
+}
+/*Create Forum End*/
