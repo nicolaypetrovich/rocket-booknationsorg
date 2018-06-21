@@ -195,15 +195,13 @@
         </ul>
         <div class="layout__content event__settings">
             <h3 class="layout__title">Settings Event</h3>
-
-
-            <form method="GET" class="personal_content_field">
+            <form method="GET">
                 <div class="es__group upload__group">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-1">
+                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
+                        <div class="p-0 col-2 col-lg- col-xl-1">
                             <span class="nowrap">Group Picture:</span>
                         </div>
-                        <div class="col-7">
+                        <div class="p-0 col-12 col-md-7">
                             <label for="file-1" class="es__load_box color-gray">
                                 Upload a picture:
                                 <i class="fas fa-upload"></i>
@@ -213,9 +211,9 @@
                     </div>
                 </div>
                 <div class="es__group">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-1"></div>
-                        <div class="col-7">
+                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
+                        <div class="p-0 col-2 col-xl-1"></div>
+                        <div class="p-0 col-12 col-md-10">
                             <div class="es_photo_box">
                                 <label for="file-2" class="es__load_box">
                                     <i class="fas fa-camera"></i>
@@ -227,23 +225,23 @@
                     </div>
                 </div>
                 <div class="es__group">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-1">
+                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
+                        <div class="p-0 col-2 col-lg- col-xl-1">
                             <span class="nowrap">Event Name:</span>
                         </div>
-                        <div class="col-7">
+                        <div class="p-0 col-12 col-md-7">
                             <label>
-                                <input type="text" class="required input">
+                                <input type="text" class="required input" placeholder="Add a short, clear name">
                             </label>
                         </div>
                     </div>
                 </div>
                 <div class="es__group">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-1">
+                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
+                        <div class="p-0 col-2 col-lg- col-xl-1">
                             <span class="nowrap">Short Discussion:</span>
                         </div>
-                        <div class="col-7">
+                        <div class="p-0 col-12 col-md-7">
                             <label>
                                 <input type="text" class="input">
                             </label>
@@ -251,23 +249,23 @@
                     </div>
                 </div>
                 <div class="es__group">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-1">
+                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
+                        <div class="p-0 col-2 col-lg- col-xl-1">
                             <span class="nowrap">Locations:</span>
                         </div>
-                        <div class="col-7">
+                        <div class="p-0 col-12 col-md-7">
                             <label>
-                                <input type="text" class="input">
+                                <input type="text" class="input" placeholder="Include a place or address">
                             </label>
                         </div>
                     </div>
                 </div>
                 <div class="es__group">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-1">
+                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
+                        <div class="p-0 col-2 col-lg- col-xl-1">
                             <span class="nowrap">Starts:</span>
                         </div>
-                        <div class="col-7">
+                        <div class="p-0 col-12 col-md-7">
                             <div class="es_date_box d-flex align-items-center">
                                 <label>
                                     <i class="fas fa-calendar-alt"></i>
@@ -285,11 +283,11 @@
                     </div>
                 </div>
                 <div class="es__group">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-1">
+                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
+                        <div class="p-0 col-2 col-lg- col-xl-1">
                             <span class="nowrap">Ends:</span>
                         </div>
-                        <div class="col-7">
+                        <div class="p-0 col-12 col-md-7">
                             <div class="es_date_box d-flex align-items-center">
                                 <label>
                                     <i class="fas fa-calendar-alt"></i>
@@ -307,46 +305,42 @@
                     </div>
                 </div>
                 <div class="es__group">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-8">
+                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
+                        <div class="p-0 col-12">
                             <div class="radio-group group-required">
-                                <input type="radio" name="radio" class="required active">
-                                <input type="radio" name="radio" class="required">
-                                <input type="radio" name="radio" class="required">
+                                <label>
+                                    <span class="btn active">Just once</span>
+                                    <input type="radio" name="radio" class="required" checked>
+                                </label>
+                                <label>
+                                    <span class="btn">Every week</span>
+                                    <input type="radio" name="radio" class="required">
+                                </label>
+                                <label>
+                                    <span class="btn">Every 2 week</span>
+                                    <input type="radio" name="radio" class="required">
+                                </label>
+                                <label>
+                                    <span class="btn">Every month</span>
+                                    <input type="radio" name="radio" class="required">
+                                </label>
                             </div>
                         </div>
                     </div>
-
-                        <div class="col-7">
-                            <div class="es_date_box d-flex align-items-center">
-                                <label>
-                                    <i class="fas fa-calendar-alt"></i>
-                                    <input class="js-date-picker input">
-                                </label>
-                                <label>
-                                    <i class="fas fa-clock"></i>
-                                    <input class="js-time-picker input">
-                                </label>
-                                <span>
-                                    UTS +1
-                                </span>
-                            </div>
+                </div>
+                <div class="es__group">
+                    <div class="row d-flex align-items-start">
+                        <div class="p-0 col-2 col-lg- col-xl-1">
+                            <span class="nowrap es__span">Discussion:</span>
                         </div>
-
+                        <div class="p-0 col-12 col-md-7">
+                            <label>
+                                <textarea class="input" maxlength="300" placeholder="Tell people more about the event"></textarea>
+                            </label>
+                        </div>
+                    </div>
                 </div>
-
-
-
-
-
-
-
-
-
-                <div class="personal_content_change">
-                    <input type="submit" class="btn btn_accent">
-                </div>
-
+                <input type="submit" value="Settings Event" class="btn btn_accent">
             </form>
         </div>
     </div>

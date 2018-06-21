@@ -64,7 +64,7 @@
 }
 
 
-@media only screen and (max-width : 1200px){
+@media only screen and (max-width : 1199px){
     /*Personal Setting page*/
     .personal_setting_wrap{
         flex-wrap: wrap;
@@ -91,6 +91,12 @@
         padding-top: 60px;
     }
     /*Personal Setting page end*/
+
+    /* Event Settings page */
+    .es__group > div > div:nth-child(2) {
+        margin-left: 0;
+    }
+    /* Event Settings page end*/
 }
 
 
@@ -169,6 +175,16 @@
         padding: 13px 0;
         width: 30px;
     }
+
+    /* Event Settings page */
+    .es_photo_box {
+        width: 100%;
+    }
+
+    .event__settings .layout__title {
+        margin-bottom: 30px;
+    }
+    /* Event Settings page end*/
 
     .events .table-content .date-box>label {
         width: 140px;
@@ -402,6 +418,30 @@
     }
 
     /* Event page end*/
+
+    /* Event settings page*/
+    .es__group .radio-group label > span {
+        margin-top: 10px;
+    }
+
+    .es__group > div > div:nth-child(2) {
+        margin-top: 15px;
+    }
+
+    .es__group:nth-child(2) > div > div:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .event__settings .layout__title {
+        margin-bottom: 15px;
+    }
+
+    .es__group input.input,
+    .es__group textarea {
+        width: 100%;
+    }
+
+    /* Event settings page end*/
 }
 
 
