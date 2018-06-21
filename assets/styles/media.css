@@ -15,6 +15,13 @@
     }
 }
 
+/*Changing Bootstrap-grid container*/
+@media (min-width: 768px){
+    .container {
+        max-width: 770px;
+    }
+}
+
 
 @media (max-width:1289px){
     /* Banner */
@@ -140,7 +147,6 @@
     }
 
     /* Event page */
-
     .event__details ul {
         margin-top: 40px;
     }
@@ -157,6 +163,43 @@
     }
     /*Wish wall page end*/
 
+    /* Events page */
+    .events .table-content .date-box {
+        position: relative;
+    }
+
+    .events .table-content .date-box>span {
+        position: absolute;
+        right: 3px;
+        top: 12px;
+        transform: rotate(90deg);
+        padding: 13px 0;
+        width: 30px;
+    }
+
+    .events .table-content .date-box>label {
+        width: 150px;
+    }
+
+    .events .table-content .date-box>label:last-child {
+        margin-top: 5px;
+    }
+
+    .events .table-content_thead th:first-child {
+        width: 5.4%;
+    }
+
+    .events .table-content_thead th:nth-child(2),
+    .events .table-content_thead th:nth-child(3) {
+        width: 18.9%;
+    }
+
+    .events .table-content_thead th:nth-child(4),
+    .events .table-content_thead th:last-child {
+        width: 28.4%;
+    }
+
+    /* Events page end */
 }
 
 
@@ -489,9 +532,19 @@
     }
     /*Personal Setting page End */
 
+    /*Event/Events*/
     .container-resize {
         padding: 0;
     }
+
+    .events .mobile__table div.date-box>label {
+        width: 78%;
+    }
+
+    .p-0 {
+        padding: 0;
+    }
+    /*Event/Events end*/
 }
 
 
@@ -501,6 +554,9 @@
     }
     .personal_photo_wrap{
         width: 100%;
+    }
+    .events .mobile__table div.date-box>label {
+        width: 75%;
     }
 }
 
