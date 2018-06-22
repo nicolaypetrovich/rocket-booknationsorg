@@ -154,5 +154,14 @@ $(document).ready(function () {
         var prevInput = $(this).prev();
         var nextInput = $(this).next();
         $(this).before(nextInput).after(prevInput);
+    });
+
+// Time picker (Setting event page)
+    $('.js-time-picker').timepicker({ 'timeFormat': 'h:i A' });
+
+// Radio btns (Setting event page)
+    $('.radio-group .btn').on('click', function () {
+        $(this).closest('.radio-group').find('.btn').removeClass('active');
+        $(this).addClass('active')
     })
 });
