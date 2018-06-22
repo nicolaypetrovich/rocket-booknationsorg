@@ -95,7 +95,9 @@
  */
 
 /* Reset start */
-
+.display{
+    display: block;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -2788,6 +2790,52 @@ a {
     background-color: #1d1d1e;
 }
 .select_icon_popup{
-
+    width: 870px;
+    max-height: 350px;
+    overflow-y: auto;
+    -webkit-box-shadow: 0px 0px 36px 10px rgba(0,0,1,0.13);
+    -moz-box-shadow: 0px 0px 36px 10px rgba(0,0,1,0.13);
+    box-shadow: 0px 0px 36px 10px rgba(0,0,1,0.13);
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    padding: 40px 35px;
+    display: none;
+    top: 70px;
+}
+.close_popup_button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #cecece;
+    cursor: pointer;
+}
+.close_popup_button i{
+    font-size: 18px;
+    line-height: 18px;
+}
+.icon_popup_title{
+    text-align: center;
+    padding-bottom: 30px;
+    color: #787878;
+    font-size: 16px;
+}
+.icon_list{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.icon_list i{
+    font-size: 16px;
+    display: block;
+    width: calc(100%/23);
+    margin-bottom: 15px;
+    color: #787878;
+    cursor: pointer;
+    text-align: center;
+}
+.icon_list i:hover{
+    color: red;
 }
 /*Create Forum End*/

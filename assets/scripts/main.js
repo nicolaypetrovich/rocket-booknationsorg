@@ -155,4 +155,12 @@ $(document).ready(function () {
         var nextInput = $(this).next();
         $(this).before(nextInput).after(prevInput);
     })
+// Switch visibility
+    $('.js_icon-switcher').click(function () {
+        $('.select_icon_popup').slideToggle();
+
+    });
+    $('.close_popup_button').click(function () {
+        $('.select_icon_popup').slideUp();
+    })
 });
