@@ -63,8 +63,18 @@
     /*Partners Page End*/
 }
 
+@media only screen and (max-width : 1200px) {
+    /*Forum page*/
+    .layout__title {
+        font-size: 16px;
+    }
+
+    /*Forum page End*/
+}
+
 
 @media only screen and (max-width : 1199px){
+
     /*Personal Setting page*/
     .personal_setting_wrap{
         flex-wrap: wrap;
@@ -422,6 +432,31 @@
     /* Event settings page*/
     .es__group .radio-group label > span {
         margin-top: 10px;
+    }
+
+    .es__group > div > div:nth-child(2) {
+        margin-top: 15px;
+    }
+
+    .es__group:nth-child(2) > div > div:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .event__settings .layout__title {
+        margin-bottom: 15px;
+    }
+
+    .es__group input.input,
+    .es__group textarea {
+        width: 100%;
+    }
+
+    /* Event settings page end*/
+}
+@media only screen and (max-width : 635px){
+    /*Forum page*/
+    .forum_table-desktop{
+        display: none;
     }
 
     .es__group > div > div:nth-child(2) {
