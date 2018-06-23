@@ -55,9 +55,9 @@ $(document).ready(function () {
         </div>
 
         В переменную inputs добавляем свой класс что бы данные выбирались именно с него
-        Атрибут data-multiple-caption обязательный , а так же не забыть поменять ай
+        Атрибут data-multiple-caption обязательный , а так же не забыть поменять айди
     */
-    var inputs = $( '.load_file-target' );
+    var inputs = $( '.load_file-target,#forum-load_vid,#forum-load_pict' );
     Array.prototype.forEach.call( inputs, function( input )
     {
         var label	 = input.nextElementSibling,

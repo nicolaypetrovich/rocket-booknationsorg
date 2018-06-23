@@ -154,7 +154,7 @@ $(document).ready(function () {
         var prevInput = $(this).prev();
         var nextInput = $(this).next();
         $(this).before(nextInput).after(prevInput);
-    })
+    });
 // Switch visibility
     $('.js_icon-switcher').click(function () {
         $('.select_icon_popup').slideToggle();
@@ -162,5 +162,24 @@ $(document).ready(function () {
     });
     $('.close_popup_button').click(function () {
         $('.select_icon_popup').slideUp();
-    })
+    });
+
+
+    // tinymce
+    tinymce.init({
+        content_css: [
+            '../styles/main.css',
+            '../fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css'],
+        selector: '.js-tinymce',
+        height: 80,
+        menubar: false,
+        statusbar: false,
+
+        plugins: [
+            'advlist autolink lists link  charmap  preview anchor ',
+            'table  paste'
+        ],
+        toolbar: 'bold | bullist numlist | italic | link',
+
+    });
 });

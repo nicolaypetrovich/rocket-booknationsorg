@@ -25,10 +25,11 @@
     <script src="./assets/scripts/clocks.js"></script>
     <!--НЕ ДОБАВЛЯТЬ ЭТОТ СКРПИТ НА СТРАНИЦЫ ГДЕ ОН НЕ НУЖЕН-->
     <script src="./assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/fontawesome-all.js"></script>
-    <script src="./assets/scripts/main.js"></script>
     <script src="assets/scripts/forms.js"></script>
     <script src="assets/scripts/tabs.js"></script>
     <script src="assets/scripts/file_loader.js"></script>
+    <script src="assets/scripts/tinymce/tinymce.min.js"></script>
+    <script src="./assets/scripts/main.js"></script>
 </head>
 
 <body>
@@ -202,22 +203,34 @@
                         <input type="text" class="required">
                     </label>
                     <div class="forum_editable_field">
-                        <label>
-                            <span class="req_field">Full Description:</span>
-                            <textarea class="required"></textarea>
-                        </label>
+                        <div class="tiny_mce_wrap">
+                            <div class="file_load_icons">
+                                <label class="load_video">
+                                    <i class="fas fa-video"></i>
+                                    <input type="file" id="forum-load_vid" data-multiple-caption="{count} files selected">
+                                </label>
+                                <label class="load_picture">
+                                    <i class="fas fa-image"></i>
+                                    <input type="file" id="forum-load_pict" data-multiple-caption="{count} files selected">
+                                </label>
+                            </div>
+                            <label class="tiny_mce_label">
+                                <span class="req_field">Full Description:</span>
+                                <textarea class="required js-tinymce"></textarea>
+                            </label>
+                        </div>
                         <div class="editable_field-info">
                             <ul>
                                 <li>
                                     Uploaded
                                 </li>
-                                <li>
-                                    <span class="info_file-name">Name</span>
+                                <li id="form_js-vid_name">
+                                    <span class="info_file-name ">Name</span>
                                     <span class="info_file-size">100</span>
                                     <span class="info_file-mb">mb</span>
                                 </li>
-                                <li>
-                                    <span class="info_file-name">Name</span>
+                                <li id="form_js-img_name">
+                                    <span class="info_file-name form_js-img_name">Name</span>
                                     <span class="info_file-size">15</span>
                                     <span class="info_file-size">mb</span>
                                 </li>
@@ -226,7 +239,7 @@
                     </div>
                     <div class="select_icon-wrap">
                         <label>
-                            <span class="req_field">Short Description:</span>
+                            <span class="req_field">Icon:</span>
                             <span class="send_btn js_icon-switcher">Select the icon</span>
                         </label>
                         <div class="select_icon_popup">
