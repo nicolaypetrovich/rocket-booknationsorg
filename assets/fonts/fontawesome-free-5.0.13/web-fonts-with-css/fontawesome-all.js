@@ -94,12 +94,15 @@
         }
     ;
     $(document).ready(function () {
-        var getKeys = Object.keys(fonts);
-        var getIconContainer = document.getElementById('js_icon-wrap');
-        for(var i = 0 ; i < getKeys.length; i++){
-            getIconContainer.innerHTML += ('<i class = "fab fa-'+ getKeys[i] +'"></i>');
-        }
-    })
+        setTimeout(function () {
+            var getKeys = Object.keys(fonts);
+            var getIconContainer = document.getElementById('js_icon-wrap');
+            for(var i = 0 ; i < getKeys.length; i++){
+                getIconContainer.innerHTML += ('<i class = "js-selected_icon  fab fa-'+ getKeys[i] +'"></i>');
+            }
+        },500)
+
+    });
 
     !function(c) {
         try {

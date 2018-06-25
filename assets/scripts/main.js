@@ -168,13 +168,14 @@ $(document).ready(function () {
     // tinymce
     tinymce.init({
         content_css: [
-            '../styles/main.css',
-            '../fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css'],
+            'styles/main.css',
+            './assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css'],
         selector: '.js-tinymce',
         height: 80,
+        verify_html: false,
         menubar: false,
         statusbar: false,
-
+        font_formats:'HelveticaNeueCyr,Font Awesome 5 Free',
         plugins: [
             'advlist autolink lists link  charmap  preview anchor ',
             'table  paste'
@@ -182,4 +183,14 @@ $(document).ready(function () {
         toolbar: 'bold | bullist numlist | italic | link',
 
     });
+    setTimeout(function () {
+        var getIconList = $('.js-selected_icon');
+        $.each(getIconList,function () {
+            $(this).on('click',function () {
+                var getIconStyle = $(this).attr('class');
+                var selectedFontIcon =  '<i class="'  + getIconStyle + '"> <!--hack--></i>';
+                tinyMCE.activeEditor.execCommand('mceInsertContent', false, selectedFontIcon)
+            })
+        })
+    },1000)
 });

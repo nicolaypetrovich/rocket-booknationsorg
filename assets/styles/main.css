@@ -2762,6 +2762,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 }
 .info_file-size{
     color: #bababa;
+    margin-right: 3px;
 }
 .info_file-mb{
     text-transform: uppercase;
@@ -2802,6 +2803,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     height: 45px;
     background-color: #f5283b;
     margin-left: 0;
+    border: none;
 }
 .create_forum_wrap .similar_form label:last-child{
     align-self: flex-start;
@@ -2936,5 +2938,6 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     color: #787878;
     cursor: pointer;
 }
+
 /*Tiny styles End*/
 /*Create Forum End*/
