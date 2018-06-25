@@ -2881,6 +2881,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 .forum_editable_field label #mce_0_ifr{
     border: 1px solid #bababa;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 .forum_editable_field label .mce-btn:hover, .mce-btn:active{
     /*border: none;*/
