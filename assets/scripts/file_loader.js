@@ -23,7 +23,7 @@ $(document).ready(function () {
         }
     }
     //When field have change call function readURL
-    $('#take_file').change(function () {
+    $('#take_file, .take-file').change(function () {
         readURL(this);
     });
     // Remove photo from preview and change on default image

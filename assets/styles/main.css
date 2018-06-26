@@ -262,12 +262,14 @@ a {
 
 /* Default styles start */
 
-<<<<<<< HEAD
 .color-gray {
     color: #bababa;
 }
-=======
->>>>>>> forum
+
+.nowrap {
+    white-space: nowrap;
+}
+
 /* Default styles end */
 
 
@@ -574,6 +576,22 @@ a {
 
 
 /* Field input */
+
+.input {
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #bababa;
+}
+
+.input::-webkit-input-placeholder {font-size:12px; color:#bababa;}
+.input::-moz-placeholder          {font-size:12px; color:#bababa;}
+.input:-moz-placeholder           {font-size:12px; color:#bababa;}
+.input:-ms-input-placeholder      {font-size:12px; color:#bababa;}
 
 .field {
     padding: 0 30px;
@@ -2291,6 +2309,131 @@ a {
 }
 
 /* Events end */
+
+/*Event Settings*/
+
+.event__settings .layout__title {
+    margin-bottom: 55px;
+}
+
+.es__group {
+    margin-top: 25px;
+}
+
+.es__group > div > div:nth-child(2) {
+    margin-left: 22px;
+}
+
+.es_photo_box {
+    position: relative;
+    width: 630px;
+    height: 170px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #d1d1d1;
+}
+
+.es_photo_box > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.es_photo_box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.es__group:first-child .es__load_box > i {
+    font-size: 16px; /*font awesome upload icon*/
+}
+
+.es_photo_box i {
+    font-size: 60px; /*font awesome camera icon*/
+    color: #e8e8e8;
+}
+
+input.take-file {
+    display: none;
+}
+
+label.es__load_box {
+    cursor: pointer;
+}
+
+.es__group input.input {
+    width: 390px;
+}
+
+.es__group .error {
+    padding-top: 0;
+    margin-left: 10px;
+}
+
+.es_date_box label {
+    position: relative;
+    cursor: pointer;
+}
+
+.es_date_box label i {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #bababa;
+}
+
+.es_date_box label input.input {
+    width: 120px;
+    margin-right: 7px;
+}
+
+.es_date_box span {
+    color: #2579bf;
+}
+
+.es__group .radio-group label > span {
+    width: 100px;
+    border: 1px solid #bababa;
+    font-size: 14px;
+    color: #787878;
+    margin-right: 10px;
+}
+
+.es__group .radio-group label:hover > span,
+.es__group .radio-group label span.active {
+    background-color: #1d1d1d;
+    border: 1px solid #1d1d1d;
+    color: #fff;
+}
+
+.es__group .radio-group label > input[type=radio] {
+    display: none;
+}
+
+.es__group textarea {
+    width: 390px;
+    height: 100px;
+    padding-top: 8px;
+    line-height: 20px;
+}
+
+.es__span {
+    display: block;
+    margin-top: 8px;
+}
+
+.event__settings form > input {
+    margin-top: 50px;
+    width: 130px;
+    height: 43px;
+}
+
+/*Event Settings end*/
+
 
 /*Personal Settings*/
 .personal_setting_wrap{
