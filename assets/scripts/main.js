@@ -184,13 +184,22 @@ $(document).ready(function () {
     });
 
     setTimeout(function () {
-        var getIconList = $('.js-selected_icon');
-        $.each(getIconList,function () {
+        $('.js-selected_icon').each(function () {
             $(this).on('click',function () {
                 var getIconStyle = $(this).attr('class');
-                var selectedFontIcon =  '<i class="'  + getIconStyle + '"> <!--hack--></i>';
-                tinyMCE.activeEditor.execCommand('mceInsertContent', false, selectedFontIcon)
+                console.log(getIconStyle);
+                $('.js_choice-icon').html('<i class="'  + getIconStyle + '"></i>' + ' Choice icon');
+                $('.select_icon_popup').slideUp();
             })
         })
-    },1000)
+    },500);
+
+    $('.js-validateBtn').on('click',function () {
+       var chekOnEmpty = tinyMCE.activeEditor.getContent();
+       if(chekOnEmpty.length == 0){
+           $('.forum_editable_field label #mce_0_ifr').css('borderColor','red')
+       }else{
+
+       }
+    })
 });

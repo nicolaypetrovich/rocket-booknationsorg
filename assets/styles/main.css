@@ -2680,6 +2680,13 @@ a {
     margin-bottom: 60px;
     position: relative;
 }
+.create_forum_wrap .similar_form .select_icon-wrap label span.icon_in{
+    display: flex;
+    flex-direction: row;
+}
+.select_icon-wrap label span.icon_in i{
+    margin-right: 7px;
+}
 form.similar_form > div.select_icon-wrap > label{
     margin-left: 100px;
 }

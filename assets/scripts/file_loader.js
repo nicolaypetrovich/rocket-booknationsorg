@@ -116,10 +116,4 @@ $(document).ready(function () {
             $('.set_req').removeClass('required');
         }
     });
-
-    $('.js-selected_icon').on('click',function () {
-       var cloneIcon = $(this).clone();
-       $('.tiny-chain_icon').html('<p>'+ cloneIcon + '</p>');
-    });
-
 });
