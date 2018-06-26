@@ -95,7 +95,9 @@
  */
 
 /* Reset start */
-
+.display{
+    display: block;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -2830,7 +2832,7 @@ a {
 .similar_form .error,.similar_form .error{
     padding-top: 10px;
 }
-
+/*Popup End*/
 /*Load_file*/
 .file-load span.req_field{
     padding-bottom: 7px;
@@ -2888,7 +2890,296 @@ a {
     max-width: 100%;
     text-overflow:ellipsis;
 }
-/*Load_file*/
-
-/*Popup End*/
+/*Load_file End*/
 /* Partners End */
+
+/*Create Forum*/
+.create_forum_wrap{
+    padding-top: 15px;
+}
+.create_forum_wrap .similar_form{
+    max-width: 490px;
+    width: 100%;
+    position: relative;
+}
+.create_forum_wrap .similar_form label{
+    flex-direction: column;
+}
+.create_forum_wrap .similar_form label:nth-child(2){
+    margin-bottom: 35px;
+}
+.select_icon-wrap{
+    margin-bottom: 60px;
+    position: relative;
+}
+.create_forum_wrap .similar_form .select_icon-wrap label span.icon_in{
+    display: flex;
+    flex-direction: row;
+}
+.select_icon-wrap label span.icon_in i{
+    margin-right: 7px;
+}
+form.similar_form > div.select_icon-wrap > label{
+    margin-left: 100px;
+}
+.create_forum_wrap .similar_form label input,.create_forum_wrap .similar_form label textarea{
+    width: 390px;
+}
+.create_forum_wrap .error{
+    text-align: right;
+}
+.create_forum_wrap .similar_form label span.req_field{
+    display: block;
+    width: 100px;
+    padding-right: 27px;
+    padding-bottom: 0;
+    align-self: center;
+    position: absolute;
+    left: 0;
+}
+.create_forum_wrap .similar_form label input,.create_forum_wrap .similar_form label textarea{
+    margin-left: 100px;
+}
+.tiny_mce_label{
+    margin-left: 100px;
+}
+.create_forum_wrap .similar_form label input, .create_forum_wrap .similar_form .forum_editable_field label.tiny_mce_label{
+    position: relative;
+}
+form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
+    left: -100px;
+}
+.create_forum_wrap .similar_form label input,.create_forum_wrap .similar_form .forum_editable_field label span.req_field{
+    align-self: flex-start;
+}
+.create_forum_wrap .similar_form label span.req_field:before{
+    display: none;
+}
+.create_forum_wrap .similar_form label .send_btn{
+    width: 165px;
+    height: 35px;
+    background-color: #161313;
+    color: #fff;
+    transition: background-color ease .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    cursor: pointer;
+    position: relative;
+}
+.create_forum_wrap .similar_form label .send_btn:hover{
+    background-color: #e11f46;
+    transition: background-color ease .5s;
+}
+.editable_field-info{
+    padding-left: 100px;
+    margin-bottom: 50px;
+    font-size: 12px;
+    line-height: 12px;
+}
+.editable_field-info ul li:nth-child(1){
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.editable_field_info-in{
+    display: inline-block;
+    position: relative;
+    padding-right: 15px;
+}
+.info_file-name,.info_file-size,.info_file-mb{
+    display: inline-block;
+    line-height: 16px;
+}
+.info_file-name{
+    margin-right: 30px;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: pre;
+}
+.info_file-size{
+    color: #bababa;
+    margin-right: 3px;
+}
+.info_file-mb{
+    text-transform: uppercase;
+    color: #bababa;
+}
+.editable_field-info ul{
+    display: flex;
+    flex-direction: column;
+}
+.editable_field-info ul li{
+    align-self: flex-start;
+    padding-right: 30px;
+    position: relative;
+    min-width: 135px;
+    display: flex;
+}
+.editable_field-info ul li:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 12px;
+    color: #bababa;
+    font-weight: 900;
+    top: 53%;
+    transform: translateY(-50%);
+}
+.editable_field-info ul li:nth-child(2):before{
+    content: '\f03d';
+
+}
+.editable_field-info ul li:nth-child(3):before{
+    content: '\f03e'
+}
+.create_forum_wrap .similar_form label.forum_save_info .send_btn{
+    width: 120px;
+    height: 45px;
+    background-color: #f5283b;
+    margin-left: 0;
+    border: none;
+}
+.create_forum_wrap .similar_form label:last-child{
+    align-self: flex-start;
+}
+.create_forum_wrap .similar_form label.forum_save_info .send_btn:hover{
+    background-color: #1d1d1e;
+}
+.select_icon_popup{
+    width: 870px;
+    max-height: 350px;
+    overflow-y: auto;
+    -webkit-box-shadow: 0px 0px 36px 10px rgba(0,0,1,0.13);
+    -moz-box-shadow: 0px 0px 36px 10px rgba(0,0,1,0.13);
+    box-shadow: 0px 0px 36px 10px rgba(0,0,1,0.13);
+    border-radius: 5px;
+    position: absolute;
+    z-index: 2;
+    background-color: #fff;
+    padding: 40px 35px;
+    display: none;
+    top: 70px;
+}
+.close_popup_button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #cecece;
+    cursor: pointer;
+}
+.close_popup_button i{
+    font-size: 18px;
+    line-height: 18px;
+}
+.icon_popup_title{
+    text-align: center;
+    padding-bottom: 30px;
+    color: #787878;
+    font-size: 16px;
+}
+.icon_list{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.icon_list i{
+    font-size: 16px;
+    display: block;
+    width: calc(100%/23);
+    margin-bottom: 15px;
+    color: #787878;
+    cursor: pointer;
+    text-align: center;
+}
+.icon_list i:hover{
+    color: red;
+}
+/*Tiny styles*/
+.forum_editable_field{
+    position: relative;
+}
+.forum_editable_field label .mce-btn-group:not(:first-child){
+    border: none;
+}
+.forum_editable_field label .mce-tinymce{
+    box-shadow: none;
+    border: none;
+}
+.forum_editable_field label .mce-panel{
+    border: none;
+    box-shadow: none;
+}
+.forum_editable_field label .mce-top-part::before{
+    box-shadow: none;
+}
+.forum_editable_field label #mce_0_ifr{
+    border: 1px solid #bababa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.forum_editable_field label .mce-btn:hover, .mce-btn:active{
+    /*border: none;*/
+    /*padding: 0;*/
+}
+.forum_editable_field label .mce-btn button{
+    padding: 0;
+}
+.forum_editable_field label .mce-btn{
+    border: none;
+}
+.forum_editable_field label .mce-top-part{
+    padding-left: 50px;
+}
+.forum_editable_field label{
+    position: relative;
+}
+
+.tiny_mce_wrap label textarea{
+    width: 100%;
+}
+.file_load_icons label{
+    border: none;
+    width: auto;
+}
+.file_load_icons label input{
+    display: none;
+}
+.file_load_icons{
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    left: 100px;
+    align-items: center;
+}
+.tiny_mce_label{
+    position: relative;
+}
+.load_picture{
+    margin-bottom: 0 !important;
+    align-self: center !important;
+}
+.file_load_icons{
+    height: 26px;
+}
+
+.tiny_mce_wrap label{
+    margin-bottom: 0;
+}
+.tiny_mce_wrap label:first-child{
+    margin-right: 8px;
+}
+.tiny_mce_wrap label i{
+    font-size: 16px;
+    color: #787878;
+    cursor: pointer;
+}
+.mce-widget.mce-tooltip {
+    display: none !important;
+}
+/*Tiny styles End*/
+/*Create Forum End*/
