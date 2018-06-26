@@ -58,13 +58,11 @@
     }
     /*Partners Page End*/
 }
-
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width : 1200px){
     /*Forum page*/
-    .layout__title {
+    .layout__title{
         font-size: 16px;
     }
-
     /*Forum page End*/
 }
 
@@ -236,7 +234,7 @@
         padding: 55px 55px 65px 55px;
     }
     /*Partners Page End*/
-<<<<<<< HEAD
+
 
 }
 @media only screen and (max-width : 768px){
@@ -259,7 +257,7 @@
         left: -100px
     }
     /*Forum page End*/
-=======
+
 }
 @media only screen and (max-width : 768px){
     /*Create forum*/
@@ -281,7 +279,7 @@
         right: 20px;
     }
     /*Create forum End*/
->>>>>>> create_forum
+
     /*Partners Page */
     .modal__wrap{
         width: 100%;
@@ -525,7 +523,7 @@
 
 
 @media only screen and (max-width : 635px){
-<<<<<<< HEAD
+
     /*Forum page*/
     .forum_table-desktop{
         display: none;
@@ -559,7 +557,7 @@
         /*border: 1px solid #bababa*/
     }
     /*Forum page End*/
-=======
+
     /*Create forum*/
     .select_icon_popup{
         width: 545px;
@@ -568,7 +566,7 @@
         width: calc(100%/18);
     }
     /*Create forum End*/
->>>>>>> create_forum
+
     /*Partners Page*/
     .partners_list ul li{
         width: 26%

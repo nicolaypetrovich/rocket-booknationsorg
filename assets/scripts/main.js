@@ -198,8 +198,16 @@ $(document).ready(function () {
        var chekOnEmpty = tinyMCE.activeEditor.getContent();
        if(chekOnEmpty.length == 0){
            $('.forum_editable_field label #mce_0_ifr').css('borderColor','red')
-       }else{
+       }})
 
-       }
+
+// Time picker (Setting event page)
+    $('.js-time-picker').timepicker({ 'timeFormat': 'h:i A' });
+
+// Radio btns (Setting event page)
+    $('.radio-group .btn').on('click', function () {
+        $(this).closest('.radio-group').find('.btn').removeClass('active');
+        $(this).addClass('active')
+
     })
 });
