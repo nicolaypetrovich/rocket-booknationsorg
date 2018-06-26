@@ -168,7 +168,6 @@ $(document).ready(function () {
     // tinymce
     tinymce.init({
         content_css: [
-            'styles/main.css',
             './assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css'],
         selector: '.js-tinymce',
         height: 80,
@@ -183,6 +182,7 @@ $(document).ready(function () {
         toolbar: 'bold | bullist numlist | italic | link',
 
     });
+
     setTimeout(function () {
         var getIconList = $('.js-selected_icon');
         $.each(getIconList,function () {

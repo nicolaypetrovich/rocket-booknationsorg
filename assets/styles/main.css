@@ -2939,6 +2939,8 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     color: #787878;
     cursor: pointer;
 }
-
+.mce-widget.mce-tooltip {
+    display: none !important;
+}
 /*Tiny styles End*/
 /*Create Forum End*/
