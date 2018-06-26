@@ -125,6 +125,18 @@
         left: -58px;
     }
     /*Forum End*/
+    /*Forum2 page*/
+    .forum2 .layout__title {
+        margin-bottom: 20px;
+    }
+
+    .forum .btn_table {
+        padding: 0;
+        height: 28px;
+        line-height: 28px;
+        min-width: 68px;
+    }
+    /*Forum2 End*/
     /*Partners Page*/
     .partners_list ul li{
         width: 21%

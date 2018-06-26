@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Events</title>
+    <title>Forum</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -182,264 +182,115 @@
     <div class="container">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
-                <a href="/" class="breadcrumbs__link">Главная</a>
+                <a href="/" class="breadcrumbs__link">Forum</a>
             </li>
             <li class="breadcrumbs__item">
-                <span class="breadcrumbs__link breadcrumbs__link_static">Events</span>
+                <a href="/" class="breadcrumbs__link">Жизнь во Франции</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link breadcrumbs__link_static">Медицина, здоровье</span>
             </li>
         </ul>
-        <div class="layout__content events">
-            <h3 class="layout__title">
-                Events
-            </h3>
-            <p class="events__subtitle">
-                Showing entries: <b>1-5</b> of <b>5</b> items
-            </p>
+        <div class="layout__content forum forum2">
+
+            <div class="row d-flex align-items-center">
+                <div class="p-0 col-12 col-lg-4">
+                    <h3 class="layout__title">
+                        Forum: <b>Медицина, здоровье</b>
+                    </h3>
+                </div>
+                <div class="p-0 col-12 col-lg-8">
+                    <div class="form-search__wrap d-flex flex-column flex-sm-row align-items-sm-center align-items-start">
+                        <input class="field field_primary form-search__field" type="text" />
+                        <button class="btn btn_accent form-search__button">
+                            <span class="btn__label">Search</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-12 d-none d-md-block">
+                <div class="p-0 col-12">
+                    <button class="btn btn_primary">
+                        <span class="btn__label">Добавить новую тему</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="p-0 col-12 d-none d-md-block">
+                    <p class="events__subtitle">
+                        Showing entries: <b>1-5</b> of <b>5</b> items
+                    </p>
                     <table class="table-content desktop__table">
                         <thead class="table-content_thead">
                             <tr>
                                 <th>
                                     <div class="table-content_title">
-                                        <span>#</span>
+                                        <span>Title</span>
                                     </div>
                                 </th>
                                 <th>
                                     <div class="table-content_title">
-                                        <a>
-                                            <span><i class="fas fa-arrow-down"></i></span>
-                                            <span>Title</span>
-                                        </a>
+                                        <span>Creation date</span>
                                     </div>
                                 </th>
                                 <th>
                                     <div class="table-content_title">
-                                        <a>
-                                            <span><i class="fas fa-arrow-down"></i></span>
-                                            <span>Group</span>
-                                        </a>
+                                        <span>Last update</span>
                                     </div>
                                 </th>
                                 <th>
                                     <div class="table-content_title">
-                                        <a class="filter-active">
-                                            <span><i class="fas fa-arrow-down"></i></span>
-                                            <span>Start date</span>
-                                        </a>
+                                        <span>Views</span>
                                     </div>
                                 </th>
                                 <th>
                                     <div class="table-content_title">
-                                        <a>
-                                            <span><i class="fas fa-arrow-down"></i></span>
-                                            <span>End date</span>
-                                        </a>
+                                        <span>Number of posts</span>
                                     </div>
+                                    <a href="#" class="btn btn_accent btn_table">
+                                        Watchlist
+                                    </a>
                                 </th>
                             </tr>
                         </thead>
                         <tbody class="table-content_tbody">
                             <tr>
-                                <td></td>
-                                <td valign="top">
-                                    <input type="text">
-                                </td>
-                                <td valign="top">
-                                    <input type="text">
+                                <td>
+                                    <a href="#">
+                                        <span>Title</span>
+                                    </a>
                                 </td>
                                 <td>
-                                    <div class="date-box d-flex flex-column flex-lg-row">
-                                        <label>
-                                            <span class="date_select_wrap d-flex">
-                                                <span class="js-focus_date_field">
-                                                    <i class="fas fa-calendar-alt"></i>
-                                                </span>
-                                                <span class="js-clear_date_field">
-                                                    <i class="fas fa-times"></i>
-                                                </span>
-                                                <input class="js-date-picker">
-                                            </span>
-                                        </label>
-                                        <span class="js-change_date_field">
-                                            <i class="fas fa-arrows-alt-h"></i>
-                                        </span>
-                                        <label>
-                                            <span class="date_select_wrap d-flex">
-                                                <span class="js-focus_date_field">
-                                                    <i class="fas fa-calendar-alt"></i>
-                                                </span>
-                                                <span class="js-clear_date_field">
-                                                    <i class="fas fa-times"></i>
-                                                </span>
-                                                <input class="js-date-picker">
-                                            </span>
-                                        </label>
-                                    </div>
+                                    <span>01.01.2018</span>
                                 </td>
                                 <td>
-                                    <div class="date-box d-flex flex-column flex-lg-row">
-                                        <label>
-                                            <span class="date_select_wrap d-flex">
-                                                <span class="js-focus_date_field">
-                                                    <i class="fas fa-calendar-alt"></i>
-                                                </span>
-                                                <span class="js-clear_date_field">
-                                                    <i class="fas fa-times"></i>
-                                                </span>
-                                                <input class="js-date-picker">
-                                            </span>
-                                        </label>
-                                        <span class="js-change_date_field">
-                                            <i class="fas fa-arrows-alt-h"></i>
-                                        </span>
-                                        <label>
-                                            <span class="date_select_wrap d-flex">
-                                                <span class="js-focus_date_field">
-                                                    <i class="fas fa-calendar-alt"></i>
-                                                </span>
-                                                <span class="js-clear_date_field">
-                                                    <i class="fas fa-times"></i>
-                                                </span>
-                                                <input class="js-date-picker">
-                                            </span>
-                                        </label>
-                                    </div>
+                                    <span>01.01.2018</span>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td>
                                     <span>1</span>
                                 </td>
                                 <td>
-                                    <a href="#">
-                                        <span>Title</span>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="#">
-                                        <span>Group</span>
-                                    </a>
-                                </td>
-                                <td>
-                                    <span>01.01.18</span>
-                                    <span class="color-gray">
-                                        19:00
-                                    </span>
-                                </td>
-                                <td>
-                                    <span>01.01.18</span>
-                                    <span class="color-gray">
-                                        19:00
-                                    </span>
+                                    <span>1</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <span>2</span>
-                                </td>
-                                <td>
                                     <a href="#">
                                         <span>Title</span>
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="#">
-                                        <span>Group</span>
-                                    </a>
+                                    <span>01.01.2018</span>
                                 </td>
                                 <td>
-                                    <span>01.01.18</span>
-                                    <span class="color-gray">
-                                        19:00
-                                    </span>
+                                    <span>01.01.2018</span>
                                 </td>
                                 <td>
-                                    <span>01.01.18</span>
-                                    <span class="color-gray">
-                                        19:00
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>3</span>
+                                    <span>1</span>
                                 </td>
                                 <td>
-                                    <a href="#">
-                                        <span>Title</span>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="#">
-                                        <span>Group</span>
-                                    </a>
-                                </td>
-                                <td>
-                                    <span>01.01.18</span>
-                                    <span class="color-gray">
-                                        19:00
-                                    </span>
-                                </td>
-                                <td>
-                                    <span>01.01.18</span>
-                                    <span class="color-gray">
-                                        19:00
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>4</span>
-                                </td>
-                                <td>
-                                    <a href="#">
-                                        <span>Title</span>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="#">
-                                        <span>Group</span>
-                                    </a>
-                                </td>
-                                <td>
-                                    <span>01.01.18</span>
-                                    <span class="color-gray">
-                                        19:00
-                                    </span>
-                                </td>
-                                <td>
-                                    <span>01.01.18</span>
-                                    <span class="color-gray">
-                                        19:00
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <span>5</span>
-                                </td>
-                                <td>
-                                    <a href="#">
-                                        <span>Title</span>
-                                    </a>
-                                </td>
-                                <td>
-                                    <a href="#">
-                                        <span>Group</span>
-                                    </a>
-                                </td>
-                                <td>
-                                    <span>01.01.18</span>
-                                    <span class="color-gray">
-                                        19:00
-                                    </span>
-                                </td>
-                                <td>
-                                    <span>01.01.18</span>
-                                    <span class="color-gray">
-                                        19:00
-                                    </span>
+                                    <span>1</span>
                                 </td>
                             </tr>
                         </tbody>
@@ -448,130 +299,11 @@
             </div>
             <div class="row">
                 <div class="p-0 col-12 d-block d-md-none">
-                    <table class="table-content mobile__table mobile__table_head">
-                        <tr>
-                            <th>
-                                <div class="table-content_title">
-                                    <a>
-                                        <span><i class="fas fa-arrow-down"></i></span>
-                                        <span>Title</span>
-                                    </a>
-                                </div>
-                            </th>
-                            <td valign="top">
-                                <input type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <div class="table-content_title">
-                                    <a>
-                                        <span><i class="fas fa-arrow-down"></i></span>
-                                        <span>Group</span>
-                                    </a>
-                                </div>
-                            </th>
-                            <td valign="top">
-                                <input type="text">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <div class="table-content_title">
-                                    <a class="filter-active">
-                                        <span><i class="fas fa-arrow-down"></i></span>
-                                        <span>Start date</span>
-                                    </a>
-                                </div>
-                            </th>
-                            <td>
-                                <div class="date-box d-flex flex-column flex-lg-row">
-                                    <label>
-                                        <span class="date_select_wrap d-flex">
-                                            <span class="js-focus_date_field">
-                                                <i class="fas fa-calendar-alt"></i>
-                                            </span>
-                                            <span class="js-clear_date_field">
-                                                <i class="fas fa-times"></i>
-                                            </span>
-                                            <input class="js-date-picker">
-                                        </span>
-                                    </label>
-                                    <span class="js-change_date_field">
-                                        <i class="fas fa-arrows-alt-h"></i>
-                                    </span>
-                                    <label>
-                                        <span class="date_select_wrap d-flex">
-                                            <span class="js-focus_date_field">
-                                                <i class="fas fa-calendar-alt"></i>
-                                            </span>
-                                            <span class="js-clear_date_field">
-                                                <i class="fas fa-times"></i>
-                                            </span>
-                                            <input class="js-date-picker">
-                                        </span>
-                                    </label>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <div class="table-content_title">
-                                    <a>
-                                        <span><i class="fas fa-arrow-down"></i></span>
-                                        <span>End date</span>
-                                    </a>
-                                </div>
-                            </th>
-                            <td>
-                                <div class="date-box d-flex flex-column flex-lg-row">
-                                    <label>
-                                        <span class="date_select_wrap d-flex">
-                                            <span class="js-focus_date_field">
-                                                <i class="fas fa-calendar-alt"></i>
-                                            </span>
-                                            <span class="js-clear_date_field">
-                                                <i class="fas fa-times"></i>
-                                            </span>
-                                            <input class="js-date-picker">
-                                        </span>
-                                    </label>
-                                    <span class="js-change_date_field">
-                                        <i class="fas fa-arrows-alt-h"></i>
-                                    </span>
-                                    <label>
-                                        <span class="date_select_wrap d-flex">
-                                            <span class="js-focus_date_field">
-                                                <i class="fas fa-calendar-alt"></i>
-                                            </span>
-                                            <span class="js-clear_date_field">
-                                                <i class="fas fa-times"></i>
-                                            </span>
-                                            <input class="js-date-picker">
-                                        </span>
-                                    </label>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
                     <table class="table-content mobile__table">
                         <tr>
                             <th>
                                 <div class="table-content_title">
-                                    <span>#</span>
-                                </div>
-                            </th>
-                            <td>
-                                <span>1</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <div class="table-content_title">
-                                    <a>
-                                        <span><i class="fas fa-arrow-down"></i></span>
-                                        <span>Title</span>
-                                    </a>
+                                    <span>Title</span>
                                 </div>
                             </th>
                             <td>
@@ -583,56 +315,27 @@
                         <tr>
                             <th>
                                 <div class="table-content_title">
-                                    <a>
-                                        <span><i class="fas fa-arrow-down"></i></span>
-                                        <span>Group</span>
-                                    </a>
+                                    <span>Creation date</span>
                                 </div>
                             </th>
                             <td>
-                                <a href="#">
-                                    <span>Group</span>
-                                </a>
+                                <span>01.01.2018</span>
                             </td>
                         </tr>
                         <tr>
                             <th>
                                 <div class="table-content_title">
-                                    <a class="filter-active">
-                                        <span><i class="fas fa-arrow-down"></i></span>
-                                        <span>Start date</span>
-                                    </a>
+                                    <span>Last update</span>
                                 </div>
                             </th>
                             <td>
-                                <span>01.01.18</span>
-                                <span class="color-gray">
-                                        19:00
-                                    </span>
+                                <span>01.01.2018</span>
                             </td>
                         </tr>
                         <tr>
                             <th>
                                 <div class="table-content_title">
-                                    <a>
-                                        <span><i class="fas fa-arrow-down"></i></span>
-                                        <span>End date</span>
-                                    </a>
-                                </div>
-                            </th>
-                            <td>
-                                <span>01.01.18</span>
-                                <span class="color-gray">
-                                        19:00
-                                    </span>
-                            </td>
-                        </tr>
-                    </table>
-                    <table class="table-content mobile__table">
-                        <tr>
-                            <th>
-                                <div class="table-content_title">
-                                    <span>#</span>
+                                    <span>Views</span>
                                 </div>
                             </th>
                             <td>
@@ -642,10 +345,22 @@
                         <tr>
                             <th>
                                 <div class="table-content_title">
-                                    <a>
-                                        <span><i class="fas fa-arrow-down"></i></span>
-                                        <span>Title</span>
-                                    </a>
+                                    <span>Number of posts</span>
+                                </div>
+                                <a href="#" class="btn btn_accent btn_table">
+                                    Watchlist
+                                </a>
+                            </th>
+                            <td>
+                                <span>1</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <table class="table-content mobile__table">
+                        <tr>
+                            <th>
+                                <div class="table-content_title">
+                                    <span>Title</span>
                                 </div>
                             </th>
                             <td>
@@ -657,48 +372,44 @@
                         <tr>
                             <th>
                                 <div class="table-content_title">
-                                    <a>
-                                        <span><i class="fas fa-arrow-down"></i></span>
-                                        <span>Group</span>
-                                    </a>
+                                    <span>Creation date</span>
                                 </div>
                             </th>
                             <td>
-                                <a href="#">
-                                    <span>Group</span>
+                                <span>01.01.2018</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="table-content_title">
+                                    <span>Last update</span>
+                                </div>
+                            </th>
+                            <td>
+                                <span>01.01.2018</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="table-content_title">
+                                    <span>Views</span>
+                                </div>
+                            </th>
+                            <td>
+                                <span>1</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <div class="table-content_title">
+                                    <span>Number of posts</span>
+                                </div>
+                                <a href="#" class="btn btn_accent btn_table">
+                                    Watchlist
                                 </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <div class="table-content_title">
-                                    <a class="filter-active">
-                                        <span><i class="fas fa-arrow-down"></i></span>
-                                        <span>Start date</span>
-                                    </a>
-                                </div>
                             </th>
                             <td>
-                                <span>01.01.18</span>
-                                <span class="color-gray">
-                                        19:00
-                                    </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>
-                                <div class="table-content_title">
-                                    <a>
-                                        <span><i class="fas fa-arrow-down"></i></span>
-                                        <span>End date</span>
-                                    </a>
-                                </div>
-                            </th>
-                            <td>
-                                <span>01.01.18</span>
-                                <span class="color-gray">
-                                        19:00
-                                    </span>
+                                <span>1</span>
                             </td>
                         </tr>
                     </table>
