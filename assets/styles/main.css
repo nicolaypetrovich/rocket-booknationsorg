@@ -270,6 +270,9 @@ a {
     white-space: nowrap;
 }
 
+b {
+    font-weight: 500;
+}
 /* Default styles end */
 
 
@@ -1753,6 +1756,75 @@ a {
 }
 /* Forum end */
 
+/* Forum two start */
+.forum2 .layout__title {
+    margin-bottom: 0;
+}
+
+.forum2 .form-search__field {
+    border-color: #bababa;
+}
+
+.forum2 .form-search__wrap .btn.form-search__button {
+    min-width: 120px;
+    height: 40px;
+}
+
+.forum2 .btn_primary {
+    padding: 0;
+    min-width: 198px;
+    height: 43px;
+    margin: 40px 0 20px;
+    font-size: 16px;
+}
+
+.forum2 .table-content {
+    width: 100%;
+    margin-top: 9px;
+}
+
+.forum2 .table-content_thead th:first-child {
+    width: 25.5%;
+}
+
+.forum2 .table-content_thead th:nth-child(2){
+    width: 17.5%;
+}
+
+.forum2 .table-content_thead th:nth-child(3) {
+    width: 18.5%;
+}
+
+.forum2 .table-content_thead th:nth-child(4) {
+    width: 13%;
+}
+
+.forum2 .mobile__table {
+    margin-top: 30px;
+}
+
+.forum2 .mobile__table th,
+.forum2 .mobile__table td {
+    border: 1px solid #bababa;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.forum2 .mobile__table tr:last-child th,
+.forum2 .mobile__table tr:last-child td {
+    padding: 10px 0;
+}
+
+.forum2 .mobile__table tr:last-child th .btn_table {
+    margin-top: 5px;
+}
+
+.forum2 .mobile__table th {
+    width: 42.75%;
+}
+
+
+/* Forum two end */
 
 
 
@@ -2155,14 +2227,11 @@ a {
 
 /* Events */
 
-.events p.events__subtitle {
+.events p.events__subtitle,
+.forum2 p.events__subtitle {
     margin-bottom: 0;
     font-size: 16px;
     color: #787878;
-}
-
-.events__subtitle b {
-    font-weight: 500;
 }
 
 .events .table-content,
