@@ -3395,3 +3395,160 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 }
 /*Tiny styles End*/
 /*Create Forum End*/
+
+/* Language course Main */
+.course_top-part{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.course_middle-part{
+    display: flex;
+    margin-bottom: 70px;
+}
+.course_title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.course_title h2{
+    font-size: 18px;
+    text-transform: uppercase;
+    align-self: flex-end;
+    line-height: 18px;
+    color: #181818;
+}
+.course_navigation ul{
+    display: flex;
+}
+.course_navigation ul li{
+    margin-right: 25px;
+    font-size: 14px;
+    line-height: 14px;
+    position: relative;
+}
+.course_navigation ul li a{
+    color: #464646;
+
+}
+.course_navigation ul li:nth-child(1){
+    padding-right: 25px;
+    color: #bababa
+}
+.course_navigation ul li:nth-child(1):before{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    display: block;
+    width: 1px;
+    height: 14px;
+    background-color: #bababa;
+    transform: translateY(50%);
+}
+.course_active-page a{
+    color: #bababa;
+}
+.main_course_content{
+    display: flex;
+}
+.course_description h4,.course_advantages h4{
+    font-size: 14px;
+    line-height: 14px;
+    color: #181818;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.course_description{
+    width: 500px;
+    margin-right: 85px;
+}
+.course_description-list{
+    margin-bottom: 40px;
+}
+.course_description-list li{
+    padding-left: 15px;
+    position: relative;
+    font-size: 14px;
+    line-height: 24px;
+    color: #787878;
+    margin-bottom: 10px;
+}
+.course_description-list li:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    display: block;
+    background-color: #787878;
+}
+.course_description p:nth-child(1){
+    margin-bottom: 30px;
+    color: #181818;
+    font-size: 14px;
+    line-height: 24px;
+}
+.course_description p:nth-child(2){
+    color: #181818;
+    font-size: 14px;
+    line-height: 24px;
+}
+.fb_learn-french{
+    display: flex;
+    flex-direction: column;
+}
+.fb_learn-french span{
+    font-size: 14px;
+    line-height: 24px;
+    color: #181818;
+}
+.fb_learn-french a{
+    position: relative;
+    padding-left: 28px;
+    color: #787878;
+    display: inline-block;
+}
+.fb_learn-french a i{
+    position: absolute;
+    display: block;
+    left: 0;
+    color: #2579bf;
+    font-size: 18px;
+    font-weight: 900;
+}
+.advantages_list li{
+    position: relative;
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 25px;
+}
+.advantages_list li:before{
+    content: '\f00c';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 30px;
+    color: #bababa;
+}
+.load_pdf-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+}
+.load_pdf-preview{
+    border: 1px solid #cecece;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+}
+/*.pdf_preview-info ul li{
+
+}*/
+/* Language course Main End */
