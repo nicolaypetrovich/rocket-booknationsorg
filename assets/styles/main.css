@@ -3454,7 +3454,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     display: flex;
     flex-direction: column;
 }
-.course_description h4,.course_advantages h4{
+.courses_title{
     font-size: 14px;
     line-height: 14px;
     color: #181818;
@@ -3612,3 +3612,19 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 
 }*/
 /* Language course Main End */
+
+/*Language course team */
+.courses_team .course_description-list{
+    margin-bottom: 0;
+}
+.courses_team .course_description-list li{
+    margin-bottom: 0;
+}
+.courses_tem_subtitle{
+    font-size: 14px;
+    color: #181818;
+    display: block;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+/*Language course team End */
