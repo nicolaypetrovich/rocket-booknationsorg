@@ -3568,11 +3568,16 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 .pdf_preview-info{
     margin-left: 15px;
     align-self: center;
+    overflow: hidden;
 }
 .pdf_preview-info ul li{
     font-size: 14px;
     line-height: 16px;
     color: #bababa;
+    white-space: pre;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
 }
 .pdf_preview-info ul li:nth-child(1){
     font-size: 18px;
