@@ -3608,9 +3608,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 .mob-hamburger input , .mob-hamburger label{
     display: none;
 }
-/*.pdf_preview-info ul li{
 
-}*/
 /* Language course Main End */
 
 /*Language course team */
@@ -3628,3 +3626,41 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     margin-bottom: 25px;
 }
 /*Language course team End */
+/*Language test */
+.layout__content .courses_test-info{
+    font-size: 14px;
+    line-height: 24px;
+    color: #787878;
+    margin-bottom: 0;
+}
+.courses_start-test{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.courses_start-test span{
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    color: #181818;
+    margin-bottom: 20px;
+}
+.courses_start-test a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #f5283b;
+    width: 150px;
+    height: 45px;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color ease .5s;
+}
+.courses_start-test a:hover{
+    background-color: #1d1d1e;
+    transition: background-color ease .5s;
+}
+/*Language test End */
