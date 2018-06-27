@@ -167,32 +167,27 @@ $(document).ready(function () {
 
     // tinymce
     tinymce.init({
-        content_css: [
-            './assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css'],
         selector: '.js-tinymce',
         height: 80,
         verify_html: false,
         menubar: false,
         statusbar: false,
-        font_formats:'HelveticaNeueCyr,Font Awesome 5 Free',
+        font_formats:'HelveticaNeueCyr',
         plugins: [
-            'advlist autolink lists link  charmap  preview anchor ',
-            'table  paste'
-        ],
+            'advlist autolink lists link  anchor ',
+            ],
         toolbar: 'bold | bullist numlist | italic | link',
 
     });
 
-    setTimeout(function () {
-        $('.js-selected_icon').each(function () {
-            $(this).on('click',function () {
-                var getIconStyle = $(this).attr('class');
-                console.log(getIconStyle);
-                $('.js_choice-icon').html('<i class="'  + getIconStyle + '"></i>' + ' Choice icon');
-                $('.select_icon_popup').slideUp();
-            })
+    $('.js-selected_icon').each(function () {
+        $(this).on('click',function () {
+            var getIconStyle = $(this).attr('class');
+            $('.js_choice-icon').html('<i class="'  + getIconStyle + '"></i>' + ' Choice icon');
+            $('.select_icon_popup').slideUp();
         })
-    },500);
+    })
+
 
     $('.js-validateBtn').on('click',function () {
        var chekOnEmpty = tinyMCE.activeEditor.getContent();

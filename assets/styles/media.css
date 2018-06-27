@@ -65,8 +65,6 @@
     }
     /*Forum page End*/
 }
-
-
 @media only screen and (max-width : 1199px){
 
     /*Personal Setting page*/
@@ -118,6 +116,24 @@
     }
 }
 @media only screen and (max-width : 991px){
+    /* Language course main*/
+    .course_description{
+        margin-right: 0;
+    }
+    .course_middle-part{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .course_foot-part{
+        justify-content: flex-start;
+    }
+    .load_pdf-item{
+        margin-bottom: 40px;
+    }
+    .load_pdf-item{
+        margin-left: 65px;
+    }
+    /* Language course main End*/
     /*Forum page*/
     .form_post_details{
         left: -58px;
@@ -250,6 +266,16 @@
 
 }
 @media only screen and (max-width : 768px){
+    /* Language course main*/
+    .load_pdf-item{
+        margin-left: 0;
+    }
+    .course_foot-part{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* Language course main End*/
     /*Forum page*/
     .user-email{
         display: block;
@@ -262,16 +288,6 @@
         width: 18%;
     }
     /*Forum End*/
-}
-@media only screen and (max-width : 767px){
-    /*Forum page*/
-    .form_post_details{
-        left: -100px
-    }
-    /*Forum page End*/
-
-}
-@media only screen and (max-width : 768px){
     /*Create forum*/
     .close_popup_button{
         right: 45px;
@@ -282,6 +298,12 @@
     /*Create forum End*/
 }
 @media only screen and (max-width : 767px){
+
+    /*Forum page*/
+    .form_post_details{
+        left: -100px
+    }
+    /*Forum page End*/
     /*Create forum*/
     .select_icon_popup{
         width: 605px;
@@ -508,34 +530,11 @@
     /* Event settings page end*/
 }
 @media only screen and (max-width : 635px){
-    /*Forum page*/
-    .forum_table-desktop{
+    /* Language course main*/
+    .course_title .pluso{
         display: none;
     }
-
-    .es__group > div > div:nth-child(2) {
-        margin-top: 15px;
-    }
-
-    .es__group:nth-child(2) > div > div:nth-child(2) {
-        margin-top: 0;
-    }
-
-    .event__settings .layout__title {
-        margin-bottom: 15px;
-    }
-
-    .es__group input.input,
-    .es__group textarea {
-        width: 100%;
-    }
-
-    /* Event settings page end*/
-}
-
-
-@media only screen and (max-width : 635px){
-
+    /* Language course main End*/
     /*Forum page*/
     .forum_table-desktop{
         display: none;
@@ -589,6 +588,29 @@
         width: 270px;
     }
     /*Personal Setting page End*/
+    /*Forum page*/
+    .forum_table-desktop{
+        display: none;
+    }
+
+    .es__group > div > div:nth-child(2) {
+        margin-top: 15px;
+    }
+
+    .es__group:nth-child(2) > div > div:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .event__settings .layout__title {
+        margin-bottom: 15px;
+    }
+
+    .es__group input.input,
+    .es__group textarea {
+        width: 100%;
+    }
+
+    /* Event settings page end*/
 }
 @media (max-width:575px){
     /*Create forum*/
@@ -688,6 +710,82 @@
     }
 }
 @media only screen and (max-width : 480px){
+    /* Language course main*/
+    .mob-hamburger input , .mob-hamburger label{
+        display: block;
+    }
+    .course_top-part{
+        margin-bottom: 25px;
+    }
+    .mob-hamburger{
+        position: relative;
+    }
+    #toggle {
+        display: none;
+    }
+    .hamburger span {
+        display: block;
+        position: relative;
+        background-color: #f8982b;
+        transition: all 0.3s ease-in-out;
+    }
+    #toggle:checked + .hamburger .top-bun {
+       transform: rotate(-45deg);
+       top: 7px;
+    }
+    #toggle:checked + .hamburger .bottom-bun {
+        opacity: 0;
+        transform: rotate(45deg);
+    }
+    #toggle:checked + .hamburger .meat {
+        transform: rotate(45deg);
+    }
+    #toggle:checked + label + ul {
+        transform: scale(1);
+        transition: transform ease .5s;
+    }
+    .course_navigation ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 0px 17px 0px rgba(89,88,89,0.55);
+        -moz-box-shadow: 0px 0px 17px 0px rgba(89,88,89,0.55);
+        box-shadow: 0px 0px 17px 0px rgba(89,88,89,0.55);
+        width: 243px;
+        z-index: 2;
+        padding: 7px 7px;
+        transform: scale(0);
+        transition: transform ease .5s;
+        text-align: center;
+        top: 50%;
+        left: 30px;
+    }
+    .course_navigation{
+        display: flex;
+        align-self: flex-start;
+    }
+    .course_navigation ul li:nth-child(1){
+        padding-right: 0;
+    }
+    .course_navigation ul li:nth-child(1):before{
+        display: none;
+    }
+    .course_navigation ul li {
+        margin-right: 0;
+        padding: 7px 0 7px 0;
+        font-size: 15px;
+    }
+    .mob-hamburger span{
+        height: 4px;
+        width: 23px;
+        display: block;
+        background-color: #464646;
+    }
+    .mob-hamburger span:nth-child(2){
+        margin: 3px 0;
+    }
+    /* Language course main End*/
     /*Create forum*/
     .select_icon_popup{
         width: 305px;

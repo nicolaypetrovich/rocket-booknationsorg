@@ -3410,6 +3410,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    padding-right: 4px;
 }
 .course_title h2{
     font-size: 18px;
@@ -3451,6 +3452,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 }
 .main_course_content{
     display: flex;
+    flex-direction: column;
 }
 .course_description h4,.course_advantages h4{
     font-size: 14px;
@@ -3459,8 +3461,15 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     margin-bottom: 20px;
     text-transform: uppercase;
 }
+.course_description p{
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #181818;
+}
 .course_description{
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     margin-right: 85px;
 }
 .course_description-list{
@@ -3499,6 +3508,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 .fb_learn-french{
     display: flex;
     flex-direction: column;
+    margin-bottom: 0;
 }
 .fb_learn-french span{
     font-size: 14px;
@@ -3509,7 +3519,8 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     position: relative;
     padding-left: 28px;
     color: #787878;
-    display: inline-block;
+    display: flex;
+    align-self: flex-start;
 }
 .fb_learn-french a i{
     position: absolute;
@@ -3537,16 +3548,60 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     line-height: 30px;
     color: #bababa;
 }
-.load_pdf-wrap{
+.course_foot-part{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.load_pdf-item{
     display: flex;
     flex-direction: column;
-    width: 230px;
+    width: 275px;
 }
 .load_pdf-preview{
     border: 1px solid #cecece;
     width: 100%;
-    padding: 15px;
+    padding: 13px;
     display: flex;
+    margin-bottom: 25px;
+}
+.pdf_preview-info{
+    margin-left: 15px;
+    align-self: center;
+}
+.pdf_preview-info ul li{
+    font-size: 14px;
+    line-height: 16px;
+    color: #bababa;
+}
+.pdf_preview-info ul li:nth-child(1){
+    font-size: 18px;
+    color: #181818;
+    line-height: 24px;
+}
+.load_pdf-link{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.load_pdf-link a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    width: 150px;
+    height: 45px;
+    color: #fff;
+    background-color: #f5283b;
+    border-radius: 5px;
+}
+.load_pdf-link a:hover{
+    background-color: #1d1d1e;
+}
+.mob-hamburger input , .mob-hamburger label{
+    display: none;
 }
 /*.pdf_preview-info ul li{
 
