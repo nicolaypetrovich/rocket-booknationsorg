@@ -205,17 +205,37 @@
                 <div class="main_course_content">
                     <form method="GET" class="similar_form">
                         <div class="reg_course_top-part">
-                            <div class="reg_course_left-half">
-                                <label>
-                                    <span class="req_field">Phone number</span>
-                                    <input type="text" class="required">
-                                    <span class="format_example">Please fill in all data only in Latin.</span>
-                                </label>
-                                <label>
+                            <!--<div class="reg_course_left-half">
+
+                            </div>
+                            <div class="reg_course_right-half">
+
+                            </div>-->
+                           <div class="reg_course_field-wrap">
+                               <label>
+                                   <span class="req_field">Name</span>
+                                   <input type="text" class="required">
+                                   <span class="format_example">Please fill in all data only in Latin.</span>
+                               </label>
+                               <label>
+                               <span class="req_field">Surname</span>
+                               <input type="text" class="required">
+                               <span class="format_example">Please fill in all data only in Latin.</span>
+                           </label>
+                           </div>
+                           <div class="reg_course_field-wrap">
+                               <label>
                                     <span class="req_field">Phone number</span>
                                     <input type="text" class="required">
                                     <span class="format_example">For example: +33612345678</span>
                                 </label>
+                               <label>
+                                    <span class="req_field ">Email</span>
+                                    <input type="text" class="email required">
+                                    <span class="format_example">If you have changed your email address, write it here.</span>
+                                </label>
+                           </div>
+                            <div class="reg_course_field-wrap">
                                 <label class="date_label">
                                     <span class="req_field">Date of Birth</span>
                                     <span class="date_select_wrap">
@@ -226,171 +246,158 @@
                                     <span class="format_example">Day / Month / Year</span>
                                 </label>
                             </div>
-                            <div class="reg_course_right-half">
-                                <label>
-                                    <span class="req_field">Phone number</span>
-                                    <input type="text" class="required">
-                                    <span class="format_example">Please fill in all data only in Latin.</span>
-                                </label>
-                                <label>
-                                    <span class="req_field ">Email</span>
-                                    <input type="text" class="email required">
-                                    <span class="format_example">If you have changed your email address, write it here.</span>
-                                </label>
-                            </div>
+
+
+
                         </div>
                         <div class="reg_course_bottom-part">
-                            <div class="reg_course_details-top">
-                                <div class="course_class-format">
+                            <div class="course_class-format">
                                     <span class="reg_course_subtitles">
                                         Select the class format:<span>*</span>
                                     </span>
-                                    <ul>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="radio" id="course-format-1" checked name="course-format">
-                                                <label for="course-format-1">Group</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="radio" id="course-format-2" name="course-format">
-                                                <label for="course-format-2">Individual</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="radio" id="course-format-3" name="course-format">
-                                                <label for="course-format-3">Skype</label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="course_days-format">
+                                <ul>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="radio" id="course-format-1" checked name="course-format">
+                                            <label for="course-format-1">Group</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="radio" id="course-format-2" name="course-format">
+                                            <label for="course-format-2">Individual</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="radio" id="course-format-3" name="course-format">
+                                            <label for="course-format-3">Skype</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="course_days-format">
                                      <span class="reg_course_subtitles">
                                         Select the days by which<br>you are more comfortable to do:
                                          <span>*</span>
                                     </span>
-                                    <ul>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="checkbox" id="course_days-format-1">
-                                                <label for="course_days-format-1">Monday</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="checkbox" id="course_days-format-2">
-                                                <label for="course_days-format-2">Tuesday</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="checkbox" id="course_days-format-3">
-                                                <label for="course_days-format-3">Wednesday</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="checkbox" id="course_days-format-4">
-                                                <label for="course_days-format-4">Thursday</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="checkbox" id="course_days-format-5">
-                                                <label for="course_days-format-5">Friday</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="checkbox" id="course_days-format-6">
-                                                <label for="course_days-format-6">Saturday</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="checkbox" id="course_days-format-7">
-                                                <label for="course_days-format-7">Sunday</label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <span class="reg_course_subtitle-under">Write hours that are convenient for you.</span>
-                                </div>
-                                <div class="course_level-format">
+                                <ul>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="checkbox" id="course_days-format-1">
+                                            <label for="course_days-format-1">Monday</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="checkbox" id="course_days-format-2">
+                                            <label for="course_days-format-2">Tuesday</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="checkbox" id="course_days-format-3">
+                                            <label for="course_days-format-3">Wednesday</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="checkbox" id="course_days-format-4">
+                                            <label for="course_days-format-4">Thursday</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="checkbox" id="course_days-format-5">
+                                            <label for="course_days-format-5">Friday</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="checkbox" id="course_days-format-6">
+                                            <label for="course_days-format-6">Saturday</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="checkbox" id="course_days-format-7">
+                                            <label for="course_days-format-7">Sunday</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <span class="reg_course_subtitle-under">Write hours that are convenient for you.</span>
+                            </div>
+                            <div class="course_level-format">
                                     <span class="reg_course_subtitles">
                                         Select the level you want to study:<span>*</span>
                                     </span>
-                                    <ul>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="radio" id="course-level-1" checked name="course-level">
-                                                <label for="course-level-1">A1 - Elementary</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="radio" id="course-level-2"  name="course-level">
-                                                <label for="course-level-2">A2 - Basic</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="radio" id="course-level-3"  name="course-level">
-                                                <label for="course-level-3">B1 - Medium</label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <span class="reg_course_subtitle-under">View modules on the site.</span>
-                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="radio" id="course-level-1" checked name="course-level">
+                                            <label for="course-level-1">A1 - Elementary</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="radio" id="course-level-2"  name="course-level">
+                                            <label for="course-level-2">A2 - Basic</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="radio" id="course-level-3"  name="course-level">
+                                            <label for="course-level-3">B1 - Medium</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <span class="reg_course_subtitle-under">View modules on the site.</span>
                             </div>
-                            <div class="reg_course_details-bottom">
-                                <div class="course_module-format">
+                            <div class="course_module-format">
                                     <span class="reg_course_subtitles">
                                         Select the module:<span>*</span>
                                     </span>
-                                    <ul>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="radio" id="course-module-1" checked name="course-module">
-                                                <label for="course-module-1">A1 - Elementary</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="radio" id="course-module-2" name="course-module">
-                                                <label for="course-module-2">A1 - Elementary</label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="course_contact-format">
+                                <ul>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="radio" id="course-module-1" checked name="course-module">
+                                            <label for="course-module-1">A1 - Elementary</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="radio" id="course-module-2" name="course-module">
+                                            <label for="course-module-2">A1 - Elementary</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="course_contact-format">
                                      <span class="reg_course_subtitles">
                                         Check the box if you want to <br> we contacted you by phone:
                                     </span>
-                                    <ul>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="checkbox" id="course-contact-1" checked name="course-contact">
-                                                <label for="course-contact-1">Contact me by phone</label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="course_association-format">
+                                <ul>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="checkbox" id="course-contact-1" checked name="course-contact">
+                                            <label for="course-contact-1">Contact me by phone</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="course_association-format">
                                     <span class="reg_course_subtitles">
                                         Only member of the Association Nationsorg <br> can be a listener of courses: <span>*</span>
                                     </span>
-                                    <ul>
-                                        <li>
-                                            <div class="checkbox_action">
-                                                <input type="checkbox" id="course-association-1" checked name="course-association">
-                                                <label for="course-association-1">Contact me by phone</label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <span class="reg_course_subtitle-under">The annual fee is 5 €.</span>
-                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="checkbox_action">
+                                            <input type="checkbox" id="course-association-1" checked name="course-association">
+                                            <label for="course-association-1">Contact me by phone</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <span class="reg_course_subtitle-under">The annual fee is 5 €.</span>
                             </div>
                         </div>
                         <input class="send_btn course_registration-send" type="submit" value="Send">
@@ -450,7 +457,7 @@
         </div>
     </div>
 </footer>
-<div class="fixed-aside">
+<!--<div class="fixed-aside">
     <div class="slideout fixed-aside__item">
         <div class="slideout__btn slideout__btn_primary">
             <span class="slideout__btn-label">An error in the text?</span>
@@ -479,7 +486,7 @@
             </form>
         </div>
     </div>
-</div>
+</div>-->
 
 </body>
 

@@ -3688,27 +3688,30 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     line-height: 24px;
     color: #787878;
 }
-.reg_course_left-half,.reg_course_right-half{
-    width: 390px;
-}
-.reg_course_left-half{
-    margin-right: 100px;
-}
 .reg_course_top-part{
     display: flex;
+    flex-direction: column;
+    width: 880px;
 }
-.similar_form .reg_course_top-part .reg_course_left-half span.date_select_wrap{
+.reg_course_field-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.reg_course_field-wrap label{
+    width: 390px;
+}
+.reg_course_field-wrap span.date_select_wrap{
     display: flex;
     max-width: 390px;
     width: 100%;
 }
-.similar_form .reg_course_top-part .reg_course_left-half span.date_select_wrap input{
+.reg_course_field-wrap span.date_select_wrap input{
     border-left: 0;
     border-left: none;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
-.similar_form .reg_course_top-part .reg_course_left-half span.date_select_wrap .clear_date_field,.similar_form .reg_course_top-part .reg_course_left-half span.date_select_wrap .focus_date_field{
+.similar_form .reg_course_field-wrap span.date_select_wrap .clear_date_field,.similar_form .reg_course_field-wrap span.date_select_wrap .focus_date_field{
     width: 33px;
     display: flex !important;
     flex-direction: column;
@@ -3719,17 +3722,19 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     border: 1px solid #bababa;
     cursor: pointer;
     height: 35px;
+
 }
-.similar_form .reg_course_top-part .reg_course_left-half span.date_select_wrap .clear_date_field i,.similar_form .reg_course_top-part .reg_course_left-half span.date_select_wrap .focus_date_field i{
+.similar_form .reg_course_field-wrap span.date_select_wrap .clear_date_field i,.similar_form .reg_course_field-wrap span.date_select_wrap .focus_date_field i{
     font-size: 12px;
     color: #787878;
     font-weight: 900;
 }
-.similar_form .reg_course_top-part .reg_course_left-half span.date_select_wrap .focus_date_field{
+.similar_form .reg_course_top-part .reg_course_field-wrap span.date_select_wrap .focus_date_field{
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     border-right: none;
 }
+.course_registration_wrap .main_course_content .similar_form .reg_course_top-part label span
 .course_registration_wrap .main_course_content .similar_form .reg_course_top-part label span{
     font-size: 14px;
     line-height: 14px;
@@ -3762,7 +3767,9 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 }
 .reg_course_bottom-part{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    width: 71.6%;
+    margin-bottom: 45px;
 }
 .course_class-format{
     display: flex;
@@ -3773,21 +3780,24 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     display: inline-block;
     align-self: flex-start;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 16px;
     margin-bottom: 20px;
 }
 .reg_course_subtitles > span{
     color: #f5283b;
     font-weight: 700;
 }
-.reg_course_details-top .checkbox_action label , .reg_course_details-bottom .checkbox_action label{
+.reg_course_bottom-part .checkbox_action label{
     padding-left: 23px;
     margin-bottom: 0;
 }
-.reg_course_details-top .checkbox_action label:before{
+.reg_course_bottom-part .checkbox_action label:before{
     width: 16px;
     height: 16px;
     line-height: 14px;
+}
+.course_class-format, .course_days-format,.course_level-format{
+    margin-bottom: 40px;
 }
 .main_course_content .similar_form ul li{
     margin-bottom: 15px;
@@ -3802,14 +3812,6 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 .course_days-format,.course_contact-format{
     margin-right: 90px;
     width: 205px;
-}
-.reg_course_details-top{
-    display: flex;
-    margin-bottom: 40px;
-}
-.reg_course_details-bottom{
-    display: flex;
-    margin-bottom: 45px;
 }
 .reg_course_subtitle-under{
     display: inline-block;

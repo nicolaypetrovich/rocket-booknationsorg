@@ -64,6 +64,11 @@
         font-size: 16px;
     }
     /*Forum page End*/
+    /* Language course registration */
+    .reg_course_bottom-part{
+        width: 100%;
+    }
+    /* Language course registration End */
 }
 @media only screen and (max-width : 1199px){
 
@@ -116,6 +121,42 @@
     }
 }
 @media only screen and (max-width : 991px){
+    /* Language course registration */
+    .reg_course_top-part{
+        width: auto;
+    }
+    .main_course_content .similar_form .reg_course_top-part .reg_course_field-wrap label{
+        width: 350px;
+    }
+    .reg_course_bottom-part{
+        width: 74%;
+    }
+    .course_class-format, .course_module-format{
+        margin-right: 0;
+        width: auto;
+    }
+    .course_days-format, .course_contact-format{
+        margin-right: 0;
+        width: auto;
+    }
+    .course_class-format, .course_module-format{
+        width: auto;
+    }
+    .course_class-format,.course_level-format,.course_contact-format{
+        width: 212px;
+        margin-right: 80px;
+    }
+    .reg_course_top-part{
+        margin-bottom: 5px;
+    }
+    .main_course_content .similar_form ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .main_course_content .similar_form ul li{
+        align-self: flex-start;
+    }
+    /* Language course registration End */
     /* Language course main*/
     .course_description{
         margin-right: 0;
@@ -250,6 +291,11 @@
     /*Create forum page End*/
 }
 @media only screen and (max-width : 850px){
+    /* Language course registration */
+    .reg_course_bottom-part{
+        width: 82%;
+    }
+    /* Language course registration End*/
     /*Personal Setting page */
     .personal_content_lp label, .personal_content_rp label{
         width: 350px;
