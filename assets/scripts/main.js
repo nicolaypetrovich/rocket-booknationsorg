@@ -133,16 +133,13 @@ $(document).ready(function () {
     }})();
 
     // Datapicker
-    $('#js-date-picker, .js-date-picker').datepicker({
+    $('#js-date-picker, .js-date-picker,.js-date-picker-reg').datepicker({
         changeYear: true,
         yearRange: "1950:2018",
         dateFormat: "dd/mm/yy"
     });
 
-    // Clear Date value in date field
-    // $('.js-clear_date_field').click(function () {
-    //     $('#js-date-picker').val('');
-    // });
+
     $('.js-clear_date_field').click(function () {
         $(this).next().val('');
         return false
