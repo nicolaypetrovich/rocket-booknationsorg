@@ -344,7 +344,14 @@
     /*Create forum End*/
 }
 @media only screen and (max-width : 767px){
-
+    /* Language course registration */
+    .main_course_content .similar_form .reg_course_top-part .reg_course_field-wrap label{
+        width: 290px;
+    }
+    .reg_course_bottom-part{
+        width: 100%;
+    }
+    /* Language course registration End */
     /*Forum page*/
     .form_post_details{
         left: -100px
@@ -576,6 +583,32 @@
     /* Event settings page end*/
 }
 @media only screen and (max-width : 635px){
+    /* Language course registration */
+    .reg_course_bottom-part{
+        flex-direction: column;
+    }
+    .reg_course_field-wrap{
+        flex-direction: column;
+    }
+    .course_class-format, .course_level-format, .course_contact-format{
+        margin-right: 0;
+        width: auto;
+
+    }
+    .course_class-format, .course_days-format, .course_level-format{
+        margin-bottom: 25px;
+    }
+    .course_class-format, .course_module-format{
+        margin-bottom: 25px;
+    }
+    .main_course_content .similar_form .reg_course_top-part .reg_course_field-wrap label{
+        max-width: 390px;
+        width: 100%;
+    }
+    .course_contact-format{
+        margin-bottom: 25px;
+    }
+    /* Language course registration End */
     /* Language course main*/
     .course_title .pluso{
         display: none;
