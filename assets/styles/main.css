@@ -3349,7 +3349,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     border: none;
 }
 .forum_editable_field label .mce-top-part{
-    padding-left: 50px;
+    padding-left: 45px;
 }
 .forum_editable_field label{
     position: relative;
@@ -3843,3 +3843,220 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     transition: background-color ease .5s;
 }
 /* Language course registration End */
+
+/* Language course review */
+.course_warning_btn{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #f5283b;
+    height: 45px;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color ease .5s;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.course_warning_btn:hover{
+    color: #fff;
+    background-color: #1d1d1e;
+    transition: background-color ease .5s;
+}
+.courses_review .main_course_content{
+    max-width: 652px;
+    width: 100%;
+}
+.review_warning-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.review_warning_massage{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff2f2;
+    font-size: 12px;
+    line-height: 12px;
+    color: #787878;
+    margin: 0;
+    max-width: 100%;
+    width: 443px;
+    justify-content: center;
+    height: 45px;
+    align-items: center;
+}
+.layout__content p.review_warning_massage{
+    margin-bottom: 0;
+}
+.review_warning_massage a{
+    font-weight: 700;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0 3px;
+}
+.course_write_review{
+    padding: 15px;
+    border: 1px solid #bababa;
+}
+.course_write_review .tiny_mce_wrap{
+    position: relative;
+}
+.course_write_review .forum_editable_field .tiny_mce_wrap .file_load_icons{
+    height: 20px;
+    left: 0;
+    top: 3px;
+}
+.main_course_content .course_write_review label.tiny_mce_label{
+    margin: 0;
+}
+#mceu_1{
+    margin-right: 6px;
+}
+.course_review_info{
+    margin-bottom: 20px;
+}
+.course_review_write-date ,.course_review_user-name{
+    display: inline-block;
+    color: #bababa;
+    font-size: 14px;
+    line-height: 14px;
+}
+.course_review_user-name{
+    margin-right: 15px;
+    color: #464646;
+    text-transform: uppercase;
+}
+.course_write_review{
+    margin-bottom: 30px;
+}
+.user_feedback_left{
+    border: 1px solid #bababa;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.review_detail_info{
+    display: flex;
+    align-items: center;
+}
+.review_detail_info li{
+    margin-right: 18px;
+    color: #bababa;
+    font-size: 14px;
+    line-height: 14px;
+    align-items: center;
+}
+.review_detail_info li:last-child{
+    margin-right: 0;
+}
+.review_detail_info li:nth-child(1){
+    text-transform: uppercase;
+    color: #464646;
+}
+.review_detail_info li span{
+    display: inline-block;
+}
+.review_detail_info li i{
+    display: inline-block;
+    margin-left: 2px;
+    font-size: 12px;
+    line-height: 12px;
+}
+.review_detail_info-like{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.feedback_editing{
+    display: flex;
+}
+.feedback_editing li{
+    width: 35px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+.feedback_editing li i{
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+}
+.feedback_editing li:nth-child(1){
+    background-color: #0b8ab4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.feedback_editing li:nth-child(2){
+    background-color: #36c61e;
+}
+.feedback_editing li:nth-child(3){
+    background-color: #ff9600;
+}
+.feedback_editing li:nth-child(4){
+    background-color: #ff4455;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.user_feedback_top-part{
+    display: flex;
+    justify-content: space-between;
+}
+.feedback_admin-editing li:last-child{
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.invite_user-dropdown,.complain_user-dropdown{
+    position: absolute;
+    left: 0;
+    width: 140px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    display: flex;
+    top: calc(100% + 2px);
+    flex-direction: column;
+    z-index: 2;
+}
+.invite_user-dropdown{
+    left:-35px;
+}
+.complain_user-dropdown{
+    left: -70px;
+}
+.invite_user-dropdown,.complain_user-dropdown{
+    max-height: 140px;
+    overflow-y: auto ;
+}
+.invite_user-dropdown li,.complain_user-dropdown li{
+    display: flex;
+    height: 45px;
+    transition: background-color ease .5s;
+    width: 100%;
+    text-align: left;
+    align-items: flex-start;
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 16px;
+
+}
+.feedback_editing li.user_list ul li, .feedback_editing li.complain_by-user ul li{
+    background-color: #fff;
+    border-radius: 0;
+}
+
+.feedback_editing li.user_list ul li:first-child,.feedback_editing li.complain_by-user ul li:first-child{
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+.feedback_editing li.user_list ul li:last-child,.feedback_editing li.complain_by-user ul li:last-child{
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.feedback_editing li.user_list ul li:hover,.feedback_editing li.complain_by-user ul li:hover{
+    background-color: #bababa;
+}
+/* Language course review End */

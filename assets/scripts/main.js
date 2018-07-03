@@ -162,20 +162,31 @@ $(document).ready(function () {
     });
 
 
-    // tinymce
-    tinymce.init({
-        selector: '.js-tinymce',
-        height: 80,
-        verify_html: false,
-        menubar: false,
-        statusbar: false,
-        font_formats:'HelveticaNeueCyr',
-        plugins: [
-            'advlist autolink lists link  anchor ',
+    /*
+        Поместил инициализацию плагинов в условие для того что бы не показывало ошибки на страницах где плагин не требуется
+        там где объявлен клас таймпикера или tinymce добавляем свой класс для инициализации плагина
+     */
+    if($('.js-tinymce,.js-tinymce-reviews').length > 0 ){
+        // tinymce
+        tinymce.init({
+            selector: '.js-tinymce , .js-tinymce-reviews',
+            height: 80,
+            verify_html: false,
+            menubar: false,
+            statusbar: false,
+            font_formats:'HelveticaNeueCyr',
+            plugins: [
+                ' autolink lists link  anchor ',
             ],
-        toolbar: 'bold | bullist numlist | italic | link',
+            toolbar: 'bold | bullist numlist | italic | link',
 
-    });
+        });
+
+    }
+    if($('.js-time-picker').length > 0){
+        // Time picker (Setting event page)
+        $('.js-time-picker').timepicker({ 'timeFormat': 'h:i A' });
+    }
 
     $('.js-selected_icon').each(function () {
         $(this).on('click',function () {
@@ -190,16 +201,17 @@ $(document).ready(function () {
        var chekOnEmpty = tinyMCE.activeEditor.getContent();
        if(chekOnEmpty.length == 0){
            $('.forum_editable_field label #mce_0_ifr').css('borderColor','red')
-       }})
+       }});
 
-
-// Time picker (Setting event page)
-    $('.js-time-picker').timepicker({ 'timeFormat': 'h:i A' });
 
 // Radio btns (Setting event page)
     $('.radio-group .btn').on('click', function () {
         $(this).closest('.radio-group').find('.btn').removeClass('active');
         $(this).addClass('active')
 
-    })
+    });
+    /*
+    Выпадающие окна для блока отзывов
+
+    */
 });
