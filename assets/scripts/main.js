@@ -240,6 +240,7 @@ $(document).ready(function () {
         var chekOnEmpty = tinyMCE.activeEditor.getContent();
 
         if(chekOnEmpty.length == 0){
+
             $('.forum_editable_field label #mce_0_ifr').css('borderColor','red')
         }
     });
