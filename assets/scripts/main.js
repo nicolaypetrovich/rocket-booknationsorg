@@ -182,11 +182,11 @@ $(document).ready(function () {
 
         });
 
-    }
+    };
     if($('.js-time-picker').length > 0){
         // Time picker (Setting event page)
         $('.js-time-picker').timepicker({ 'timeFormat': 'h:i A' });
-    }
+    };
 
     $('.js-selected_icon').each(function () {
         $(this).on('click',function () {
@@ -194,7 +194,7 @@ $(document).ready(function () {
             $('.js_choice-icon').html('<i class="'  + getIconStyle + '"></i>' + ' Choice icon');
             $('.select_icon_popup').slideUp();
         })
-    })
+    });
 
 
     $('.js-validateBtn').on('click',function () {
@@ -212,6 +212,35 @@ $(document).ready(function () {
     });
     /*
     Выпадающие окна для блока отзывов
-
     */
+
+    $('.js-user-list').click(function () {
+        $(this).children('ul').slideToggle();
+        $('.js-complain_by-user').children('ul').slideUp(0)
+    });
+    $('.js-complain_by-user').click(function () {
+        $(this).children('ul').slideToggle();
+        $('.js-user-list').children('ul').slideUp(0)
+    });
+    $('.js-delete-user-post').click(function () {
+        $(this).parent().parent().parent().hide().css('display','none');
+    });
+
+    /* Передаём текст комментария в текстовое поле что бы прокомментировать чей то отзыв */
+    $('.js-comment-current-post').on('click',function () {
+        var getReviewContent = $(this).parent().parent().next().children('p').text() + '<br/>' + '-----------------';
+        var chekOnEmpty = tinyMCE.activeEditor.getContent();
+        if(chekOnEmpty.length == 0){
+            tinyMCE.activeEditor.execCommand('mceInsertContent', false, getReviewContent + '<br/>')
+        }else{
+            chekOnEmpty.appendTo(tinyMCE.activeEditor.execCommand('mceInsertContent', false, '<br/>' + getReviewContent + '<br/>'))
+        }
+    });
+    $('.js-review_btn-send').click(function () {
+        var chekOnEmpty = tinyMCE.activeEditor.getContent();
+
+        if(chekOnEmpty.length == 0){
+            $('.forum_editable_field label #mce_0_ifr').css('borderColor','red')
+        }
+    });
 });

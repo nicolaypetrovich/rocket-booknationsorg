@@ -789,6 +789,26 @@
     }
 }
 @media only screen and (max-width : 480px){
+    /* Language course review */
+    .user_feedback_top-part{
+        display: flex;
+        flex-direction: column;
+    }
+    .user_feedback_top-part{
+        margin-bottom: 10px;
+    }
+    .review_detail_info{
+        margin-bottom: 15px;
+    }
+    .invite_user-dropdown{
+        left: -35px;
+    }
+    .review_warning-wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Language course review End */
     /* Language course main*/
     .mob-hamburger input , .mob-hamburger label{
         display: block;

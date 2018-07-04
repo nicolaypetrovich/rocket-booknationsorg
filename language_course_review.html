@@ -258,32 +258,88 @@
                             Only <a href="register.html">registered</a> users can post a new comment.and write posts
                         </p>
                     </div>
-                    <div id="answer_on-review" class="course_write_review">
-                        <div class="forum_editable_field">
-                            <div class="course_review_info">
-                                <ul class="review_detail_info">
-                                    <li>
-                                        <span>Name</span></li>
-                                    <li>
-                                        <span>01.01.18</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="tiny_mce_wrap">
-                                <div class="file_load_icons">
-                                    <label class="load_video">
-                                        <i class="fas fa-video"></i>
-                                        <input type="file" id="forum-load_vid" >
-                                    </label>
-                                    <label class="load_picture">
-                                        <i class="fas fa-image"></i>
-                                        <input type="file" id="forum-load_pict" >
+                    <div class="course_write_review">
+                        <form method="GET" class="similar_form">
+                            <div class="forum_editable_field">
+                                <div class="course_review_info">
+                                    <ul class="review_detail_info">
+                                        <li>
+                                            <span>Name</span></li>
+                                        <li>
+                                            <span>01.01.18</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tiny_mce_wrap">
+                                    <div class="file_load_icons">
+                                        <label class="load_video">
+                                            <i class="fas fa-video"></i>
+                                            <input type="file" id="forum-load_vid" >
+                                        </label>
+                                        <label class="load_picture">
+                                            <i class="fas fa-image"></i>
+                                            <input type="file" id="forum-load_pict" >
+                                        </label>
+                                    </div>
+                                    <label class="tiny_mce_label">
+                                        <textarea class="required js-tinymce-reviews js-empty_check"></textarea>
                                     </label>
                                 </div>
-                                <label class="tiny_mce_label">
-                                <textarea class="required js-tinymce-reviews js-empty_check"></textarea>
-                            </label>
                             </div>
+                            <input type="submit" value="Send" class="course_warning_btn js-review_btn-send">
+                        </form>
+                    </div>
+                    <div class="user_feedback_left">
+                        <div class="user_feedback_top-part">
+                            <ul class="review_detail_info">
+                                <li>
+                                    <span>Name</span>
+                                </li>
+                                <li>
+                                    <span>01.01.18</span>
+                                </li>
+                                <li>
+                                    <span>10.00</span>
+                                </li>
+                                <li class="review_detail_info-like">
+                                    <span>22</span>
+                                    <i class="far fa-thumbs-up"></i>
+                                </li>
+                            </ul>
+                            <ul class="feedback_editing feedback_admin-editing">
+                                <li title="comment this post" class="js-comment-current-post">
+                                    <i class="fas fa-quote-right"></i>
+                                </li>
+                                <li title="invite user" class="user_list js-user-list">
+                                    <ul class="invite_user-dropdown">
+                                        <li title="">someMail@gmail.com</li>
+                                        <li title="">someMail@gmail.com</li>
+                                        <li title="">someMail@gmail.com</li>
+                                        <li title="">someMail@gmail.com</li>
+                                        <li title="">someMail@gmail.com</li>
+                                    </ul>
+                                    <i class="fas fa-user-plus"></i>
+                                </li>
+                                <li title="complain" class="complain_by-user js-complain_by-user">
+                                    <ul class="complain_user-dropdown">
+                                        <li title="">Spam</li>
+                                        <li title="">Insult</li>
+                                        <li title="">Idiocy</li>
+                                        <li title="">Other</li>
+                                    </ul>
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </li>
+                                <li title="delete post" class="js-delete-user-post">
+                                    <i class="fas fa-times"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user_feedback-text">
+                            <p>
+                                11Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aliquid animi asperiores, assumenda atque culpa
+                                deleniti dicta dolorem ea excepturi ipsa iusto laboriosam magnam maxime mollitia nobis non nulla officiis, perspiciatis
+
+                            </p>
                         </div>
                     </div>
                     <div class="user_feedback_left">
@@ -304,35 +360,96 @@
                                 </li>
                             </ul>
                             <ul class="feedback_editing feedback_admin-editing">
-                                <li title="comment this post">
+                                <li title="comment this post" class="js-comment-current-post">
                                     <i class="fas fa-quote-right"></i>
                                 </li>
-                                <li title="invite user" class="user_list">
-                                    <i class="fas fa-user-plus"></i>
-                                    <!--<ul class="invite_user-dropdown">
-                                        <li title="">Test</li>
-                                        <li title="">Test</li>
-                                        <li title="">Test</li>
-                                    </ul>-->
-                                </li>
-                                <li title="complain" class="complain_by-user">
-                                    <i class="fas fa-exclamation-triangle"></i>
-                                    <ul class="complain_user-dropdown">
-                                        <li title="">Test2</li>
-                                        <li title="">Test2</li>
-                                        <li title="">Test2</li>
-                                        <li title="">Test2</li>
-                                        <li title="">Test2</li>
-                                        <li title="">Test2</li>
+                                <li title="invite user" class="user_list js-user-list">
+                                    <ul class="invite_user-dropdown">
+                                        <li title="">someMail@gmail.com</li>
+                                        <li title="">someMail@gmail.com</li>
+                                        <li title="">someMail@gmail.com</li>
+                                        <li title="">someMail@gmail.com</li>
+                                        <li title="">someMail@gmail.com</li>
                                     </ul>
+                                    <i class="fas fa-user-plus"></i>
                                 </li>
-                                <li title="delete post">
+                                <li title="complain" class="complain_by-user js-complain_by-user">
+                                    <ul class="complain_user-dropdown">
+                                        <li title="">Spam</li>
+                                        <li title="">Insult</li>
+                                        <li title="">Idiocy</li>
+                                        <li title="">Other</li>
+                                    </ul>
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </li>
+                                <li title="delete post" class="js-delete-user-post">
                                     <i class="fas fa-times"></i>
                                 </li>
                             </ul>
                         </div>
+                        <div class="user_feedback-text">
+                            <p>
+                                12Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aliquid animi asperiores, assumenda atque culpa
+                                deleniti dicta dolorem ea excepturi ipsa iusto laboriosam magnam maxime mollitia nobis non nulla officiis, perspiciatis
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="user_feedback_left">
+                        <div class="user_feedback_top-part">
+                            <ul class="review_detail_info">
+                                <li>
+                                    <span>Name</span>
+                                </li>
+                                <li>
+                                    <span>01.01.18</span>
+                                </li>
+                                <li>
+                                    <span>10.00</span>
+                                </li>
+                                <li class="review_detail_info-like">
+                                    <span>22</span>
+                                    <i class="far fa-thumbs-up"></i>
+                                </li>
+                            </ul>
+                            <ul class="feedback_editing feedback_admin-editing">
+                                <li title="comment this post" class="js-comment-current-post">
+                                    <i class="fas fa-quote-right"></i>
+                                </li>
+                                <li title="invite user" class="user_list js-user-list">
+                                    <ul class="invite_user-dropdown">
+                                        <li title="">someMail@gmail.com</li>
+                                        <li title="">someMail@gmail.com</li>
+                                        <li title="">someMail@gmail.com</li>
+                                        <li title="">someMail@gmail.com</li>
+                                        <li title="">someMail@gmail.com</li>
+                                    </ul>
+                                    <i class="fas fa-user-plus"></i>
+                                </li>
+                                <li title="complain" class="complain_by-user js-complain_by-user">
+                                    <ul class="complain_user-dropdown">
+                                        <li title="">Spam</li>
+                                        <li title="">Insult</li>
+                                        <li title="">Idiocy</li>
+                                        <li title="">Other</li>
+                                    </ul>
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </li>
+                                <li title="delete post" class="js-delete-user-post">
+                                    <i class="fas fa-times"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user_feedback-text">
+                            <p>
+                                13Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aliquid animi asperiores, assumenda atque culpa
+                                deleniti dicta dolorem ea excepturi ipsa iusto laboriosam magnam maxime mollitia nobis non nulla officiis, perspiciatis
+
+                            </p>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
