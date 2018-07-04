@@ -17,6 +17,12 @@ $(document).ready(function () {
         allTabs.each(function () {
             $(this).removeClass('activeTab')
         });
+        $('.steps_list').removeClass('step-shadow');
+        if($('.steps_list').parent().hasClass('activeTab')){
+            $('.steps_list').addClass('step-shadow') ;
+        }else{
+            $('.steps_list').removeClass('step-shadow');
+        }
         // Add class to need tab
         $(this).addClass('activeTab');
         // Show need tab
