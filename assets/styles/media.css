@@ -104,6 +104,10 @@
         margin-left: 0;
     }
     /* Event Settings page end*/
+    .search_filter_pos{    
+       display: flex;
+       flex-wrap: wrap;
+     }
 }
 @media (max-width: 1024px){
     /*Personal Setting page*/
@@ -342,6 +346,10 @@
         width: calc(100%/20);
     }
     /*Create forum End*/
+    /*Language courses start*/
+    .search_filter_pos label:nth-child(1){
+        width: 768px !important;
+    /*Language courses end*/
 }
 @media only screen and (max-width : 767px){
     /* Language course registration */
@@ -787,6 +795,15 @@
         margin: 15px 0 0;
         min-width: 190px;
     }
+    /*Language courses start*/
+    .d-flex {
+       display: table-row !important;
+   }
+    .btn_algin_right{
+        padding-left: 0 !important;
+        margin-bottom: 33px;
+    }
+    /*Language courses end*/
 }
 @media only screen and (max-width : 480px){
     /* Language course main*/
@@ -950,8 +967,30 @@
     .course_description-list li{
         padding-left: 0;
         text-indent: 15px;
+    }    
+        /*Language courses start*/
+    .search_filter_pos label:nth-child(1){
+        width: 306px;
     }
+    .search_filter_pos{    
+       display: flex;
+       flex-wrap: wrap;
+     }
+    .breadcrumbs__item:last-child {
+       padding-left: 0;
+    }  
+    .d-flex {
+       display: table-row !important; 
+    } 
+    .layout_titel_2 {
+        margin-bottom: 30px;
+    }
+    .btn_algin_right{
+        padding-left: 0 !important;
+        margin-bottom: 33px;
+    }       
+        /*Language courses end*/
+   }
 
-}
 
 

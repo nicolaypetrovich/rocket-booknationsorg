@@ -5,8 +5,6 @@
 .container_head {
 	padding-top: 20px;
 	padding-bottom: 32px;
-
-
 }
 
 .btn_algin_right {	
@@ -19,6 +17,10 @@
 .layout_titel_2 {
 	font-size: 18px;
     text-transform: uppercase;   
+}
+.text_center{
+	text-align: center;
+	margin-bottom: 46px; 
 }
 
 .event__btn_m {
@@ -38,14 +40,17 @@
 .search_filter_pos label:nth-child(1){
     width: 420px;
     position: relative;
+    font-size: 16px;
 }
 .search_filter_pos label:nth-child(2){
     width: 190px;
     position: relative;
+    font-size: 16px;
 }
 .search_filter_pos label:nth-child(3){
     width: 190px;
     position: relative;
+    font-size: 16px;
 }
 .search_filter_pos label span{
     font-size: 16px;
@@ -60,7 +65,7 @@
     border-radius: 5px;
     border: 1px solid #bababa;
     padding: 0 10px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 14px;
     color: #787878;
 }
@@ -71,7 +76,7 @@
     border: 1px solid transparent;
     border-radius: 5px;
     display: inline-block;
-    font-size: 16px !important;
+    font-size: 16pxc
 }   
 .btn__search{
 	margin-bottom: 0px;
@@ -91,6 +96,8 @@
     justify-content: center;
     margin-bottom: 15px;
     margin-top: auto;
+    font-size: 16px;
+
 }
 .form_search_section input:nth-child(1){
     border: 1px solid #f5283b;
@@ -117,28 +124,81 @@
     transition: all ease .5s;
     border-color: #e11f46;
 }
+.wrap_courses{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 19px;
+}
 .card_courses {
-	width: 100%;
+	width: 556px;
 	height: 80px;
-	margin-right: 30px;
+	margin-top: 21px;
 	border: 1px solid #bababa;
-
-
+	background-color: #fff;
+	display: flex;
+	align-self: stretch;
+	align-items: center;	
 }
 .short_card{
 	width: 45px;
-	height: 32px;
+	height: 23px;
 	color: #fff;
 	font-size: 14px;
+	margin-left: 12px;
+	margin-bottom: 38px; 
 	background-color: #d1d1d1;
-	border-radius: 5px;
-	align-items: center;
-	position: relative;
-	top: 17px;
-	left: 12px;
+	border-radius: 5px;	
 	display: flex;
-    align-items: center;
-    justify-content: center
+	justify-content: center;
+	align-items: center;
+}
+.cont_wrap {
+	margin-left: 23px;
+}
+.cont_wrap h4 {
+	font-size: 16px;
+}
+.cont_wrap p {
+	color: #bdbdbd;
+	display: inline-block;
+}
+.cont_wrap p:nth-child(2) {
+	padding-right: 18px;
+}
+.img_wrap{ 
+	position: relative;
+	margin-right: 16px;
+	margin-left: auto;
+}
+.first_fl {
+	position: relative;
+	left: 44px;
+	box-shadow: 0 0 0 4px #fff;
+}
+.sub_send_wrap {
+	margin-top: 185px;
+	margin-bottom: 41px;
+}
+.sub_space_pos {
+	width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn_sub {
+	margin-left: 20px;
+	font-size: 16px;
+}
 
-
+.sub_pos_wrap{	
+	width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sub_pos_wrap label input {
+	height: 45px;
+	font-size: 14px;
+	width: 495px;
 }
