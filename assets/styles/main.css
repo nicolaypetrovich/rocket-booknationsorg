@@ -4093,17 +4093,10 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 }
 .test_form-tabs{
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 .test_form-tabs li.tablinks{
-    /*width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    background-color: green;
-    text-align: center;
-    color: #fff;
-    margin-right: 15px;
-    cursor: pointer;*/
+
     margin-right: 15px;
 }
 .steps_list{
@@ -4137,5 +4130,167 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 }
 .step-shadow{
     color: red !important;
+}
+.courses_test_form .main_course_content .tab_wrap .tabcontent{
+    margin: 0;
+    max-width: 100%;
+    width: auto;
+}
+.activeTab .steps_list .outside_circle{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.courses_test_form h4.home_titles{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.test_preview-section{
+    margin-bottom: 15px;
+}
+.test_preview-section li{
+    line-height: 24px;
+    font-weight: 400;
+}
+.test_preview-section li:nth-child(1){
+    font-size: 14px;
+    color: #2579bf;
+    text-transform: uppercase;
+}
+.test_preview-section li:nth-child(2){
+    font-size: 14px;
+    color: #787878;
+}
+.test_preview-section li:nth-child(3){
+    font-size: 12px;
+    color: #f5283b;
+}
+/* Answers Styles */
+.correct_answer-tab{
+    background-color: #00ad5d;
+}
+.wrong_answer-tab{
+    background-color: #f5283b;
+}
+.current_answer-tab{
+    background-color: #787878;
+}
+.test-question-list{
+    margin-bottom: 20px;
+}
+
+/* Answers Styles */
+.test-question-list li{
+    max-width: 390px;
+    width: 100%;
+    background-color: #eceaeb;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: background-color ease .3s;
+}
+.test-question-list li:hover{
+    background-color: #b6d3ff;
+    transition: background-color ease .3s;
+}
+.test-question-list li:last-child{
+    margin-bottom: 0;
+}
+.test-question-options{
+    max-width: 775px;
+    width: 100%;
+    display: flex;
+}
+.test-question-options li button{
+    border: 1px solid #bababa;
+    font-size: 14px;
+    line-height: 14px;
+    color: #787878;
+    background-color: #fff;
+    height: 35px;
+    border-radius: 5px;
+    width: 130px;
+    transition: all ease .5s;
+}
+.test-question-options li button:hover{
+    background-color: #1d1d1e;
+    color: #fff;
+    transition: all ease .5s;
+}
+.test-question-options li{
+    margin-right: 2px;
+}
+.test-question-options li:first-child{
+    margin-right: 18px;
+}
+.test-question-options li:last-child{
+    margin-left: 18px;
+}
+.test-question-options li:nth-child(1) button,.test-question-options li:nth-child(2) button{
+    width: 100px;
+}
+.test-question-options li:nth-child(1) button:hover ,.test-question-options li:nth-child(6) button:hover{
+    background-color: #f5283b;
+    border: 1px solid #f5283b;
+}
+.mistake-link{
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #bababa;
+    border-bottom: 1px solid #bababa;
+    display: inline-flex;
+    align-self: flex-start;
+    margin-bottom: 50px;
+}
+.test_form-quest-part{
+    margin-bottom: 50px;
+}
+.test_result-title{
+    font-size: 14px;
+    line-height: 24px;
+    color: #181818;
+    text-transform: uppercase;
+    display: block;
+}
+.test_result-subtitle{
+    font-size: 14px;
+    line-height: 24px;
+    color: #787878;
+    display: block;
+    margin-bottom: 20px;
+}
+.test_result-table{
+    max-width: 521px;
+    width: 100%;
+}
+.test_result-table tr td ,.test_result-table tr th{
+    text-align: center;
+    border: 1px solid #bababa;
+    border-collapse: collapse;
+    height: 49px;
+
+}
+.test_result-table tr td:last-child ,.test_result-table tr th:last-child{
+    width: 200px;
+}
+.test_form-actions{
+    display: flex;
+    width: 521px;
+    justify-content: center;
+}
+.test_form-actions a{
+    width: 220px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 /* Language course test form End */
