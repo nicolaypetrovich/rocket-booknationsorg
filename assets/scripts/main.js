@@ -161,10 +161,12 @@ $(document).ready(function () {
         ]
 
     });
+       $('.arrows-view').on('click', function () {
+        lightbox.option({
+            'positionFromTop': 200
+        })
+    });
 
-    lightbox.option({
-      'positionFromTop': 200
-    })
 //end slider for Language course photo
 
     $('#slider-aside').slick({
