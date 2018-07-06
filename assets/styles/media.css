@@ -974,4 +974,85 @@
 
 }
 
+/* Language course photo */
+@media only screen and (max-width : 991px){
+    .course-gallery{
+        max-width: 530px;
+    }
+    .course-gallery__item{
+        padding: 180px 200px;
+    }
+    .next{
+        right:50px;
+        bottom: 200px;
+    }
+    .prev{
+        left:50px;
+        bottom: 200px;
+    }
+    .course-nav{
+       max-width: 530px; 
+    }
+    .course-nav__item{
+        padding: 35px 36px;
+    }
+}
+@media only screen and (max-width : 768px){
+    .course-gallery{
+        max-width: 450px;
+    }
+    .course-nav{
+       max-width: 450px; 
+    }
+    .arrows-view{
+        left:90%;
+    }
+}
 
+@media only screen and (max-width : 675px){
+     .course-gallery{
+        max-width: 400px;
+    }
+    .course-nav{
+       max-width: 400px; 
+    }
+      .course-gallery__item{
+        padding: 120px 150px;
+    }
+    .next{
+        bottom: 150px;
+        right:-10px;
+    }
+    .prev{
+        bottom: 150px;
+        left:-10px;
+    }
+}
+@media only screen and (max-width : 520px){
+    .course-gallery{
+        max-width: 100%;
+    }
+      .course-nav{
+       max-width: 98%; 
+    }
+      .course-gallery__item{
+        padding:80px 100px;
+    }
+    .next{
+        bottom: 0;
+       right:32%;
+    }
+    .prev{
+        bottom: 0;
+        left:35%;
+    }
+    .arrows-slider{
+        max-width:320px;
+        width:100%;
+        margin: 20px auto;
+    }
+    .course-nav__item{
+        padding: 25px 26px;
+    }
+}
+/* Language course photo End */
