@@ -3984,7 +3984,9 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     border: 1px solid #bababa;
     background-color: #fff;
     display: flex;
-    align-items: center;    
+    align-items: center;
+    box-shadow: 0 0 21px rgba(0,0,0,0.15);
+
 }
 .short_card{
     width: 45px;
