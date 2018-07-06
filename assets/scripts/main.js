@@ -162,9 +162,7 @@ $(document).ready(function () {
 
     });
 
-    lightbox.option({
-      'positionFromTop': 200
-    })
+ 
 //end slider for Language course photo
 
     $('#slider-aside').slick({
