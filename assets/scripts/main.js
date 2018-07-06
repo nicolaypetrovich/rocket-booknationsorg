@@ -108,6 +108,64 @@ $(document).ready(function () {
             }
         ]
     });
+//slider for Language course photo
+     $('#course-gallery').slick({
+        adaptiveHeight: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade: true,
+        asNavFor: '#course-nav',
+        appendArrows: $('.arrows-slider'),
+        nextArrow: '<button class="next" type="button"><i class="fas fa-chevron-right"></i></button>',
+        prevArrow: '<button class="prev" type="button"><i class="fas fa-chevron-left"></i></button>'
+        
+
+    });
+
+     $('#course-nav').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '#course-gallery',
+        centerMode: false,
+        focusOnSelect: true,
+        arrows:false,
+        infinite: true,
+        dots:false,
+                responsive: [
+            {
+                breakpoint: (SCREEN.desktop + 1),
+                settings: {
+          
+                }
+            },
+            {
+                breakpoint: (SCREEN.tablet + 1),
+                settings: {
+                    slidesToShow: 5
+                }
+            },
+            {
+                breakpoint: (SCREEN.mobile_hd + 1),
+                settings: {
+                    slidesToShow: 5
+                   
+                }
+            },
+            {
+                breakpoint: (SCREEN.mobile + 1),
+                settings: {
+                    slidesToShow: 4
+                 
+                }
+            }
+        ]
+
+    });
+
+    lightbox.option({
+      'positionFromTop': 200
+    })
+//end slider for Language course photo
 
     $('#slider-aside').slick({
         adaptiveHeight: true,
@@ -203,3 +261,6 @@ $(document).ready(function () {
 
     })
 });
+
+
+

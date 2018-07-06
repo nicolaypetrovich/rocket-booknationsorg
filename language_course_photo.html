@@ -14,6 +14,7 @@
     <link href="./assets/styles/Bootstrap/bootstrap-grid.min.css" rel="stylesheet">
     <link href="./assets/styles/Slick/slick.css" rel="stylesheet">
     <link href="./assets/styles/Slick/slick-theme.css" rel="stylesheet">
+    <link href="./assets/styles/lightbox/lightbox.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/styles/jQuery_Ui/jquery-ui-1.9.2.custom.min.css">
     <link href="./assets/styles/main.css" rel="stylesheet">
@@ -22,10 +23,14 @@
     <script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
     <script src="assets/scripts/jQuery/jquery-ui-1.9.2.custom.min.js"></script>
     <script src="./assets/scripts/Slick/slick.min.js"></script>
-    <script src="./assets/scripts/clocks.js"></script>
+    <script src="./assets/scripts/lightbox/lightbox.js"></script>
+    <script src="./assets/scripts/clocks.js"></script> 
+   
     <script src="./assets/scripts/main.js"></script>
     <script src="assets/scripts/forms.js"></script>
     <script src="assets/scripts/tabs.js"></script>
+     <script src="./assets/scripts/modal.js"></script>
+
     <script src="assets/scripts/file_loader.js"></script>
 </head>
 
@@ -154,6 +159,9 @@
         </div>
     </div>
 </header>
+
+
+
 <div class="layout">
     <div class="m-menu">
         <nav class="nav-main nav-main_m-menu">
@@ -246,19 +254,31 @@
                             </div>
                         </div>
                     </div>
-
-                </div>
-                <h4 class="courses_title">Determining the level of knowledge of the French language</h4>
-                <p class="courses_test-info">
-                    The test <span style="color:#181818;">"The test for determining the level of the French language"</span> , consisting of 28 questions.
-                    In this test,<span style="color:#181818;"> 15 </span> questions will be asked. To successfully pass the test, you must <span style="color:#181818;"> correctly answer 12 questions.</span>
-                    After answering each question, the correct answer will immediately be displayed, therefore, in this mode, the made answer will not be corrected.
-                </p>
-                <div class="courses_start-test">
-                    <span>If you are ready - click "Start Test"</span>
-                    <a href="" class="send_btn">
-                        Start Test
-                    </a>
+					<div id="course-gallery" class="course-gallery ">
+						<div style="background-image: url(./assets/images/2321.png);" class="course-gallery__item"><a class="arrows-view" href="./assets/images/2321.png" data-lightbox="roadtrip"><i class="fas fa-arrows-alt"></i></a></div>
+						<div style="background-image: url(./assets/images/temp/bg.jpg);" class="course-gallery__item"><a class="arrows-view" href="./assets/images/temp/bg.jpg" data-lightbox="roadtrip"><i class="fas fa-arrows-alt"></i></a></div>
+						<div style="background-image: url(./assets/images/temp/1.jpg);" class="course-gallery__item"><a class="arrows-view" href="./assets/images/temp/1.jpg" data-lightbox="roadtrip"><i class="fas fa-arrows-alt"></i></a></div>
+						<div style="background-image: url(./assets/images/2321.png);" class="course-gallery__item"><a class="arrows-view" href="./assets/images/2321.png" data-lightbox="roadtrip"><i class="fas fa-arrows-alt"></i></a></div>
+						<div style="background-image: url(./assets/images/temp/bg.jpg);" class="course-gallery__item"><a class="arrows-view" href="./assets/images/temp/bg.jpg" data-lightbox="roadtrip"><i class="fas fa-arrows-alt"></i></a></div>
+                        <div style="background-image: url(./assets/images/2321.png);" class="course-gallery__item"><a class="arrows-view" href="./assets/images/2321.png" data-lightbox="roadtrip"><i class="fas fa-arrows-alt"></i></a></div>
+                        <div style="background-image: url(./assets/images/temp/bg.jpg);" class="course-gallery__item"><a class="arrows-view" href="./assets/images/temp/bg.jpg" data-lightbox="roadtrip"><i class="fas fa-arrows-alt"></i></a></div>
+                        <div style="background-image: url(./assets/images/temp/1.jpg);" class="course-gallery__item"><a class="arrows-view" href="./assets/images/temp/1.jpg" data-lightbox="roadtrip"><i class="fas fa-arrows-alt"></i></a></div>
+                        <div style="background-image: url(./assets/images/2321.png);" class="course-gallery__item"><a class="arrows-view" href="./assets/images/2321.png" data-lightbox="roadtrip"><i class="fas fa-arrows-alt"></i></a></div>
+                        <div style="background-image: url(./assets/images/temp/bg.jpg);" class="course-gallery__item"><a class="arrows-view" href="./assets/images/temp/bg.jpg" data-lightbox="roadtrip"><i class="fas fa-arrows-alt"></i></a></div>
+					</div>
+                    <div class="arrows-slider"></div>
+					<div id="course-nav" class="course-nav">
+						<div style="background-image: url(./assets/images/2321.png);" class="course-nav__item"></div>
+						<div style="background-image: url(./assets/images/temp/bg.jpg);" class="course-nav__item"></div>
+						<div style="background-image: url(./assets/images/temp/1.jpg);" class="course-nav__item"></div>
+						<div style="background-image: url(./assets/images/2321.png);" class="course-nav__item"></div>
+						<div style="background-image: url(./assets/images/temp/bg.jpg);" class="course-nav__item"></div>
+                        <div style="background-image: url(./assets/images/2321.png);" class="course-nav__item"></div>
+                        <div style="background-image: url(./assets/images/temp/bg.jpg);" class="course-nav__item"></div>
+                        <div style="background-image: url(./assets/images/temp/1.jpg);" class="course-nav__item"></div>
+                        <div style="background-image: url(./assets/images/2321.png);" class="course-nav__item"></div>
+                        <div style="background-image: url(./assets/images/temp/bg.jpg);" class="course-nav__item"></div>
+					</div>
                 </div>
             </div>
         </div>
