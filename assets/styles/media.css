@@ -349,6 +349,7 @@
     /*Language courses start*/
     .search_filter_pos label:nth-child(1){
         width: 768px !important;
+    }    
     /*Language courses end*/
 }
 @media only screen and (max-width : 767px){
@@ -589,6 +590,18 @@
     }
 
     /* Event settings page end*/
+    /*Language courses start*/
+    .sub_pos_wrap {
+     flex-direction: column !important;   
+    }
+    .sub_pos_wrap input {
+    
+    width: 100% !important
+    }
+    .btn_sub {
+    margin-left: 0px !important;
+    }
+    /*Language courses end*/
 }
 @media only screen and (max-width : 635px){
     /* Language course registration */
@@ -803,6 +816,27 @@
         padding-left: 0 !important;
         margin-bottom: 33px;
     }
+    .breadcrumbs__item:last-child {
+       padding-left: 0;
+       margin-right: 70px;
+    }  
+    .layout_titel_2 {
+        margin-bottom: 30px;
+    }
+    .card_courses {
+        height: 180px !important;
+        flex-wrap: wrap;
+    }
+    .img_wrap{ 
+        margin-left:  35px !important;
+    }
+    .cont_wrap {
+        position: relative;
+        width: 150px;
+        
+
+    }
+
     /*Language courses end*/
 }
 @media only screen and (max-width : 480px){
@@ -976,20 +1010,12 @@
        display: flex;
        flex-wrap: wrap;
      }
-    .breadcrumbs__item:last-child {
-       padding-left: 0;
-    }  
+    
     .d-flex {
        display: table-row !important; 
     } 
-    .layout_titel_2 {
-        margin-bottom: 30px;
-    }
-    .btn_algin_right{
-        padding-left: 0 !important;
-        margin-bottom: 33px;
-    }       
-        /*Language courses end*/
+    
+    /*Language courses end*/
    }
 
 
