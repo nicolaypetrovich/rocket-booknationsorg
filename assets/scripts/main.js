@@ -162,6 +162,7 @@ $(document).ready(function () {
 
     });
 
+
  
 //end slider for Language course photo
 
