@@ -104,6 +104,10 @@
         margin-left: 0;
     }
     /* Event Settings page end*/
+    .search_filter_pos{    
+       display: flex;
+       flex-wrap: wrap;
+     }
 }
 @media (max-width: 1024px){
     /*Personal Setting page*/
@@ -342,6 +346,11 @@
         width: calc(100%/20);
     }
     /*Create forum End*/
+    /*Language courses start*/
+    .search_filter_pos label:nth-child(1){
+        width: 768px !important;
+    }    
+    /*Language courses end*/
 }
 @media only screen and (max-width : 767px){
     /* Language course registration */
@@ -581,6 +590,21 @@
     }
 
     /* Event settings page end*/
+    /*Language courses start*/
+    .sub_pos_wrap {
+     flex-direction: column !important;   
+    }
+    .sub_pos_wrap input {
+    
+    width: 100% !important
+    }
+    .btn_sub {
+    margin-left: 0px !important;
+    display: flex;
+    justify-content: center;
+
+    }
+    /*Language courses end*/
 }
 @media only screen and (max-width : 635px){
     /* Language course registration */
@@ -787,6 +811,36 @@
         margin: 15px 0 0;
         min-width: 190px;
     }
+    /*Language courses start*/
+    .d-flex {
+       display: table-row !important;
+   }
+    .btn_algin_right{
+        padding-left: 0 !important;
+        margin-bottom: 33px;
+    }
+    .breadcrumbs__item:last-child {
+       padding-left: 0;
+       margin-right: 70px;
+    }  
+    .layout_titel_2 {
+        margin-bottom: 30px;
+    }
+    .card_courses {
+        height: 180px !important;
+        flex-wrap: wrap;
+    }
+    .img_wrap{ 
+        margin-left:  35px !important;
+    }
+    .cont_wrap {
+        position: relative;
+        width: 150px;
+        
+
+    }
+
+    /*Language courses end*/
 }
 @media only screen and (max-width : 480px){
     /* Language course review */
@@ -970,9 +1024,23 @@
     .course_description-list li{
         padding-left: 0;
         text-indent: 15px;
+    }    
+        /*Language courses start*/
+    .search_filter_pos label:nth-child(1){
+        width: 306px;
     }
+    .search_filter_pos{    
+       display: flex;
+       flex-wrap: wrap;
+     }
+    
+    .d-flex {
+       display: table-row !important; 
+    } 
+    
+    /*Language courses end*/
+   }
 
-}
 
 /* Language course photo */
 @media only screen and (max-width : 991px){
