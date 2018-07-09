@@ -4497,3 +4497,12 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     width: 495px;
 }
 /*Language courses end*/
+
+/*Start group_discussion*/
+.media_marge a {
+    margin-right: 10px;
+}
+.btn_font_16{
+    font-size: 16px;
+}
+/*End group_discussion*/
