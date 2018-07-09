@@ -4164,6 +4164,134 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 }
 /* Language course photo End */
 
+/* Groups event */
+.event__navigation{
+    margin-left: 60px;
+}
+.event__banner .groups{
+    margin-bottom: 0;
+}
+
+.event__banner i{
+    color:#fff;
+    font-size: 32px;
+}
+
+.event__title i{
+    margin-right: 20px;
+}
+
+.event__button{
+    color:#fff;
+}
+.event__status{
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.events{
+    padding-top: 40px;
+    padding-bottom: 60px
+}
+
+.events__content{
+    max-width: 650px;
+    width:100%;
+}
+
+.events__content .layout__title{
+    margin-bottom: 0;
+}
+
+.event-simple{
+    margin-top:30px;
+    padding: 25px 20px;
+    border:solid 1px #e8e8e8;
+}
+
+.event-simple__top{
+    margin-bottom: 15px;
+}
+
+.content__bottom{
+    padding-top: 20px;
+}
+.event-simple__tiltle{
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-right:30px;
+    color:#787878;
+}
+
+.event-simple__date{
+    font-size: 16px;
+    color:#bababa;
+}
+
+.event-simple .event-simple__content{
+    font-size: 14px;
+    margin-bottom: 0;
+
+}
+
+.events__tag{
+    margin-top: 40px;
+}
+
+.tag-simple{
+    margin-top: 30px;
+}
+
+.tag-simple__title{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.tag-simple__link{
+    padding:5px 10px;
+    background-color: #d1d1d1;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: linear 0.2s;
+    color:#fff;
+}
+
+.tag-simple__link:hover{
+    background-color: #1d1d1e;
+}
+.btn_events{
+    padding:10px 35px;
+    background-color: #1d1d1e;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    width:100%;
+    text-align: center;
+    color: #fff;
+    transition: linear 0.2s;
+}
+.btn_events:hover{
+    background-color: #e11f46;
+    color:#fff; 
+}
+
+.groups-list{
+    color:#bababa;
+    font-size: 16px;
+}
+
+.groups-list__item{
+    margin-top: 15px;
+}
+
+.groups-list__item:hover{
+    color:#1d1d1e;
+}
+
+.groups-list__item:first-child{
+    margin-top: 0;
+}
+/* Groups event End */
+
 /*Language courses start*/
 .text_red {
     color: red;
