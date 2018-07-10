@@ -2147,9 +2147,8 @@ b {
     margin-bottom: 35px;
 }
 
-.event__buttons {
-    width: 300px;
-    margin-left: 55px;
+.events__buttons {
+    margin-top: 35px;
 }
 
 .event__details ul {
@@ -4504,5 +4503,30 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 }
 .btn_font_16{
     font-size: 16px;
+}
+.text_form {
+    color: #787878;
+    font-size: 14px;
+}
+.com_pos{
+    font-size: 14px;
+
+}
+.pos_disc_block{
+    justify-content: space-between;
+}
+.block_discus {
+    padding: 16.5px 16px 16.5px 16px;
+    border: 1px solid #bababa;
+    margin-bottom: 3px;
+}
+/*maybe*/
+.block_discus:hover {
+    box-shadow: 0 0 21px rgba(0,0,0,0.15);
+}
+/*maybe*/
+.head_tabs {
+    padding-top: 50px;
+    padding-bottom: 30px; 
 }
 /*End group_discussion*/
