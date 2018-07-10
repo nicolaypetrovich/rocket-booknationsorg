@@ -4505,7 +4505,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     font-size: 16px;
 }
 .text_form {
-    color: #787878;
+    color: #464646;
     font-size: 14px;
 }
 .com_pos{
@@ -4518,15 +4518,50 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 .block_discus {
     padding: 16.5px 16px 16.5px 16px;
     border: 1px solid #bababa;
+    margin-bottom: 15px;
+}
+.block_discus_message {
+    padding: 16.5px 16px 16.5px 16px;
+    border: 1px solid #bababa;
     margin-bottom: 3px;
 }
-/*maybe*/
 .block_discus:hover {
     box-shadow: 0 0 21px rgba(0,0,0,0.15);
 }
-/*maybe*/
 .head_tabs {
     padding-top: 50px;
-    padding-bottom: 30px; 
+    padding-bottom: 10px; 
 }
+.forum_editable_field_2{
+    position: relative;
+}
+.forum_editable_field_2 label .mce-top-part{
+    padding-left: 15px;
+}
+.time_discu{
+    margin-left: 16px;
+    font-size: 14px;
+}
+.reply_comm{
+    padding-right: 15px;
+}
+.message_text {
+    padding-top: 20px;
+
+}
+.message_merg{
+    margin-left: 75px;
+}
+.up_text{
+    text-transform: uppercase;
+}
+.activ_content{
+    display: block;
+} 
+
+.non_activ{
+    display: none;
+}
+
+
 /*End group_discussion*/
