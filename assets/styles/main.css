@@ -3947,8 +3947,8 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 
 }
 .form_search_section input:nth-child(1){
-    border: 1px solid #f5283b;
-    background-color: #f5283b;
+    border: 1px solid #e11f46;
+    background-color: #e11f46;
     color: #fff;
     transition: all ease .5s;
     margin-right: 6px;
@@ -3966,10 +3966,10 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     
 }
 .form_search_section input:nth-child(2):hover{
-    background-color: #e11f46;
+    background-color: #1d1d1e;
     color: #fff;
     transition: all ease .5s;
-    border-color: #e11f46;
+    border-color: #1d1d1e;
 }
 .wrap_courses{
     display: flex;
@@ -4006,6 +4006,9 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 }
 .cont_wrap h4 {
     font-size: 16px;
+}
+.cont_wrap h4:hover{
+    color: #787878; 
 }
 .cont_wrap p {
     color: #bdbdbd;
