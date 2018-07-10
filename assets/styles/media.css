@@ -813,7 +813,7 @@
     }
     /*Language courses start*/
     .d-flex {
-       display: table-row !important;
+       display: flex !important;/*ERROR*/
    }
     .btn_algin_right{
         padding-left: 0 !important;
@@ -1035,7 +1035,7 @@
      }
     
     .d-flex {
-       display: table-row !important; 
+       display: flex !important; /*ERROR*/
     } 
     
     /*Language courses end*/
@@ -1097,6 +1097,7 @@
     }
 }
 @media only screen and (max-width : 520px){
+
     .course-gallery{
         max-width: 100%;
     }
@@ -1128,7 +1129,7 @@
 /* Groups event*/
 @media only screen and (max-width : 991px){
     .event__banner{
-        height:80px;
+        
     }
     .events{
         padding-top: 0;
@@ -1209,7 +1210,9 @@
 }
 
 @media only screen and (max-width : 768px){
-
+     .event__buttons{
+        margin-top: 30px;
+    }
     .events__content{
         max-width: 302px;
         margin-right: 30px;
