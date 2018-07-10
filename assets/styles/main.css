@@ -2205,6 +2205,10 @@ b {
     margin-right: 10px;
 }
 
+.media__like i{
+    margin-left: 5px;
+}
+
 .event__buttons>a {
     width: 100%;
     border-radius: 0;
@@ -4167,7 +4171,23 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 /* Groups event */
 .event__navigation{
     margin-left: 60px;
+    max-width: 460px;
+    width:100%;
 }
+
+
+.pluso-hide{
+    display: none;
+}
+.event__navigation_hide{
+    display: none;
+}
+
+.event__navigation ul{
+    max-width: 460px;
+    width:100%;
+}
+
 .event__banner .groups{
     margin-bottom: 0;
 }
@@ -4192,11 +4212,28 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 .events{
     padding-top: 40px;
     padding-bottom: 60px
+    max-width:1150px;
+    width:100%;
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   /* стили только для IE10 IE11 */
+   .events{
+        flex-wrap: wrap;
+   }
+   .events__aside{
+    margin-top: 50px;
+   } 
+}
+
 
 .events__content{
     max-width: 650px;
     width:100%;
+}
+
+.events__aside{
+    max-width:460px;
+    width:100%; 
 }
 
 .events__content .layout__title{
@@ -4290,4 +4327,9 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 .groups-list__item:first-child{
     margin-top: 0;
 }
+
+.media__left{
+    flex-wrap: wrap;    
+}
+
 /* Groups event End */
