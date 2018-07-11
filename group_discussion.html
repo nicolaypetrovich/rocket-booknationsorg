@@ -24,7 +24,7 @@
 	    <script src="./assets/scripts/clocks.js"></script>
 	    <script src="assets/scripts/tinymce/tinymce.min.js"></script>
 	    <script src="./assets/scripts/main.js"></script>
-	    <script src="assets/scripts/forms.js"></script>
+	    <script src="./assets/scripts/forms.js"></script>
 	    <script src="assets/scripts/tabs.js"></script>
 	    <script src="assets/scripts/file_loader.js"></script>
 	    <script src="./assets/scripts/message.js"></script>
@@ -269,16 +269,20 @@
 			          		<div class="events__content">
 
 			          		<!-- Start tags change -->
-			          		<div class="main_course_content"> 
-			          			<div class="head_tabs d-flex justify-content-between">
-	          		               
+			            <div class="main_course_content">
+			                    <!-- Head --> 
+			          			<div class="head_tabs d-flex justify-content-between">         		            
+	          		              
 	          			           <div class="content__top d-flex justify-content-between align-items-center">
-	          				           <h3 class="layout__title">discussion</h3>	          				
-	          			           </div>         			           
+	          				           <h3 class="layout__title">discussion</h3>          				
+	          			           </div>     			           
 	          			          
 	          			       </div>
+	          			       <!-- Head -->
 	          			<div class="content__bottom">
+
 	          				<!-- first discussion -->
+	          			 <div class="accordion">
 	          				<div class="block_discus">
 	          					<div class="media__like d-flex pos_disc_block">
 	          						<h3 class="text_form">Discussion_1</h3>
@@ -287,9 +291,8 @@
 	          						<i class="far fa-comment"></i>
 	          						</div>
 	          					</div>
-	          			    </div>
-	          			    <!-- first discussion -->
-                         <div class="wrap_message non_activ">
+	          			    </div>	          			    
+                         <div class="wrap_message ">
 	          			    <div class="block_discus_message">
 	          			      <div class="message_f_dicus">
 	          					<div class="media__like d-flex pos_disc_block">
@@ -297,10 +300,10 @@
 		          						<h3 class="text_form up_text">Name</h3>
 		          						<span class="time_discu">01.01.18</span>
 	          						</div>
-	          						<div class="com_pos text_red">	
-		          						<span class="reply_comm">Reply to comment</span>
-		          						<span>1</span>
-		          						<i class="far fa-comment"></i>
+	          						<div class="com_pos ">	
+		          						<span class="text_red reply_comm">Reply to comment</span>
+		          						<span class="text_red">1</span>
+		          						<i class="text_red far fa-comment"></i>
 	          						</div>
 	          					</div>	          				  
 	          					<div class="d-block message_text">
@@ -324,43 +327,37 @@
 	          						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 	          					</div>
 	          				  </div>
-	          			    </div>
-
-	          					
+	          			    </div>	          					
 	          				<!-- Sender messege	 -->
-
 	          				<div class="course_write_review">
 		                        <form method="GET" class="similar_form">
-		                            <div class="forum_editable_field">
-		                                <div class="course_review_info">
-		                                    <ul class="review_detail_info">
-		                                        <li><span>your name</span></li>
-		                                        <li><span>01.01.18</span></li>
-		                                    </ul>
-		                                </div>
-		                                <div class="tiny_mce_wrap">
-		                                    <div class="file_load_icons">
-		                                        <!-- <label class="load_video">
-		                                            <i class="fas fa-video"></i>
-		                                            <input type="file" id="forum-load_vid" >
-		                                        </label> -->
-		                                        <label class="load_picture">
-		                                            <i class="fas fa-image"></i>
-		                                            <input type="file" id="forum-load_pict" >
-		                                        </label>
+		                            <div class="forum_discus">
+		                                <div class="edia__like d-flex pos_disc_block">
+		                                    <div class="review_detail_info">
+		                                        <span class="text_form up_text">your name</span>
+		                                        <span class="time_discu">01.01.18</span>
 		                                    </div>
+		                                    <div class="com_pos">	
+	          						           <span class="reply_comm">Your answer (user)</span>
+	          						        </div>
+		                                </div>
+		                                <div class="tiny_mce_wrap message_text">		                                    
 		                                    <label class="tiny_mce_label">
-		                                        <textarea class="required js-tinymce-reviews js-empty_check" placeholder="Write something"></textarea>
+		                                        <textarea class="required js-tinymce-discus js-emptycheck" placeholder="Write something"></textarea>
 		                                    </label>
 		                                </div>
 		                            </div>
-		                            <input type="submit" value="Send" class="course_warning_btn js-review_btn-send">
+		                            <input type="submit" value="Send" class="send_btn js-review_bt-send js-validateBtn">
 		                        </form>
                             </div>
+                            <!-- Sender messege -->
 	          			</div>
-		         
-                             <!-- Sender messege -->
+	          		  </div>		         
+                             
+                             <!-- /first dicussion -->
+
                              <!-- Second discussion -->
+                        <div class="accordion">
 	          				<div class="block_discus">
 	          					<div class="media__like d-flex pos_disc_block">
 	          						<h3 class="text_form">Discussion_2</h3>
@@ -370,8 +367,7 @@
 	          						</div>
 	          					</div>
 	          			    </div>
-	          			    <!-- Second discussion -->
-	          			    <div class="wrap_message non_activ">
+	          			   <div class="wrap_message">
 	          			    <div class="block_discus_message">
 	          			      <div class="message_f_dicus">
 	          					<div class="media__like d-flex pos_disc_block">
@@ -379,10 +375,10 @@
 		          						<h3 class="text_form up_text">Name</h3>
 		          						<span class="time_discu">01.01.18</span>
 	          						</div>
-	          						<div class="com_pos text_red">	
-		          						<span class="reply_comm">Reply to comment</span>
-		          						<span>1</span>
-		          						<i class="far fa-comment"></i>
+	          						<div class="com_pos ">	
+		          						<span class="text_red reply_comm">Reply to comment</span>
+		          						<span class="text_red">1</span>
+		          						<i class="text_red far fa-comment"></i>
 	          						</div>
 	          					</div>	          				  
 	          					<div class="d-block message_text">
@@ -410,39 +406,35 @@
 
 	          					
 	          				<!-- Sender messege	 -->
-
 	          				<div class="course_write_review">
 		                        <form method="GET" class="similar_form">
-		                            <div class="forum_editable_field">
-		                                <div class="course_review_info">
-		                                    <ul class="review_detail_info">
-		                                        <li><span>your name</span></li>
-		                                        <li><span>01.01.18</span></li>
-		                                    </ul>
-		                                </div>
-		                                <div class="tiny_mce_wrap">
-		                                    <div class="file_load_icons">
-		                                        <!-- <label class="load_video">
-		                                            <i class="fas fa-video"></i>
-		                                            <input type="file" id="forum-load_vid" >
-		                                        </label> -->
-		                                        <label class="load_picture">
-		                                            <i class="fas fa-image"></i>
-		                                            <input type="file" id="forum-load_pict" >
-		                                        </label>
+		                            <div class="forum_discus">
+		                                <div class="edia__like d-flex pos_disc_block">
+		                                    <div class="review_detail_info">
+		                                        <span class="text_form up_text">your name</span>
+		                                        <span class="time_discu">01.01.18</span>
 		                                    </div>
+		                                    <div class="com_pos">	
+	          						           <span class="reply_comm">Your answer (user)</span>
+	          						        </div>
+		                                </div>
+		                                <div class="tiny_mce_wrap message_text">		                                    
 		                                    <label class="tiny_mce_label">
-		                                        <textarea class="required js-tinymce-reviews js-empty_check" placeholder="Write something"></textarea>
+		                                        <textarea class="required js-tinymce-discus js-emptycheck" placeholder="Write something"></textarea>
 		                                    </label>
 		                                </div>
 		                            </div>
-		                            <input type="submit" value="Send" class="course_warning_btn js-review_btn-send">
+		                            <input type="submit" value="Send" class="send_btn js-review_bt-send js-validateBtn">
 		                        </form>
                             </div>
+                            <!-- Sender messege -->
 	          			</div>
-		         
-                             <!-- Sender messege -->
+	          		  </div>		         
+                            
+                            <!-- /Second discussion -->
+
 	          			    <!-- Third discussion -->
+	          			  <div class="accordion">
 	          			    <div class="block_discus">
 	          					<div class="media__like d-flex pos_disc_block">
 	          						<h3 class="text_form">Discussion_3</h3>
@@ -461,10 +453,10 @@
 		          						<h3 class="text_form up_text">Name</h3>
 		          						<span class="time_discu">01.01.18</span>
 	          						</div>
-	          						<div class="com_pos text_red">	
-		          						<span class="reply_comm">Reply to comment</span>
-		          						<span>1</span>
-		          						<i class="far fa-comment"></i>
+	          						<div class="com_pos ">	
+		          						<span class="text_red reply_comm">Reply to comment</span>
+		          						<span class="text_red">1</span>
+		          						<i class="text_red far fa-comment"></i>
 	          						</div>
 	          					</div>	          				  
 	          					<div class="d-block message_text">
@@ -492,40 +484,32 @@
 
 	          					
 	          				<!-- Sender messege	 -->
-
 	          				<div class="course_write_review">
 		                        <form method="GET" class="similar_form">
-		                            <div class="forum_editable_field">
-		                                <div class="course_review_info">
-		                                    <ul class="review_detail_info">
-		                                        <li><span>your name</span></li>
-		                                        <li><span>01.01.18</span></li>
-		                                    </ul>
-		                                </div>
-		                                <div class="tiny_mce_wrap">
-		                                    <div class="file_load_icons">
-		                                        <!-- <label class="load_video">
-		                                            <i class="fas fa-video"></i>
-		                                            <input type="file" id="forum-load_vid" >
-		                                        </label> -->
-		                                        <label class="load_picture">
-		                                            <i class="fas fa-image"></i>
-		                                            <input type="file" id="forum-load_pict" >
-		                                        </label>
+		                            <div class="forum_discus">
+		                                <div class="edia__like d-flex pos_disc_block">
+		                                    <div class="review_detail_info">
+		                                        <span class="text_form up_text">your name</span>
+		                                        <span class="time_discu">01.01.18</span>
 		                                    </div>
+		                                    <div class="com_pos">	
+	          						           <span class="reply_comm">Your answer (user)</span>
+	          						        </div>
+		                                </div>
+		                                <div class="tiny_mce_wrap message_text">		                                    
 		                                    <label class="tiny_mce_label">
-		                                        <textarea class="required js-tinymce-reviews js-empty_check" placeholder="Write something"></textarea>
+		                                        <textarea class="required js-tinymce-discus js-emptycheck" placeholder="Write something"></textarea>
 		                                    </label>
 		                                </div>
 		                            </div>
-		                            <input type="submit" value="Send" class="course_warning_btn js-review_btn-send">
+		                            <input type="submit" value="Send" class="send_btn js-review_bt-send js-validateBtn">
 		                        </form>
                             </div>
+                            <!-- Sender messege -->
 	          			</div>
-		         
-                             <!-- Sender messege -->
-	          			</div>
-			          
+	          		</div>	         
+                          
+	          			</div>		          
 			          		
 			          		</div>
 			          		</div>

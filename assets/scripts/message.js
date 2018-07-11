@@ -1,21 +1,28 @@
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
-	const btnMess = document.querySelector('.block_discus');
-	const contMess = document.querySelector('.wrap_message');
+	$('.accordion .wrap_message').hide();
+    $('.accordion .block_discus').on('click', function (e) {
+	    e.stopPropagation();
+	    e.preventDefault();
 
-	btnMess.addEventListener('click', function(event) {
+	    var $text = $(this).next('.wrap_message');
+	    
+	    if ( $text.is(':hidden') ) {
+	        $('.accordion').each(function () {
+	            $(this).find('.wrap_message').slideUp();
+	            $(this).removeClass('open_discus');
+	        });
 
-		console.log(btnMess);
-		// event.preventDefault();
+	        $(this).addClass('open_discus');
+	        $text.slideDown();	        
+	    } else {
+	        $(this).removeClass('open_discus');
+	        $text.slideUp();	        
+	    }
 
-		// contMess.forEach( element => {
+    });
 
-  //           if( element.classList.contains('non_activ') ) {
-  //               element.classList.toggle('non_activ');
-  //               return;
-  //           }
-  //       })
-  //       event.target.classList.add('red_text');
-   })  
+   
+    
 }	

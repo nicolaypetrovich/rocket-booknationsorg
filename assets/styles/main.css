@@ -4510,6 +4510,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 }
 .com_pos{
     font-size: 14px;
+    color: #bababa
 
 }
 .pos_disc_block{
@@ -4518,12 +4519,12 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 .block_discus {
     padding: 16.5px 16px 16.5px 16px;
     border: 1px solid #bababa;
-    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .block_discus_message {
     padding: 16.5px 16px 16.5px 16px;
     border: 1px solid #bababa;
-    margin-bottom: 3px;
+    margin: 3px 0 3px 0;
 }
 .block_discus:hover {
     box-shadow: 0 0 21px rgba(0,0,0,0.15);
@@ -4541,6 +4542,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 .time_discu{
     margin-left: 16px;
     font-size: 14px;
+    color: #bababa
 }
 .reply_comm{
     padding-right: 15px;
@@ -4555,13 +4557,59 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 .up_text{
     text-transform: uppercase;
 }
-.activ_content{
-    display: block;
-} 
-
-.non_activ{
-    display: none;
+.forum_discus{
+    position: relative;
 }
+.forum_discus label .mce-btn-group:not(:first-child){
+    border: none;
+}
+.forum_discus label .mce-tinymce{
+    box-shadow: none;
+    border: none;
+}
+.forum_discus label .mce-panel{
+    border: none;
+    box-shadow: none;
+}
+.forum_discus label .mce-top-part::before{
+    box-shadow: none;
+}
+.forum_discus iframe {
+    border: 1px solid #bababa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.forum_discus label .mce-btn button{
+    padding: 0;
+}
+.forum_discus label .mce-btn{
+    border: none;
+}
+.forum_discus label .mce-top-part{
+    padding: 0 0 13px 0;
+}
+.forum_discus label{
+    position: relative;
+}
+.send_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: #e11f46;
+    height: 45px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color ease .5s;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+}
+.course_write_review .send_btn {
+    width: 100px;
+    align-self: flex-end;
 
+}
 
 /*End group_discussion*/

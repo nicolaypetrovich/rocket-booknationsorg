@@ -240,11 +240,50 @@ $(document).ready(function () {
             plugins: [
                 ' autolink lists link  anchor ',
             ],
-            toolbar: 'bold | bullist numlist | italic | link',
+           toolbar: 'bold | bullist | numlist | italic | link', 
+        });
+    };
+    if($('.js-tinymce-discus').length > 0 ){
+        // tinymce
+        tinymce.init({
+            selector: '.js-tinymce-discus',
+            height: 80,
+            verify_html: false,
+            menubar: false,
+            statusbar: false,
+            font_formats:'HelveticaNeueCyr',
+            plugins: [
+                ' image autolink lists link  anchor ',
+            ],
+            toolbar: 'bold | image | code | bullist | numlist | italic | link',
+            image_title: true,
+            automatic_uploads: true,
+            file_picker_types: 'image',
+            file_picker_callback: function(cb, value, meta) {
+                var input = document.createElement('input');
+                input.setAttribute('type', 'file');
+                input.setAttribute('accept', 'image/*');
+                input.onchange = function() {
+                  var file = this.files[0];
+                  var reader = new FileReader();
+                  reader.onload = function () {
+                      var id = 'blobid' + (new Date()).getTime();
+                      var blobCache =  tinymce.activeEditor.editorUpload.blobCache;
+                      var base64 = reader.result.split(',')[1];
+                      var blobInfo = blobCache.create(id, file, base64);
+                      blobCache.add(blobInfo);
+                      cb(blobInfo.blobUri(), { title: file.name });
+            };
+                reader.readAsDataURL(file);
+            };
+    
+            input.click();
+            }
 
         });
 
     };
+    
     if($('.js-time-picker').length > 0){
         // Time picker (Setting event page)
         $('.js-time-picker').timepicker({ 'timeFormat': 'h:i A' });
@@ -259,11 +298,30 @@ $(document).ready(function () {
     });
 
 
-    $('.js-validateBtn').on('click',function () {
+    $('.js-validateBtn').on('click',function (e) {
        var chekOnEmpty = tinyMCE.activeEditor.getContent();
+       
        if(chekOnEmpty.length == 0){
-           $('.forum_editable_field label #mce_0_ifr').css('borderColor','red')
-       }});
+            e.preventDefault();
+           $(this).parent().find('.error').remove();
+           $('.forum_editable_field label #mce_0_ifr').css('borderColor','red');
+           $('.forum_discus iframe').css('borderColor','red');
+           $(this).before('<div class="error">Required field</div>');
+       } else{
+            var iframeArr = [].slice.call( document.querySelectorAll('iframe') );
+            iframeArr.forEach( function(iframe){
+                var childrenArr = [].slice.call( document.querySelector('iframe').contentDocument.querySelector('body').children );
+                childrenArr.forEach( function(obj){
+                    obj.remove();
+                } );
+            } );
+
+            $('.forum_editable_field label #mce_0_ifr').css('borderColor','');
+            $('.forum_discus iframe').css('borderColor','');
+            $(this).parent().find('.error').remove(); 
+       } 
+
+   });
 
 
 // Radio btns (Setting event page)
