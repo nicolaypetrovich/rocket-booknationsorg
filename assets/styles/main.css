@@ -4481,7 +4481,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 }
 
 .events__tag{
-    margin-top: 40px;
+    margin-top: 64px;
 }
 
 .tag-simple{
@@ -5135,7 +5135,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 }
 .layout {
     display: block;
-    padding-bottom: 65px;
+   
 }
 
 
@@ -5186,3 +5186,32 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
    max-width: 50px;
 }
 /* Groups End */
+
+/* Groups posts */
+
+.event-simple__media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 120px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #bababa;
+}
+
+.event-simple__like, .event-simple__comments{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.event-simple__like i, .event-simple__comments i{
+    margin-left: 5px;
+}
+
+.posts-count{
+    margin-left: 20px;
+    color:#d1d1d1;
+}
+/* Groups posts End */
