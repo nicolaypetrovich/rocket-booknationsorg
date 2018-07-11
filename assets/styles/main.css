@@ -2070,7 +2070,7 @@ b {
     font-size: 14px;
     font-weight: 900;
 }
-.news_section .news_sort button.news_name-sort{
+.news_sort button.news_name-sort{
     display: inline-block;
     color: #bababa;
     font-size: 14px;
@@ -2748,7 +2748,7 @@ label.es__load_box {
 .personal_groups{
     padding-top: 40px;
 }
-.personal_groups_in .news-card__content{
+.news-card__content{
     margin-left: 20px;
     display: flex;
     flex-direction: column;
@@ -5137,3 +5137,52 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     display: block;
     padding-bottom: 65px;
 }
+
+
+/* Groups */
+
+.groups-search{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    
+}
+
+.groups-search .search_filter_pos .title_search{
+    max-width: 520px;
+    width:100%;
+    margin-right: 0;
+}
+
+.groups-search .search_filter_pos .filter_search{
+    max-width: 330px;
+    width: 100%;
+}
+
+.groups-search .search_filter_pos .form_search_section{
+    max-width:240px;
+    width: 100%;
+   
+}
+
+.groups-wrap{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.groups-wrap .news-group__item{
+    min-width: 535px;
+    width: 100%;
+}
+.groups-wrap .news-card__label{
+   max-width: 50px;
+}
+/* Groups End */
