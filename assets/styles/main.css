@@ -5083,7 +5083,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 }
 .menagement__popup--button {
   padding: 0 40px;
-  margin-left: 18px;
+  margin-left: 50px;
   height: 37px;
   border-radius: 5px;
   background-color: #fd3535;
@@ -5116,3 +5116,24 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
   font-size: 24px;
 }
 
+ .menagement__popup-name--wrap {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+  }
+.menagement__input--wrapper {
+    width: 100%;
+    padding-right: 0px;
+}
+#menangement__toggle {
+    display: none;
+}
+.layout {
+    display: block;
+    padding-bottom: 65px;
+}
