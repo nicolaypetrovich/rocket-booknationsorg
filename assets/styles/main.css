@@ -4424,15 +4424,16 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     margin-top: 19px;
 }
 .card_courses {
-    width: 556px;
+    width: 560px;
     height: 80px;
     margin-top: 21px;
-    border: 1px solid #bababa;
-    background-color: #fff;
+    border: 1px solid #bababa;    
     display: flex;
-    align-items: center;
+    align-items: center;    
+}
+.card_courses:hover {
     box-shadow: 0 0 21px rgba(0,0,0,0.15);
-
+    background-color: #fff;
 }
 .short_card{
     width: 45px;
@@ -4461,14 +4462,20 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     padding-right: 18px;
 }
 .img_wrap{ 
-    position: relative;
+    display: flex;
     margin-right: 16px;
     margin-left: auto;
+    
 }
 .first_fl {
-    position: relative;
-    left: 44px;
-    box-shadow: 0 0 0 4px #fff;
+    margin-left: 30px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);s
+    
+}
+.second_fl {
+    margin-left: 10px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+
 }
 .sub_send_wrap {
     margin-top: 185px;

@@ -16,7 +16,7 @@
     /* Banner */
     .banner__label {
         font-size: 160px;
-    }
+    }    
 
     /* Clock and wether wrapper */
     .weather img{
@@ -762,6 +762,12 @@
     }
 
     /* Event settings page end*/
+    .card_courses {
+        width: 100%;
+    }
+    .first_fl {
+    margin-left: 10px;.
+    }
 }
 @media (max-width:575px){
     /*Create forum*/
@@ -867,6 +873,9 @@
         padding-left: 0 !important;
         margin-bottom: 33px;
     }
+    .pad_0 {
+        padding-left: 0;
+    }
     .breadcrumbs__item:last-child {
        margin-right: 70px;
     }  
@@ -878,7 +887,7 @@
         flex-wrap: wrap;
     }
     .img_wrap{ 
-        margin-left:  35px !important;
+        margin-left:  70px !important;
     }
     .cont_wrap {
         position: relative;
