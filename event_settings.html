@@ -215,7 +215,7 @@
                         <div class="p-0 col-2 col-xl-1"></div>
                         <div class="p-0 col-12 col-md-10">
                             <div class="es_photo_box">
-                                <label for="file-2" class="es__load_box">
+                                <label for="file-2" class="es__load_box es__load_box-last">
                                     <i class="fas fa-camera"></i>
                                     <input type="file" id="file-2" class="take-file">
                                 </label>
@@ -273,7 +273,7 @@
                                 </label>
                                 <label>
                                     <i class="fas fa-clock"></i>
-                                    <input class="js-time-picker input">
+                                    <input class="js-time-picker input" type="text" maxlength="4" onkeypress='validate(event)' />
                                 </label>
                                 <span>
                                     UTS +1
@@ -295,7 +295,7 @@
                                 </label>
                                 <label>
                                     <i class="fas fa-clock"></i>
-                                    <input class="js-time-picker input">
+                                    <input class="js-time-picker input" type="text" maxlength="4" onkeypress='validate(event)'/>
                                 </label>
                                 <span>
                                     UTS +1
@@ -426,6 +426,22 @@
         </div>
     </div>
 </div>
+
+    <script>
+        
+        function validate(evt) {
+          var theEvent = evt || window.event;
+          var key = theEvent.keyCode || theEvent.which;
+          key = String.fromCharCode( key );
+          var regex = /[0-9]|\./;
+          if( !regex.test(key) ) {
+            theEvent.returnValue = false;
+            if(theEvent.preventDefault) theEvent.preventDefault();
+          }
+        }
+
+    </script>
+
 
 </body>
 
