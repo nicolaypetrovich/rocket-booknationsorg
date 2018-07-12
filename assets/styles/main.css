@@ -3981,12 +3981,13 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     width: 560px;
     height: 80px;
     margin-top: 21px;
-    border: 1px solid #bababa;
-    background-color: #fff;
+    border: 1px solid #bababa;    
     display: flex;
-    align-items: center;
+    align-items: center;    
+}
+.card_courses:hover {
     box-shadow: 0 0 21px rgba(0,0,0,0.15);
-
+    background-color: #fff;
 }
 .short_card{
     width: 45px;
