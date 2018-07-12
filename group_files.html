@@ -6,27 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>Wish wall</title>
+    <title>Nationsorg</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <!--<link href="/assets/styles/Bootstrap/bootstrap.min.css" rel="stylesheet">-->
     <link href="./assets/styles/Bootstrap/bootstrap-grid.min.css" rel="stylesheet">
     <link href="./assets/styles/Slick/slick.css" rel="stylesheet">
     <link href="./assets/styles/Slick/slick-theme.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/styles/jQuery_Ui/jquery-ui-1.9.2.custom.min.css">
     <link href="./assets/styles/main.css" rel="stylesheet">
     <link href="./assets/styles/media.css" rel="stylesheet">
+    
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
-    <script src="assets/scripts/jQuery/jquery-ui-1.9.2.custom.min.js"></script>
     <script src="./assets/scripts/Slick/slick.min.js"></script>
     <script src="./assets/scripts/clocks.js"></script>
     <script src="./assets/scripts/main.js"></script>
-    <script src="assets/scripts/forms.js"></script>
-    <script src="assets/scripts/tabs.js"></script>
-    <script src="assets/scripts/file_loader.js"></script>
 </head>
 
 <body>
@@ -58,30 +54,30 @@
                     </div>
                     <div class="dropdown">
                         <button class="btn dropdown__button">
-                            <span class="btn__label">
-                                <span class="country-flag">
-                                    <span class="country-flag__item">RU</span>
-                                    <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-                                </span>
-                            </span>
+                                    <span class="btn__label">
+                                        <span class="country-flag">
+                                            <span class="country-flag__item">RU</span>
+                                            <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                        </span>
+                                    </span>
                             <span class="btn__label icon icon_caret"></span>
                         </button>
                         <ul class="actions-menu dropdown__content">
                             <li>
                                 <a href="#" class="actions-menu__link">
-                                    <span class="country-flag">
-                                        <span class="country-flag__item">EU</span>
-                                        <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-                                    </span>
+                                            <span class="country-flag">
+                                                <span class="country-flag__item">EU</span>
+                                                <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                            </span>
                                 </a>
                             </li>
                             <li class="actions-menu__divider"></li>
                             <li>
                                 <a href="#" class="actions-menu__link">
-                                    <span class="country-flag">
-                                        <span class="country-flag__item">FR</span>
-                                        <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
-                                    </span>
+                                            <span class="country-flag">
+                                                <span class="country-flag__item">FR</span>
+                                                <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                            </span>
                                 </a>
                             </li>
                         </ul>
@@ -179,360 +175,195 @@
             </div>
         </nav>
     </div>
-    <div class="container media_edit">
+    <div class="container">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
-                <a href="/" class="breadcrumbs__link">Главная</a>
+                <a href="/" class="breadcrumbs__link">Home</a>
             </li>
             <li class="breadcrumbs__item">
-                <span class="breadcrumbs__link breadcrumbs__link_static">Название страницы</span>
+                <a href="/" class="breadcrumbs__link_static">My group</a>
             </li>
         </ul>
-        <div class="layout__content">
-            <div class="wish_wall_wrap">
-                <div class="wish_wall_form">
-                    <h4 class="home_titles">Wish Wall</h4>
-                    <form method="GET">
-                        <label>
-                            <span class="req_field">Name</span>
-                            <input type="text" class="required">
-                        </label>
-                        <label>
-                            <span class="req_field">Email</span>
-                            <input type="text" class="email required">
-                        </label>
-                        <label>
-                            <span class="req_field">Wishes</span>
-                            <textarea class='message required'></textarea>
-                        </label>
-                        <div class="recaptcha_wrap">
-                            <img src="assets/images/temp/recaptcha.png" alt="recaptcha">
-                        </div>
-                        <div class="form_send_section">
-                            <input type="submit" class="send_btn" value="Cancel">
-                            <input type="submit" class="validateBtn preEv send_btn" value="Send">
-                        </div>
-                    </form>
+    
+    <div class="layout__content">
+        <div class="container-resize">
+            <div class="event__banner d-flex align-items-end justify-content-between flex-column flex-md-row ">
+                <div class="event__title d-flex align-items-center">
+                <i class="fas fa-camera"></i>
+                <h3 class="layout__title d-flex group_title">My Groups</h3>
                 </div>
-                <div class="wish_wall_massage">
-                    <span class="home_titles">
-                        sent Mail
-                    </span>
-                    <div class="wishes_wrap">
-                        <ul class="wishes_list">
-                            <li>
-                               <ul class="wishes_list_in">
-                                   <li>
-                                       <span>
-                                           Name:
-                                       </span>
-                                   </li>
-                                   <li>
-                                       <span>
-                                           Loren Ipsum
-                                       </span>
-                                   </li>
-                               </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           Date of creation:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <span>
-                                           01.01.2018   20:33
-                                       </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           E-mail:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <span>
-                                           mail@gmail.com
-                                       </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           Wishes:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <p>
-                                           Loren Ipsum lorem300
-                                       </p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="wishes_list">
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           Name:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <span>
-                                           Loren Ipsum
-                                       </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           Date of creation:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <span>
-                                           01.01.2018   20:33
-                                       </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           E-mail:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <span>
-                                           mail@gmail.com
-                                       </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           Wishes:
-                                       </span>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Loren Ipsum lorem300
-                                        </p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="wishes_list">
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           Name:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <span>
-                                           Loren Ipsum
-                                       </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           Date of creation:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <span>
-                                           01.01.2018   20:33
-                                       </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           E-mail:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <span>
-                                           mail@gmail.com
-                                       </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           Wishes:
-                                       </span>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Loren Ipsum lorem300
-                                        </p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="wishes_list">
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           Name:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <span>
-                                           Loren Ipsum
-                                       </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           Date of creation:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <span>
-                                           01.01.2018   20:33
-                                       </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           E-mail:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <span>
-                                           mail@gmail.com
-                                       </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           Wishes:
-                                       </span>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Loren Ipsum lorem300
-                                        </p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="wishes_list">
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           Name:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <span>
-                                           Loren Ipsum
-                                       </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           Date of creation:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <span>
-                                           01.01.2018   20:33
-                                       </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           E-mail:
-                                       </span>
-                                    </li>
-                                    <li>
-                                       <span>
-                                           mail@gmail.com
-                                       </span>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="wishes_list_in">
-                                    <li>
-                                       <span>
-                                           Wishes:
-                                       </span>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Loren Ipsum lorem300
-                                        </p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                <div class="d-flex event__button align-items-center">
+                 
+                  <span class="event__status">PRIVATE</span>
+                    <a class="btn btn_accent event__btn">
+                        
+                        <span class="btn__label">Join group</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+            <div class="event__media d-md-flex justify-content-between">
+                <div class="media__left d-flex flex-lg-row justify-content-sm-between flex-sm-column align-items-lg-center align-items-sm-start flex-sm-wrap">
+                     <div class="media__like d-flex align-items-center ">
+                    <a class="btn btn_default">
+                        <span class="btn__label">Like</span>
+                    </a>
+                    <span>10</span>
+                    <i class="far fa-thumbs-up"></i>
+                </div>
+                    <div class="pluso-hide">
+                         <div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
+                      </div>
+                      <div class="course_navigation event__navigation d-flex flex-column flex-md-column align-items-md-center flex-sm-column">
+                          <div class="course-hamburger">
+                              <div class="">
+                                  <ul>
+                                      <li class="course_active-page">
+                                          <a href="#" id="">About</a>
+                                      </li>
+                                      <li>
+                                          <a href="#">Discussion</a>
+                                      </li>
+                                        <li>
+                                          <a href="#">Members</a>
+                                      </li>
+                                        <li>
+                                          <a href="#">Events</a>
+                                      </li>
+                                        <li>
+                                          <a href="#">Files</a>
+                                      </li>
+                                        <li>
+                                          <a href="#">Management</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+                <div class="course_navigation event__navigation_hide">
+                    <div class="course-hamburger">
+                        <div class="mob-hamburger">
+                      <input id="toggle" type="checkbox">
+                      <label for="toggle" class="hamburger">
+                          <span class="top-bun"></span>
+                          <span class="meat"></span>
+                          <span class="bottom-bun"></span>
+                      </label>
+                      <ul>
+                          <li class="course_active-page">
+                              <a href="#" >About</a>
+                          </li>
+                          <li>
+                              <a href="">Discussion</a>
+                          </li>
+                          <li>
+                              <a href="">Members</a>
+                          </li>
+                          <li>
+                              <a href="">Events</a>
+                          </li>
+                          <li>
+                              <a href="">Files</a>
+                          </li>
+                          <li>
+                              <a href="">Management</a>
+                          </li>
+                      </ul>
+                  </div>
                     </div>
-                    <ul class="wishes_pagination">
-                       <li>
-                           <a href="#">
-                            <i class="fas fa-caret-left"></i>
-                           </a>
-                       </li>
-                       <li class="active_wish_page"><a href="#">1</a></li>
-                       <li><a href="#">2</a></li>
-                       <li><a href="#">3</a></li>
-                       <li><a href="#">4</a></li>
-                       <li><a href="#">5</a></li>
-                        <li>
-                            <a href="#">
-                                <i class="fas fa-caret-right"></i>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
+                <div class="d-sm-none d-md-flex d-lg-flex flex-column flx-md-row align-items-md-start">
+                    <div class="event__pluso d-flex">
+                        <div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
+                    </div>
+                </div>
+            </div>
+                    <div class="events d-flex justify-content-between justify-content-sm-between align-items-sm-start align-items-lg-start">
+                <div class="events__content d-flex flex-column">
+
+                    <div class="content__top d-flex d-flex justify-content-between align-items-sm-end">
+                        <h3 class="layout__title">FILES</h3>
+                    </div>
+                    <div class="">
+                            <ul class="file_breadcrumbs_active">
+                                <li class="files_breadcrumbs__item">
+                                    <a href="/" class="file_breadcrumbs__link_active">All</a>
+                                </li>
+                                <li class="files__breadcrumbs__item">
+                                    <a href="/" class="file_breadcrumbs__link">Pictures</a>
+                                </li>
+                                <li class="files__breadcrumbs__item">
+                                    <a href="/" class="file_breadcrumbs__link">Video</a>
+                                </li>
+                                <li class="files__breadcrumbs__item">
+                                    <a href="/" class="file_breadcrumbs__link">Audio</a>
+                                </li>
+                            </ul>
+                        </div>
+                    <div class="content__bottom">
+                        <div class="file_input">
+                            <input type="file" class="file_input_custom" id="customFile">
+                            <label class="file_input_custom_label" for="customFile"> <span class="inside__input"><i class="fas fa-image"></i></span>Lorem ipsum</label>
+                        </div>
+                        <div class="file_input">
+                            <input type="file" class="file_input_custom" id="customFile">
+                            <label class="file_input_custom_label" for="customFile"> <span class="inside__input"><i class="fas fa-video"></i></i></span>Lorem ipsum</label>
+                        </div>
+
+                            <div class="file_input">
+                                <input type="file" class="file_input_custom" id="customFile">
+                                <label class="file_input_custom_label" for="customFile"> <span class="inside__input"><i class="fas fa-music"></i></i></span>Lorem ipsum</label>
+                            </div>
+                            <div class="container">
+                 
+                    </div>
+                    </div>
+
+                </div>
+                <div class="files__adh d-flex flex-column-reverse flex-lg-row justify-content-lg-between align-items-start">
+                <div class=" d-flex flex-column-reverse flex-lg-row justify-content-lg-start">
+                    <div class="group_file_tags flex-column">
+                    <div class="tag-simple">
+                    <h4 class="secondary">Groups Themes/tegs</h4>
+                    <span class="badge badge-pill badge-secondary">Travel</span>
+                    </div>
+                    <div class="tag-simple">
+                    <h4 class="secondary">Members of the group</h4>
+                    <span class="badge badge-pill badge-secondary">info@nationsorg.com</span>
+                    </div>
+                    <div class="tag-simple">
+                    <h4 class="secondary"> Administrators of guppies</h4>
+                    <span class="badge badge-pill badge-secondary">info@nationsorg.com</span>
+                    </div>
+                    <div class="tag-simple">
+                    <h4 class="secondary">Events</h4>
+                    <span class="badge badge-pill badge-secondary">Events</span>
+                    </div>
+                </div>
+                </div>
+                <div class="group_files_buttons d-flex flex-column align-items-center" >
+                    <a class="group_search_btn btn btn_accent">
+                        <span class="group_search_btn_label ">Search in the group</span>
+                    </a>
+                        
+                        <a class="group_search_btn btn btn_accent"> 
+                        <span class="group_search_btn_label ">Invite friends</span>
+                    </a>
+                            <a href="#" class="under_button">Group 1</a>
+                            <a href="#"  class="under_button">Group 1</a>
+                            <a href="#" class="under_button">Group 1</a>
+
+                    </div>
+                </div>
+  </div>
             </div>
         </div>
     </div>
 </div>
 <footer class="footer footer">
+
+    </div>
     <nav class="nav-main">
         <div class="nav-main__wrap container">
             <a href="#" class="nav-main__link is-active">
@@ -594,6 +425,11 @@
                 <button class="btn btn_primary btn_size_md slideout__button">
                     <span class="btn__label">Enter</span>
                 </button>
+                <!--+b('ul').key-comb-->
+                <!--    +e('li').item-->
+                <!--        +btn('button', 'CTRL')._default._size_md-->
+                <!--    +e('li').item-->
+                <!--        +btn('button', 'ENTER')._default._size_md-->
             </form>
         </div>
     </div>
