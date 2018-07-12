@@ -4426,25 +4426,113 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
    }
    .events__aside{
     margin-top: 50px;
+
    } 
 }
- 
  
 .events__content{
     max-width: 650px;
     width:100%;
 }
- 
 
-
-
- 
-.content__bottom{
-    padding-top: 20px;
+.events__aside{
+    max-width:460px;
+    width:100%; 
 }
 
+.events__content .layout__title{
+    margin-bottom: 0;
+}
 
- 
+.event-simple{
+    margin-top:30px;
+    padding: 25px 20px;
+    border:solid 1px #e8e8e8;
+}
+
+.event-simple__top{
+    margin-bottom: 15px;
+}
+
+.content__bottom{
+    padding-top: 20px;
+    position: relative;
+}
+.event-simple__tiltle{
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-right:30px;
+    color:#787878;
+}
+
+.event-simple__date{
+    font-size: 16px;
+    color:#bababa;
+}
+
+.event-simple .event-simple__content{
+    font-size: 14px;
+    margin-bottom: 0;
+
+}
+
+.events__tag{
+    margin-top: 64px;
+}
+
+.tag-simple{
+    margin-top: 30px;
+}
+
+.tag-simple__title{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.tag-simple__link{
+    padding:5px 10px;
+    background-color: #d1d1d1;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: linear 0.2s;
+    color:#fff;
+}
+
+.tag-simple__link:hover{
+    background-color: #1d1d1e;
+}
+.btn_events{
+    padding:10px 35px;
+    background-color: #1d1d1e;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    width:100%;
+    text-align: center;
+    color: #fff;
+    transition: linear 0.2s;
+}
+.btn_events:hover{
+    background-color: #e11f46;
+    color:#fff; 
+}
+
+.groups-list{
+    color:#bababa;
+    font-size: 16px;
+}
+
+.groups-list__item{
+    margin-top: 15px;
+}
+
+.groups-list__item:hover{
+    color:#1d1d1e;
+}
+
+.groups-list__item:first-child{
+    margin-top: 0;
+}
+
 .media__left{
     flex-wrap: wrap;    
 }
@@ -5288,3 +5376,175 @@ input.file_input{
 
 
 /*  menagement end */
+/* Groups */
+
+.groups-search{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    
+}
+
+.groups-search .search_filter_pos .title_search{
+    max-width: 520px;
+    width:100%;
+    margin-right: 0;
+}
+
+.groups-search .search_filter_pos .filter_search{
+    max-width: 330px;
+    width: 100%;
+}
+
+.groups-search .search_filter_pos .form_search_section{
+    max-width:240px;
+    width: 100%;
+   
+}
+
+.groups-wrap{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.groups-wrap .news-group__item{
+    min-width: 535px;
+    width: 100%;
+}
+.groups-wrap .news-card__label{
+   max-width: 50px;
+}
+/* Groups End */
+
+/* Groups posts */
+
+.event-simple__media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 120px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #bababa;
+}
+
+.event-simple__like, .event-simple__comments{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.event-simple__like i, .event-simple__comments i{
+    margin-left: 5px;
+}
+
+.posts-count{
+    margin-left: 20px;
+    color:#d1d1d1;
+}
+
+
+#box{
+    
+   transform:scale(0);
+    transition: linear 0.4s;
+
+
+}
+#box2{
+    background-color: #fff;
+   transform:scale(0);
+    transition: linear 0.4s;
+}
+
+
+#box.active, #box2.active{
+    transform:scale(1);
+    transition: linear 0.4s;
+} 
+
+#box input{
+    position: absolute;
+    right: 106px;
+    bottom: 11px;
+    height: 43px;
+    width: 484px;
+    border-radius: 5px;
+    border: solid 1px #bababa;
+    padding: 0 10px;
+}
+.events__buttons{
+    position: relative;
+}
+
+.events__buttons .btn_events:focus{
+    color:#fff;
+    background-color: #e11f46;
+}
+
+#box .search_btn{
+    position: absolute;
+    bottom: 22px;
+    right: 116px;
+    background-color: #fff;
+    border: none;
+    font-size: 18px;
+    color: #bababa;
+}
+
+.posts-inner .tiny_mce_label{
+    margin-left: 0;
+}
+
+.posts-inner .file_load_icons{
+    left: 0
+}
+
+.posts-inner{
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: absolute;
+    top:20px;
+    left:0;
+        max-width: 650px;
+    width: 100%;
+    height: 420px;
+}
+
+.posts-inner .course_warning_btn{
+    max-width: 150px;
+    width:100%;
+    align-self: flex-end;
+    margin-top: 50px;
+}
+
+.posts-inner .similar_form{
+  display: flex;
+    flex-direction: column;
+}
+
+#box2 .search_btn{
+    position: absolute;
+    bottom: 22px;
+    right: 116px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #bababa;
+    position: absolute;
+    top:0;
+    left:0;
+}
+/* Groups posts End */
