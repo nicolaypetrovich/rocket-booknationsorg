@@ -167,7 +167,15 @@ $(document).ready(function () {
         })
     });
 
+    $("#trigger").click(function(e) {
+        e.preventDefault();
+        $("#box").toggleClass("active");     
+    });
 
+      $("#trigger2").click(function(e) {
+        e.preventDefault();
+        $("#box2").toggleClass("active");     
+    });
  
 //end slider for Language course photo
 
@@ -233,6 +241,23 @@ $(document).ready(function () {
         tinymce.init({
             selector: '.js-tinymce , .js-tinymce-reviews',
             height: 80,
+            verify_html: false,
+            menubar: false,
+            statusbar: false,
+            font_formats:'HelveticaNeueCyr',
+            plugins: [
+                ' autolink lists link  anchor ',
+            ],
+            toolbar: 'bold | bullist numlist | italic | link',
+
+        });
+
+    };
+      if($('.js-tinymce-posts').length > 0 ){
+        // tinymce
+        tinymce.init({
+            selector: '.js-tinymce-posts',
+            height: 200,
             verify_html: false,
             menubar: false,
             statusbar: false,
@@ -319,6 +344,7 @@ $(document).ready(function () {
         }
 
 });
+
 
 
 
