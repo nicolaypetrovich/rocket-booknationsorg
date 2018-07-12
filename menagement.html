@@ -9,19 +9,27 @@
 		<meta name="keywords" content="">
 		
 		<!--<link href="./assets/styles/Bootstrap/bootstrap.min.css" rel="stylesheet">-->
-		<link href="./assets/styles/Bootstrap/bootstrap-grid.min.css" rel="stylesheet">
-		<link href="./assets/styles/Slick/slick.css" rel="stylesheet">
-		<link rel="stylesheet" href="assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
-		<link href="./assets/styles/main.css" rel="stylesheet">
-		<link href="./assets/styles/media.css" rel="stylesheet">
+	    <link href="./assets/styles/Bootstrap/bootstrap-grid.min.css" rel="stylesheet">
+	    <link href="./assets/styles/Slick/slick.css" rel="stylesheet">
+	    <link href="./assets/styles/Slick/slick-theme.css" rel="stylesheet">
+	    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+	    <link rel="stylesheet" href="assets/styles/jQuery_Ui/jquery-ui-1.9.2.custom.min.css">
+	    <link href="./assets/styles/timePicker/jquery.timepicker.min.css" rel="stylesheet">
+	    <link href="./assets/styles/main.css" rel="stylesheet">
+	    <link href="./assets/styles/media.css" rel="stylesheet">
 
-		<script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
-		<script src="./assets/scripts/Slick/slick.min.js"></script>
-		<script src="./assets/scripts/clocks.js"></script>
-		<script src="./assets/scripts/main.js"></script>
+	    <script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
+	    <script src="assets/scripts/jQuery/jquery-ui-1.9.2.custom.min.js"></script>
+	    <script src="./assets/scripts/Slick/slick.min.js"></script>
+	    <script src="./assets/scripts/clocks.js"></script>
+	    <script src="./assets/scripts/main.js"></script>
+	    <script src="assets/scripts/forms.js"></script>
+	    <script src="assets/scripts/tabs.js"></script>
+	    <script src="assets/scripts/file_loader.js"></script>
+	    <script src="assets/scripts/timePicker/jquery.timepicker.min.js"></script>
 	</head>
+
 <body>
-	
 	<div class="m-control">
 			<div class="m-control__burger">
 				<span class="m-control__line m-control__line_top"></span>
@@ -267,7 +275,7 @@
                     			Pending Members
                     		</h5>
 
-                    		<form action="#" class="menagement__form">
+                    		<form method="GET" class="menagement__form">
                     			<label class="menagement__group--name">
                     				Group Name:
                     			</label>
@@ -275,7 +283,7 @@
                     			<label class="menagement__discussion--name">
                     				Discussion:
                     			</label>
-                    			<textarea name="" id="" cols="19" rows="3" required="required" class="menagement__discussion--input"></textarea><br>
+                    			<textarea cols="19" rows="3" required="required" class="menagement__discussion--input"></textarea><br>
                     			<p class="menagement__discussion--desc">Potential members see the description if privacy is set to public or closed.</p>
                     			<div class="menagement__tags--grid">
 	                    			<label class="menagement__tags--name">
@@ -308,7 +316,7 @@
                     			</div>	<!-- menagement__tags-grid -->
 
                     			<br>
-                    			<label for="" class="menagement__location--name">
+                    			<label class="menagement__location--name">
                     				Locations:
                     			</label> <br class="menagement__location--br">
                     			<br class="menagement__location--br">
@@ -324,18 +332,38 @@
                     				Email: 
                     			</label>
                     			<input type="text" class="menagement__email--input"><br>
-                    			<label class="menagement__picture--name">
-                    				Group Picture:
-                    			</label> <br class="menagement__location--br">
-                    			<br class="menagement__location--br">
-                    			<span class="menagement__picture--span">
-                    				Upload a picture: 
-                    			</span>
-                    			<i class="fas fa-upload menagement__picture--icon"></i>
-                    			<div class="menagement__picture--block">
-                    				<i class="fas fa-camera"></i>
-                    			</div>
-								
+
+                    			<!-- upload picture -->
+								 <div class="es__group upload__group">
+				                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
+				                        <div class="p-0 col-2 col-lg- col-xl-1">
+				                            <span class="nowrap">Group Picture:</span>
+				                        </div>
+				                        <div class="p-0 col-12 col-md-7">
+				                            <label for="file-1" class="es__load_box color-gray">
+				                                Upload a picture:
+				                                <i class="fas fa-upload"></i>
+				                                <input type="file" id="file-1" class="take-file">
+				                            </label>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div class="es__group">
+				                    <div class="row d-flex flex-column flex-md-row align-items-md-center">
+				                        <div class="p-0 col-2 col-xl-1"></div>
+				                        <div class="p-0 col-12 col-md-10">
+				                            <div class="es_photo_box">
+				                                <label for="file-2" class="es__load_box es__load_box-last">
+				                                    <i class="fas fa-camera"></i>
+				                                    <input type="file" id="file-2" class="take-file">
+				                                </label>
+				                                <img class="js-user-photo" alt="" src="#">
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+
+								<!-- upload picture end -->
 								<h5 class="menagement__type--title">
                     				Group type
                     			</h5>
@@ -353,7 +381,7 @@
                     			</label> <br class="menagement__location--br">
                     			<br class="menagement__location--br">
                     			<input type="radio" checked name="anyone" value="anyone" class="menagement__type--anyone">Anyone in the group<br>
-                    			<input type="radio" name="only" value="only" class="menagement__type--only""><span>Only admins and moderators</span><br>
+                    			<input type="radio" class="menagement__type--only"><span>Only admins and moderators</span><br>
 
                     			<div class="menagement__post">
                     				<p class="menagement__post--name">

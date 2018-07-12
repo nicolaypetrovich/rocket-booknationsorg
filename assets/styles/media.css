@@ -1377,6 +1377,7 @@
     color: #181818;
   }
   .menagement__type--text {
+    margin-top: 60px;
     margin-left: 103px;
     white-space: nowrap;
   }
@@ -1548,6 +1549,9 @@
   .menagement__subscrible--button {
     margin-top: 20px;
   }
+  .menagement__type--title{
+    margin-top: 60px;
+  }
   .menagement__type--text {
     white-space: normal;
   }
@@ -1695,9 +1699,13 @@
   }
   .menagement__post--name {
     white-space: nowrap;
+    margin-bottom: 20px;
   }
   .menagement__post--checkbox {
     margin-left: 0;
+  }
+  .menagement__type--title{
+    margin-top: 50px;
   }
 }
 @media (max-width: 399px) {
@@ -1753,6 +1761,9 @@
     width: 23px;
     height: 17px;
     margin-top: 45px;
+  }
+  .menagement__type--title{
+    margin-top: 40px;
   }
 }
 

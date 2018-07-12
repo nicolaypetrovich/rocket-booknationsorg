@@ -4984,6 +4984,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
   font-size: 60px;
 }
 .menagement__type--title {
+  margin-top: 70px;
   margin-bottom: 40px;
   color: #787878;
   font-size: 18px;
