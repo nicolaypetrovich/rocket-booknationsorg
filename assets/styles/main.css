@@ -4461,6 +4461,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 
 .content__bottom{
     padding-top: 20px;
+    position: relative;
 }
 .event-simple__tiltle{
     text-transform: uppercase;
@@ -5213,5 +5214,101 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 .posts-count{
     margin-left: 20px;
     color:#d1d1d1;
+}
+
+
+#box{
+    
+   transform:scale(0);
+    transition: linear 0.4s;
+
+
+}
+#box2{
+    background-color: #fff;
+   transform:scale(0);
+    transition: linear 0.4s;
+}
+
+
+#box.active, #box2.active{
+    transform:scale(1);
+    transition: linear 0.4s;
+} 
+
+#box input{
+    position: absolute;
+    right: 106px;
+    bottom: 11px;
+    height: 43px;
+    width: 484px;
+    border-radius: 5px;
+    border: solid 1px #bababa;
+    padding: 0 10px;
+}
+.events__buttons{
+    position: relative;
+}
+
+.events__buttons .btn_events:focus{
+    color:#fff;
+    background-color: #e11f46;
+}
+
+#box .search_btn{
+    position: absolute;
+    bottom: 22px;
+    right: 116px;
+    background-color: #fff;
+    border: none;
+    font-size: 18px;
+    color: #bababa;
+}
+
+.posts-inner .tiny_mce_label{
+    margin-left: 0;
+}
+
+.posts-inner .file_load_icons{
+    left: 0
+}
+
+.posts-inner{
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: absolute;
+    top:20px;
+    left:0;
+        max-width: 650px;
+    width: 100%;
+    height: 420px;
+}
+
+.posts-inner .course_warning_btn{
+    max-width: 150px;
+    width:100%;
+    align-self: flex-end;
+    margin-top: 50px;
+}
+
+.posts-inner .similar_form{
+  display: flex;
+    flex-direction: column;
+}
+
+#box2 .search_btn{
+    position: absolute;
+    bottom: 22px;
+    right: 116px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #bababa;
+    position: absolute;
+    top:0;
+    left:0;
 }
 /* Groups posts End */
