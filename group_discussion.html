@@ -221,7 +221,7 @@
 			           <!-- Start Social and tabs -->
 			            <div class="event__media d-md-flex justify-content-between">
 			            	
-			                <div class="media__like d-flex align-items-center">
+			                <div class="media__left d-flex flex-lg-row justify-content-sm-between flex-sm-column flex-sm-wrap align-items-sm-start align-items-lg-center">
 			                	<!-- Like button -->
 			                    <div class="media_marge">
 				                    <a class="btn btn_accent">
@@ -231,9 +231,32 @@
 				                    <i class="far fa-thumbs-up"></i>
 				                </div>
 			                    <!-- Like button -->
-
+	                        <div class="pluso-hide">
+		                     	<div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
+		                    </div>
 			                    <!-- Start Tabs -->
-			                    <div class="course_navigation event__navigation d-flex flex-column flex-md-row align-items-md-center">
+			                    <div class="course_navigation event__navigation d-flex flex-column flex-md-row align-items-md-center flex-sm-column">
+									<div class="course-hamburger">
+									    <div class="mob-hamburger">
+									        <input id="toggle" type="checkbox">
+									        <label for="toggle" class="hamburger">
+									            <span class="top-bun"></span>
+									            <span class="meat"></span>
+									            <span class="bottom-bun"></span>
+									        </label>							       
+									        <ul>
+									            <li><a href="#">About</a></li>							                
+									            <li class="course_active-page"><a href="#">Discussion</a></li>      
+									            <li><a href="#">Members</a></li>						            
+									            <li><a href="#">Events</a></li>						            
+									            <li><a href="#">Files</a></li>							            
+									            <li><a href="#">Management</a></li>
+									        </ul>							         
+									    </div>
+									</div>							
+									<!-- End Tabs -->
+							    </div>
+							    <div class="course_navigation event__navigation_hide">
 									<div class="course-hamburger">
 									    <div class="mob-hamburger">
 									        <input id="toggle" type="checkbox">
@@ -257,7 +280,7 @@
 			                </div>
 							
 			                <div class="d-flex flex-column flex-md-row align-items-md-center">
-			                    <div class="event__pluso">
+			                    <div class="event__pluso d-flex">
 			                     	<div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
 			                    </div>
 			                </div>
@@ -265,8 +288,8 @@
 			            <!-- End Social and tabs -->
 
 		                <!-- Start Content  -->
-			          	<div class="d-flex justify-content-between">
-			          		<div class="events__content">
+			          	<div class="events d-flex justify-content-between justify-content-sm-between align-items-sm-start align-items-lg-start">
+			          		<div class="discus__content">
 
 			          		<!-- Start tags change -->
 			            <div class="main_course_content">
@@ -295,12 +318,12 @@
                          <div class="wrap_message ">
 	          			    <div class="block_discus_message">
 	          			      <div class="message_f_dicus">
-	          					<div class="media__like d-flex pos_disc_block">
+	          					<div class="media__like d-flex pos_reply">
 	          						<div class="align-items-center d-flex name_mess ">
-		          						<h3 class="text_form up_text">Name</h3>
+		          						<h3 class="text_form up_text add_cont_1">Name</h3>
 		          						<span class="time_discu">01.01.18</span>
 	          						</div>
-	          						<div class="com_pos ">	
+	          						<div class="reply_pos ">	
 		          						<span class="text_red reply_comm">Reply to comment</span>
 		          						<span class="text_red">1</span>
 		          						<i class="text_red far fa-comment"></i>
@@ -312,12 +335,12 @@
 	          				  </div>
 
 	          				  <div class="message_f_dicus message_merg">
-	          					<div class="media__like d-flex pos_disc_block">
+	          					<div class="media__like d-flex pos_reply">
 	          						<div class="align-items-center d-flex name_mess ">
-		          						<h3 class="text_form up_text">Name</h3>
+	          							<h3 class="text_form up_text make_ba add_cont_2">Name</h3>
 		          						<span class="time_discu">01.01.18</span>
 	          						</div>
-	          						<div class="com_pos">	
+	          						<div class="reply_pos">	
 		          						<span class="reply_comm">Reply to comment</span>
 		          						<span>0</span>
 		          						<i class="far fa-comment"></i>
@@ -332,12 +355,12 @@
 	          				<div class="course_write_review">
 		                        <form method="GET" class="similar_form">
 		                            <div class="forum_discus">
-		                                <div class="edia__like d-flex pos_disc_block">
-		                                    <div class="review_detail_info">
+		                                <div class="edia__like d-flex pos_reply">
+		                                    <div class="review_detail_inf">
 		                                        <span class="text_form up_text">your name</span>
 		                                        <span class="time_discu">01.01.18</span>
 		                                    </div>
-		                                    <div class="com_pos">	
+		                                    <div class="reply_pos">	
 	          						           <span class="reply_comm">Your answer (user)</span>
 	          						        </div>
 		                                </div>
@@ -370,12 +393,12 @@
 	          			   <div class="wrap_message">
 	          			    <div class="block_discus_message">
 	          			      <div class="message_f_dicus">
-	          					<div class="media__like d-flex pos_disc_block">
+	          					<div class="media__like d-flex pos_reply">
 	          						<div class="align-items-center d-flex name_mess ">
-		          						<h3 class="text_form up_text">Name</h3>
+		          						<h3 class="text_form up_text add_cont_1">Name</h3>
 		          						<span class="time_discu">01.01.18</span>
 	          						</div>
-	          						<div class="com_pos ">	
+	          						<div class="reply_pos">	
 		          						<span class="text_red reply_comm">Reply to comment</span>
 		          						<span class="text_red">1</span>
 		          						<i class="text_red far fa-comment"></i>
@@ -387,12 +410,12 @@
 	          				  </div>
 
 	          				  <div class="message_f_dicus message_merg">
-	          					<div class="media__like d-flex pos_disc_block">
+	          					<div class="media__like d-flex pos_reply">
 	          						<div class="align-items-center d-flex name_mess ">
-		          						<h3 class="text_form up_text">Name</h3>
+		          						<h3 class="text_form up_text make_ba add_cont_2">Name</h3>
 		          						<span class="time_discu">01.01.18</span>
 	          						</div>
-	          						<div class="com_pos">	
+	          						<div class="reply_pos">	
 		          						<span class="reply_comm">Reply to comment</span>
 		          						<span>0</span>
 		          						<i class="far fa-comment"></i>
@@ -409,12 +432,12 @@
 	          				<div class="course_write_review">
 		                        <form method="GET" class="similar_form">
 		                            <div class="forum_discus">
-		                                <div class="edia__like d-flex pos_disc_block">
-		                                    <div class="review_detail_info">
+		                                <div class="edia__like d-flex pos_reply">
+		                                    <div class="review_detail_inf">
 		                                        <span class="text_form up_text">your name</span>
 		                                        <span class="time_discu">01.01.18</span>
 		                                    </div>
-		                                    <div class="com_pos">	
+		                                    <div class="reply_pos">	
 	          						           <span class="reply_comm">Your answer (user)</span>
 	          						        </div>
 		                                </div>
@@ -448,12 +471,12 @@
 	          			    <div class="wrap_message non_activ">
 	          			    <div class="block_discus_message">
 	          			      <div class="message_f_dicus">
-	          					<div class="media__like d-flex pos_disc_block">
+	          					<div class="media__like d-flex pos_reply">
 	          						<div class="align-items-center d-flex name_mess ">
-		          						<h3 class="text_form up_text">Name</h3>
+		          						<h3 class="text_form up_text add_cont_1">Name</h3>
 		          						<span class="time_discu">01.01.18</span>
 	          						</div>
-	          						<div class="com_pos ">	
+	          						<div class="reply_pos">	
 		          						<span class="text_red reply_comm">Reply to comment</span>
 		          						<span class="text_red">1</span>
 		          						<i class="text_red far fa-comment"></i>
@@ -465,12 +488,12 @@
 	          				  </div>
 
 	          				  <div class="message_f_dicus message_merg">
-	          					<div class="media__like d-flex pos_disc_block">
+	          					<div class="media__like d-flex pos_reply">
 	          						<div class="align-items-center d-flex name_mess ">
-		          						<h3 class="text_form up_text">Name</h3>
+		          						<h3 class="text_form up_text make_ba add_cont_2">Name</h3>
 		          						<span class="time_discu">01.01.18</span>
 	          						</div>
-	          						<div class="com_pos">	
+	          						<div class="reply_pos">	
 		          						<span class="reply_comm">Reply to comment</span>
 		          						<span>0</span>
 		          						<i class="far fa-comment"></i>
@@ -487,12 +510,12 @@
 	          				<div class="course_write_review">
 		                        <form method="GET" class="similar_form">
 		                            <div class="forum_discus">
-		                                <div class="edia__like d-flex pos_disc_block">
-		                                    <div class="review_detail_info">
+		                                <div class="edia__like d-flex pos_reply">
+		                                    <div class="review_detail_inf">
 		                                        <span class="text_form up_text">your name</span>
 		                                        <span class="time_discu">01.01.18</span>
 		                                    </div>
-		                                    <div class="com_pos">	
+		                                    <div class="reply_pos">	
 	          						           <span class="reply_comm">Your answer (user)</span>
 	          						        </div>
 		                                </div>
@@ -515,53 +538,57 @@
 			          		</div>
 			          		<!-- Start tags change -->
 
-			          		<!-- Start tags -->
-			          		<div class="events__tag d-flex flex-column">
-			          			<div class="tag-simple">
-			          				<h4 class="tag-simple__title">
-			          					Groups Themes/tegs
-			          				</h4>
-			          				<span class="tag-simple__link"><a href="#">Travel</a></span>
-			          			</div>
-			          			<div class="tag-simple">
-			          				<h4 class="tag-simple__title">
-			          					Members of the group
-			          				</h4>
-			          				<span class="tag-simple__link"><a href="#">info@nationsorg.com</a></span>
-			          			</div>
-			          			<div class="tag-simple">
-			          				<h4 class="tag-simple__title">
-			          					Administrators of guppies
-			          				</h4>
-			          				<span class="tag-simple__link"><a href="#">info@nationsorg.com</a></span>
-			          			</div>
-			          			<div class="tag-simple">
-			          				<h4 class="tag-simple__title">
-			          					Events
-			          				</h4>
-			          				<span class="tag-simple__link"><a href="#">Events</a></span>
-			          			</div>
-			          		</div>
-			          		<!-- End tags -->
+			          		
+			          		<div class="events__aside d-flex flex-column-reverse flex-lg-row justify-content-lg-between align-items-start">
+			          			<!-- Start tags -->
+				          		<div class="events__tag d-flex flex-column">
+				          			<div class="tag-simple">
+				          				<h4 class="tag-simple__title">
+				          					Groups Themes/tegs
+				          				</h4>
+				          				<span class="tag-simple__link"><a href="#">Travel</a></span>
+				          			</div>
+				          			<div class="tag-simple">
+				          				<h4 class="tag-simple__title">
+				          					Members of the group
+				          				</h4>
+				          				<span class="tag-simple__link"><a href="#">info@nationsorg.com</a></span>
+				          			</div>
+				          			<div class="tag-simple">
+				          				<h4 class="tag-simple__title">
+				          					Administrators of guppies
+				          				</h4>
+				          				<span class="tag-simple__link"><a href="#">info@nationsorg.com</a></span>
+				          			</div>
+				          			<div class="tag-simple">
+				          				<h4 class="tag-simple__title">
+				          					Events
+				          				</h4>
+				          				<span class="tag-simple__link"><a href="#">Events</a></span>
+				          			</div>
+				          		</div>
+				          		<!-- End tags -->
 
-			          		<!-- Start Search group -->
+				          		<!-- Start Search group -->
 
-			          		<div class="events__buttons d-flex flex-column align-items-center">
-			          			<a class="btn_events">
-		                            <span class="btn__label">Search in the group</span>
-		                        </a>
-		                        <a class="btn_events">
-		                            <span class="btn__label">Invite friends</span>
-		                        </a>
-		                        <ul class="groups-list d-flex flex-column">
-		                        	<li class="groups-list__item"><a href="#">Group 1</a></li>
-		                        	<li class="groups-list__item"><a href="#">Group 1</a></li>
-		                        	<li class="groups-list__item"><a href="#">Group 1</a></li>
-		                        </ul>
+				          		<div class="events__buttons d-flex flex-column align-items-center">
+				          			<a class="btn_events">
+			                            <span class="btn__label">Search in the group</span>
+			                        </a>
+			                        <a class="btn_events">
+			                            <span class="btn__label">Invite friends</span>
+			                        </a>
+			                        <ul class="groups-list d-flex flex-column d-xs-none d-sm-none d-lg-flex ">
+			                        	<li class="groups-list__item"><a href="#">Group 1</a></li>
+			                        	<li class="groups-list__item"><a href="#">Group 1</a></li>
+			                        	<li class="groups-list__item"><a href="#">Group 1</a></li>
+			                        </ul>
 
-			          		</div>
+				          		</div>
+				          		<!-- Start Search group -->
+			          	    </div>
 
-			          		<!-- Start Search group -->
+			          		
 			          		         
 			    </div>
 	        </div>

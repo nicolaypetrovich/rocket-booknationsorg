@@ -4201,7 +4201,6 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     max-width: 650px;
     width:100%;
 }
-
 .events__content .layout__title{
     margin-bottom: 0;
 }
@@ -4528,23 +4527,6 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     margin-bottom: 0;
 
 }
-.text_form {
-    color: #464646;
-    font-size: 14px;
-}
-.com_pos{
-    font-size: 14px;
-    color: #bababa
-
-}
-.pos_disc_block{
-    justify-content: space-between;
-}
-.block_discus {
-    padding: 16.5px 16px 16.5px 16px;
-    border: 1px solid #bababa;
-    margin-top: 15px;
-}
 .events{
     padding-top: 40px;
     padding-bottom: 60px
@@ -4592,6 +4574,13 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 /*Start group_discussion*/
 .media_marge a {
     margin-right: 10px;
+    font-size: 16px;
+}
+.media_marge span:nth-child(2) {
+    color: #bababa;
+}
+.media_marge i {
+    color: #bababa;
 }
 .btn_font_16{
     font-size: 16px;
@@ -4600,12 +4589,18 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     color: #464646;
     font-size: 14px;
 }
-.com_pos{
+.com_pos {
     font-size: 14px;
-    color: #bababa
-
+    color: #bababa;
+}
+.reply_pos {
+    font-size: 14px;
+    color: #bababa;
 }
 .pos_disc_block{
+    justify-content: space-between;
+}
+.pos_reply{
     justify-content: space-between;
 }
 .block_discus {
@@ -4703,6 +4698,11 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     align-self: flex-end;
 
 }
+.discus__content {
+    max-width: 650px; 
+    width: 100%;   
+}
+
 
 /*End group_discussion*/
 

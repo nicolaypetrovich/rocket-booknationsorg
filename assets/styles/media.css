@@ -56,6 +56,15 @@
     .partners_list ul{
         justify-content: space-between;
     }
+    .discus__content{
+    margin-right: 70px;
+    }
+    .events__content {
+        margin-right: 70px;
+    }
+
+}
+
     /*Partners Page End*/
 }
 @media only screen and (max-width : 1200px){
@@ -107,6 +116,9 @@
     .search_filter_pos{    
        display: flex;
        flex-wrap: wrap;
+     }
+     .events__tag{
+        margin: 0 80px 0 0;
      }
 }
 @media (max-width: 1024px){
@@ -293,6 +305,18 @@
         left: 0;
     }
     /*Create forum page End*/
+    .discus__content{
+    margin-right: 17px;
+    }
+    .content__bottom {
+    padding-top: 0px;
+    }
+    .block_discus{
+        margin-top: 10px;
+    }
+}
+
+    
 }
 @media only screen and (max-width : 850px){
     /* Language course registration */
@@ -351,6 +375,30 @@
         width: 768px !important;
     }    
     /*Language courses end*/
+    /*tart Discussion_group*/
+    .message_merg {
+    margin-left: 0px;
+    }
+    .pos_reply {
+        flex-direction: column!important;
+    }
+    .reply_pos {
+    margin-top: 17px;
+    }
+    .add_cont_1:after {
+        content: " 1";
+    }
+    .add_cont_2:after {
+        content: " 1";
+    }
+    .add_cont_2:before {
+        content: "Name 2 ";
+        color: #2579bf;
+    }
+    .make_ba {
+        color: #bababa;
+    }
+    /*End Discussion_group*/
 }
 @media only screen and (max-width : 767px){
     /* Language course registration */
@@ -820,7 +868,6 @@
         margin-bottom: 33px;
     }
     .breadcrumbs__item:last-child {
-       padding-left: 0;
        margin-right: 70px;
     }  
     .layout_titel_2 {
@@ -1008,6 +1055,15 @@
         padding: 0;
     }
     /*Event/Events end*/
+    .head_tabs{
+        padding: 10px 0 10px 0;
+    }
+    .layout__title{
+        margin-bottom: 0px; 
+    }
+    .discus__content {
+        margin: 0 30px;
+    }
 }
 @media only screen and (max-width : 340px){
     .profile_photo_info{
@@ -1150,16 +1206,13 @@
         max-width: 450px;
         margin-top: 57px;
     }
-    .event__btn{
-        min-width: 174px;
-        height: 36px;
-        line-height: 41px;
-    }
+    
   
 }
 @media only screen and (max-width : 1290px){
-   .events__content{
+   .dicsuc__content{
         margin-right: 70px;
+        max-width: 580px;
    }
 @media only screen and (max-width : 575px){
 
