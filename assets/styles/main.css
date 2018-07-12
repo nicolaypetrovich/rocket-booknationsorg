@@ -2000,8 +2000,8 @@ b {
 }
 
 .form_send_section input:nth-child(2){
-    border: 1px solid #f5283b;
-    background-color: #f5283b;
+    border: 1px solid #e11f46;
+    background-color: #e11f46;
     color: #fff;
     transition: all ease .5s;
 }
@@ -3255,7 +3255,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 .create_forum_wrap .similar_form label.forum_save_info .send_btn{
     width: 120px;
     height: 45px;
-    background-color: #f5283b;
+    background-color: #e11f46;
     margin-left: 0;
     border: none;
 }
@@ -4393,8 +4393,8 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
 
 }
 .form_search_section input:nth-child(1){
-    border: 1px solid #f5283b;
-    background-color: #f5283b;
+    border: 1px solid #e11f46;
+    background-color: #e11f46;
     color: #fff;
     transition: all ease .5s;
     margin-right: 6px;
@@ -4706,8 +4706,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    background: #e11f46;
-    height: 45px;
+   h eight: 45px;
     color: #fff;
     font-size: 16px;
     margin-top: 15px;
