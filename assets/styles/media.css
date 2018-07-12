@@ -16,7 +16,7 @@
     /* Banner */
     .banner__label {
         font-size: 160px;
-    }
+    }    
 
     /* Clock and wether wrapper */
     .weather img{
@@ -820,7 +820,6 @@
         margin-bottom: 33px;
     }
     .breadcrumbs__item:last-child {
-       padding-left: 0;
        margin-right: 70px;
     }  
     .layout_titel_2 {
