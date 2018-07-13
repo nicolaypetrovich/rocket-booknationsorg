@@ -1868,3 +1868,198 @@
 }
 
 /* menagement end */
+
+
+
+
+/* course test block */
+@media (max-width: 1200px) {
+  .course__popup {
+    right:0;
+  }
+}
+
+@media (max-width: 830px) {
+
+  .test-question-options li:first-child {
+	margin-right: 3px;
+  }
+  .test-question-options li {
+	margin-right: 3px;
+  }
+  .test-question-options li:last-child {
+    margin-left: 0px;
+  }
+  .course__popup {
+    padding: 22px 0;
+    text-align: center;
+    width: 326px;
+    -webkit-box-shadow: 0 0 17px 4px rgba(89, 88, 89, 0.22);
+    box-shadow: 0 0 17px 4px rgba(89, 88, 89, 0.22);
+    background-color: #ffffff;
+    position: absolute;
+    right: 56px;
+    top: 184px;
+}
+
+}
+
+@media (max-width: 761px) {
+
+.test-question-options {
+	flex-wrap: wrap;
+}
+.course__test--button {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.course__popup {
+    padding: 22px 0;
+    text-align: center;
+    width: 326px;
+    -webkit-box-shadow: 0 0 17px 4px rgba(89, 88, 89, 0.22);
+    box-shadow: 0 0 17px 4px rgba(89, 88, 89, 0.22);
+    background-color: #ffffff;
+    position: absolute;
+    right: 0px;
+    top: 209px;
+}
+.test-question-options li:nth-child(1) button{
+       width: 262px;
+       margin-bottom: 3px;
+    }
+    .test-question-options li:nth-child(2) button{
+       width: 130px;
+       margin-bottom: 3px;
+    }
+    .test-question-options li:nth-child(4) button{
+       width: 130px;
+    }
+    .test-question-options li:nth-child(6) button{
+       width: 262px;
+       margin-top: 0px;
+    }
+
+}
+@media (max-width: 433px) {
+	.course__test--button {
+	}
+	.course__test--button a{
+		padding: 15px 45px;
+		margin-bottom: 5px;
+	}
+	.course__test--button-add {
+		/*margin-right: 0;*/
+	}
+}
+@media (max-width: 580px) {
+     .course__popup {
+        padding: 22px 0;
+        text-align: center;
+        max-width: 430px;
+        width: 100%;
+        -webkit-box-shadow: 0 0 17px 4px rgba(89, 88, 89, 0.22);
+        box-shadow: 0 0 17px 4px rgba(89, 88, 89, 0.22);
+        background-color: #ffffff;
+        position: absolute;
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 410px;
+    }
+    .test-question-options {
+        max-width: 320px;
+    }
+    .test-question-options li:nth-child(6) button{
+       width: 262px;
+       margin-top: 3px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .home_titles {
+        font-size: 14px; 
+        padding-top: 5px;
+    }
+	.steps_list li.outside_circle {
+		    width: 11px;
+	    height: 11px;
+	    border: 1px solid #bababa;
+	    position: relative;
+	    border-radius: 14px;
+	    cursor: pointer;
+	    margin-bottom: 5px;
+	}
+	.test_form-tabs li.tablinks {
+    	margin-right: 8px;
+	}
+	.course__test--button {
+		margin-top: 20px;
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+	} 
+	.course__test--button a{
+		max-width: 220px;
+		width: 100%;
+	}
+	.course__test--button-add {
+		margin-right: 0;
+	}
+	.test_result-table tr th:first-child {
+		    width: 95px;
+    		padding: 0 10px;
+	}
+	.test_result-table tr th:nth-child(2) {
+		    padding: 0 15px;
+		    white-space: nowrap;
+	}
+    .test_result-table tr td:last-child, .test_result-table tr th:last-child {
+        width: 130px;
+    }
+    .test-question-options li:nth-child(1) button{
+       width: 262px;
+       margin-bottom: 3px;
+    }
+    .test-question-options li:nth-child(2) button{
+       width: 130px;
+       margin-bottom: 3px;
+    }
+    .test-question-options li:nth-child(4) button{
+       width: 130px;
+    }
+    .test-question-options li:nth-child(6) button{
+       width: 262px;
+       margin-top: 3px;
+    }
+    .test-question-options {
+        justify-content: center;
+    }
+    .course__popup {
+        padding: 22px 0;
+        text-align: center;
+        max-width: 330px;
+        width: 100%;
+        -webkit-box-shadow: 0 0 17px 4px rgba(89, 88, 89, 0.22);
+        box-shadow: 0 0 17px 4px rgba(89, 88, 89, 0.22);
+        background-color: #ffffff;
+        position: absolute;
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 410px;
+    }
+
+}
+
+/* course test block end */

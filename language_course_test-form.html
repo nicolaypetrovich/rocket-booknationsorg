@@ -1,0 +1,1830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Language course test form</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--<link href="/assets/styles/Bootstrap/bootstrap.min.css" rel="stylesheet">-->
+    <link href="./assets/styles/Bootstrap/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="./assets/styles/Slick/slick.css" rel="stylesheet">
+    <link href="./assets/styles/Slick/slick-theme.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/styles/jQuery_Ui/jquery-ui-1.9.2.custom.min.css">
+    <link href="./assets/styles/main.css" rel="stylesheet">
+    <link href="./assets/styles/media.css" rel="stylesheet">
+
+    <script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="assets/scripts/jQuery/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="./assets/scripts/Slick/slick.min.js"></script>
+    <script src="./assets/scripts/clocks.js"></script>
+    <script src="assets/scripts/tinymce/tinymce.min.js"></script>
+    <script src="assets/scripts/forms.js"></script>
+    <script src="assets/scripts/file_loader.js"></script>
+    <script src="assets/scripts/tabs.js"></script>
+    <script src="assets/scripts/main.js"></script>
+</head>
+
+<body>
+<div class="m-control">
+    <div class="m-control__burger">
+        <span class="m-control__line m-control__line_top"></span>
+        <span class="m-control__line m-control__line_icon"></span>
+        <span class="m-control__line m-control__line_end"></span>
+    </div>
+</div>
+
+<header class="header">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-12 col-md-6 col-lg-5 col-xl-3">
+                <div class="header__control">
+                    <div class="dropdown">
+                        <button class="btn btn_default dropdown__button">
+                            <span class="btn__label">Lyon</span>
+                            <span class="btn__label icon icon_caret"></span>
+                        </button>
+                        <ul class="actions-menu dropdown__content">
+                            <li>
+                                <a href="#" class="actions-menu__link">Lyon</a>
+                            </li>
+                            <li>
+                                <a href="#" class="actions-menu__link">Lyon</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn dropdown__button">
+                                    <span class="btn__label">
+                                        <span class="country-flag">
+                                            <span class="country-flag__item">RU</span>
+                                            <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                        </span>
+                                    </span>
+                            <span class="btn__label icon icon_caret"></span>
+                        </button>
+                        <ul class="actions-menu dropdown__content">
+                            <li>
+                                <a href="#" class="actions-menu__link">
+                                            <span class="country-flag">
+                                                <span class="country-flag__item">EU</span>
+                                                <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                            </span>
+                                </a>
+                            </li>
+                            <li class="actions-menu__divider"></li>
+                            <li>
+                                <a href="#" class="actions-menu__link">
+                                            <span class="country-flag">
+                                                <span class="country-flag__item">FR</span>
+                                                <img src="./assets/images/icon-flag_ru.png" class="country-flag__item" alt="" role="presentation" />
+                                            </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="#" class="link link_seo"></a>
+                    <img src="./assets/images/logo.png" alt="" />
+                    <div class="logo__wrap">
+                        <span class="logo__title">Nationsorg</span>
+                        <span class="logo__subtitle">beta part1 ver.:0.1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="widgets col-12 col-xl-6">
+                <div class="clock-group">
+                    <div class="clock clock-group__item" data-clock="3" id="c1">
+                        <ul class="clock__face">
+                            <li class="clock__hand clock__hand_second"></li>
+                            <li class="clock__hand clock__hand_minute"></li>
+                            <li class="clock__hand clock__hand_hour"></li>
+                        </ul>
+                        <span class="clock__location">Brest</span>
+                    </div>
+                    <div class="clock clock-group__item" data-clock="2" id="c2">
+                        <ul class="clock__face">
+                            <li class="clock__hand clock__hand_second"></li>
+                            <li class="clock__hand clock__hand_minute"></li>
+                            <li class="clock__hand clock__hand_hour"></li>
+                        </ul>
+                        <span class="clock__location">Lyon</span>
+                    </div>
+                    <div class="clock clock-group__item" data-clock="3" id="c3">
+                        <ul class="clock__face">
+                            <li class="clock__hand clock__hand_second"></li>
+                            <li class="clock__hand clock__hand_minute"></li>
+                            <li class="clock__hand clock__hand_hour"></li>
+                        </ul>
+                        <span class="clock__location">Moscow</span>
+                    </div>
+                    <div class="clock clock-group__item" data-clock="-4" id="c4">
+                        <ul class="clock__face">
+                            <li class="clock__hand clock__hand_second"></li>
+                            <li class="clock__hand clock__hand_minute"></li>
+                            <li class="clock__hand clock__hand_hour"></li>
+                        </ul>
+                        <span class="clock__location">New York</span>
+                    </div>
+                </div>
+                <div class="weather">
+                    <img src="./assets/images/widget.png" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5 col-xl-3">
+                <ul class="auth-controls">
+                    <li class="auth-controls__item">
+                        <button class="btn">
+                            <span class="btn__label icon icon_lock"></span>
+                            <span class="btn__label">Register</span>
+                        </button>
+                    </li>
+                    <li class="auth-controls__item">
+                        <button class="btn btn_default">
+                            <span class="btn__label icon icon_login"></span>
+                            <span class="btn__label">Login</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="layout">
+    <div class="m-menu">
+        <nav class="nav-main nav-main_m-menu">
+            <div class="nav-main__wrap container">
+                <a href="#" class="nav-main__link is-active">
+                    <span class="nav-main__label">Home</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Language courses</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Groups</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Events</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Forum</span>
+                </a>
+                <a href="#" class="nav-main__link">
+                    <span class="nav-main__label">Partners</span>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="container remove_default_styles">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+                <a href="/" class="breadcrumbs__link">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <span class="breadcrumbs__link breadcrumbs__link_static">Название страницы</span>
+            </li>
+        </ul>
+        <div class="layout__content">
+            <div class="courses_test_form">
+                <div class="course_top-part">
+                   <div class="course_title">
+                       <h2>
+                           FPR - French for Russian-speaking
+                       </h2>
+                       <div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
+                   </div>
+                    <div class="course_navigation">
+                        <div class="course-hamburger">
+                            <div class="mob-hamburger">
+                                <input id="toggle" type="checkbox">
+                                <label for="toggle" class="hamburger">
+                                    <span class="top-bun"></span>
+                                    <span class="meat"></span>
+                                    <span class="bottom-bun"></span>
+                                </label>
+                                <ul>
+                                    <li class="course_active-page">
+                                        <a href="language_course_main.html" >
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Levels
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Test
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Team
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Photo
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Contacts
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Reviews
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_course_content">
+                    <div class="test_form-quest-part">
+                        <h4 class="home_titles">Determining the level of knowledge of the French language</h4>
+                        <div class="tab_wrap">
+
+                            <div class="course__popup">
+                                <div class="course__popup--wrapper">
+                                    <h3 class="course__popup--title">
+                                        Unfortunately, you did not answer correctly.
+                                    </h3>
+                                    <button class="course__popup--correct">Show the correct answer</button><br>
+                                    <button class="course__popup--continue">Continue the test</button>
+                                    <button class="course__popup--complete">Complete test</button><br>
+                                    <a href="#" class="course__popup__link">
+                                        Found a mistake in this question? Please leave a review.
+                                    </a>
+                                </div>
+                            </div>
+
+                            
+                            <ul class="test_form-tabs">
+                                <li class="tablinks" data-href="step-1">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            1
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step-1 -->
+
+                                <li class="tablinks" data-href="step-2">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            2
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step-2 -->
+
+                                 <li class="tablinks" data-href="step-3">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            3
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step-3 -->
+
+                                 <li class="tablinks" data-href="step-4">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            4
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step-4 -->
+
+                                <li class="tablinks" data-href="step-5">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            5
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step-5 -->
+
+                                <li class="tablinks" data-href="step-6">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            6
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step-6 -->
+
+                                <li class="tablinks" data-href="step-7">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            7
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step-7 -->
+
+                                <li class="tablinks" data-href="step-8">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            8
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step-8 -->
+
+                                <li class="tablinks" data-href="step-9">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            9
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step-9 -->
+
+                                <li class="tablinks" data-href="step-10">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            10
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step-10 -->
+
+                                <li class="tablinks" data-href="step-11">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            11
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step-11 -->
+
+                                <li class="tablinks" data-href="step-12">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            12
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step-12 -->
+
+                                <li class="tablinks" data-href="step-13">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            13
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step-13 -->
+
+                                <li class="tablinks" data-href="step-14">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            14
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step14 -->
+
+                                <li class="tablinks" data-href="step-15">
+                                    <ul class="steps_list">
+                                        <li class="outside_circle">
+                                            <span class="inside_circle"></span>
+                                        </li>
+                                        <li>
+                                            15
+                                        </li>
+                                    </ul>
+                                </li>   <!-- step-15 -->
+
+                            </ul>       <!-- tabs__list -->
+
+
+                            <div id="step-1" class="tabcontent activeTab">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №1
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                                </ul>
+                                        <option value="true"  class="course__test__option">mein</option>
+                                        <option value="false"  class="course__test__option">mois</option>
+                                        <option value="false"  class="course__test__option">miennes</option>
+                                        <option value="false" class="course__test__option">miens</option> 
+
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table">
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                 <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+
+                                </div>
+                            </div>      <!-- tabcontent 1 -->
+
+                            <div id="step-2" class="tabcontent">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №2
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                                </ul>
+                                
+                                    <div class="course__test--form">
+                                        <option value="false"  class="course__test__option">mein</option>
+                                        <option value="false"  class="course__test__option">mois</option>
+                                        <option value="true"  class="course__test__option">miennes</option>
+                                        <option value="false" class="course__test__option">miens</option>   
+                                  </div>   <!-- course__test-form -->
+
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table">
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                     <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+                                </div>
+                            </div>      <!-- tabcontent 2 -->
+
+                            <div id="step-3" class="tabcontent">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №3
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                                </ul>
+                               
+                                <div  class="course__test--form">
+                                    <option value="true"  class="course__test__option">mein</option>
+                                    <option value="false"  class="course__test__option">mois</option>
+                                    <option value="false"  class="course__test__option">miennes</option>
+                                    <option value="false" class="course__test__option">miens</option>
+                                </div>   <!-- course__test-form -->
+
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table" >
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                    <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+                                </div>
+                            </div>      <!-- tabcontent 3 -->
+
+                            <div id="step-4" class="tabcontent">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №4
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                               <div  class="course__test--form">
+                                    <option value="true"  class="course__test__option">mein</option>
+                                    <option value="false"  class="course__test__option">mois</option>
+                                    <option value="false"  class="course__test__option">miennes</option>
+                                    <option value="false" class="course__test__option">miens</option>   
+                              </div>   <!-- course__test-form -->
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table" >
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                     <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+                                </div>
+                            </div>      <!-- tabcontent 4 -->
+
+                            <div id="step-5" class="tabcontent">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №5
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                                </ul>
+                               <div  class="course__test--form">
+                                        <option value="true"  class="course__test__option">mein</option>
+                                        <option value="false"  class="course__test__option">mois</option>
+                                        <option value="false"  class="course__test__option">miennes</option>
+                                        <option value="false" class="course__test__option">miens</option> 
+                              </div>   <!-- course__test-form -->
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table">
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                     <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+                                </div>
+                            </div>      <!-- tabcontent 5 -->
+
+                            <div id="step-6" class="tabcontent">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №6
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                                </ul>
+                                <div  class="course__test--form">
+                                        <option value="true"  class="course__test__option">mein</option>
+                                        <option value="false"  class="course__test__option">mois</option>
+                                        <option value="false"  class="course__test__option">miennes</option>
+                                        <option value="false" class="course__test__option">miens</option>   
+                              </div>   <!-- course__test-form -->
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table" >
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                    <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+                                </div>
+                            </div>      <!-- tabcontent 6 -->
+
+                            <div id="step-7" class="tabcontent">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №7
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                                </ul>
+                               <div  class="course__test--form">
+                                        <option value="true"  class="course__test__option">mein</option>
+                                        <option value="false"  class="course__test__option">mois</option>
+                                        <option value="false"  class="course__test__option">miennes</option>
+                                        <option value="false" class="course__test__option">miens</option>
+                              </div>   <!-- course__test-form -->
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table">
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                    <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+                                </div>
+                            </div>      <!-- tabcontent 7 -->
+
+                            <div id="step-8" class="tabcontent">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №8
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                                </ul>
+                                <div  class="course__test--form">
+                                        <option value="true"  class="course__test__option">mein</option>
+                                        <option value="false"  class="course__test__option">mois</option>
+                                        <option value="false"  class="course__test__option">miennes</option>
+                                        <option value="false" class="course__test__option">miens</option>    
+                              </div>   <!-- course__test-form -->
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table">
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                    <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+                                </div>
+                            </div>      <!-- tabcontent 8 -->
+
+                            <div id="step-9" class="tabcontent">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №9
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                                </ul>
+                               <div class="course__test--form">
+                                        <option value="true"  class="course__test__option">mein</option>
+                                        <option value="false"  class="course__test__option">mois</option>
+                                        <option value="false"  class="course__test__option">miennes</option>
+                                        <option value="false" class="course__test__option">miens</option>   
+                              </div>   <!-- course__test-form -->
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table">
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                   <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+                                </div>
+                            </div>      <!-- tabcontent 9 -->
+
+                            <div id="step-10" class="tabcontent">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №10
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                                </ul>
+                               <div  class="course__test--form">
+                                    <option value="true"  class="course__test__option">mein</option>
+                                    <option value="false"  class="course__test__option">mois</option>
+                                    <option value="false"  class="course__test__option">miennes</option>
+                                    <option value="false" class="course__test__option">miens</option>   
+                              </div>   <!-- course__test-form -->
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table">
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                     <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+                                </div>
+                            </div>      <!-- tabcontent 10 -->
+
+                            <div id="step-11" class="tabcontent">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №11
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                                </ul>
+                               <div  class="course__test--form">
+                                        <option value="true"  class="course__test__option">mein</option>
+                                        <option value="false"  class="course__test__option">mois</option>
+                                        <option value="false"  class="course__test__option">miennes</option>
+                                        <option value="false" class="course__test__option">miens</option> 
+                              </div>   <!-- course__test-form -->
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table">
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                    <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+                                </div>
+                            </div>      <!-- tabcontent 11 -->
+
+                            <div id="step-12" class="tabcontent">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №12
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                                </ul>
+                               <div class="course__test--form">
+                                        <option value="true"  class="course__test__option">mein</option>
+                                        <option value="false"  class="course__test__option">mois</option>
+                                        <option value="false"  class="course__test__option">miennes</option>
+                                        <option value="false" class="course__test__option">miens</option>   
+                              </div>   <!-- course__test-form -->
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table" >
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                    <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+                                </div>
+                            </div>      <!-- tabcontent 12 -->
+
+                            <div id="step-13" class="tabcontent">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №13
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                                </ul>
+                                <div  class="course__test--form">
+                                        <option value="true"  class="course__test__option">mein</option>
+                                        <option value="false"  class="course__test__option">mois</option>
+                                        <option value="false"  class="course__test__option">miennes</option>
+                                        <option value="false" class="course__test__option">miens</option>   
+                              </div>   <!-- course__test-form -->
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table">
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                    <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+                                </div>
+                            </div>      <!-- tabcontent 13-->
+
+                            <div id="step-14" class="tabcontent">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №14
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                                </ul>
+                               <div  class="course__test--form">
+                                        <option value="true"  class="course__test__option">mein</option>
+                                        <option value="false"  class="course__test__option">mois</option>
+                                        <option value="false"  class="course__test__option">miennes</option>
+                                        <option value="false" class="course__test__option">miens</option>   
+                              </div>   <!-- course__test-form -->
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table">
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                     <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+                                </div>
+                            </div>      <!-- tabcontent 14 -->
+
+                            <div id="step-15" class="tabcontent">
+                                <ul class="test_preview-section">
+                                    <li>
+                                        Question №15
+                                    </li>
+                                    <li>
+                                        A qui appartiennent ces stylos? Ce sont les ... .
+                                    </li>
+                                    <li>
+                                        Attention! The answer will be given immediately when choosing one of the proposed options.
+                                    </li>
+                                </ul>
+                                <div  class="course__test--form">
+                                        <option value="true"  class="course__test__option">mein</option>
+                                        <option value="false"  class="course__test__option">mois</option>
+                                        <option value="false"  class="course__test__option">miennes</option>
+                                        <option value="false" class="course__test__option">miens</option> 
+                              </div>   <!-- course__test-form -->
+                                <ul class="test-question-options">
+                                    <li>
+                                        <button>
+                                            Back to top
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Back
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Reset response
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Give an answer
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Skip question
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            Complete test
+                                        </button>
+                                    </li>
+                                </ul>
+                                <a href="#" class="mistake-link course__test-mistake">
+                                    Found a mistake in this question? Please leave a review.
+                                </a>
+                                <div class="test_form-result-part">
+                                    <span class="test_result-title">Test result</span>
+                                    <span class="test_result-subtitle">Determining the level of knowledge of the French language</span>
+                                    <table class="test_result-table">
+                                        <tr>
+                                            <th>Scale of the test</th>
+                                            <th>Test result</th>
+                                            <th>Number of points</th>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Very bad</td>
+                                            <td>0.00 out of 15.00 (0%)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The overall result</td>
+                                            <td>Good</td>
+                                            <td>10.00 out of 15.00 (80%)</td>
+                                        </tr>
+                                    </table>
+                                    <div class="course__test--button">
+                                    <a href="" class="course__test--button-add">
+                                        Take the test again
+                                    </a>
+                                    <a href="" class="course__test--button-take">
+                                        Add to workout
+                                    </a>
+                                 </div>
+                                </div>
+                            </div>      <!-- tabcontent 15-->
+
+                        </div> <!-- tab_wrapper -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menagement__subscrible">
+            <h2 class="menagement__subscrible--title">Subscribe to our mailing list</h2>
+            <form action="#">
+                <input type="text" required="required" class="menagement__subscrible--input" placeholder="Email address">
+                <button class="menagement__subscrible--button">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="footer footer">
+    <nav class="nav-main">
+        <div class="nav-main__wrap container">
+            <a href="#" class="nav-main__link is-active">
+                <span class="nav-main__label">Home</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Language courses</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Groups</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Events</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Forum</span>
+            </a>
+            <a href="#" class="nav-main__link">
+                <span class="nav-main__label">Partners</span>
+            </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-3 order-2 order-lg-first">
+                <p class="copyright">© Nationsorg 2017</p>
+            </div>
+            <div class="col-12 col-lg-9 order-1">
+                <nav class="nav-footer">
+                    <a href="#" class="nav-footer__link">
+                        <span class="nav-footer__label">About Us</span>
+                    </a>
+                    <a href="#" class="nav-footer__link is-active">
+                        <span class="nav-footer__label">About Project</span>
+                    </a>
+                    <a href="#" class="nav-footer__link">
+                        <span class="nav-footer__label">Franchising</span>
+                    </a>
+                    <a href="#" class="nav-footer__link">
+                        <span class="nav-footer__label">Wish Wall</span>
+                    </a>
+                    <a href="#" class="nav-footer__link">
+                        <span class="nav-footer__label">CGU</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="fixed-aside">
+    <div class="slideout fixed-aside__item">
+        <div class="slideout__btn slideout__btn_primary">
+            <span class="slideout__btn-label">An error in the text?</span>
+        </div>
+        <div class="slideout__wrap">
+            <form class="slideout__content slideout__content_center">
+                <p>Something edit</p>
+                <textarea placeholder="Email address" class="field field_area" required="required"></textarea>
+                <button class="btn btn_primary btn_size_md slideout__button">
+                    <span class="btn__label">Enter</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="slideout fixed-aside__item">
+        <div class="slideout__btn slideout__btn_secondary">
+            <span class="slideout__btn-label">Subscribe to our mailing list</span>
+        </div>
+        <div class="slideout__wrap">
+            <form class="slideout__content slideout__content_center">
+                <p>Subscribe to our mailing list</p>
+                <input placeholder="Email address" class="field" type="email" required="required"/>
+                <button class="btn btn_primary btn_size_md slideout__button">
+                    <span class="btn__label">Subscribe</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+ <script>
+    // language course test-form
+
+
+    $(document).ready(function() {
+
+       
+       console.log('hatred');
+         $(".course__test__option").on("click", function (){
+            var temp=$(this).val();
+            console.log(temp);
+         if(temp=='true') {
+            console.log('added true');
+             $(this).addClass("course__option_true");
+         }
+         else{
+            console.log('added false');
+            $(this).addClass("course__option_false");
+            $(".course__popup").show(50);
+         }
+     });
+
+     $(".course__popup--continue").on("click", function() {
+        $(".course__popup").hide(50);
+     });
+    });
+
+ </script>
+</body>
+
+</html>
