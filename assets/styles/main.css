@@ -7374,3 +7374,9 @@ option:checked {
   background: transparent;
   outline: none;
 }
+.test_form-quest-part {
+    margin-bottom: 15px;
+}
+
+
+/* course test block end */
