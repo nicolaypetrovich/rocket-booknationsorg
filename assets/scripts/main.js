@@ -246,9 +246,10 @@ $(document).ready(function () {
             statusbar: false,
             font_formats:'HelveticaNeueCyr',
             plugins: [
-                ' autolink lists link  anchor ',
+                ' autolink lists link  anchor textcolor fullpage ',
             ],
            toolbar: 'bold | bullist | numlist | italic | link', 
+           fullpage_default_text_color: '#787878',
         });
     };
     if($('.js-tinymce-discus').length > 0 ){

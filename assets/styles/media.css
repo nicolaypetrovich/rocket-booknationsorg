@@ -62,7 +62,6 @@
     .events__content {
         margin-right: 70px;
     }
-
 }
 
     /*Partners Page End*/
@@ -120,6 +119,9 @@
      .events__tag{
         margin: 0 80px 0 0;
      }
+      .events__aside{ 
+        width: 50%; 
+     } 
 }
 @media (max-width: 1024px){
     /*Personal Setting page*/
@@ -244,6 +246,9 @@
         width: 450px;
         margin-bottom: 30px;
     }
+     .groups-list{ 
+        display: none !important; 
+    } 
     /* Event page end*/
      /*Wish wall page*/
     .wish_wall_form{
@@ -400,6 +405,12 @@
     }
     /*End Discussion_group*/
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)and (max-width : 767px){ 
+   /* стили только для IE10 IE11 */ 
+   .slideout__btn-label{ 
+    margin-top: 15px; 
+    } 
+} 
 @media only screen and (max-width : 767px){
     /* Language course registration */
     .main_course_content .similar_form .reg_course_top-part .reg_course_field-wrap label{
@@ -517,6 +528,9 @@
         white-space: inherit;
         transform: inherit;
         opacity: 0;
+        position: inherit; 
+        display: flex;  
+        align-items: center;
     }
     .slideout__wrap {
         max-width: inherit;
@@ -575,7 +589,12 @@
     /* Text in banner */
 
     /* Event page */
-
+    .events__content { 
+    margin-right: 17px; 
+    } 
+    .events__tag { 
+        margin: 0; 
+    } 
     .greeting__title {
         font-size: 36px;
     }
@@ -891,12 +910,20 @@
     }
     .cont_wrap {
         position: relative;
-        width: 150px;
-        
-
+        width: 150px;      
     }
 
     /*Language courses end*/
+    .events__aside { 
+        max-width: none; 
+        width: 100%; 
+    } 
+    .discus__content { 
+    margin-right: 0px; 
+    } 
+    .course_navigation ul li { 
+    margin-right: 20px; 
+    } 
 }
 @media only screen and (max-width : 480px){
     /* Language course review */
@@ -1351,13 +1378,11 @@
 
 @media only screen and (min-width:576px ) and (max-width:765px ){
 .events{
-    width:50%;
+    
 }
 }
 
 /*group files end*/
-
-
 
 
 /*menagement*/
