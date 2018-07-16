@@ -7454,3 +7454,9 @@ option:checked {
 
 
 /* course test block end */
+.file_breadcrumbs_file{
+    margin-bottom: 18px;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5px;
+}
