@@ -1375,11 +1375,6 @@
    .files__content{
         margin-right: 70px;
    }
-
-@media only screen and (min-width:576px ) and (max-width:765px ){
-.events{
-    
-}
 }
 
 /*group files end*/

@@ -246,10 +246,10 @@ $(document).ready(function () {
             statusbar: false,
             font_formats:'HelveticaNeueCyr',
             plugins: [
-                ' autolink lists link  anchor textcolor fullpage ',
+                ' textcolor fullpage autolink lists link  anchor  ',
             ],
-           toolbar: 'bold | bullist | numlist | italic | link', 
-           fullpage_default_text_color: '#787878',
+            fullpage_default_text_color: '#787878',
+           toolbar: 'bold | bullist | numlist | italic | link',           
         });
     };
     if($('.js-tinymce-discus').length > 0 ){
@@ -322,20 +322,24 @@ $(document).ready(function () {
         })
     });
 
-
+    console.log(tinyMCE.activeEditor.getContent().color);
     $('.js-validateBtn').on('click',function (e) {
        var chekOnEmpty = tinyMCE.activeEditor.getContent();
+
        
        if(chekOnEmpty.length == 0){
             e.preventDefault();
            $(this).parent().find('.error').remove();
            $('.forum_editable_field label #mce_0_ifr').css('borderColor','red');
-           $('.forum_discus iframe').css('borderColor','red');
+           console.log($('.forum_editable_field label #mce_0_ifr'));
+           $('.forum_discus iframe ').css('borderColor','red');
+           
            $(this).before('<div class="error">Required field</div>');
        } else{
             var iframeArr = [].slice.call( document.querySelectorAll('iframe') );
             iframeArr.forEach( function(iframe){
                 var childrenArr = [].slice.call( document.querySelector('iframe').contentDocument.querySelector('body').children );
+                console.log(childrenArr);
                 childrenArr.forEach( function(obj){
                     obj.remove();
                 } );
