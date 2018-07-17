@@ -5,8 +5,23 @@
     .weather img{
         max-width: 100%;
         height: auto;
-    }
+    }    
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)and (min-width : 1200px){ 
+   /* стили только для IE10 IE11 */ 
+   .weather img{
+        position: relative;
+        left:70px;
+    }
+} 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)and (min-width : 1290px){ 
+   /* стили только для IE10 IE11 */ 
+   .weather img{
+        position: relative;
+        left:30px;
+    }
+} 
 @media (min-width: 1200px){
     .container {
         width: auto;
@@ -62,6 +77,9 @@
     .events__content {
         margin-right: 70px;
     }
+    .select_icon_popup {
+        left: 50px;
+    }
 }
 
     /*Partners Page End*/
@@ -76,6 +94,7 @@
     .reg_course_bottom-part{
         width: 100%;
     }
+    
     /* Language course registration End */
 }
 @media only screen and (max-width : 1199px){
@@ -122,6 +141,9 @@
       .events__aside{ 
         width: 50%; 
      } 
+     .select_icon_popup {
+        left: 0;
+    }
 }
 @media (max-width: 1024px){
     /*Personal Setting page*/
@@ -341,7 +363,12 @@
         padding: 55px 55px 65px 55px;
     }
     /*Partners Page End*/
-
+}    
+ @media only screen and (max-width : 815px){   
+    .select_icon_popup {
+        width: 700px;
+        left: 0;
+    }
 
 }
 @media only screen and (max-width : 768px){
@@ -428,7 +455,6 @@
     /*Create forum*/
     .select_icon_popup{
         width: 605px;
-        height: 200px;
     }
     .close_popup_button{
         right: 20px;
@@ -924,6 +950,11 @@
     .course_navigation ul li { 
     margin-right: 20px; 
     } 
+    .select_icon_popup{
+        max-width: 490px;
+        height: 300px;
+        top:-200px;
+    }
 }
 @media only screen and (max-width : 480px){
     /* Language course review */
@@ -1128,9 +1159,14 @@
     
     .d-flex {
         display: flex !important; /*ERROR*/ 
-    } 
+    }
     
     /*Language courses end*/
+    .select_icon_popup{
+        width: 290px;
+        padding: 20px 15px;
+        left: 0;
+    }
    }
 
 

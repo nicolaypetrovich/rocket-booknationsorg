@@ -982,7 +982,7 @@ b {
 }
 
 .layout__content {
-  margin-bottom: 40px;
+  margin-bottom: 49px;
   display: block;
 }
 
@@ -3904,8 +3904,12 @@ form.personal_content_field {
   flex-direction: column;
 }
 
-.create_forum_wrap .similar_form label:nth-child(2) {
+/*.create_forum_wrap .similar_form label:nth-child(2) {
   margin-bottom: 35px;
+}
+*/
+.create_forum_wrap .similar_form .forum_editable_field .tiny_mce_wrap {
+    margin-bottom: 35px;
 }
 
 .select_icon-wrap {
@@ -4130,17 +4134,17 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 
 .select_icon_popup {
   width: 870px;
-  max-height: 350px;
   overflow-y: auto;
   -webkit-box-shadow: 0px 0px 36px 10px rgba(0, 0, 1, 0.13);
   box-shadow: 0px 0px 36px 10px rgba(0, 0, 1, 0.13);
   border-radius: 5px;
   position: absolute;
+  left: 150px;
+  top: -550px;
   z-index: 2;
   background-color: #fff;
   padding: 40px 35px;
   display: none;
-  top: 70px;
 }
 
 .close_popup_button {

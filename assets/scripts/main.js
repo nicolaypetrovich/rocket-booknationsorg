@@ -322,7 +322,6 @@ $(document).ready(function () {
         })
     });
 
-    console.log(tinyMCE.activeEditor.getContent().color);
     $('.js-validateBtn').on('click',function (e) {
        var chekOnEmpty = tinyMCE.activeEditor.getContent();
 
@@ -331,15 +330,12 @@ $(document).ready(function () {
             e.preventDefault();
            $(this).parent().find('.error').remove();
            $('.forum_editable_field label #mce_0_ifr').css('borderColor','red');
-           console.log($('.forum_editable_field label #mce_0_ifr'));
-           $('.forum_discus iframe ').css('borderColor','red');
-           
+           $('.forum_discus iframe ').css('borderColor','red');           
            $(this).before('<div class="error">Required field</div>');
        } else{
             var iframeArr = [].slice.call( document.querySelectorAll('iframe') );
             iframeArr.forEach( function(iframe){
                 var childrenArr = [].slice.call( document.querySelector('iframe').contentDocument.querySelector('body').children );
-                console.log(childrenArr);
                 childrenArr.forEach( function(obj){
                     obj.remove();
                 } );
