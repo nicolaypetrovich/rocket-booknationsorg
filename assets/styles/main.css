@@ -564,7 +564,9 @@ b {
 .btn__label {
   margin-left: 6px;
   margin-right: 6px;
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   max-width: 100%;
   font-size: inherit;
@@ -1697,7 +1699,6 @@ b {
 .slideout__btn_secondary {
   background: #0fb1f3;
 }
-
 .slideout__wrap {
   padding: 25px;
   display: -ms-flexbox;
@@ -1715,6 +1716,7 @@ b {
 .slideout__content {
   margin: auto;
 }
+
 
 .slideout__content p {
   margin-bottom: 20px;
@@ -1815,7 +1817,20 @@ b {
     padding-top: 20px;
     padding-bottom: 32px;
 }
+.form-search_wrapper {
+   -ms-flex-pack: justify;
+   -webkit-box-pack: justify;
+   justify-content: space-between;
+}
+.form-search_wrapper > .btn {
+   height: 50px;
+   min-width: auto;
+   width: 120px;
+}  
 .form-search__wrap {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
   -ms-flex-pack: justify;
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -1855,7 +1870,7 @@ b {
 }
 
 .forum .layout__title span {
-  color: #f5283b;
+  color: #e11f46;
 }
 
 .forum .form-search__wrap .btn {
@@ -1863,6 +1878,7 @@ b {
   min-width: auto;
   width: 120px;
 }
+
 
 .forum .table-content,
 .forum .table-content_thead th,
@@ -2154,7 +2170,7 @@ b {
 
 .forum2 .form-search__wrap .btn.form-search__button {
   min-width: 120px;
-  height: 40px;
+  min-height: 40px;
 }
 
 .forum2 .btn_primary {
@@ -2337,7 +2353,7 @@ b {
   top: 0;
   right: 0px;
   display: block;
-  color: #f5283b;
+  color: #e11f46;
   font-weight: 700;
 }
 
@@ -2476,7 +2492,7 @@ b {
   padding-top: 25px;
   font-size: 14px;
   line-height: 16px;
-  color: #f5283b;
+  color: #e11f46;
   font-weight: 500;
   display: inline-block;
   margin-right: 5px;
@@ -2684,6 +2700,9 @@ b {
   color: #bababa;
   border: 1px solid #898989;
   margin-right: 10px;
+}
+.event__buttons{
+    margin-left: 20px;
 }
 
 .event__buttons > a {
@@ -3056,7 +3075,7 @@ label.es__load_box {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #f5283b;
+  background-color: #e11f46;
   color: #fff;
   border-radius: 5px;
   font-size: 14px;
@@ -3193,7 +3212,6 @@ form.personal_content_field {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
 .personal_content_change a {
   -ms-flex-item-align: center;
   align-self: center;
@@ -3205,7 +3223,7 @@ form.personal_content_field {
 .personal_content_change .send_btn {
   -ms-flex-item-align: center;
   align-self: center;
-  background-color: #f5283b;
+  background-color: #e11f46;
   color: #fff;
   font-size: 16px;
   -webkit-transition: background-color ease .5s;
@@ -3213,7 +3231,7 @@ form.personal_content_field {
 }
 .personal_content_change .send_btn_discus{ 
     align-self: center; 
-    background-color: #f5283b; 
+    background-color: #e11f46; 
     color: #fff; 
     font-size: 16px; 
     transition: background-color ease .5s 
@@ -3245,7 +3263,7 @@ form.personal_content_field {
 .personal_content_lp label,
 .personal_content_rp label {
   margin-bottom: 30px;
-  width: 390px;
+  width: 350px;
   position: relative;
 }
 
@@ -3269,7 +3287,7 @@ form.personal_content_field {
   top: 0;
   right: 0px;
   display: block;
-  color: #f5283b;
+  color: #e11f46;
   font-weight: 700;
 }
 
@@ -3390,7 +3408,7 @@ form.personal_content_field {
 
 .personal_group_preview .send_btn {
   width: 200px;
-  background-color: #f5283b;
+  background-color: #e11f46;
   -webkit-transition: background-color ease .5s;
   transition: background-color ease .5s;
   color: #fff;
@@ -3398,7 +3416,7 @@ form.personal_content_field {
 }
 .personal_group_preview .send_btn_discus{ 
     width: 200px; 
-    background-color: #f5283b; 
+    background-color: #e11f46; 
     transition: background-color ease .5s; 
     color: #fff; 
     margin-bottom: 30px; 
@@ -3648,7 +3666,7 @@ form.personal_content_field {
 }
 
 .become_partner button {
-  background-color: #f5283b;
+  background-color: #e11f46;
   width: 165px;
   height: 52px;
   color: #fff;
@@ -3783,7 +3801,7 @@ form.personal_content_field {
   -ms-flex-item-align: center;
   align-self: center;
   color: #fff;
-  background-color: #f5283b;
+  background-color: #e11f46;
   -webkit-transition: background-color ease .5s;
   transition: background-color ease .5s;
 }
@@ -4253,10 +4271,6 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   border: none;
 }
 
-.forum_editable_field label .mce-top-part {
-  padding-left: 45px;
-}
-
 .forum_editable_field label {
   position: relative;
 }
@@ -4284,6 +4298,10 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.forum_editable_field label .mce-top-part {
+   
+    padding: 0 0 13px 45px;
 }
 
 .tiny_mce_label {
@@ -4609,7 +4627,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   width: 150px;
   height: 45px;
   color: #fff;
-  background-color: #f5283b;
+  background-color: #e11f46;
   border-radius: 5px;
   -webkit-transition: background-color ease .5s;
   transition: background-color ease .5s;
@@ -4694,7 +4712,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  background: #f5283b;
+  background: #e11f46;
   width: 150px;
   height: 45px;
   color: #fff;
@@ -4879,7 +4897,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 
 .reg_course_subtitles > span {
-  color: #f5283b;
+  color: #e11f46;
   font-weight: 700;
 }
 
@@ -4898,14 +4916,6 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 .course_days-format,
 .course_level-format {
   margin-bottom: 40px;
-}
-
-.main_course_content .similar_form ul li {
-  margin-bottom: 15px;
-}
-
-.main_course_content .similar_form ul li:last-child {
-  margin-bottom: 10px;
 }
 
 .course_class-format,
@@ -4944,7 +4954,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 
 .main_course_content .similar_form .course_registration-send {
-  background-color: #f5283b;
+  background-color: #e11f46;
   -webkit-transition: background-color ease .5s;
   transition: background-color ease .5s;
   color: #fff;
@@ -4973,18 +4983,20 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
-  background: #f5283b;
+  background: #e11f46;
   height: 45px;
   color: #fff;
   font-size: 16px;
   -webkit-transition: background-color ease .5s;
   transition: background-color ease .5s;
   border-radius: 5px;
-  margin-right: 10px;
   border: none;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+.review_warning-wrap > a {
+    margin-right: 10px;
 }
 
 .course_warning_btn:hover,
@@ -5550,6 +5562,10 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     font-size: 18px;
     text-transform: uppercase;   
 }
+.layout_titel_2 {
+    font-size: 18px;
+    text-transform: uppercase;   
+}
 .text_center{
     text-align: center;
     margin-bottom: 46px; 
@@ -5954,8 +5970,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     text-align: center;
     height: 45px;
     color: #fff;
-    font-size: 16px;
-    margin-top: 15px;
+    font-size: 16px;    
     transition: background-color ease .5s;
     border-radius: 5px;
     border: none;
@@ -6277,7 +6292,7 @@ input.file_input{
 .menagement__banner--button button {
   margin-left: 15px;
   border-radius: 5px;
-  background-color: #f5283b;
+  background-color: #e11f46;
   font-family: HelveticaNeueCyr;
   color: #fff;
   font-size: 16px;
@@ -6684,7 +6699,7 @@ input.file_input{
   margin-bottom: 120px;
   padding: 13px 35px;
   border-radius: 5px;
-  background-color: #f5283b;
+  background-color: #e11f46;
   color: #ffffff;
   border: none;
   transition: all 0.4s;
@@ -7097,7 +7112,7 @@ input.file_input{
 
 .test_preview-section li:nth-child(3) {
   font-size: 12px;
-  color: #f5283b;
+  color: #e11f46;
 }
 
 /* Answers Styles */
@@ -7107,7 +7122,7 @@ input.file_input{
 }
 
 .wrong_answer-tab {
-  background-color: #f5283b;
+  background-color: #e11f46;
 }
 
 .current_answer-tab {
@@ -7203,8 +7218,8 @@ input.file_input{
 
 .test-question-options li:nth-child(1) button:hover,
 .test-question-options li:nth-child(6) button:hover {
-  background-color: #f5283b;
-  border: 1px solid #f5283b;
+  background-color: #e11f46;
+  border: 1px solid #e11f46;
 }
 
 .mistake-link {
@@ -7365,7 +7380,7 @@ input.file_input{
   color: #fff;
   font-size: 14px;
   border-radius: 5px;
-  background-color: #f5283b;
+  background-color: #e11f46;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }

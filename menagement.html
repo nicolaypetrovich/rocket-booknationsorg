@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>menagement</title>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<title>Menagement</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
 		
@@ -27,7 +28,7 @@
 	    <script src="assets/scripts/tabs.js"></script>
 	    <script src="assets/scripts/file_loader.js"></script>
 	    <script src="assets/scripts/timePicker/jquery.timepicker.min.js"></script>
-	</head>
+</head>
 
 <body>
 	<div class="m-control">
@@ -364,14 +365,11 @@
 				                </div>
 
 								<!-- upload picture end -->
-								<h5 class="menagement__type--title">
-                    				Group type
-                    			</h5>
-                    			<label class="menagement__type--name">
-                    				Group type:
-                    			</label> <br class="menagement__location--br">
-                    			<input type="radio" checked name="privacy" value="privacy" class="menagement__type--privacy">Privacy<br>
-                    			<input type="radio" name="pablic" value="pablic" class="menagement__type--pablic"><span>Pablic</span><br>
+								<h5 class="menagement__type--title">Group type</h5>
+								<label class="menagement__type--name">Group type:</label> 
+                    			<br class="menagement__location--br">
+                    			<input type="radio" name="group" value="privacy" class="menagement__type--privacy" checked>Privacy<br>
+                    			<input type="radio" name="group" value="pablic" class="menagement__type--pablic">Pablic<br>                    			
                     			<p class="menagement__type--text">
                     				Pablic Group. Anyonecan see the group, its members and their posts.
                     			</p>
@@ -380,8 +378,8 @@
                     				Posting <br class="menagement__posting--br">Permissions:
                     			</label> <br class="menagement__location--br">
                     			<br class="menagement__location--br">
-                    			<input type="radio" checked name="anyone" value="anyone" class="menagement__type--anyone">Anyone in the group<br>
-                    			<input type="radio" class="menagement__type--only"><span>Only admins and moderators</span><br>
+                    			<input type="radio" name="anyone" value="anyone" class="menagement__type--anyone" checked>Anyone in the group<br>
+                    			<input type="radio" name="anyone" value="adminM" class="menagement__type--only">Only admins and moderators<br>
 
                     			<div class="menagement__post">
                     				<p class="menagement__post--name">
@@ -423,14 +421,7 @@
                     		</div>
                     	</div>
                     </div>	<!-- menagement__wrapper -->
-                    <div class="menagement__subscrible">
-                    	<h2 class="menagement__subscrible--title">Subscribe to our mailing list</h2>
-                    	<form action="#">
-                    		<input type="text" required="required" class="menagement__subscrible--input" placeholder="Email address">
-                    		<button class="menagement__subscrible--button">Subscribe</button>
-                    	</form>
-                    </div>
-			</div>
+              </div>
 		</div>
 
 
@@ -494,7 +485,7 @@
 				<div class="slideout__wrap">
 					<form class="slideout__content slideout__content_center">
 						<p>Something edit</p>
-						<textarea placeholder="Email address" class="field field_area" required="required"></textarea>
+						<textarea placeholder="Enter text" class="field field_area" required="required"></textarea>
 						<button class="btn btn_primary btn_size_md slideout__button">
 							<span class="btn__label">Enter</span>
 						</button>
