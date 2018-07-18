@@ -451,6 +451,15 @@
     .form_post_details{
         left: -100px
     }
+    .container_head_search {
+    display: block;   
+    }
+    .search_algin_right { 
+        width: 100%;
+        padding-left: 0;
+        padding-top: 25px;
+
+    }
     /*Forum page End*/
     /*Create forum*/
     .select_icon_popup{
@@ -904,16 +913,15 @@
     /* Input form-search main */
     .form-search__wrap {
         display: block;
-        text-align: center;
     }
     .form-search__button {
         margin: 15px 0 0;
         min-width: 190px;
     }
     /*Language courses start*/
-    .d-flex {
-       display: flex !important;/*ERROR*/ 
-   }
+    .container_head{
+        display: block;
+    }
     .btn_algin_right{
         padding-left: 0 !important;
         margin-bottom: 33px;
@@ -1141,6 +1149,9 @@
     }
     .events .mobile__table div.date-box>label {
         width: 75%;
+    }
+    .layout_titel_3 {
+        white-space: normal;
     }
 }
 @media only screen and (max-width : 320px){
