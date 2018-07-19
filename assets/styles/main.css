@@ -2840,8 +2840,17 @@ b {
   color: #787878;
 }
 
+.in_put_data {
+    width: 100px;
+}
+.tabel-row {
+     flex-direction: row!important;
+    
+} 
+.in_put_group {
+    width: 100px;
+} 
 .events .table-content input {
-  width: 100%;
   height: 30px;
   border-radius: 5px;
   border: 1px solid #bababa;

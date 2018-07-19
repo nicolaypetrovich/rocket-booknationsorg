@@ -27,6 +27,99 @@
         width: auto;
     }
 }
+/*Start---Special for events tabel---Start*/
+
+@media only screen and (max-width: 1330px){
+    .in_put_data {
+        width: 92px;
+    }
+    .in_put_group input {
+        width: 180px;
+     }     
+}
+@media only screen and (max-width:1289px){
+    .in_put_group input {
+        width: 150px;
+    }
+}
+@media only screen and (max-width:1250px){
+    .in_put_group input {
+        width: 140px;
+    }
+}
+@media only screen and (max-width:1199px){
+    .in_put_group input {
+        width: 80px;
+    }
+}
+@media only screen and (max-width:1130px){
+    .tabel-row {
+        flex-direction: column!important;
+    }
+    .events .table-content .date-box {
+        position: relative;
+    }
+    .events .table-content .date-box > span {
+        position: absolute;
+        right: 3px;
+        top: 12px;
+        transform: rotate(90deg);
+        padding: 13px 0;
+        width: 30px;
+    }
+    .events .table-content_thead th:nth-child(4), 
+    .events .table-content_thead th:nth-child(5) {
+        width: 28%;
+    }
+    .events .table-content_thead th:nth-child(2), 
+    .events .table-content_thead th:nth-child(3) {
+        width: 20%;
+}
+    .events span.js-change_date_field {
+        padding: 0 20px;
+        border-radius: 5px;
+    }
+    .in_put_group input {
+        width: 150px;
+    }
+    .in_put_data {
+        width: 120px;
+    }
+}
+ @media only screen and (max-width:991px){
+    .in_put_data {
+        width: 92px;
+    }
+    .in_put_group input {
+        width: 110px;
+    }
+ @media only screen and (max-width:768px){
+    .in_put_data {
+        width: 100%;
+    }
+    .in_put_group input {
+        width: 100%;
+    } 
+}
+@media only screen and (max-width:420px){
+    .in_put_data {
+        width: 120px;
+    }     
+}
+@media only screen and (max-width:380px){
+    .in_put_data {
+        width: 110px;
+    }   
+}
+@media only screen and (max-width:350px){
+    .in_put_data {
+        width: 100px;
+    }   
+}
+
+/*End ---Special for events tabel---End*/
+
+
 @media (max-width:1289px){
     /* Banner */
     .banner__label {
