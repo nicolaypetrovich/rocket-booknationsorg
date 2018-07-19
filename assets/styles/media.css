@@ -27,6 +27,13 @@
         width: auto;
     }
 }
+@media only screen and (max-width: 1200px) and (min-width: 991px){
+    .auth-controls  {      
+        position: relative;
+        top: -215px;
+        right: -550px;             
+        }
+}        
 /*Start---Special for events tabel---Start*/
 
 @media only screen and (max-width: 1330px){
@@ -173,8 +180,6 @@
     .select_icon_popup {
         left: 50px;
     }
-}
-
     /*Partners Page End*/
 }
 @media only screen and (max-width : 1200px){
@@ -218,6 +223,7 @@
         padding-top: 60px;
     }
     /*Personal Setting page end*/
+    
 
     /* Event Settings page */
     .es__group > div > div:nth-child(2) {

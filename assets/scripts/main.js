@@ -246,10 +246,9 @@ $(document).ready(function () {
             statusbar: false,
             font_formats:'HelveticaNeueCyr',
             plugins: [
-                ' textcolor fullpage autolink lists link  anchor  ',
+                ' fullpage autolink lists link  anchor  ',
             ],
-            fullpage_default_text_color: '#787878',
-           toolbar: 'bold | bullist | numlist | italic | link',           
+            toolbar: 'bold | bullist | numlist | italic | link',
         });
     };
     if($('.js-tinymce-discus').length > 0 ){
@@ -323,25 +322,25 @@ $(document).ready(function () {
     });
 
     $('.js-validateBtn').on('click',function (e) {
-       var chekOnEmpty = tinyMCE.activeEditor.getContent();
-
+       // var chekOnEmpty = tinyMCE.activeEditor.getContent();
+        var chekOnEmpty = [].slice.call( this.parentElement.parentElement.querySelector('iframe').contentDocument.querySelector('body').children)[0].innerText;
        
-       if(chekOnEmpty.length == 0){
+       if(chekOnEmpty == 0){
             e.preventDefault();
            $(this).parent().find('.error').remove();
-           $('.forum_editable_field label #mce_0_ifr').css('borderColor','red');
+           $('.forum_editable_field iframe').css('borderColor','red');
            $('.forum_discus iframe ').css('borderColor','red');           
-           $(this).before('<div class="error">Required field</div>');
+           // $(this).before('<div class="error">Required field</div>');
+           $(this).closest('.similar_form').find('.tiny_mce_label').after('<div class="error">Required field</div>')
        } else{
-            var iframeArr = [].slice.call( document.querySelectorAll('iframe') );
-            iframeArr.forEach( function(iframe){
-                var childrenArr = [].slice.call( document.querySelector('iframe').contentDocument.querySelector('body').children );
-                childrenArr.forEach( function(obj){
-                    obj.remove();
-                } );
-            } );
-
-            $('.forum_editable_field label #mce_0_ifr').css('borderColor','');
+            // var iframeArr = [].slice.call( document.querySelectorAll('iframe') );
+            // iframeArr.forEach( function(iframe){
+            //     var childrenArr = [].slice.call( document.querySelector('iframe').contentDocument.querySelector('body').children );
+            //     childrenArr.forEach( function(obj){
+            //         obj.remove();
+            //     } );
+            // } );
+            $('.forum_editable_field iframe').css('borderColor','');
             $('.forum_discus iframe').css('borderColor','');
             $(this).parent().find('.error').remove(); 
        } 
