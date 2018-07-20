@@ -1039,7 +1039,7 @@
     .pad_0 {
         padding-left: 0;
     }
-    .breadcrumbs__item:last-child {
+    .breadcrumbs__item:nth-child(3) {
        margin-right: 150px;
     }  
     .layout_titel_2 {
@@ -1249,6 +1249,10 @@
     .discus__content {
         margin: 0 30px;
     }
+    .review_warning_massage {
+        margin-top: 15px;
+    }
+     
 }
 @media only screen and (max-width : 340px){
     .profile_photo_info{

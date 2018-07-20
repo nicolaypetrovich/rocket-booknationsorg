@@ -246,8 +246,9 @@ $(document).ready(function () {
             statusbar: false,
             font_formats:'HelveticaNeueCyr',
             plugins: [
-                ' fullpage autolink lists link  anchor  ',
+                ' textcolor fullpage autolink lists link  anchor  ',
             ],
+            fullpage_default_text_color: '#787878',
             toolbar: 'bold | bullist | numlist | italic | link',
         });
     };
@@ -261,8 +262,9 @@ $(document).ready(function () {
             statusbar: false,
             font_formats:'HelveticaNeueCyr',
             plugins: [
-                ' image autolink lists link  anchor ',
+                ' textcolor fullpage image autolink lists link  anchor ',
             ],
+            fullpage_default_text_color: '#787878',
             toolbar: 'bold | image | code | bullist | numlist | italic | link',
             image_title: true,
             automatic_uploads: true,
@@ -301,8 +303,9 @@ $(document).ready(function () {
             statusbar: false,
             font_formats:'HelveticaNeueCyr',
             plugins: [
-                ' autolink lists link  anchor ',
+                ' textcolor fullpage autolink lists link  anchor ',
             ],
+            fullpage_default_text_color: '#787878',
             toolbar: 'bold | bullist numlist | italic | link',
 
         });

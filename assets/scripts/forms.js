@@ -166,11 +166,12 @@ $(document).ready(function () {
                         var elem = '<div class="error">Required field</div>';
                         if (this.querySelector('.forum_editable_field')){
                             this.querySelector('.forum_editable_field').querySelector('iframe').style.borderColor = 'red';
-                            var error = generateError( 'Required field' );
-                            this.querySelector('.tiny_mce_label').appendChild(error);
+                            
                         } else {
                             this.querySelector('.forum_discus').querySelector('iframe').style.borderColor = 'red';
-                        }                       
+                        } 
+                        var error = generateError( 'Required field' );
+                        this.querySelector('.tiny_mce_label').appendChild(error);                      
                         submit = false;
                    } else if(this.querySelector('.forum_editable_field')) {
                         this.querySelector('.forum_editable_field').querySelector('iframe').style.borderColor = 'inherit';
