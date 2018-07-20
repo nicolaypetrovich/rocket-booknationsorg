@@ -2,6 +2,8 @@
 
 $(document).ready(function () {
 
+
+
     function validateForm( ) {
         var form = document.querySelectorAll('form');
 
@@ -152,13 +154,41 @@ $(document).ready(function () {
                     }
                 }
 
-                if ( submit ) this.submit();
-            })
-        }
-    }
+                console.log( this.querySelector( '.tiny_mce_wrap' ) );
 
+                if ( this.querySelector( '.tiny_mce_wrap' ) ) {
+
+                    console.log('step 1');
+
+                    var chekOnEmpty = [].slice.call( this.querySelector('iframe').contentDocument.querySelector('body').children)[0].innerText;
+       
+                   if(chekOnEmpty == 0){
+                        var elem = '<div class="error">Required field</div>';
+                        if (this.querySelector('.forum_editable_field')){
+                            this.querySelector('.forum_editable_field').querySelector('iframe').style.borderColor = 'red';
+                            var error = generateError( 'Required field' );
+                            this.querySelector('.tiny_mce_label').appendChild(error);
+                        } else {
+                            this.querySelector('.forum_discus').querySelector('iframe').style.borderColor = 'red';
+                        }                       
+                        submit = false;
+                   } else if(this.querySelector('.forum_editable_field')) {
+                        this.querySelector('.forum_editable_field').querySelector('iframe').style.borderColor = 'inherit';
+                        
+                   } else {
+                        this.querySelector('.forum_discus').querySelector('iframe').style.borderColor = 'inherit';
+                   } 
+                }
+
+                            if ( submit ) this.submit();
+                        })
+                    }
+                }
+   
     window.addEventListener('load', function () {
-        validateForm()
-    })
+        validateForm();        
+    });
+
+     
 
 });
