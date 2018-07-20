@@ -6412,7 +6412,7 @@ input.file_input{
   border: none;
   margin-bottom: 8px;
   border-radius: 5px;
-  background-color: #bababa;
+  background-color: black;
   color: #ffffff;
   font-family: HelveticaNeueCyr;
   font-size: 14px;
@@ -6422,7 +6422,7 @@ input.file_input{
 .menagement__aside--button:hover,
 .menagement__aside--button:focus {
   transition: all 0.4s;
-  background-color: #1d1d1d;
+  background-color: #e11f46;
 }
 .menagement__aside__group {
   padding-top: 10px;
@@ -6580,7 +6580,7 @@ input.file_input{
   margin-left: 100px;
   margin-top: 13px;
   border-radius: 5px;
-  background-color: #bababa;
+  background-color: black;
   color: #fff;
   cursor: pointer;
   transition: all 0.4s;
@@ -6588,7 +6588,7 @@ input.file_input{
 .menagement__location--button:hover,
 .menagement__location--button:focus {
   transition: all 0.4s;
-  background-color: #1d1d1e;
+  background-color: #e11f46;
 }
 .menagement__web--name {
   font-size: 14px;
@@ -6768,7 +6768,7 @@ input.file_input{
   box-shadow: 0 0 34px 4px rgba(0, 0, 1, 0.13);
   border-radius: 5px;
   height: auto;
-  width: 100%;
+  width: 80%;
   background-color: #fff;
   transform: translateX(-50%);
 }
@@ -6798,7 +6798,7 @@ input.file_input{
   margin-left: 50px;
   height: 37px;
   border-radius: 5px;
-  background-color: #fd3535;
+  background-color: #e11f46;
   color: #fff;
   border: none;
   transition: all 0.4s;
@@ -7505,4 +7505,7 @@ option:checked {
     display: -ms-flexbox;
     display: flex;
     margin-top: 5px;
+}
+.menagement__popup--wrapper {
+    margin-top: 40px;
 }

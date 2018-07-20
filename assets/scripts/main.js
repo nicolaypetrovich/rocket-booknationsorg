@@ -230,6 +230,9 @@ $(document).ready(function () {
     $('.close_popup_button').click(function () {
         $('.select_icon_popup').slideUp();
     });
+    $('.close_popup_button').click(function () {
+        $('.menagement__popup').hide();
+    });
 
 
     /*
@@ -357,14 +360,14 @@ $(document).ready(function () {
             chekOnEmpty.appendTo(tinyMCE.activeEditor.execCommand('mceInsertContent', false, '<br/>' + getReviewContent + '<br/>'))
         }
     });
-    $('.js-review_btn-send').click(function () {
-        var chekOnEmpty = tinyMCE.activeEditor.getContent();
+    // $('.js-review_btn-send').click(function () {
+    //     var chekOnEmpty = tinyMCE.activeEditor.getContent();
 
-        if(chekOnEmpty.length == 0){
+    //     if(chekOnEmpty.length == 0){
 
-            $('.forum_editable_field label #mce_0_ifr').css('borderColor','red')
-        }
-    });
+    //         $('.forum_editable_field label #mce_0_ifr').css('borderColor','red')
+    //     }
+    // });
 
         function validate(evt) {
           var theEvent = evt || window.event;

@@ -242,7 +242,7 @@
      } 
      .select_icon_popup {
         left: 0;
-    }
+    }    
 }
 @media (max-width: 1024px){
     /*Personal Setting page*/
@@ -473,7 +473,7 @@
    .personal_content_lp label,
    .personal_content_rp label {
        width: 320px;
-
+    }
 }
 @media only screen and (max-width : 768px){
     /* Language course main*/
@@ -1291,8 +1291,8 @@
         width: 290px;
         padding: 20px 15px;
         left: 0;
-    }
-   }
+    }    
+}
 
 
 /* Language course photo */
@@ -1402,6 +1402,7 @@
         margin-right: 70px;
         max-width: 580px;
    }
+}   
 @media only screen and (max-width : 575px){
  
  
@@ -1441,8 +1442,7 @@
  
 }
  
-@media only screen and (max-width : 768px){
-     
+@media only screen and (max-width : 768px){    
     
  
  
