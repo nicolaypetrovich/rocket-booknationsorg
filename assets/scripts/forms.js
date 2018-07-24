@@ -154,12 +154,10 @@ $(document).ready(function () {
                     }
                 }
 
-                console.log( this.querySelector( '.tiny_mce_wrap' ) );
-
+                
                 if ( this.querySelector( '.tiny_mce_wrap' ) ) {
 
-                    console.log('step 1');
-
+                    
                     var chekOnEmpty = [].slice.call( this.querySelector('iframe').contentDocument.querySelector('body').children)[0].innerText;
        
                    if(chekOnEmpty == 0){

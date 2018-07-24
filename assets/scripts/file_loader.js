@@ -117,3 +117,177 @@ $(document).ready(function () {
         }
     });
 });
+
+window.addEventListener('DOMContentLoaded', init);
+function init () {
+
+
+    
+
+  function addFile () {
+
+    this.UpLoadFile = document.querySelector('.uplod_file');
+    this.sendBtnPic = document.querySelector('.load_picture');
+    this.sendBtnVid = document.querySelector('.load_video');
+    this.remoVer = document.querySelector('.clear_file');
+
+
+    // Создаем Заголовок //
+    this._createUpLod = () => {
+          
+          let headUp = document.createElement('h5');
+              headUp.classList.add('head_load');
+              headUp.innerHTML = "uploaded";
+
+          this.UpLoadFile.insertBefore(headUp, this.UpLoadFile.firstChild);    
+
+
+
+    }
+
+    // Создаем елемент видео //
+    this._createVideo = () => {
+        let wrpVid = document.createElement('div');
+            wrpVid.classList.add('show_video');
+        let nameV = document.createElement('span');
+            nameV.classList.add('info_file-name');
+            nameV.classList.add('form_js-vid_name');
+            nameV.innerHTML = "Name";
+        let sizeV = document.createElement('span');
+            sizeV.classList.add('info_file-size');    
+            sizeV.classList.add('form_js-vid_size');
+            sizeV.innerHTML = "100";
+        let valueMb = document.createElement('span');
+            valueMb.classList.add('info_file-mb')
+            valueMb.innerHTML = "mb";
+        let iconV = document.createElement('span');
+            iconV.classList.add('info_icon');
+        let iconVcontV = document.createElement('i');
+            iconVcontV.classList.add('fas');    
+            iconVcontV.classList.add('fa-video');
+        let iconClosV = document.createElement('span');
+            iconClosV.classList.add('clear_file');
+        let iconClosVcontent = document.createElement('i');
+            iconClosVcontent.classList.add('fas');    
+            iconClosVcontent.classList.add('fa-times');
+        wrpVid.appendChild(nameV);        
+        wrpVid.appendChild(sizeV);
+        wrpVid.appendChild(valueMb);
+        wrpVid.appendChild(iconV);
+        wrpVid.appendChild(iconClosV);
+        iconV.appendChild(iconVcontV);
+        iconClosV.appendChild(iconClosVcontent);
+
+        this.UpLoadFile.insertBefore(wrpVid, this.UpLoadFile.lastChild);
+    } 
+    // Создаем елемент катринки //
+    this._createImg = () => {
+        let wrpImg = document.createElement('div');
+            wrpImg.classList.add('show_img');
+        let nameImg = document.createElement('span');
+            nameImg.classList.add('info_file-name');
+            nameImg.classList.add('form_js-img_name');
+            nameImg.innerHTML = "Name";
+        let sizeImg = document.createElement('span');
+            sizeImg.classList.add('info_file-size');    
+            sizeImg.classList.add('form_js-img_size');
+            sizeImg.innerHTML = "100";
+        let valueMb = document.createElement('span');
+            valueMb.classList.add('info_file-mb')
+            valueMb.innerHTML = "mb";
+        let iconImg = document.createElement('span');
+            iconImg.classList.add('info_icon');
+        let iconImgcontV = document.createElement('i');
+            iconImgcontV.classList.add('fas');    
+            iconImgcontV.classList.add('fa-image');
+        let iconClosImg = document.createElement('span');
+            iconClosImg.classList.add('clear_file');
+        let iconClosImgContent = document.createElement('i');
+            iconClosImgContent.classList.add('fas');    
+            iconClosImgContent.classList.add('fa-times');
+        wrpImg.appendChild(nameImg);        
+        wrpImg.appendChild(sizeImg);
+        wrpImg.appendChild(valueMb);
+        wrpImg.appendChild(iconImg);
+        wrpImg.appendChild(iconClosImg);
+        iconImg.appendChild(iconImgcontV);
+        iconClosImg.appendChild(iconClosImgContent);
+
+        this.UpLoadFile.insertBefore(wrpImg, this.UpLoadFile.lastChild);
+    }   
+    this._clerFile = (event) => {
+
+        event.parentNode.removeChild(event);
+
+
+    }  
+
+    this._remove = () => {
+        let shImg = document.querySelector('.show_img');
+        let shVid = document.querySelector('.show_video');
+        let shHlod = document.querySelector('.head_load'); 
+           
+
+        if (shImg) {
+
+            shImg.parentNode.removeChild(shImg);
+
+        } else if (shVid) {
+
+            shVid.parentNode.removeChild(shVid);
+
+        } else if (shHlod) {
+
+            shHlod.parentNode.removeChild(shHlod);
+            return;
+        }
+        console.log('sdsad');
+    }
+
+    this._event = () => {
+
+        // this.remoVer.addEventListener('mouseup', this._clerFile(remoVer));
+             
+        this.sendBtnPic.addEventListener('muoseup', this._remove);
+        this.sendBtnPic.addEventListener('mouseup', this._createImg);
+        this.sendBtnPic.addEventListener('mouseup', this._createUpLod);
+        
+        this.sendBtnVid.addEventListener('muoseup', this._remove);          
+        this.sendBtnVid.addEventListener('mouseup', this._createVideo); 
+        this.sendBtnVid.addEventListener('mouseup', this._createUpLod); 
+        
+        
+
+
+
+
+    }
+    
+
+    this._init = () => {   
+        this._event (); 
+                  
+       
+    }   
+
+    this._init();        
+                    
+
+
+
+
+
+
+
+
+// var vidShow = document.querySelector('.show_video');
+//     imgShow = document.querySelector('.show_img');
+//     getEl = document.querySelector('.uplod_file');
+
+// newCreEl = vidShow.cloneNode(true);
+// new1CreEl = imgShow.cloneNode(true);
+// // getEl.appendChild(newCreEl);
+// // getEl.appendChild(new1CreEl);
+  }
+   const runaddFile = new addFile();
+}

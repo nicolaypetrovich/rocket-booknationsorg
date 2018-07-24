@@ -4117,7 +4117,31 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   color: #bababa;
 }
 
-.editable_field-info ul {
+.info_icon { 
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+
+  
+}
+
+.clear_file{
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  color: #bababa; 
+}
+.clear_file:hover{
+  color: #000;
+}
+.activ_video{
+  display: none;
+}
+.activ_img {
+  display: none;
+}
+
+.uplod_file{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4127,7 +4151,8 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   flex-direction: column;
 }
 
-.editable_field-info ul li {
+.show_video,
+.show_img {
   -ms-flex-item-align: start;
   align-self: flex-start;
   padding-right: 30px;
@@ -4137,8 +4162,12 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   display: -ms-flexbox;
   display: flex;
 }
+.head_load {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
 
-.editable_field-info ul li:before {
+/*.show_video > .info_icon*/ {
   content: '';
   position: absolute;
   right: 0;
@@ -4152,13 +4181,6 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   transform: translateY(-50%);
 }
 
-.editable_field-info ul li:nth-child(2):before {
-  content: '\f03d';
-}
-
-.editable_field-info ul li:nth-child(3):before {
-  content: '\f03e';
-}
 .create_forum_wrap .similar_form label.forum_save_info .send_btn{
     width: 120px;
     height: 45px;
@@ -5455,7 +5477,6 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     padding-top: 40px;
     padding-bottom: 60px
 }
-
 .events__content{
     max-width: 650px;
     margin-right: 30px;
