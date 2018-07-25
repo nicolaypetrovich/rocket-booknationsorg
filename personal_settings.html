@@ -182,10 +182,10 @@
     <div class="container remove_default_styles">
         <ul class="breadcrumbs">
             <li class="breadcrumbs__item">
-                <a href="/" class="breadcrumbs__link">Главная</a>
+                <a href="/" class="breadcrumbs__link">Home</a>
             </li>
             <li class="breadcrumbs__item">
-                <span class="breadcrumbs__link breadcrumbs__link_static">Название страницы</span>
+                <span class="breadcrumbs__link breadcrumbs__link_static">Personal settings</span>
             </li>
         </ul>
         <div class="layout__content">
@@ -208,13 +208,13 @@
                     <form method="GET" class="formWithValidation personal_content_field">
                         <div class="personal_form_in">
                             <div class="personal_content_lp">
-                                <label>
+                                <label class="date_label">
                                     <span class="req_field">Name</span>
-                                    <input type="text" class="required" required="required">
+                                    <input type="text" class="required">
                                 </label>
-                                <label>
+                                <label class="date_label">
                                     <span class="req_field">Gender</span>
-                                    <input type="text" class="required" required="required">
+                                    <input type="text" class="required">
                                 </label>
                                 <label>
                                     <span>Nickname</span>
@@ -228,23 +228,23 @@
                                         <option value="">Afganistan (+95)</option>
                                     </select>
                                 </label>
-                                <label>
+                                <label class="label_error">
                                     <span class="req_field ">Email</span>
-                                    <input type="text" class="email required" required="required">
+                                    <input type="text" class="email required">
                                     <p class="format_example">If you have changed your email address, write it here.</p>
                                 </label>
                             </div>
                             <div class="personal_content_rp">
-                                <label>
+                                <label class="date_label">
                                     <span class="req_field">Surname</span>
-                                    <input type="text" class="required" required="required">
+                                    <input type="text" class="required">
                                 </label>
                                 <label class="date_label">
                                     <span class="req_field">Date of Birth</span>
                                     <span class="date_select_wrap">
                                         <span class="focus_date_field js-focus_date_field"><i class="fas fa-calendar-alt"></i></span>
                                         <span class="clear_date_field js-clear_date_field"><i class="fas fa-times"></i></span>
-                                        <input id="js-date-picker" class="required" required="required">
+                                        <input id="js-date-picker" class="required">
                                     </span>
                                     <span class="format_example">Day / Month / Year</span>
                                 </label>
@@ -260,10 +260,10 @@
                                     <span>City of residence</span>
                                     <input type="text">
                                 </label>
-                                <label>
+                                <label class="label_error">
                                     <span class="req_field">Phone number</span>
-                                    <input type="text" class="required" required="required">
-                                    <p class="format_example">For example: +33612345678</p>
+                                    <input type="text" class="required">
+                                    <p><a class="format_example" content="telephone=no" >For example: +33612345678</a></p>
                                 </label>
                             </div>
                         </div>

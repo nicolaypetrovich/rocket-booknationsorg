@@ -111,18 +111,33 @@
 @media only screen and (max-width:420px){
     .in_put_data {
         width: 120px;
-    }     
+    }  
+
 }
 @media only screen and (max-width:380px){
     .in_put_data {
         width: 110px;
+    }
+    .social_log-in {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+    .social_log-in span.pluso-wrap a:first-child {
+        margin-left: 0px;        
+    }
+    .social_log-in span.pluso-wrap a {
+        margin-top: 10px;
     }   
+    
 }
 @media only screen and (max-width:350px){
     .in_put_data {
         width: 100px;
-    }   
+    } 
+    
 }
+
 
 /*End ---Special for events tabel---End*/
 
