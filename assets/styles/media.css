@@ -217,7 +217,7 @@
         flex-wrap: wrap;
     }
     .personal_form_in{
-        justify-content: space-around;
+        justify-content: space-between;
     }
     .personal_groups_in{
         flex-direction: row;
@@ -261,7 +261,7 @@
 }
 @media (max-width: 1024px){
     /*Personal Setting page*/
-    /*.personal_form_in{
+   /* .personal_form_in{
         justify-content: space-between;
     }*/
     /*Personal Setting page End*/
@@ -1035,7 +1035,8 @@
 
     /* Pages */
     /* Input form-search main */
-    .form-search__wrap {
+
+    .form-search_wrapper {
         flex-wrap: wrap;
         justify-content: center;
     }

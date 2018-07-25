@@ -2929,6 +2929,7 @@ b {
   border-radius: 5px;
   overflow: hidden;
   background-color: #d1d1d1;
+  z-index: 1;
 }
 
 .es_photo_box > * {
@@ -2958,6 +2959,9 @@ b {
 
 input.take-file {
   display: none;
+}
+.take-file {
+  z-index: 99999;
 }
 
 label.es__load_box {
