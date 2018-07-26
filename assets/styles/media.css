@@ -197,6 +197,7 @@
     }
     /*Partners Page End*/
 }
+
 @media only screen and (max-width : 1200px){
     /*Forum page*/
     .layout__title{
@@ -210,7 +211,7 @@
     
     /* Language course registration End */
 }
-@media only screen and (max-width : 1199px){
+@media only screen and (max-width:1199px){
 
     /*Personal Setting page*/
     .personal_setting_wrap{
@@ -237,6 +238,14 @@
     .personal_groups{
         padding-top: 60px;
     }
+    .personal_content_lp > label, 
+    .personal_content_rp > label {
+        width: 300px;
+    }
+    .personal_content_rp {
+        border-color: red;
+    }
+
     /*Personal Setting page end*/
     
 
@@ -248,22 +257,22 @@
     .search_filter_pos{    
        display: flex;
        flex-wrap: wrap;
-     }
-     .events__tag{
+    }
+    .events__tag{
         margin: 0 80px 0 0;
-     }
-      .events__aside{ 
+    }
+    .events__aside{ 
         width: 50%; 
-     } 
-     .select_icon_popup {
+    } 
+    .select_icon_popup {
         left: 0;
     }    
 }
 @media (max-width: 1024px){
     /*Personal Setting page*/
-   /* .personal_form_in{
+    .personal_form_in{
         justify-content: space-between;
-    }*/
+    }
     /*Personal Setting page End*/
     /* Aside right to blocks start */
     .fixed-aside{
@@ -274,7 +283,7 @@
         min-width: 40px;
     }
 }
-@media only screen and (max-width : 991px){
+@media screen and (max-width: 991px){
     /* Language course registration */
     .reg_course_top-part{
         width: auto;
@@ -354,11 +363,7 @@
         width: 800px;
     }
     /*Partners Page End*/
-    /*Personal Setting page*/
-    .remove_default_styles{
-        max-width: 100%
-    }
-    /*Personal Setting page end*/
+    
     /* Banner */
     .banner {
         padding: 40px 50px;
@@ -487,7 +492,7 @@
     }
    .personal_content_lp label,
    .personal_content_rp label {
-       width: 320px;
+       width: 280px;
     }
 }
 @media only screen and (max-width : 768px){
