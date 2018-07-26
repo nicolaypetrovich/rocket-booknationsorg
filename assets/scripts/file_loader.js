@@ -223,36 +223,44 @@ function init () {
     }  
 
     this._remove = () => {
-        let shImg = document.querySelector('.show_img');
-        let shVid = document.querySelector('.show_video');
-        let shHlod = document.querySelector('.head_load'); 
+        let shImg = [].slice.call(document.getElementsByClassName('show_img'));
+        let shVid = [].slice.call(document.getElementsByClassName('show_video'));
+        let shHlod = [].slice.call(document.getElementsByClassName('head_load')); 
+        console.log('blablabla');
            
 
-        if (shImg) {
+        if (shImg.length) {
+            shImg.forEach(function(elem){
+                
+                elem.remove();
+            });
+            // shImg.parentNode.removeChild(shImg);
 
-            shImg.parentNode.removeChild(shImg);
+        } else if (shVid.length) {
 
-        } else if (shVid) {
+            shVid.forEach(function(elem){
+                
+                elem.remove();
+            });
 
-            shVid.parentNode.removeChild(shVid);
+        } else if (shHlod.length) {
 
-        } else if (shHlod) {
-
-            shHlod.parentNode.removeChild(shHlod);
-            return;
+            shHlod.forEach(function(elem){
+                
+                elem.remove();
+            });
         }
-        console.log('sdsad');
     }
 
     this._event = () => {
 
         // this.remoVer.addEventListener('mouseup', this._clerFile(remoVer));
              
-        this.sendBtnPic.addEventListener('muoseup', this._remove);
+        this.sendBtnPic.addEventListener('m', this._remove);
         this.sendBtnPic.addEventListener('mouseup', this._createImg);
         this.sendBtnPic.addEventListener('mouseup', this._createUpLod);
         
-        this.sendBtnVid.addEventListener('muoseup', this._remove);          
+        this.sendBtnVid.addEventListener('click', this._remove);          
         this.sendBtnVid.addEventListener('mouseup', this._createVideo); 
         this.sendBtnVid.addEventListener('mouseup', this._createUpLod); 
         

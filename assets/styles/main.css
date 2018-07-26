@@ -3041,6 +3041,13 @@ label.es__load_box {
 /*Event Settings end*/
 
 /*Personal Settings*/
+.conteiner_for_per_sett {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .personal_setting_wrap {
   display: -webkit-box;
@@ -3270,6 +3277,7 @@ form.personal_content_field {
 } 
 .personal_content_lp,
 .personal_content_rp {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3286,7 +3294,7 @@ form.personal_content_field {
 .personal_content_lp label,
 .personal_content_rp label {
   margin-bottom: 30px;
-  width: 350px;
+  width: 100%;
   position: relative;
 }
 
@@ -3297,6 +3305,12 @@ form.personal_content_field {
   color: #181818;
   display: inline-block;
   padding-bottom: 7px;
+}
+.personal_content_lp {
+  margin-right: 15px;
+}
+.personal_content_rp {
+  margin-left: 15px;
 }
 
 .req_field {
