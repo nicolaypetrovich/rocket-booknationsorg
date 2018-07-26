@@ -5526,9 +5526,6 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     margin-bottom: 15px;
 }
 
-.content__bottom{
-    padding-top: 20px;
-}
 .event-simple__tiltle{
     text-transform: uppercase;
     font-size: 16px;
@@ -5967,8 +5964,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     box-shadow: 0 0 21px rgba(0,0,0,0.15);
 }
 .head_tabs {
-    padding-top: 50px;
-    padding-bottom: 10px; 
+    padding-top: 50px;    
 }
 .forum_editable_field_2{
     position: relative;
@@ -7561,3 +7557,24 @@ option:checked {
 .menagement__popup--wrapper {
     margin-top: 40px;
 }
+
+/*Grop_membera Start*/
+.content__member{
+    position: relative;
+}
+.member_wrap {
+  border: 1px solid #bababa;
+  margin-top: 0.73rem;  
+  display: flex;
+  justify-content: space-between;
+  
+}
+.member_wrap:hover {
+    box-shadow: 0 0 21px rgba(0,0,0,0.15);
+}
+.member_wrap > span {   
+  padding: 0.55rem;  
+}
+
+
+/*Grop_membera End*/
