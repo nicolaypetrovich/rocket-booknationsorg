@@ -25,8 +25,11 @@ $(function() {
     //============ CLOSE on button */
     $(document).on('click', function(e){
         if(e.target.className == 'modal__overlay' || e.target.className == 'modal__close'){
-            closeModal();
-        }
+            closeModal();             
+        }        
+    });
+    $('.close_popup_button').click(function () {
+            closeModal();;
     });
     //============  ESCAPE key pressed
     $(document).keydown(function(e) {
