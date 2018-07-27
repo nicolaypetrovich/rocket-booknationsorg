@@ -2929,7 +2929,6 @@ b {
   border-radius: 5px;
   overflow: hidden;
   background-color: #d1d1d1;
-  z-index: 1;
 }
 
 .es_photo_box > * {
@@ -2944,6 +2943,13 @@ b {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.wrap_user_photo img {
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 .es__group:first-child .es__load_box > i {
@@ -4742,7 +4748,15 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   line-height: 24px;
   margin-bottom: 25px;
 }
-
+.courses_level{
+  margin-bottom: 92px;
+}
+.courses_team {
+  margin-bottom: 107px;
+}
+.courses_test {
+  margin-bottom: 51px;
+}
 /*Language course team End */
 
 /*Language test */
@@ -5589,6 +5603,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     margin-bottom: 20px;
     border-radius: 7px;
     width:100%;
+    cursor: pointer;
     text-align: center;
     color: #fff;
     transition: linear 0.2s;

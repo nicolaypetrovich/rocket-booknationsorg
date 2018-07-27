@@ -203,11 +203,19 @@ $(document).ready(function () {
     }})();
 
     // Datapicker
+    
     $('#js-date-picker, .js-date-picker,.js-date-picker-reg').datepicker({
-        changeYear: true,
-        yearRange: "1950:2018",
-        dateFormat: "dd/mm/yy"
+            changeYear: true,
+            changeMonth: true,
+            yearRange: "1900:2018",
+            dateFormat: "dd/mm/yy",
+            closeText: "Close"   
     });
+
+
+    $("#datepicker-btn").click(function() {
+        $("#datepicker-input").datepicker("show");
+    });   
 
 
     $('.js-clear_date_field').click(function () {
