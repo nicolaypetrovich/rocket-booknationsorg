@@ -2526,12 +2526,11 @@ b {
   text-transform: uppercase;
 }
 
-.news_sort button.news_new-sort {
+.news_new-sort {
   background-color: transparent;
   border: none;
   font-size: 14px;
   position: relative;
-  padding-left: 20px;
   color: #0e83b5;
   margin-right: 20px;
   display: inline-block;
@@ -2552,15 +2551,16 @@ b {
 
 .news_sort button:before {
   content: '\f062';
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
+  padding-right: 10px;
   font-family: "Font Awesome 5 Free";
   font-size: 14px;
   font-weight: 900;
 }
 
-.news_section .news_sort button.news_name-sort {
+.news_name-sort {
   display: inline-block;
   color: #bababa;
   font-size: 14px;
@@ -2569,15 +2569,15 @@ b {
   border: none;
 }
 
-.news_section .news_sort button.news_name-sort:before {
+/*.news_name-sort:before {
   display: none;
-}
+}*/
 
-.news_section .news_sort button.news_name-sort:hover {
+.news_name-sort:hover {
   color: #1d1d1e;
 }
 
-.news_section .news_sort button.news_name-sort:focus {
+.news_name-sort:focus {
   color: #3396c0;
 }
 
@@ -5860,6 +5860,9 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     max-width: 460px;
     width:100%;
 }
+.event__pluso {
+  min-width: 162px;
+}
  
  
 .pluso-hide{
@@ -5951,9 +5954,12 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 /* Groups event End */
 
 /*Start group_discussion*/
-.media_marge a {
+.media_marge{
+   font-size: 16px;
+}
+
+.media_marge  a{
     margin-right: 10px;
-    font-size: 16px;
 }
 .media_marge span:nth-child(2) {
     color: #bababa;

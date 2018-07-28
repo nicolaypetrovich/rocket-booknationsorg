@@ -6,7 +6,7 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	    <title>Nationsorg</title>
+	    <title>Groups posts</title>
 	    <meta name="description" content="">
 	    <meta name="keywords" content="">
 
@@ -205,108 +205,63 @@
 	            </div>
 	        </div>
 	            <div class="event__media d-md-flex justify-content-between">
-	            	<div class="media__left d-flex flex-lg-row justify-content-sm-between flex-sm-column flex-sm-wrap align-items-sm-start align-items-lg-center">
-			            <div class="media__like d-flex align-items-center">
-			                <a class="btn btn_default">
-			                    <span class="btn__label">Like</span>
-			                </a>
-			                <span>10</span>
-			            	<i class="far fa-thumbs-up"></i>
+			            	
+			                <div class="media__left d-flex flex-lg-row justify-content-sm-between flex-sm-wrap align-items-sm-start align-items-lg-center">
+			                	<!-- Like button -->
+			                    <div class="media_marge">
+				                    <a class="btn btn_accent">
+				                        <span class="btn__label">Like</span>
+				                    </a>
+				                    <span>10</span>
+				                    <i class="far fa-thumbs-up"></i>
+				                </div>
+			                    <!-- Like button -->
+	                        <div class="pluso-hide">
+		                     	<div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
+		                    </div>
+			                    <!-- Start navigation -->
+			                    <div class="course_navigation event__navigation d-flex flex-column flex-md-row align-items-md-center flex-sm-column">
+									<div class="course-hamburger">			       
+									        <ul>
+									            <li><a href="#">About</a></li>						                
+									            <li class="course_active-page"><a href="#">Discussion</a></li>      
+									            <li><a href="#">Members</a></li>						            
+									            <li><a href="#">Events</a></li>						            
+									            <li><a href="#">Files</a></li>							            
+									            <li><a href="#">Management</a></li>
+									        </ul>							  
+								    </div>							
+							    </div>
+							    <!-- Start hide navigation -->
+							    <div class="course_navigation event__navigation_hide">
+									<div class="course-hamburger">
+									    <div class="mob-hamburger">
+									        <input id="toggle" type="checkbox">
+									        <label for="toggle" class="hamburger">
+									            <span class="top-bun"></span>
+									            <span class="meat"></span>
+									            <span class="bottom-bun"></span>
+									        </label>							       
+									        <ul>
+									            <li><a href="#">About</a></li>						                
+									            <li class="course_active-page"><a href="#">Discussion</a></li>      
+									            <li><a href="#">Members</a></li>						            
+									            <li><a href="#">Events</a></li>						            
+									            <li><a href="#">Files</a></li>							            
+									            <li><a href="#">Management</a></li>
+									        </ul>							         
+									    </div>
+									</div>							
+									<!-- End Tabs -->
+							    </div>
+			                </div>
+							
+			                <div class="d-flex flex-column flex-md-row align-items-md-center">
+			                    <div class="event__pluso d-flex">
+			                     	<div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
+			                    </div>
+			                </div>
 			            </div>
-			            <div class="pluso-hide">
-	                     	<div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
-	                    </div>
-			            <div class="course_navigation event__navigation d-flex flex-column flex-md-row align-items-md-center flex-sm-column">
-							<div class="course-hamburger">
-							    <div class="">
-							        <ul>
-							            <li class="course_active-page">
-							                <a href="#" >
-							                    About
-							                </a>
-							            </li>
-							            <li>
-							                <a href="">
-							                    Discussion        
-							                </a>
-							            </li>
-							            <li>
-							                <a href="">
-							                    Members        
-							                </a>
-							            </li>
-							            <li>
-							                <a href="">
-							                    Events        
-							                </a>
-							            </li>
-							            <li>
-							                <a href="">
-							                    Files        
-							                </a>
-							            </li>
-							            <li>
-							                <a href="">
-							                    Management
-							                </a>
-							            </li>
-							        </ul>
-							    </div>
-							</div>
-						</div>
-	            	</div>
-	            	<div class="course_navigation event__navigation_hide">
-							<div class="course-hamburger">
-							    <div class="mob-hamburger">
-							        <input id="toggle" type="checkbox">
-							        <label for="toggle" class="hamburger">
-							            <span class="top-bun"></span>
-							            <span class="meat"></span>
-							            <span class="bottom-bun"></span>
-							        </label>
-							        <ul>
-							            <li class="course_active-page">
-							                <a href="#" >
-							                    About
-							                </a>
-							            </li>
-							            <li>
-							                <a href="">
-							                    Discussion        
-							                </a>
-							            </li>
-							            <li>
-							                <a href="">
-							                    Members        
-							                </a>
-							            </li>
-							            <li>
-							                <a href="">
-							                    Events        
-							                </a>
-							            </li>
-							            <li>
-							                <a href="">
-							                    Files        
-							                </a>
-							            </li>
-							            <li>
-							                <a href="">
-							                    Management
-							                </a>
-							            </li>
-							        </ul>
-							    </div>
-							</div>
-						</div>
-	               
-					
-	                <div class="d-sm-none d-md-flex d-lg-flex flex-column flex-md-row align-items-md-start">
-	                    <div class="event__pluso d-flex">
-	                     	<div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
-	                    </div>
-	                </div>
-	            </div>
 	          	<div class="events d-flex justify-content-between justify-content-sm-between align-items-sm-start align-items-lg-start">
 	          		<div class="events__content d-flex flex-column">
 	          			<div class="content__top d-flex flex-sm-column flex-md-row justify-content-between align-items-sm-start">
