@@ -276,14 +276,20 @@
     } 
     .select_icon_popup {
         left: 0;
-    }    
+    } 
+    /*Group Start*/
+    .groups-wrap .news-group__item {
+        min-width: 400px;
+    }   
+
+    /*Group End*/    
 }
 
+
 @media only screen and (max-width: 991px) {
-    /* Language course registration */
     .reg_course_top-part{
         width: auto;
-    }
+    }  
     .main_course_content .similar_form .reg_course_top-part .reg_course_field-wrap label{
         width: 350px;
     }
@@ -316,13 +322,7 @@
         align-self: flex-start;
     }
     /* Language course registration End */
-    /*Personal Setting page*/
-  /*  .personal_content_lp label, 
-    .personal_content_rp label {
-        width: 320px;
-    }
-*/
-
+   
     /*Personal Setting page end*/
 
     /* Language course main*/
@@ -395,20 +395,28 @@
      .groups-list{ 
         display: none !important; 
     } 
-    /* Event page end*/
-     /*Wish wall page*/
-    .wish_wall_form{
+    /*Group Start*/
+    .groups-wrap .news-group__item {
+        min-width: 0;  
+        width: 0;  
+    }   
+    .groups-wrap {
+        max-width: 520px;
+        flex-direction: row ;
+        justify-content: space-between;
+    }
+
+    /*Group End*/  
+          
+
+}    
+@media only screen and (max-width: 991px) {
+    
+    .wish_wall_form {
         align-self: center;
         max-width: 100%;
     }
-    /*Wish wall page end*/
-
-    /* Events page */
-    .events .table-content .date-box {
-        position: relative;
-    }
-
-    .events .table-content .date-box>span {
+    .events .table-content .date-box > span {
         position: absolute;
         right: 3px;
         top: 12px;
@@ -416,6 +424,9 @@
         padding: 13px 0;
         width: 30px;
     }
+    .events .table-content .date-box {
+        position: relative;
+    }   
 
     /* Event Settings page */
     .es_photo_box {
@@ -465,6 +476,24 @@
     .block_discus{
         margin-top: 10px;
     }
+    /*Group Start*/
+    .groups_search_filter{
+        flex-wrap: wrap;
+    }
+    .groups-search {
+        max-width: 520px;
+    }
+    .groups_title_search{
+        width: 100%;
+    }
+    .groups_wrap_button {
+        margin-left: 0px;
+        width: 100%;
+    }
+    
+
+    /*Group End*/
+    
 }
 
    
@@ -487,7 +516,7 @@
     }
     /*Partners Page End*/
 }    
- @media only screen and (max-width : 815px){   
+@media only screen and (max-width : 815px){   
     .select_icon_popup {
         width: 700px;
         left: 0;
@@ -514,7 +543,7 @@
     }
     .layout__title{
         font-size: 18px;
-        padding-bottom: 10px;
+        padding-bottom: 0px;
     }
     .forum .table-content_thead th:nth-child(2){
         width: 18%;
@@ -536,12 +565,6 @@
     /*tart Discussion_group*/
     .message_merg {
     margin-left: 0px;
-    }
-    .pos_reply {
-        flex-direction: column!important;
-    }
-    .reply_pos {
-    margin-top: 17px;
     }
     .add_cont_1:after {
         content: " 1";
@@ -786,17 +809,19 @@
     .event__banner {
         padding: 30px 7px 35px;
         border-radius: 0;
+        align-items: inherit;
+        
+    }
+    .event__banner > div {
+        padding: 0;
+        margin: 0;
+
+    }
+    .event__banner > .event__button  {
+        justify-content: flex-end;
     }
 
-    .event__banner p {
-        width: 100%;
-    }
-
-    .event__banner>h3, .event__banner>div {
-        max-width: 540px;
-        padding: 0 15px;
-        margin: 0 auto;
-    }
+    
 
     /* Event page end*/
 
@@ -829,7 +854,7 @@
     }
     .sub_pos_wrap input {
     
-    width: 100% !important
+    width: 100% !important;
     }
     .btn_sub {
     margin-left: 0px !important;
@@ -838,7 +863,14 @@
 
     }
     /*Language courses end*/
-}
+    .pos_reply {
+        flex-direction: column!important;
+    }
+    .reply_pos {
+    margin-top: 17px;
+    }
+}    
+    
 @media only screen and (max-width : 635px){
     /* Language course registration */
     .reg_course_bottom-part{
@@ -1278,6 +1310,16 @@
     }
     .review_warning_massage {
         margin-top: 15px;
+    }
+    .groups_wrap_button {
+        flex-wrap: wrap;
+    }
+    .groups_form_search_section input:nth-child(1){
+        margin-left: 0;
+    }
+    .groups_form_search_section{
+        width: 100%;    
+        justify-content: center;
     }
      
 }

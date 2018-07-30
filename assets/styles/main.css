@@ -1031,8 +1031,8 @@ b {
 
 .news-group__item {
   margin: 25px 10px;
-  -ms-flex-preferred-size: 240px;
-  flex-basis: 240px;
+  -ms-flex-preferred-size: 180px;
+  flex-basis: 180px;
 }
 
 .news-card {
@@ -2635,6 +2635,7 @@ b {
   background: url("../images/2321.png") no-repeat 50%;
   background-size: cover;
   border-radius: 5px;
+  align-items: flex-end;
 }
 
 .event__banner .layout__title {
@@ -5058,7 +5059,14 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   -webkit-transition: background-color ease .5s;
   transition: background-color ease .5s;
 }
-
+.wrap_button {
+  display: flex;
+  margin-left: 10px;
+  margin-right: auto;
+}
+.wrap_button > label {
+  margin-right: 10px;
+}
 /* Language course registration End */
 
 /* Language course review */
@@ -6477,6 +6485,7 @@ input.file_input{
   display: -o-flex;
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 .menagement__aside {
   display: -webkit-flex;
@@ -6952,6 +6961,69 @@ input.file_input{
     margin-bottom: 10px;
     
 }
+.groups_title_search{
+   width: 45%;
+}
+.groups_filter_search{
+  width: 100%;
+}
+.groups_search_filter {
+  display: flex;
+  
+}
+.groups_wrap_button{
+  display: flex; 
+  margin-left: 19px;
+  width: 55%;
+  
+}
+.groups_title_search, 
+.groups_filter_search,
+.groups_form_search_section {
+  margin-bottom: 10px;
+}
+.groups_similar_form label input {
+    width: 100%;
+    max-width: 550px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 14px;
+    color: #787878;
+    margin-bottom: 10px;
+}
+.groups_search_filter label select {
+    width: 100%;
+    max-width: 450px;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 14px;
+    color: #787878;
+    margin-bottom: 10px;
+
+}
+.groups_form_search_section input:nth-child(1) {
+    border: 1px solid #e11f46;
+    background-color: #e11f46;
+    color: #fff;
+    transition: all ease .5s;
+    margin-right: 6px;
+    margin-left: 19px;
+}
+.groups_form_search_section input:nth-child(2) {
+    border: 1px solid #bababa;
+    color: #787878;
+    transition: all ease .5s;
+}
+.groups_form_search_section {
+  display: flex;
+}
+
 
 .groups-search .search_filter_pos .title_search{
     max-width: 520px;
@@ -6960,7 +7032,7 @@ input.file_input{
 }
 
 .groups-search .search_filter_pos .filter_search{
-    max-width: 330px;
+    min-width: 330px;
     width: 100%;
 }
 
