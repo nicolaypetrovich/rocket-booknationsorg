@@ -169,7 +169,7 @@ $(document).ready(function () {
 
     $("#trigger").click(function(e) {
         e.preventDefault();
-        $("#box").toggleClass("active");     
+        $("#box").toggleClass("active");        
     });
 
       $("#trigger2").click(function(e) {

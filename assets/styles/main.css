@@ -2920,7 +2920,7 @@ b {
 }
 
 .es__group > div > div:nth-child(2) {
-  margin-left: 22px;
+  margin-left: 38px;
 }
 
 .es_photo_box {
@@ -5920,6 +5920,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
    }
    .events__aside{
     margin-top: 50px;
+    align-items: flex-start;
 
    } 
 }
@@ -5932,6 +5933,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 .events__aside{
     max-width:460px;
     width:100%; 
+    align-self: flex-start;
 }
 
 .events__content .layout__title{
@@ -6549,6 +6551,7 @@ input.file_input{
 .menagement__left {
   max-width: 100%;
   width: 100%;
+  margin-right: 20px;
 }
 .menagement__left--title {
   margin-top: 10px;
@@ -6588,7 +6591,7 @@ input.file_input{
 }
 .menagement__discussion--desc {
   margin-bottom: 20px;
-  margin-left: 100px;
+  margin-left: 101px;
   color: #bababa;
   font-size: 12px;
   line-height: 12px;
@@ -6600,10 +6603,11 @@ input.file_input{
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  flex-wrap: wrap;
 }
 .menagement__tags--name {
   font-size: 14px;
-  margin-right: 63px;
+  margin-right: 69px;
 }
 .menagement__tags--input {
   height: 38px;
@@ -6619,6 +6623,7 @@ input.file_input{
   flex-wrap: wrap;
   max-width: 270px;
   width: 100%;
+  margin-left: 101px;
 }
 .menagement__tags--block {
   cursor: pointer;
@@ -6753,7 +6758,7 @@ input.file_input{
   text-transform: uppercase;
 }
 .menagement__type--name {
-  margin-right: 30px;
+  margin-right: 27px;
 }
 .menagement__type--privacy {
   margin-right: 10px;
@@ -6765,7 +6770,7 @@ input.file_input{
 .menagement__type--pablic {
   margin-bottom: 20px;
   margin-right: 10px;
-  margin-left: 105px;
+  margin-left: 101px;
   width: 12px !important;
   height: 12px;
   background-color: #787878 !important;
@@ -6780,17 +6785,17 @@ input.file_input{
 .menagement__type--only {
   margin-bottom: 20px;
   margin-right: 10px;
-  margin-left: 110px;
+  margin-left: 101px;
   width: 12px !important;
   height: 12px;
   background-color: #787878 !important;
 }
 .menagement__type--text {
   margin-bottom: 55px;
-  margin-left: 105px;
+  margin-left: 101px;
 }
 .menagement__posting--name {
-  margin-right: 30px;
+  margin-right: 21px;
 }
 .menagement__post {
   margin-top: 58px;
@@ -6798,7 +6803,7 @@ input.file_input{
   display: flex;
 }
 .menagement__post--checkbox {
-  margin-left: 20px;
+  margin-left: 13px;
   margin-right: 6px;
   width: 16px !important;
   height: 16px !important;
@@ -7087,30 +7092,27 @@ input.file_input{
     color:#d1d1d1;
 }
 #box{
-    
-   transform:scale(0);
-    transition: linear 0.4s;
-
-
+   display: none;   
 }
 #box2{
     background-color: #fff;
-   transform:scale(0);
+    transform:scale(0);
     transition: linear 0.4s;
 }
 
 
 #box.active, #box2.active{
+    display: block;
     transform:scale(1);
     transition: linear 0.4s;
 } 
 
 #box input{
     position: absolute;
-    right: 106px;
-    bottom: 11px;
-    height: 43px;
-    width: 484px;
+    right: 105px;
+    bottom: 20px;
+    height: 35px;
+    width: 485px;
     border-radius: 5px;
     border: solid 1px #bababa;
     padding: 0 10px;
@@ -7126,8 +7128,8 @@ input.file_input{
 
 #box .search_btn{
     position: absolute;
-    bottom: 22px;
-    right: 116px;
+    bottom: 27px;
+    right: 120px;
     background-color: #fff;
     border: none;
     font-size: 18px;

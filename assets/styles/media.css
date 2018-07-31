@@ -282,7 +282,11 @@
         min-width: 400px;
     }   
 
-    /*Group End*/    
+    /*Group End*/  
+    .menagement__left {
+        max-width: 469px;
+    }
+
 }
 
 
@@ -406,8 +410,11 @@
         justify-content: space-between;
     }
 
-    /*Group End*/  
-          
+    /*Group End*/
+    .menagement__form input, 
+    .menagement__form textarea { 
+        max-width: 350px;
+    }    
 
 }    
 @media only screen and (max-width: 991px) {
@@ -491,8 +498,10 @@
         width: 100%;
     }
     
-
     /*Group End*/
+    #box input{       
+       width: 436px;
+    }
     
 }
 
@@ -680,7 +689,7 @@
     /* Nav bar */
     .m-menu {
         position: fixed;
-        z-index: 99999;
+        z-index: 99;
         top: 0;
         right: 0;
         bottom: 0;
@@ -868,6 +877,9 @@
     }
     .reply_pos {
     margin-top: 17px;
+    }
+    #box input{       
+       width: 282px;
     }
 }    
     
@@ -1133,6 +1145,25 @@
         max-width: 490px;
         height: 300px;
         top:-200px;
+    }
+
+    #box input{
+        position: relative;
+        right: 0px;
+        bottom: 10px;
+        height: 35px;
+        width: 178px;    
+    }
+    #box .search_btn {        
+        bottom: 17px;
+        right: 12px;        
+    }
+    .menagement__wrapper {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
     }
 }
 @media only screen and (max-width : 480px){
@@ -1846,13 +1877,7 @@
   .menagement__popup-name--wrap {
     display: block;
   }
-  .menagement__wrapper {
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
-    flex-direction: column;
-  }
+  
   .menagement__banner {
     min-height: 230px;
     padding: 15px;
@@ -1957,8 +1982,24 @@
   .menagement .layout {
     padding-bottom: 45px;
   }
+   .menagement__group--input {
+    margin-top: 10px;
+  }
+  .menagement__discussion--desc {
+    
+    margin-left: 0;
+  }
+  .menagement__tags--wrapper {
+    margin-left: 0;
+  }
+  .menagement__location--button {
+    margin-left: 0;
+  }
 }
-@media (max-width: 519px) {
+@media (max-width: 575px) {
+  .menagement__form input, .menagement__form textarea {
+    max-width: 390px;
+}
   .layout {
     padding-bottom: 40px;
   }
