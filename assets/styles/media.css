@@ -261,7 +261,10 @@
 
     /* Event Settings page */
     .es__group > div > div:nth-child(2) {
-        margin-left: 0;
+        margin-left: 101px;
+    }
+    .menge_up_file  {
+        margin-left: 14px !important;
     }
     /* Event Settings page end*/
     .search_filter_pos{    
@@ -284,9 +287,13 @@
 
     /*Group End*/  
     .menagement__left {
-        max-width: 469px;
+        max-width: 500px;
+        margin-left: 5px;
     }
-
+    .es_photo_box{
+        width: 395px;
+    }
+    
 }
 
 
@@ -414,7 +421,10 @@
     .menagement__form input, 
     .menagement__form textarea { 
         max-width: 350px;
-    }    
+    }  
+    .es_photo_box {
+    width: 350px;
+    }  
 
 }    
 @media only screen and (max-width: 991px) {
@@ -436,10 +446,6 @@
     }   
 
     /* Event Settings page */
-    .es_photo_box {
-        width: 100%;
-    }
-
     .event__settings .layout__title {
         margin-bottom: 30px;
     }
@@ -876,10 +882,22 @@
         flex-direction: column!important;
     }
     .reply_pos {
-    margin-top: 17px;
+       margin-top: 17px;
     }
     #box input{       
        width: 282px;
+    }
+    .menge_up_file {
+       margin-left: 0px !important;
+    }
+    .es_photo_box {
+       width: 100%;
+    }
+    .es__group > div > div:nth-child(2) {
+    margin-left: 0px;
+    }
+    .es__group {
+    margin-top: 0px;
     }
 }    
     
@@ -1724,10 +1742,7 @@
     color: #181818;
   }
   .menagement__form {
-    max-width: 490px;
-  }
-  .menagement__form label {
-    color: #181818;
+    max-width: 480px;
   }
   .menagement__group--name {
     margin-right: 10px;
@@ -1758,8 +1773,8 @@
     color: #181818;
   }
   .menagement__type--text {
-    margin-top: 60px;
-    margin-left: 103px;
+    margin-top: 0px;
+    margin-left: 101px;
     white-space: nowrap;
   }
   .menagement__post {
@@ -1996,10 +2011,10 @@
     margin-left: 0;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .menagement__form input, .menagement__form textarea {
-    max-width: 390px;
-}
+    max-width: 100%;
+  }
   .layout {
     padding-bottom: 40px;
   }

@@ -6597,6 +6597,9 @@ input.file_input{
   line-height: 12px;
   font-weight: 300;
 }
+.menagement_wrap-checkbox {
+  display: flex;
+}
 .menagement__tags--grid {
   display: -webkit-flex;
   display: -moz-flex;
