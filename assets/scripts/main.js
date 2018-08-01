@@ -172,9 +172,18 @@ $(document).ready(function () {
         $("#box").toggleClass("active");        
     });
 
-      $("#trigger2").click(function(e) {
+    $("#trigger2").click(function(e) {
         e.preventDefault();
-        $("#box2").toggleClass("active");     
+        $("#box2").toggleClass("active");
+        if ($("#box2").hasClass("active")){
+            $("#trigger2").css("background-color", "black");
+        } else {
+            $("#trigger2").css("background-color","");
+        }   
+    });
+    $(".close_popup_button").click(function() {
+        $("#box2").removeClass("active");
+        $("#trigger2").css("background-color","");
     });
  
 //end slider for Language course photo
@@ -385,6 +394,22 @@ $(document).ready(function () {
             if(theEvent.preventDefault) theEvent.preventDefault();
           }
         }
+    $("#teg_1").click( function() {
+        $(this).toggleClass("menangement__teg_color");
+    });    
+    $("#teg_2").click( function() {
+        $(this).toggleClass("menangement__teg_color"); 
+    });        
+    $("#teg_3").click( function() {
+        $(this).toggleClass("menangement__teg_color");
+    });     
+    $("#teg_4").click( function() {
+        $(this).toggleClass("menangement__teg_color");
+    });     
+    $("#teg_5").click( function() {
+        $(this).toggleClass("menangement__teg_color");    
+    });
+    
 
 });
 

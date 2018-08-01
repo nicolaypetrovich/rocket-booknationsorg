@@ -2651,10 +2651,6 @@ b {
   margin-bottom: 35px;
 }
 
-.events__buttons {
-    margin-top: 35px;
-}
-
 .event__details ul {
   margin-top: 48px;
 }
@@ -2682,7 +2678,6 @@ b {
   top: 0;
   left: 0;
 }
-
 .event__btn {
   min-width: 150px;
   height: 45px;
@@ -2690,7 +2685,10 @@ b {
   padding: 0;
   border: none;
 }
-
+.event__btn_add {
+    min-width: 150px;
+    padding: 1.5px 15px;
+}
 .event__text {
   display: block;
   font-size: 14px;
@@ -4500,6 +4498,9 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   -webkit-transform: translateY(50%);
   transform: translateY(50%);
 }
+.course_navigation ul li a:hover {
+  color:#bababa;
+}
 
 .course_active-page a {
   color: #bababa!important;
@@ -4602,6 +4603,9 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
+.fb_learn-french a:hover {
+   color: #bababa;
+}   
 
 .fb_learn-french a i {
   position: absolute;
@@ -5587,6 +5591,9 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 .tag-simple{
     margin-top: 30px;
 }
+.tag-simple:first-child {
+    margin-top: 0px;
+}
 
 .tag-simple__title{
     font-size: 16px;
@@ -5946,8 +5953,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 .groups-list__item:first-child{
     margin-top: 0;
 }
-.content__bottom{
-    padding-top: 20px;
+.content__bottom{   
     position: relative;
 }
 .media__left{
@@ -5960,6 +5966,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     margin-right:30px;
     color:#787878;
 }
+
 
 /* Groups event End */
 
@@ -6010,9 +6017,6 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 .block_discus:hover {
     box-shadow: 0 0 21px rgba(0,0,0,0.15);
-}
-.head_tabs {
-    padding-top: 50px;    
 }
 .forum_editable_field_2{
     position: relative;
@@ -6567,7 +6571,6 @@ input.file_input{
 }
 .menagement__form input,
 .menagement__form textarea {
-  padding-left: 30px;
   max-width: 390px;
   width: 100%;
   border-radius: 5px;
@@ -6587,6 +6590,7 @@ input.file_input{
 }
 .menagement__discussion--input {
   height: 80px;
+  padding: 5px 10px;
   margin-bottom: 5px;
 }
 .menagement__discussion--desc {
@@ -6611,6 +6615,52 @@ input.file_input{
 .menagement__tags--name {
   font-size: 14px;
   margin-right: 69px;
+}
+.menagement__es_photo_box {
+  position: relative;
+  width: 630px;
+  height: 170px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #d1d1d1;
+}
+.menagement__es__group {
+  margin-top: 25px;
+}
+
+.menagement__es__group > div > div:nth-child(2) {
+  margin-left: 38px;
+}
+.menagement__es_photo_box > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.menagement__es_photo_box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.menagement__wrap_user_photo img {
+  width: auto;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.menagement__es__group:first-child .es__load_box > i {
+  font-size: 16px;
+  /*font awesome upload icon*/
+}
+
+.menagement__es_photo_box i {
+  font-size: 60px;
+  /*font awesome camera icon*/
+  color: #e8e8e8;
 }
 .menagement__tags--input {
   height: 38px;
@@ -6646,11 +6696,6 @@ input.file_input{
   border-radius: 5px;
   background-color: #d1d1d1;
   transition: all 0.4s;
-}
-.menagement__tags--block:hover,
-.menagement__tags--block:focus {
-  transition: all 0.4s;
-  background-color: #1d1d1e;
 }
 .menagement__tags--block-sm {
   margin-bottom: 4px;
@@ -6931,7 +6976,7 @@ input.file_input{
   font-size: 24px;
 }
 
- .menagement__popup-name--wrap {
+ .popup-name--wrap {
     width: 100%;
     display: -webkit-flex;
     display: -moz-flex;
@@ -6951,6 +6996,9 @@ input.file_input{
 .layout {
     display: block;
     padding-bottom: 65px;
+}
+.menangement__teg_color {
+  background: #1d1d1e;
 }
 
 
@@ -7151,7 +7199,7 @@ input.file_input{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px;
+    padding: 45px 30px 30px 30px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     position: absolute;
     top:20px;
@@ -7250,7 +7298,6 @@ input.file_input{
 .step-shadow {
   color: red !important;
 }
-
 .courses_test_form .main_course_content .tab_wrap .tabcontent {
   margin: 0;
   max-width: 100%;
