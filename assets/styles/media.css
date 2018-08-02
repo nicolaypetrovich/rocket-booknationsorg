@@ -553,8 +553,8 @@
         margin-left: 0;
     }
     .course_foot-part{
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
     }
     /* Language course main End*/
