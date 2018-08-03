@@ -5784,6 +5784,16 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     justify-content: space-between;
     margin-top: 19px;
 }
+_:-ms-lang(x), .wrap_courses { 
+/* Нужные стили */ 
+  width: 100px;
+}
+_:-ms-lang(x), .wrap_courses .card_courses { 
+/* Нужные стили */ 
+  float: left;
+  margin-right: 20px;
+  width: 25%;
+}
 .card_courses {
     width: 560px;
     height: 80px;
@@ -7401,8 +7411,17 @@ input.file_input{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+
 }
 
+.test-question-options li {
+  margin-bottom: 10px;
+}
 .test-question-options li button {
   border: 1px solid #bababa;
   font-size: 14px;
@@ -7412,8 +7431,12 @@ input.file_input{
   height: 35px;
   border-radius: 5px;
   width: 130px;
+  margin-top: 0;
   -webkit-transition: all ease .5s;
   transition: all ease .5s;
+}
+.test-question-options li button:last-child {
+  margin-left: 0;
 }
 
 .test-question-options li button:hover {
