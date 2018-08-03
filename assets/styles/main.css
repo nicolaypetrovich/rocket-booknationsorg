@@ -7722,7 +7722,7 @@ input.file_input{
 
 .course__popup--continue {
   background-color: transparent;
-  padding: 11px 20px;
+  padding: 11px 23px;
   border-radius: 5px;
   border: 1px solid #bababa;
   color: #787878;
@@ -7734,7 +7734,7 @@ input.file_input{
 .course__popup--complete {
   margin-bottom: 15px;
   background-color: transparent;
-  padding: 11px 20px;
+  padding: 11px 23px;
   border-radius: 5px;
   border: 1px solid #bababa;
   color: #787878;
