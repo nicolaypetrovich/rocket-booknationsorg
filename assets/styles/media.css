@@ -305,7 +305,8 @@
         width: auto;
     }  
     .main_course_content .similar_form .reg_course_top-part .reg_course_field-wrap label{
-        width: 350px;
+        width: 325px;
+        margin-right: 20px;
     }
     .reg_course_bottom-part{
         width: 74%;
@@ -623,7 +624,7 @@
 @media only screen and (max-width : 767px){
     /* Language course registration */
     .main_course_content .similar_form .reg_course_top-part .reg_course_field-wrap label{
-        width: 290px;
+        width: 235px;
     }
     .reg_course_bottom-part{
         width: 100%;
