@@ -5076,30 +5076,23 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 /* Language course review */
 
 .course_warning_btn {
+  display: inline-block;
   width: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   text-align: center;
   background: #e11f46;
   height: 45px;
   color: #fff;
   font-size: 16px;
+  padding-top: 13px;
   -webkit-transition: background-color ease .5s;
   transition: background-color ease .5s;
   border-radius: 5px;
   border: none;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
+.course_warning_btn::first-letter {
+    text-transform: uppercase;
+}
+
 .review_warning-wrap > a {
     margin-right: 10px;
 }
