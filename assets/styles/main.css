@@ -4645,6 +4645,16 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+.course_foot-part form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
 .load_pdf-item {
   display: -webkit-box;
@@ -4665,6 +4675,14 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 25px;
+}
+.load_pdf-preview >a{
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
 }
 
 .pdf_preview-info {
@@ -5001,7 +5019,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 
 .reg_course_bottom-part .checkbox_action label {
   padding-left: 23px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .reg_course_bottom-part .checkbox_action label:before {

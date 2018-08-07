@@ -161,11 +161,17 @@ $(document).ready(function () {
         ]
 
     });
+
+
        $('.arrows-view').on('click', function () {
         lightbox.option({
             'positionFromTop': 200
         })
+
     });
+
+
+
 
     $("#trigger").click(function(e) {
         e.preventDefault();
