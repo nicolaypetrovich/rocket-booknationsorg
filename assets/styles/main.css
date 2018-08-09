@@ -3895,7 +3895,7 @@ form.personal_content_field {
 
 .similar_form .error,
 .similar_form .error {
-  padding-top: 10px;
+  padding-top: 3px;
 }
 
 /*Popup End*/
@@ -4959,7 +4959,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 
 .course_registration_wrap .main_course_content .similar_form .reg_course_top-part label span.date_select_wrap .error {
   left: 0;
-  bottom: -15px;
+  bottom: -10px;
 }
 
 .course_registration_wrap .main_course_content .similar_form .reg_course_top-part label.date_label {
@@ -4988,7 +4988,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 71.6%;
+  width: 80%;
   margin-bottom: 45px;
 }
 
@@ -5701,6 +5701,8 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
 }
 .search_filter_pos label:nth-child(1){
     width: 420px;
@@ -5790,20 +5792,24 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     border-color: #e11f46;
 }
 .wrap_courses{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 19px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 19px;
 }
 _:-ms-lang(x), .wrap_courses { 
 /* Нужные стили */ 
-  width: 100px;
+  width: 100%;
+  display: flex;
+  overflow: hidden; 
 }
 _:-ms-lang(x), .wrap_courses .card_courses { 
 /* Нужные стили */ 
-  float: left;
-  margin-right: 20px;
-  width: 25%;
+  
 }
 .card_courses {
     width: 560px;
