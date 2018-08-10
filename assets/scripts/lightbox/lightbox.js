@@ -517,3 +517,43 @@
 
   return new Lightbox();
 }));
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="slider-wrap">
+              <div class="course-gallery">
+                <a href="assets/images/2321.png"><img src="assets/images/2321.png" alt="img"></a>
+                            <a href="assets/images/temp/bg.jpg"><img src="assets/images/temp/bg.jpg" alt="img"></a>
+                            <a href="assets/images/temp/1.jpg"><img src="assets/images/temp/1.jpg" alt="img"></a>
+                            <a href="assets/images/2321.png"><img src="assets/images/2321.png" alt="img"></a>
+                            <a href="assets/images/temp/bg.jpg"><img src="assets/images/temp/bg.jpg" alt="img"></a>
+                            <a href="assets/images/2321.png"><img src="assets/images/2321.png" alt="img"></a>
+                            <a href="assets/images/temp/bg.jpg"><img src="assets/images/temp/bg.jpg" alt="img"></a>
+                            <a href="assets/images/temp/1.jpg"><img src="assets/images/temp/1.jpg" alt="img"></a>
+                            <a href="assets/images/2321.png"><img src="assets/images/2321.png" alt="img"></a>
+                            <a href="assets/images/temp/bg.jpg"><img src="assets/images/temp/bg.jpg" alt="img"></a>
+              </div>
+                        <a href="#" class="link-gallery">link</a>
+                        <div class="arrows-slider"></div>
+              <div class="course-nav">
+                <img src="assets/images/2321.png" alt="img">
+                            <img src="assets/images/temp/bg.jpg" alt="img">
+                            <img src="assets/images/temp/1.jpg" alt="img">
+                            <img src="assets/images/2321.png" alt="img">
+                            <img src="assets/images/temp/bg.jpg" alt="img">
+                            <img src="assets/images/2321.png" alt="img">
+                            <img src="assets/images/temp/bg.jpg" alt="img">
+                            <img src="assets/images/temp/1.jpg" alt="img">
+                            <img src="assets/images/2321.png" alt="img">
+                            <img src="assets/images/temp/bg.jpg" alt="img">
+              </div>
+                    </div>

@@ -109,12 +109,12 @@ $(document).ready(function () {
         ]
     });
 //slider for Language course photo
-     $('#course-gallery').slick({
+     $('.course-gallery').slick({
         adaptiveHeight: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade: true,
-        asNavFor: '#course-nav',
+        asNavFor: '.course-nav',
         appendArrows: $('.arrows-slider'),
         nextArrow: '<button class="next" type="button"><i class="fas fa-chevron-right"></i></button>',
         prevArrow: '<button class="prev" type="button"><i class="fas fa-chevron-left"></i></button>'
@@ -122,10 +122,10 @@ $(document).ready(function () {
 
     });
 
-     $('#course-nav').slick({
+     $('.course-nav').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        asNavFor: '#course-gallery',
+        asNavFor: '.course-gallery',
         centerMode: false,
         focusOnSelect: true,
         arrows:false,
@@ -162,13 +162,27 @@ $(document).ready(function () {
 
     });
 
+$('.course-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        mainClass: 'mfp-img-mobile',
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
+        gallery: {
+            enabled: true,
+            tPrev: '', // Alt text on left arrow
+            tNext: '', // Alt text on right arrow
+            }
+        });
+    
 
+
+/*
        $('.arrows-view').on('click', function () {
         lightbox.option({
             'positionFromTop': 200
         })
-
-    });
+    });*/
 
 
 
@@ -373,6 +387,7 @@ $(document).ready(function () {
 
     /* Передаём текст комментария в текстовое поле что бы прокомментировать чей то отзыв */
     $('.js-comment-current-post').on('click',function () {
+        console.log(1);
         var getReviewContent = $(this).parent().parent().next().children('p').text() + '<br/>' + '-----------------';
         var chekOnEmpty = tinyMCE.activeEditor.getContent();
         if(chekOnEmpty.length == 0){
@@ -420,10 +435,3 @@ $(document).ready(function () {
 });
 
 
-
-jQuery(function($){
-    $(".date").mask("99/99/9999");
-    $(".phone").mask("+7 (999) 999-9999");
-    $("#tin").mask("99-9999999");
-    $("#ssn").mask("999-99-9999");
-});

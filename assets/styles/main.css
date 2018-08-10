@@ -5099,9 +5099,10 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   text-align: center;
   background: #e11f46;
   height: 45px;
+  line-height: 45px;
   color: #fff;
   font-size: 16px;
-  padding-top: 13px;
+  /* padding-top: 13px; */
   -webkit-transition: background-color ease .5s;
   transition: background-color ease .5s;
   border-radius: 5px;
@@ -5456,9 +5457,27 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 .course-gallery{
     display: flex;
     justify-content: center;
-    max-width: 750px;
-    width: 100%;
+    width: 550px;
+    height: 330px;
     margin: 50px auto;
+}
+.course-gallery .course-gallary-item{
+  position: relative;;
+}
+.course-gallery a{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/link-gallary.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.course-gallery img{
+  width: 100%;
+  height: 330px;
 }
 
 .course-gallery__item{
@@ -5469,9 +5488,12 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 
 .course-nav{
-    max-width:750px;
-    width: 100%;
+    width:550px;
     margin: 0 auto;
+}
+.course-nav img{
+    width:105px;
+    height: 75px;
 }
 
 .course-nav__item{
@@ -5481,15 +5503,62 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     background-position: 50%;
     background-size: cover; cursor:pointer;
 }
+.mfp-preloader .mfp-container button.mfp-arrow{
+  display: none;
+}
 
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+
+.slider-wrap{
+  position: relative;
+}
 .arrows-slider{
-    position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 30%;
+  margin-top: 0;
+  width: 100%;
 }
 
 .prev{
-    position: absolute;
-    bottom: 250px;
-    left: 0;
     border: 1px solid #787878;
     background-color: transparent;
     font-size: 12px;
@@ -5498,9 +5567,6 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 
 .next{
-    position: absolute;
-    bottom:250px;
-    right: 0; 
     border: 1px solid #787878;
     color:#787878;
     background-color: transparent;
