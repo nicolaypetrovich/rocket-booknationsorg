@@ -2628,7 +2628,7 @@ b {
 
 .event__banner {
   margin-bottom: 15px;
-  padding: 200px 23px 23px 48px;
+  padding: 48px 23px 23px 48px;
   display: block;
   min-height: 280px;
   background: url("../images/2321.png") no-repeat 50%;
@@ -2639,7 +2639,24 @@ b {
   -ms-align-items: flex-end;
   */
   border-radius: 5px;
+  position: relative;
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   /* IE10 IE11 */
+  .event__banner .event__title {
+    position: absolute;
+    bottom: 23px;
+  }
+  .event__banner .event__button {
+    position: absolute;
+    bottom: 23px;
+    right: 23px;
+  }
+
+}
+
+
 
 .event__banner .layout__title {
   font-size: 24px;
@@ -7760,7 +7777,7 @@ input.file_input{
 .course__test--button-take:hover {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #e11f46;
+  background-color: #1d1d1e;
   color: #fff;
 }
 
