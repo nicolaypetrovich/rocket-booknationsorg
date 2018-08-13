@@ -5886,6 +5886,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 19px;
+  width: 100%;
 }
 _:-ms-lang(x), .wrap_courses { 
 /* Нужные стили */ 
@@ -5895,8 +5896,15 @@ _:-ms-lang(x), .wrap_courses {
 }
 _:-ms-lang(x), .wrap_courses .card_courses { 
 /* Нужные стили */ 
-  
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   /* IE10 IE11 */
+.wrap_courses a{
+    float: left;
+
+  }
+}
+
 .card_courses {
     width: 560px;
     height: 80px;
