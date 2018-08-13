@@ -24,10 +24,12 @@
     <script src="assets/scripts/jQuery/jquery-ui-1.9.2.custom.min.js"></script>
     <script src="./assets/scripts/Slick/slick.min.js"></script>
     <script src="./assets/scripts/clocks.js"></script>
-    <script src="./assets/scripts/main.js"></script>
+    <script src="assets/scripts/jquery.maskedinput.min.js"></script>    
     <script src="assets/scripts/forms.js"></script>
     <script src="assets/scripts/tabs.js"></script>
     <script src="assets/scripts/file_loader.js"></script>
+    <script src="./assets/scripts/jquery.magnific-popup.js"></script>
+    <script src="./assets/scripts/main.js"></script>
 </head>
 
 <body>
@@ -259,7 +261,7 @@
                                                 <span class="js-clear_date_field">
                                                     <i class="fas fa-times"></i>
                                                 </span>
-                                                <input class="in_put_data js-date-picker">
+                                                <input class="in_put_data js-date-picker date">
                                             </span>
                                         </label>
                                         <span class="js-change_date_field">
@@ -273,7 +275,7 @@
                                                 <span class="js-clear_date_field">
                                                     <i class="fas fa-times"></i>
                                                 </span>
-                                                <input class="in_put_data js-date-picker">
+                                                <input class="in_put_data js-date-picker date">
                                             </span>
                                         </label>
                                     </div>
@@ -288,7 +290,7 @@
                                                 <span class="js-clear_date_field">
                                                     <i class="fas fa-times"></i>
                                                 </span>
-                                                <input class="in_put_data js-date-picker">
+                                                <input class="in_put_data js-date-picker date">
                                             </span>
                                         </label>
                                         <span class="js-change_date_field">
@@ -302,7 +304,7 @@
                                                 <span class="js-clear_date_field">
                                                     <i class="fas fa-times"></i>
                                                 </span>
-                                                <input class="in_put_data js-date-picker">
+                                                <input class="in_put_data js-date-picker date">
                                             </span>
                                         </label>
                                     </div>
@@ -789,7 +791,11 @@
         </div>
     </div>
 </div>
-
+<script>
+    jQuery(function($){
+   $(".date").mask("99/99/9999");
+});
+</script>
 </body>
 
 </html>
