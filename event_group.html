@@ -19,10 +19,17 @@
 
 	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
+	    
 	    <script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
+	    <script src="assets/scripts/jQuery/jquery-ui-1.9.2.custom.min.js"></script>
 	    <script src="./assets/scripts/Slick/slick.min.js"></script>
+	    <script src="./assets/scripts/jquery.magnific-popup.js"></script>
 	    <script src="./assets/scripts/clocks.js"></script>
+	    <script src="assets/scripts/tinymce/tinymce.min.js"></script>
 	    <script src="./assets/scripts/main.js"></script>
+	    <script src="assets/scripts/forms.js"></script>
+	    <script src="assets/scripts/tabs.js"></script>
+	    <script src="assets/scripts/file_loader.js"></script>
 	</head>
 
 	<body>
@@ -314,17 +321,21 @@
 		          		</div>
 
 		          		<div class="events__buttons d-flex flex-column align-items-center">
-		          			<a class="btn_events">
+		          			<a href="#" id="trigger" class="btn_events">
 	                            <span class="btn__label">Search in the group</span>
-	                        </a>
-	                        <a class="btn_events">
-	                            <span class="btn__label">Invite friends</span>
-	                        </a>
-	                        <ul class="groups-list flex-column d-xs-none d-sm-none d-lg-flex ">
-	                        	<li class="groups-list__item"><a href="#">Group 1</a></li>
-	                        	<li class="groups-list__item"><a href="#">Group 1</a></li>
-	                        	<li class="groups-list__item"><a href="#">Group 1</a></li>
-	                        </ul>
+                    </a>
+                     <form id="box" action="#">
+												<input type="search" name="q"  placeholder="Search the site..." required>
+												<button class="search_btn"><i class="fas fa-search"></i></button>
+											</form>
+                    <a class="btn_events">
+                        <span class="btn__label">Invite friends</span>
+                    </a>
+                    <ul class="groups-list flex-column d-xs-none d-sm-none d-lg-flex ">
+                    	<li class="groups-list__item"><a href="#">Group 1</a></li>
+                    	<li class="groups-list__item"><a href="#">Group 1</a></li>
+                    	<li class="groups-list__item"><a href="#">Group 1</a></li>
+                    </ul>
 
 		          		</div>
 	          		</div>
