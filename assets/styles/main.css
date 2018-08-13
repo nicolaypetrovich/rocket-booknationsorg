@@ -1274,7 +1274,7 @@ b {
 .footer {
   padding-bottom: 35px;
   background-color: #f9f9f9;
-  border-bottom: 8px solid #333;
+  /* border-bottom: 8px solid #333; */
 }
 
 /* Input form-subscribe footer */
@@ -2628,14 +2628,17 @@ b {
 
 .event__banner {
   margin-bottom: 15px;
-  padding: 48px 23px 23px 48px;
-  min-height: 280px;
+  padding: 200px 23px 23px 48px;
   display: block;
-  overflow: hidden;
+  min-height: 280px;
   background: url("../images/2321.png") no-repeat 50%;
-  background-size: cover;
-  border-radius: 5px;
+  background-size: cover; 
+  /* 
+  background-color: #050609;
   align-items: flex-end;
+  -ms-align-items: flex-end;
+  */
+  border-radius: 5px;
 }
 
 .event__banner .layout__title {
