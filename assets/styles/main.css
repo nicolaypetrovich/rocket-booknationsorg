@@ -2398,6 +2398,7 @@ b {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width: 270px;
 }
 
 .checkbox_action label:before {
