@@ -2470,6 +2470,9 @@ b {
     border-radius: 5px; 
     display: inline-block; 
 } 
+.send_btn_discus:hover{
+    background-color: #1d1d1e;
+} 
 .form_send_section input:nth-child(1):hover {
   background-color: #e11f46;
   color: #fff;
@@ -6125,6 +6128,9 @@ _:-ms-lang(x), .wrap_courses .card_courses {
 }
 .pos_reply{
     justify-content: space-between;
+}
+.accordion{
+  cursor: pointer;
 }
 .block_discus {
     padding: 16.5px 16px 16.5px 16px;
