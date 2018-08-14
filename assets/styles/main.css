@@ -6695,13 +6695,29 @@ input.file_input{
   font-size: 14px;
 }
 .menagement__form input,
+.menagement__form select,
 .menagement__form textarea {
   max-width: 390px;
   width: 100%;
   border-radius: 5px;
   border: 1px solid #bababa;
   background-color: #ffffff;
+  position: relative;
 }
+.menagement__form select{
+ background-color: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 .menagement__group--name {
   font-size: 14px;
   margin-right: 15px;
@@ -7195,6 +7211,10 @@ input.file_input{
     transition: all ease .5s;
     margin-right: 6px;
     margin-left: 19px;
+}
+.groups_form_search_section input:nth-child(1):hover {
+    background-color: #1d1d1e;
+     border: 1px solid #1d1d1e;
 }
 .groups_form_search_section input:nth-child(2) {
     border: 1px solid #bababa;

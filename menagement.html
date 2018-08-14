@@ -24,11 +24,13 @@
 	    <script src="assets/scripts/jQuery/jquery-ui-1.9.2.custom.min.js"></script>
 	    <script src="./assets/scripts/Slick/slick.min.js"></script>
 	    <script src="./assets/scripts/clocks.js"></script>
-	    <script src="./assets/scripts/main.js"></script>
+	    <script src="./assets/scripts/jquery.magnific-popup.js"></script>
+	    
 	    <script src="assets/scripts/forms.js"></script>
 	    <script src="assets/scripts/tabs.js"></script>
 	    <script src="assets/scripts/file_loader.js"></script>
 	    <script src="assets/scripts/timePicker/jquery.timepicker.min.js"></script>
+	    <script src="./assets/scripts/main.js"></script>
 </head>
 
 <body>
@@ -285,12 +287,18 @@
 	                    			<label class="menagement__tags--name">
 	                    				Tags: 
 	                    			</label>
-	                    			<input type="text" list="tags" class="menagement__tags--input required input">
+	                    			
+	                    			<select  class="menagement__tags--input required input">
+	                    				<option value="tags">tag1</option>
+	                    				<option value="tags">tag2</option>
+	                    				<option value="tags">tag3</option>
+	                    			</select>
+	                    			<!-- <input type="text" list="tags">
 	                    			<datalist id="tags">
-	                    				<option value="tags"></option>
-	                    				<option value="tags"></option>
-	                    				<option value="tags"></option>
-	                    			</datalist>
+	                    				<option value="tags">tag1</option>
+	                    				<option value="tags">tag2</option>
+	                    				<option value="tags">tag3</option>
+	                    			</datalist> -->
 
 	                    			<div class="menagement__tags--wrapper">
 	                    				<div id ="teg_1" class="menagement__tags--block menagement__tags--block-sm">
