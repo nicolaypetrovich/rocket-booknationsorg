@@ -833,8 +833,12 @@
 
     .event__banner {
         padding: 30px 7px 35px;
-        border-radius: 0;
-        align-items: inherit;
+        align-items: flex-end;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        -o-flex-wrap: wrap;
+        flex-wrap: wrap;
         
     }
     .event__banner > div {
