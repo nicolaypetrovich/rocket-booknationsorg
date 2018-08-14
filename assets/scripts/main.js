@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     //Resize
 
-    const SCREEN = {
+    var SCREEN = {
         'mobile': 575,
         'mobile_hd': 767,
         'tablet': 991,
@@ -51,7 +51,7 @@ $(document).ready(function () {
     });
 
     $(document).on('touchstart click', function (e) {
-        const fixedAside = $('.fixed-aside');
+        var fixedAside = $('.fixed-aside');
         if (e.target !== fixedAside[0] && !fixedAside.has(e.target).length){
             $('.fixed-aside').removeClass('is-active');
             $('.slideout').removeClass('is-active');
@@ -165,7 +165,6 @@ $(document).ready(function () {
 $('.course-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',
-        mainClass: 'mfp-img-mobile',
         removalDelay: 300,
         mainClass: 'mfp-fade',
         gallery: {
