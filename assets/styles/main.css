@@ -2636,11 +2636,11 @@ b {
   display: block;
   min-height: 280px;
   background: url("../images/2321.png") no-repeat 50%;
-  background-size: cover; 
-  /* 
-  background-color: #050609;
+  background-size: cover;
   align-items: flex-end;
   -ms-align-items: flex-end;
+  /* 
+  background-color: #050609;
   */
   border-radius: 5px;
   position: relative;
