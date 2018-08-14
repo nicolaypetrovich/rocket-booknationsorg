@@ -5234,7 +5234,6 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   left: 0;
   top: 3px;
 }
-
 .main_course_content .course_write_review label.tiny_mce_label {
   margin: 0;
 }
@@ -5319,6 +5318,37 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   -ms-flex-align: center;
   align-items: center;
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   /* IE10 IE11 */
+  .course_review_info {
+    margin-bottom: 40px;
+  }
+  .course_write_review .forum_editable_field .tiny_mce_wrap .file_load_icons {
+    height: 20px;
+    left: 0;
+    top: -30px;
+  }
+}
+
+/*----MS Edge Browser CSS Start----*/
+@supports (-ms-ime-align:auto) {
+  .course_review_info {
+    margin-bottom: 40px;
+  }
+  .course_write_review .forum_editable_field .tiny_mce_wrap .file_load_icons {
+    height: 20px;
+    left: 0;
+    top: -30px;
+  }
+}
+/*----MS Edge Browser CSS End----*/
+
+
+
+
+
+
 
 .feedback_editing {
   display: -webkit-box;
