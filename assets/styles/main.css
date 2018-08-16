@@ -1364,7 +1364,7 @@ b {
 }
 
 .nav-main {
-  margin-bottom: 45px;
+  margin-bottom: 22px;
   height: 70px;
   font-size: 16px;
   font-weight: 400;
@@ -2712,6 +2712,7 @@ b {
 .event__btn_add {
     min-width: 150px;
     padding: 1.5px 15px;
+    margin-top: -12px;
 }
 .event__text {
   display: block;
@@ -5555,7 +5556,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 .course-nav img{
   height: 100px;
-  margin: 5px;
+  margin: 7px 5px;
 }
 .course-nav img.slick-current{
   box-shadow: 0 0 13px rgba(89, 88, 89, 0.85);
@@ -5700,7 +5701,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 
 .event-simple{
-    margin-top:30px;    
+    margin-top:2px;    
     padding: 25px 20px;
     border:solid 1px #e8e8e8;
 }
@@ -5796,7 +5797,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 
 .container_head {
     display: flex;
-    padding-top: 20px;
+    padding-top: 0;
     padding-bottom: 32px;
 }
 
@@ -7354,9 +7355,9 @@ input.file_input{
 
 #box input{
     position: absolute;
-    right: 105px;
-    bottom: 20px;
-    height: 35px;
+    right: 115px;
+    bottom: 12px;
+    height: 31px;
     width: 485px;
     border-radius: 5px;
     border: solid 1px #bababa;
@@ -7374,8 +7375,8 @@ input.file_input{
 
 #box .search_btn{
     position: absolute;
-    bottom: 27px;
-    right: 120px;
+    bottom: 18px;
+    right: 130px;
     background-color: #fff;
     border: none;
     font-size: 18px;
