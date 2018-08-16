@@ -1467,9 +1467,17 @@
 @media only screen and (max-width : 675px){
      .course-gallery{
         max-width: 400px;
+        height: 350px;
+    }
+     .course-gallery img{
+        max-width: 400px;
+        height: 330px;
     }
     .course-nav{
        max-width: 400px; 
+    }
+    .course-nav img{
+       height: 70px;
     }
       .course-gallery__item{
         padding: 120px 150px;
@@ -1485,10 +1493,10 @@
 }
 @media only screen and (max-width : 520px){
     .course-gallery{
-        max-width: 100%;
+       
     }
       .course-nav{
-       max-width: 98%; 
+       width: 100%;
     }
       .course-gallery__item{
         padding:80px 100px;
@@ -1502,12 +1510,20 @@
         left:35%;
     }
     .arrows-slider{
-        max-width:320px;
         width:100%;
         margin: 20px auto;
     }
     .course-nav__item{
         padding: 25px 26px;
+    }
+}
+@media only screen and (max-width : 430px){
+    .course-gallery{
+       width: 100%;
+       text-align: center;
+    }
+      .course-nav{
+       
     }
 }
 /* Language course photo End */

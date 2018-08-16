@@ -4351,6 +4351,13 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+  background-color: transparent;
+  position: relative;
+}
+
+.forum_editable_field .mce-flow-layout {
+  margin-left: 45px;
+  margin-bottom: 3px;
 }
 
 .forum_editable_field label .mce-top-part::before {
@@ -4423,7 +4430,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 
 .file_load_icons {
-  height: 26px;
+  height: 28px;
 }
 
 .tiny_mce_wrap label {
@@ -5511,9 +5518,9 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 .course-gallery{
     display: flex;
     justify-content: center;
-    width: 550px;
-    height: 330px;
-    margin: 50px auto;
+    width: 690px;
+    height: 430px;
+    margin: 50px auto 0;
 }
 .course-gallery .course-gallary-item{
   position: relative;;
@@ -5530,8 +5537,9 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   background-position: center;
 }
 .course-gallery img{
+  display: block;
+  height: 400px;
   width: 100%;
-  height: 330px;
 }
 
 .course-gallery__item{
@@ -5542,13 +5550,17 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 
 .course-nav{
-    width:550px;
+    width:690px;
     margin: 0 auto;
 }
 .course-nav img{
-    width:105px;
-    height: 75px;
+  height: 100px;
+  margin: 5px;
 }
+.course-nav img.slick-current{
+  box-shadow: 0 0 13px rgba(89, 88, 89, 0.85);
+}
+
 
 .course-nav__item{
     padding: 50px 72px;
@@ -5607,8 +5619,8 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 30%;
-  margin-top: 0;
+  top: 35%;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -5720,7 +5732,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 
 .tag-simple{
-    margin-top: 30px;
+    margin-top: 17px;
 }
 .tag-simple:first-child {
     margin-top: 0px;
@@ -5728,11 +5740,11 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 
 .tag-simple__title{
     font-size: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
 }
 
 .tag-simple__link{
-    padding:5px 10px;
+    padding:2px 10px;
     background-color: #d1d1d1;
     cursor: pointer;
     border-radius: 5px;
@@ -5744,9 +5756,9 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     background-color: #1d1d1e;
 }
 .btn_events{
-    padding:10px 35px;
+    padding:7px 28px;
     background-color: #1d1d1e;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     border-radius: 7px;
     width:100%;
     cursor: pointer;
@@ -6099,10 +6111,10 @@ _:-ms-lang(x), .wrap_courses .card_courses {
 }
 
 .events__content .layout__title{
-    margin-bottom: 0;
+    margin-bottom: 19px;
 }
 .events__tag{
-    margin-top: 64px;
+    margin-top: 42px;
 
 }
 .groups-list__item:first-child{
@@ -7352,6 +7364,7 @@ input.file_input{
 }
 .events__buttons{
     position: relative;
+    top: -7px;
 }
 
 .events__buttons .btn_events:focus{

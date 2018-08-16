@@ -62,6 +62,7 @@ $(document).ready(function () {
     //Dropdown button
 
     $('.dropdown__button').on('click', function () {
+        $('.dropdown__button').siblings('.dropdown__content').removeClass('is-visible');
         $(this).siblings('.dropdown__content').toggleClass('is-visible');
     });
 
@@ -436,3 +437,4 @@ $('.course-gallery').magnificPopup({
 });
 
 
+// show name upload img
