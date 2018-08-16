@@ -846,6 +846,11 @@
         margin: 0;
 
     }
+   .event__banner > .event__title {
+    float: left;
+    width: 100%;
+    }
+
     .event__banner > .event__button  {
         justify-content: flex-end;
     }

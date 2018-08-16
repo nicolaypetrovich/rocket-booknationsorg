@@ -1272,7 +1272,7 @@ b {
 /* Footer start */
 
 .footer {
-  padding-bottom: 35px;
+  padding-bottom: 20px;
   background-color: #f9f9f9;
   /* border-bottom: 8px solid #333; */
 }
@@ -6069,7 +6069,7 @@ _:-ms-lang(x), .wrap_courses .card_courses {
     color:#fff;
     font-size: 32px;
 }
- 
+
 .event__title i{
     margin-right: 20px;
 }
