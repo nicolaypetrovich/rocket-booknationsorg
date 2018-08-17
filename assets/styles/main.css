@@ -4507,7 +4507,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 
 .course_navigation ul li {
-  margin-right: 25px;
+  margin-right: 27px;
   font-size: 14px;
   line-height: 14px;
   position: relative;
@@ -4518,7 +4518,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 
 .course_navigation ul li:nth-child(1) {
-  padding-right: 25px;
+  padding-right: 18px;
   color: #bababa;
 }
 
@@ -5706,8 +5706,8 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     padding-bottom: 60px
 }
 .events__content{
-    max-width: 650px;
-    margin-right: 30px;
+    
+    
     width:100%;
 }
 .events__content .layout__title{
@@ -6053,14 +6053,15 @@ _:-ms-lang(x), .wrap_courses .card_courses {
 
 /* Groups event */
 .event__navigation{
-    margin-left: 60px;
+    margin-left: 80px;
     max-width: 460px;
     width:100%;
 }
 .event__pluso {
   min-width: 162px;
+  margin-right: 38px;
 }
- 
+  
  
 .pluso-hide{
     display: none;
@@ -6123,6 +6124,7 @@ _:-ms-lang(x), .wrap_courses .card_courses {
     max-width:460px;
     width:100%; 
     align-self: flex-start;
+    margin-right: 55px;
 }
 
 .events__content .layout__title{
@@ -6157,8 +6159,9 @@ _:-ms-lang(x), .wrap_courses .card_courses {
    font-size: 16px;
 }
 
-.media_marge  a{
-    margin-right: 10px;
+.media_marge a{
+    margin-right: 0;
+    padding: 0;
 }
 .media_marge span:nth-child(2) {
     color: #bababa;
