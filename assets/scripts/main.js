@@ -184,7 +184,46 @@ $('.course-gallery').magnificPopup({
         })
     });*/
 
+// информация загруженого файла
 
+    var fileInputArr = [].slice.call(document.getElementsByClassName("myfileinput"));
+    var NameAndSize = document.querySelector("NameAndSize-file");
+    
+    fileInputArr.forEach(function( input ){
+        input.addEventListener('change', function(){
+            var files = input.files;
+            var needTag = input.closest('form').getElementsByClassName('NameAndSize-file')[0];
+            $(this).closest('form').find('.NameAndSize-file').children().remove();
+            for (var i = 0; i < files.length; i++) {
+                var p = document.createElement('p');
+                p.textContent = files[i].name + " has a size of " + ((files[i].size/1024)/1024).toFixed(4) + " Mb";
+                needTag.appendChild(p);
+            }
+        });
+    })
+// конец информация загруженого файла
+
+// показ картинки
+
+    function readURL(input) {
+
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          $('.blah').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+
+    $(".imgInp").change(function() {
+      readURL(this);
+    });
+
+
+// показ картинки
 
 
     $("#trigger").click(function(e) {

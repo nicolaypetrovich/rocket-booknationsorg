@@ -4150,7 +4150,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 } 
 .editable_field-info {
   padding-left: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   font-size: 12px;
   line-height: 12px;
 }
@@ -4336,6 +4336,10 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 
 .forum_editable_field {
   position: relative;
+}
+
+.forum_editable_field .NameAndSize-file{
+  margin-left: 101px;
 }
 
 .forum_editable_field label .mce-btn-group:not(:first-child) {
@@ -5245,6 +5249,16 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 .main_course_content .course_write_review label.tiny_mce_label {
   margin: 0;
 }
+.similar_form .NameAndSize-file{
+  float: left;
+  width: 300px;
+  display: block;
+}
+
+.similar_form .NameAndSize-file p{
+  margin: 0;
+}
+
 
 #mceu_1 {
   margin-right: 6px;
@@ -6758,6 +6772,11 @@ input.file_input{
  background-color: none;
 }
 
+.menagement__form .NameAndSize-file{
+  width: 400px;
+  margin-left: 98px;
+}
+
 
 
 
@@ -6814,6 +6833,7 @@ input.file_input{
   border-radius: 5px;
   overflow: hidden;
   background-color: #d1d1d1;
+  margin-bottom: 25px;
 }
 .menagement__es__group {
   margin-top: 25px;
@@ -6836,11 +6856,16 @@ input.file_input{
   display: block;
 }
 
-.menagement__wrap_user_photo img {
-  width: auto;
+.menagement__wrap_user_photo  {
+  width:100%;
   height: auto;
   display: block;
-  object-fit: cover;
+  text-align: center;
+}
+.menagement__wrap_user_photo img {
+  width:100%;
+  height: auto;
+  display: block;
 }
 
 .menagement__es__group:first-child .es__load_box > i {
