@@ -291,7 +291,6 @@ $('.course-gallery').magnificPopup({
         return false
     });
 
-
 // Date changer (Events page)
     $('.js-change_date_field').on('click', function () {
         var prevInput = $(this).prev();

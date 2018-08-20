@@ -151,6 +151,10 @@ button::-moz-focus-inner {
   font-family: Arial, Baskerville, monospace; }
   .mfp-close:hover,
   .mfp-close:focus {
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+    transform: scale(.9);
     opacity: 1; }
   .mfp-close:active {
     top: 1px; }

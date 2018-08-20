@@ -4281,7 +4281,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   position: absolute;
   left: 150px;
   top: -550px;
-  z-index: 2;
+  z-index: 3;
   background-color: #fff;
   padding: 40px 35px;
   display: none;
@@ -6305,7 +6305,9 @@ _:-ms-lang(x), .wrap_courses .card_courses {
     margin-right: 30px; 
     width: 100%;   
 }
-
+.forum_discus .mce-panel {
+  background-color: transparent;
+}
 /* Groups event End */
 
 /*files start*/
