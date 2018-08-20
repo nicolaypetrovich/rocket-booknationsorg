@@ -3837,7 +3837,7 @@ form.personal_content_field {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .similar_form .partners_send_btn label {
@@ -7317,10 +7317,24 @@ input.file_input{
 /* The switch - the box around the slider */
 .switch {
   position: relative;
-  display: inline-block;
+  display: block;
   width: 60px;
   height: 30px;
-  margin-top: 25px;
+  margin: 25px 70px;
+}
+.switch:before{
+  content: 'Online';
+  display: block;
+  position: absolute;
+  left: -55px;
+  top: 7px;
+}
+.switch:after{
+  content: 'Offline';
+  display: block;
+  position: absolute;
+  right: -55px;
+  top: 7px;
 }
 
 /* Hide default HTML checkbox */
@@ -7328,6 +7342,7 @@ input.file_input{
 /* The slider */
 .switch-span-margin{
   margin-top: 10px;
+  display: block;
 }
 .slider {
   position: absolute;
