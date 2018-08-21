@@ -2703,10 +2703,7 @@ b {
   left: 0;
 }
 .event__btn {
-  min-width: 150px;
-  height: 45px;
-  line-height: 45px;
-  padding: 0;
+  padding: 3px 30px;
   border: none;
 }
 .event__btn_add {
@@ -4389,8 +4386,11 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 
 .forum_editable_field label .mce-btn {
   border: none;
+  background-color: transparent;
 }
-
+.mce-container .mce-btn{
+  background-color: transparent;
+}
 .forum_editable_field label {
   position: relative;
 }
@@ -5051,6 +5051,16 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 .reg_course_subtitles > span {
   color: #e11f46;
   font-weight: 700;
+}
+.course_days-format  {
+  position: relative;
+}
+.course_days-format > .error {
+  position: absolute;
+  top: 20px;
+}
+.course_days-format > .reg_course_subtitle-under {
+  margin-top: 20px;
 }
 
 .reg_course_bottom-part .checkbox_action label {
@@ -5715,7 +5725,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 
 .event-simple{
-    margin-top:2px;    
+    margin-top: 15px;    
     padding: 25px 20px;
     border:solid 1px #e8e8e8;
 }
@@ -7300,6 +7310,10 @@ input.file_input{
     border: 1px solid #bababa;
     color: #787878;
     transition: all ease .5s;
+}
+.groups_form_search_section input:nth-child(2):hover {
+  background-color: #1d1d1e;
+  color: #fff;
 }
 .groups_form_search_section {
   display: flex;

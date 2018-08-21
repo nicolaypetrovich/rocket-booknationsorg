@@ -178,7 +178,7 @@ $(document).ready(function () {
                         this.querySelector('.forum_discus').querySelector('iframe').style.borderColor = 'inherit';
                    } 
                 }
-
+                    
                             if ( submit ) this.submit();
                         })
                     }

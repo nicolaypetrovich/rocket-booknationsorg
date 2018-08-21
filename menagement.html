@@ -25,7 +25,6 @@
 	    <script src="./assets/scripts/Slick/slick.min.js"></script>
 	    <script src="./assets/scripts/clocks.js"></script>
 	    <script src="./assets/scripts/jquery.magnific-popup.js"></script>
-	    
 	    <script src="assets/scripts/forms.js"></script>
 	    <script src="assets/scripts/tabs.js"></script>
 	    <!-- <script src="assets/scripts/file_loader.js"></script> -->
@@ -197,7 +196,7 @@
         		<div class="menagement__banner">
 	        		<div class="menagement__banner--content">
 	        			<div class="menagement__banner--img">
-	        				<img src="assets/images/temp/menagement__title-img.png" alt="">
+	        				<img src="assets/images/temp/menagement__title-img.png" alt="img">
 	        				<p>MY GROUPS</p>
 	        			</div>
 	        			<div class="menagement__banner--button">
@@ -218,12 +217,12 @@
 				                    <i class="far fa-thumbs-up"></i>
 				                </div>
 			                    <!-- Like button -->
-	                        <div class="pluso-hide">
-		                     	<div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
+	                      	<div class="pluso-hide">
+		                    	<div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
 		                    </div>
 			                    <!-- Start navigation -->
 			                    <div class="course_navigation event__navigation d-flex flex-column flex-md-row align-items-md-center flex-sm-column">
-									<div class="course-hamburger">			       
+									<div class="course-hamburger">
 									        <ul>
 									            <li><a href="#">About</a></li>						                
 									            <li class="course_active-page"><a href="#">Discussion</a></li>      
@@ -276,15 +275,23 @@
                     		</h5>
 
                     		<form method="GET" class="menagement__form">
-                    			<label class="menagement__group--name">
-                    				Group Name:
-                    			</label>
-                    			<input type="text" class="required input menagement__group--input"><br>
-                    			<label class="menagement__discussion--name">
-                    				Discussion:
-                    			</label>
-                    			<textarea cols="19" rows="3" class=" required input menagement__discussion--input"></textarea><br>
-                    			<p class="menagement__discussion--desc">Potential members see the description if privacy is set to public or closed.</p>
+													<div>
+	                    			<label class="menagement__group--name">
+	                    				Group Name:
+	                    			</label>
+	                    			<input type="text" class="required input menagement__group--input">
+														</div>
+	                    			<br>
+													
+<div>
+	                    			<label class="menagement__discussion--name">
+	                    				Discussion:
+	                    			</label>
+	                    			<textarea cols="19" rows="3" class=" required input menagement__discussion--input"></textarea>
+</div>
+	                    			<br>
+	                    			<p class="menagement__discussion--desc">Potential members see the description if privacy is set to public or closed.</p>
+	                    			
                     			<div class="menagement__tags--grid">
 	                    			<label class="menagement__tags--name">
 	                    				Tags: 
@@ -330,14 +337,20 @@
                     			<p class="menagement__location--button">Edit Locations</p>
                     				
                     				<br>
+                    				<div>
                     			<label class="menagement__web--name">
                     				Web: 
                     			</label>
-                    			<input type="text" class="required input menagement__web--input"><br>
+                    			<input type="text" class="required input menagement__web--input">
+														</div>
+                    			<br>
+                    			<div>
                     			<label class="menagement__email--name">
                     				Email: 
                     			</label>
-                    			<input type="email" class="required input menagement__email--input"><br>
+                    			<input type="email" class="required input menagement__email--input">
+													</div>
+                    			<br>
 
                     			<!-- upload picture -->
 								 <div class="menagement__es__group upload__group">
