@@ -218,7 +218,7 @@ function init () {
     this._clerFile = (event) => {
 
         event.parentNode.removeChild(event);
-
+ console.log('blablabla');
 
     }  
 
@@ -226,7 +226,7 @@ function init () {
         let shImg = [].slice.call(document.getElementsByClassName('show_img'));
         let shVid = [].slice.call(document.getElementsByClassName('show_video'));
         let shHlod = [].slice.call(document.getElementsByClassName('head_load')); 
-        console.log('blablabla');
+       
            
 
         if (shImg.length) {
@@ -254,7 +254,7 @@ function init () {
 
     this._event = () => {
 
-        // this.remoVer.addEventListener('mouseup', this._clerFile(remoVer));
+        this.remoVer.addEventListener('mouseup', this._clerFile(remoVer));
              
         this.sendBtnPic.addEventListener('m', this._remove);
         this.sendBtnPic.addEventListener('mouseup', this._createImg);
