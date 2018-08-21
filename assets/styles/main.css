@@ -5057,7 +5057,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 .course_days-format > .error {
   position: absolute;
-  top: 20px;
+  bottom: 18px;
 }
 .course_days-format > .reg_course_subtitle-under {
   margin-top: 20px;
