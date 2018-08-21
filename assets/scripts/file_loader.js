@@ -116,7 +116,7 @@ $(document).ready(function () {
             $('.set_req').removeClass('required');
         }
     });
-});
+
 
 window.addEventListener('DOMContentLoaded', init);
 function init () {
@@ -299,3 +299,5 @@ function init () {
   }
    const runaddFile = new addFile();
 }
+
+});
