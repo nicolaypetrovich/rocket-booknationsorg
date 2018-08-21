@@ -4146,6 +4146,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 } 
 .editable_field-info {
   padding-left: 100px;
+  margin-top: 20px;
   margin-bottom: 10px;
   font-size: 12px;
   line-height: 12px;
