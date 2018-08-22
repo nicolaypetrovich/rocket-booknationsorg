@@ -424,7 +424,7 @@ b {
   position: relative;
   padding-right: 15px;
   padding-left: 14px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .breadcrumbs__item:after {
@@ -2949,7 +2949,9 @@ b {
 .es__group {
   margin-top: 25px;
 }
-
+.wrap-picture{
+  margin-left: 134px;
+}
 .es__group > div > div:nth-child(2) {
   margin-left: 38px;
 }
@@ -3010,7 +3012,7 @@ label.es__load_box-last {
   display: block;
   cursor: pointer;
   position: relative;
-  width: 630px;
+  max-width: 630px;
   height: 170px;
   border-radius: 5px;
   overflow: hidden;
@@ -3030,8 +3032,8 @@ label.es__load_box-last img {
   padding-top: 0;
   margin-left: 10px;
 }
-.es__group .uplod_file{
-  margin-left: 0;
+.es__group > .wrap-picture .uplod_file{
+  margin-left: 0!important;
 }
 .es_date_box label {
   position: relative;
@@ -6601,7 +6603,7 @@ input.file_input{
   max-width: 100%;
   background-color: #000;
   color: #fff;
-  border-radius: 3px;
+  border-radius: 5px;
   margin-bottom: 15px;
   display: flex;
   -ms-align-items: flex-end;

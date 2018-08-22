@@ -296,7 +296,9 @@
     .menagement__es_photo_box{
         width: 395px;
     }
-    
+    .wrap-picture {
+        margin-left: 200px;
+    }
 }
 
 
@@ -431,7 +433,11 @@
     width: 350px;
     }  
     .menagement__left {
-    max-width: 470px;3
+    max-width: 470px;
+    }
+
+    .wrap-picture {
+        margin-left: 160px;
     }
 
 }    
@@ -615,6 +621,10 @@
        padding-right: 0px;
     }   
     /*Personal Setting page End*/
+    .wrap-picture {
+        margin-left: 38px;
+    }
+
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)and (max-width : 767px){ 
    /* стили только для IE10 IE11 */ 
@@ -1018,7 +1028,7 @@
     }
 
     .es__group:nth-child(2) > div > div:nth-child(2) {
-        margin-top: 0;
+        margin-top: 10px;
     }
 
     .event__settings .layout__title {
