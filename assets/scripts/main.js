@@ -260,7 +260,7 @@ $('.course-gallery').magnificPopup({
             }
         ]
     });
-    /*
+    
  (function() {
       if (window.pluso)if (typeof window.pluso.start == "function") return;
       if (window.ifpluso==undefined) { window.ifpluso = 1;
@@ -269,7 +269,7 @@ $('.course-gallery').magnificPopup({
         s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
         var h=d[g]('body')[0];
         h.appendChild(s);
-      }})();*/
+      }})();
     
     // Datapicker
     

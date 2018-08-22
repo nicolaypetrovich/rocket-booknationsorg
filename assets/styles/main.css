@@ -2228,7 +2228,9 @@ b {
 /* Forum two end */
 
 /*Register form tabs*/
-
+.tab_wrap{
+  margin-top: 53px;
+}
 .tab {
   overflow: hidden;
   display: -webkit-box;
@@ -2237,7 +2239,7 @@ b {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 41px;
 }
 
 .tab button {
@@ -2256,6 +2258,10 @@ b {
 
 .register_form {
   padding-right: 20px;
+  margin-left: -64px;
+}
+.login_form {
+  padding-left: 20px;
 }
 
 .tab button:hover {
@@ -2275,8 +2281,9 @@ b {
 .tabcontent {
   display: none;
   border-top: none;
-  max-width: 390px;
+  max-width: 430px;
   width: 100%;
+  padding-right: 40px;
   margin: 0 auto;
 }
 
@@ -2316,7 +2323,7 @@ b {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 
 .social_log-in span {
@@ -2326,6 +2333,10 @@ b {
 
 .social_log-in span.pluso-wrap a {
   margin-left: 6px;
+}
+
+.tabcontent_login_form  {
+  margin-left: 0;
 }
 
 .tabcontent_login_form label {
@@ -2392,11 +2403,12 @@ b {
 
 .checkbox_action label {
   position: relative;
-  padding-left: 18px;
+  padding-left: 21px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin-top: 10px;
 }
 
 .checkbox_action label:before {
