@@ -3409,13 +3409,20 @@ form.personal_content_field {
   float: right;
   
 }
-.label_error p {
-  margin-top: 5px;
+.personal_content_lp p {
+  margin-top: -20px;
   margin-bottom: 0px;
   font-size: 12px;
   line-height: 12px;
   color: #bababa;
 
+}
+.personal_content_rp p {
+  margin-top: -20px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  line-height: 12px;
+  color: #bababa;
 }
 
 .personal_content_rp label span.date_select_wrap input {
@@ -3851,6 +3858,10 @@ form.personal_content_field {
   -ms-flex-direction: column;
   flex-direction: column;
   margin-bottom: 20px;
+}
+
+.similar_form .uplod_file {
+  margin: 0;
 }
 
 .similar_form .partners_send_btn label {
@@ -7532,7 +7543,6 @@ input:checked + .slider:before {
     max-width: 150px;
     width:100%;
     align-self: flex-end;
-    margin-top: 50px;
 }
 
 .posts-inner .similar_form{

@@ -23,12 +23,9 @@
     <script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
     <script src="assets/scripts/jQuery/jquery-ui-1.9.2.custom.min.js"></script>
     <script src="./assets/scripts/Slick/slick.min.js"></script>
-    <!--
     <script src="./assets/scripts/clocks.js"></script>
     <script src="assets/scripts/tabs.js"></script>
     <script src="assets/scripts/file_loader.js"></script>
-    
-    -->
     <script src="assets/scripts/tinymce1/tinymce.js"></script>
     <script src="assets/scripts/forms.js"></script>
     <script src="./assets/scripts/jquery.magnific-popup.js"></script>
@@ -283,11 +280,11 @@
                                     <div class="file_load_icons">
                                         <label class="load_video">
                                             <i class="fas fa-video"></i>
-                                            <input type="file" id="forum-load_vid" class="myfileinput" >
+                                            <input type="file" class="myfileinput forum-load_vid" >
                                         </label>
                                         <label class="load_picture">
                                             <i class="fas fa-image"></i>
-                                            <input type="file" class="myfileinput" >
+                                            <input type="file" class="myfileinput forum-load_pict" >
                                         </label>
                                     </div>
                                     <label class="tiny_mce_label">
@@ -295,7 +292,23 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="NameAndSize-file"></div>
+                            <div class="uplod_file">
+                                <h5 class="head_load">uploaded</h5>
+                                <div class="show_video">
+                                    <span class="info_file-name form_js-vid_name">Name</span>
+                                    <span class="info_file-size form_js-vid_size">0</span>
+                                    <span class="info_file-mb">mb</span>
+                                    <span class="info_icon"><i class="fas fa-video"></i></span>
+                                    <span class="clear_file clear-file_vid"><i class="fas fa-times"></i></span>
+                                </div>
+                                <div class="show_img ">
+                                    <span class="info_file-name form_js-img_name">Name</span>
+                                    <span class="info_file-size form_js-img_size">0</span>
+                                    <span class="info_file-mb">mb</span>
+                                    <span class="info_icon"><i class="fas fa-image"></i></span>
+                                    <span class="clear_file clear-file_img"><i class="fas fa-times"></i></span>
+                                </div>
+                            </div>
                             <input type="submit" value="Send" class="course_warning_btn js-review_btn-send js-validateBtn">
                         </form>
                     </div>
