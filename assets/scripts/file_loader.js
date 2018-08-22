@@ -263,11 +263,6 @@ function init () {
         this.sendBtnVid.addEventListener('click', this._remove);          
         this.sendBtnVid.addEventListener('mouseup', this._createVideo); 
         this.sendBtnVid.addEventListener('mouseup', this._createUpLod); 
-        
-        
-
-
-
 
     }
     
@@ -278,15 +273,7 @@ function init () {
        
     }   
 
-    this._init();        
-                    
-
-
-
-
-
-
-
+    this._init();     
 
 // var vidShow = document.querySelector('.show_video');
 //     imgShow = document.querySelector('.show_img');
@@ -299,5 +286,18 @@ function init () {
   }
    const runaddFile = new addFile();
 }
+    // удаление нажимая на крестик //
+    $('.clear-file_vid').click(function(){
+        $("#forum-load_vid").replaceWith($("#forum-load_vid").val(''));
+        $('.form_js-vid_size').text('0');
+        $('.form_js-vid_name').text("Name");
+    });
 
+    $('.clear-file_img').click(function(){
+        $("#forum-load_pict").replaceWith($("#forum-load_pict").val(''));
+        $('.form_js-img_size').text('0');
+        $('.form_js-img_name').text("Name");
+    });
+    // конец удалние нажимая на крестик //
 });
+
