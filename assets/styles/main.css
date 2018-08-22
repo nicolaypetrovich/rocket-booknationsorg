@@ -1440,7 +1440,6 @@ b {
 
 .slick-list.dragging {
   cursor: pointer;
-  cursor: hand;
 }
 
 .slick-slider .slick-list,
@@ -3769,7 +3768,7 @@ form.personal_content_field {
   width: 870px;
   height: auto;
   background: #fff;
-  transform: translateX(-50%) 
+  transform: translateX(-50%);
   bottom: auto;
   display: none;
   opacity: 0;
@@ -4240,19 +4239,6 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   padding-bottom: 10px;
 }
 
-/*.show_video > .info_icon*/ {
-  content: '';
-  position: absolute;
-  right: 0;
-  font-family: "Font Awesome 5 Free";
-  font-size: 12px;
-  line-height: 12px;
-  color: #bababa;
-  font-weight: 900;
-  top: 53%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 
 .create_forum_wrap .similar_form label.forum_save_info .send_btn{
     width: 120px;
@@ -5961,15 +5947,12 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   margin-top: 19px;
   width: 100%;
 }
-_:-ms-lang(x), .wrap_courses { 
-/* Нужные стили */ 
+/*
+.wrap_courses:-ms-lang(x)  { 
   width: 100%;
   display: flex;
   overflow: hidden; 
-}
-_:-ms-lang(x), .wrap_courses .card_courses { 
-/* Нужные стили */ 
-}
+}*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
    /* IE10 IE11 */
 .wrap_courses a{
@@ -6027,7 +6010,7 @@ _:-ms-lang(x), .wrap_courses .card_courses {
 }
 .first_fl {
     margin-left: 30px;
-    box-shadow: 0 0 30px rgba(0,0,0,0.15);s
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
     
 }
 .second_fl {
@@ -6111,7 +6094,7 @@ _:-ms-lang(x), .wrap_courses .card_courses {
  
 .events{
     padding-top: 40px;
-    padding-bottom: 60px
+    padding-bottom: 60px;
     max-width:500px;
     width:100%;
 }
@@ -6786,7 +6769,7 @@ input.file_input{
   position: relative;
 }
 .menagement__form select{
- background-color: none;
+ background-color: transparent;
 }
 
 .menagement__form .NameAndSize-file{
