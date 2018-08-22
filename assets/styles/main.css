@@ -7265,6 +7265,7 @@ input.file_input{
 .layout {
     display: block;
     padding-bottom: 65px;
+    overflow: hidden;
 }
 .menangement__teg_color {
   background: #1d1d1e;

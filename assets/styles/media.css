@@ -1477,6 +1477,14 @@
     .arrows-view{
         left:90%;
     }
+
+    .wrap-picture {
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    .wrap-picture .es__load_box-last{
+        margin-bottom: 10px;
+    }
 }
 
 @media only screen and (max-width : 675px){
