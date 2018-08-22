@@ -84,7 +84,7 @@ $(document).ready(function () {
         Получаем данные из полей type file и выводим эти данны(размер, имя) файла на странице
        */
 
-    $('#forum-load_vid').change(function () {
+    $('.forum-load_vid').change(function () {
         var name = this.files[0].name;
         var size = this.files[0].size;
         if(size < 1024){
@@ -95,7 +95,7 @@ $(document).ready(function () {
        $('.form_js-vid_name').text(name);
     });
 
-    $('#forum-load_pict').change(function () {
+    $('.forum-load_pict').change(function () {
         var name = this.files[0].name;
         var size = Math.round(this.files[0].size);
         if(size < 1024){
@@ -288,13 +288,13 @@ function init () {
 }
     // удаление нажимая на крестик //
     $('.clear-file_vid').click(function(){
-        $("#forum-load_vid").replaceWith($("#forum-load_vid").val(''));
+        $(".forum-load_vid").replaceWith($(".forum-load_vid").val(''));
         $('.form_js-vid_size').text('0');
         $('.form_js-vid_name').text("Name");
     });
 
     $('.clear-file_img').click(function(){
-        $("#forum-load_pict").replaceWith($("#forum-load_pict").val(''));
+        $(".forum-load_pict").replaceWith($(".forum-load_pict").val(''));
         $('.form_js-img_size').text('0');
         $('.form_js-img_name').text("Name");
     });
