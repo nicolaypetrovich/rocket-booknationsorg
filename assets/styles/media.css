@@ -404,7 +404,8 @@
     }
 
     .event__banner p {
-        width: 450px;
+        width: 100%;
+        padding: 10px 20px;
         margin-bottom: 30px;
     }
      .groups-list{ 
@@ -1152,7 +1153,6 @@
         padding-left: 0;
     }
     .breadcrumbs__item:nth-child(3) {
-       margin-right: 150px;
     }  
     .layout_titel_2 {
         margin-bottom: 30px;
