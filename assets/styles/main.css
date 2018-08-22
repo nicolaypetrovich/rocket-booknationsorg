@@ -1274,7 +1274,8 @@ b {
 .footer {
   padding-bottom: 20px;
   background-color: #f9f9f9;
-  /* border-bottom: 8px solid #333; */
+  position: relative;
+  bottom: 0;
 }
 
 /* Input form-subscribe footer */
@@ -2645,13 +2646,10 @@ b {
   padding: 48px 23px 23px 48px;
   display: block;
   min-height: 280px;
-  background: url("../images/2321.png") no-repeat 50%;
-  background-size: cover;
+  
   align-items: flex-end;
   -ms-align-items: flex-end;
-  /* 
   background-color: #050609;
-  */
   border-radius: 5px;
   position: relative;
 }
@@ -3898,6 +3896,7 @@ form.personal_content_field {
   -ms-flex-item-align: start;
   align-self: flex-start;
   padding-bottom: 7px;
+  font-weight: 300;
 }
 
 .similar_form label input {
@@ -6631,6 +6630,7 @@ input.file_input{
   font-size: 24px;
   font-weight: 300;
   text-transform: uppercase;
+
 }
 .menagement__banner--button {
   display: flex;
@@ -6641,6 +6641,9 @@ input.file_input{
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
+}
+.menagement__banner--content p {
+  margin: 0;
 }
 .menagement__banner--button button {
   margin-left: 15px;
