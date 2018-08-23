@@ -977,7 +977,7 @@ b {
 /* Titles in layout */
 
 .layout__title {
-  margin-bottom: 20px;
+  margin-bottom: 9px;
   display: block;
   font-size: 18px;
   text-transform: uppercase;
@@ -2921,6 +2921,10 @@ b {
   cursor: pointer;
   font-size: 12px;
   color: #787878;
+}
+.events span.js-focus_date_field,
+.events span.js-clear_date_field{
+  width: 45px;
 }
 
 .events span.js-change_date_field {
@@ -6150,7 +6154,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
  
 .events{
-    padding-top: 40px;
+    padding-top: 9px;
     padding-bottom: 60px;
     width:100%;
 }

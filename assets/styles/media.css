@@ -34,17 +34,17 @@
         width: 92px;
     }
     .in_put_group input {
-        width: 180px;
+        
      }     
 }
 @media only screen and (max-width:1289px){
     .in_put_group input {
-        width: 150px;
+        
     }
 }
 @media only screen and (max-width:1250px){
     .in_put_group input {
-        width: 140px;
+        
     }
 }
 @media only screen and (max-width:1130px){
@@ -54,6 +54,10 @@
     .events .table-content .date-box {
         position: relative;
     }
+
+.date-box label{
+  margin: 2px 0;
+}
     .events .table-content .date-box > span {
         position: absolute;
         right: 3px;
@@ -75,7 +79,7 @@
         border-radius: 5px;
     }
     .in_put_group input {
-        width: 150px;
+       
     }
     .in_put_data {
         width: 120px;
@@ -102,13 +106,13 @@
 }
 @media only screen and (max-width:420px){
     .in_put_data {
-        width: 120px;
+        
     }  
 
 }
 @media only screen and (max-width:380px){
     .in_put_data {
-        width: 110px;
+       
     }
     .social_log-in {
         flex-direction: column;
@@ -125,7 +129,7 @@
 }
 @media only screen and (max-width:350px){
     .in_put_data {
-        width: 100px;
+        
     } 
     
 }
@@ -256,7 +260,7 @@
         justify-content: space-around;
     }
     .in_put_group input {
-        width: 80px;
+        
     }
 
     /*Personal Setting page end*/
