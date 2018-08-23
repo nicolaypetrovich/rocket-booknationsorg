@@ -301,7 +301,7 @@ table {
 html {
   /*font-family: Helvetica, sans-serif;*/
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 body {
@@ -412,18 +412,19 @@ b {
 /* Breadcrumbs */
 
 .breadcrumbs {
-  margin-bottom: 20px;
+  margin-bottom: 27px;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+
 }
 
 .breadcrumbs__item {
   position: relative;
   padding-right: 15px;
-  padding-left: 14px;
+  padding-left: 13px;
   font-size: 14px;
 }
 
@@ -2230,7 +2231,7 @@ b {
 
 /*Register form tabs*/
 .tab_wrap{
-  margin-top: 53px;
+  margin-top: 26px;
 }
 .tab {
   overflow: hidden;
@@ -2371,6 +2372,10 @@ b {
     display: flex;
     justify-content: flex-end;
 }
+.similar_form .tiny_mce_wrap .uplod_file {
+  margin-left: 100px;
+  margin-top: 10px;
+}
 .tabcontent_login_form label div.error {
   padding-top: 10px;
 }
@@ -2420,7 +2425,7 @@ b {
   content: "";
   color: #fff;
   display: inline-block;
-  border: 1px solid #707272;
+  border: 2px solid #707272;
   font-size: 10px;
   line-height: 13px;
   height: 14px;
@@ -2430,7 +2435,6 @@ b {
   -webkit-transition: color ease .3s;
   transition: color ease .3s;
   font-weight: 900;
-  padding-left: 1px;
 }
 
 .checkbox_action input:checked + label:before {
@@ -2534,10 +2538,9 @@ b {
 }
 
 .home_titles {
-  font-size: 18px;
+  font-size: 14px;
   color: #181818;
   margin-bottom: 30px;
-  padding-top: 10px;
   text-transform: uppercase;
 }
 
@@ -3870,7 +3873,7 @@ form.personal_content_field {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .similar_form .uplod_file {
@@ -4266,6 +4269,10 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   margin-top: 15px;
 }
 
+.uplod_file div:first-child{
+  margin-bottom: 5px;
+}
+
 .show_video,
 .show_img {
   -ms-flex-item-align: start;
@@ -4501,7 +4508,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
 }
 
 .course_middle-part {
@@ -4518,7 +4525,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding-right: 4px;
 }
 
@@ -4549,7 +4556,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 
 .course_navigation ul li:nth-child(1) {
-  padding-right: 18px;
+  padding-right: 27px;
   color: #bababa;
 }
 
@@ -4582,6 +4589,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 .courses_title {
@@ -4708,9 +4716,10 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-top: 28px;
 }
 .course_foot-part form {
   display: -webkit-box;
@@ -4732,6 +4741,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   -ms-flex-direction: column;
   flex-direction: column;
   width: 275px;
+  margin: 0 38px;
 }
 
 .load_pdf-preview {
@@ -4850,7 +4860,9 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 /*Language course team End */
 
 /*Language test */
-
+.wrap-text-test {
+  margin-top: 28px;
+}
 .layout__content .courses_test-info {
   font-size: 14px;
   line-height: 24px;
@@ -4873,6 +4885,8 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin-left: -59px;
+  margin-top: 2px;
 }
 
 .courses_start-test span {
@@ -5046,7 +5060,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 }
 
 .reg_course_top-part {
-  margin-bottom: 30px;
+  margin-bottom: -13px;
 }
 
 .reg_course_bottom-part {
@@ -5055,8 +5069,8 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 80%;
-  margin-bottom: 45px;
+  width: 90%;
+  margin-bottom: 64px;
 }
 
 .course_class-format {
@@ -5076,7 +5090,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
   align-self: flex-start;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
 }
 
 .reg_course_subtitles > span {
@@ -5096,19 +5110,19 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
 
 .reg_course_bottom-part .checkbox_action label {
   padding-left: 23px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .reg_course_bottom-part .checkbox_action label:before {
-  width: 16px;
-  height: 16px;
-  line-height: 14px;
+  width: 13px;
+  height: 13px;
+  line-height: 8px;
 }
 
 .course_class-format,
 .course_days-format,
 .course_level-format {
-  margin-bottom: 40px;
+  margin-bottom: 13px;
 }
 
 .course_class-format,
@@ -5950,7 +5964,7 @@ form.similar_form div.forum_editable_field .tiny_mce_wrap > label > span {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
-    margin-top: auto;
+    margin-top: 10px;
     font-size: 16px;
 
 }
@@ -7603,11 +7617,11 @@ input:checked + .slider:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 .test_form-tabs li.tablinks {
-  margin-right: 15px;
+  margin-right: 18px;
 }
 
 .steps_list {
@@ -7624,23 +7638,24 @@ input:checked + .slider:before {
 }
 
 .steps_list li.outside_circle {
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   border: 1px solid #bababa;
   position: relative;
-  border-radius: 14px;
+  border-radius: 50%;
   cursor: pointer;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  margin-left: 1px;
 }
 
 .steps_list li.outside_circle span.inside_circle {
   background-color: transparent;
-  width: 8px;
-  height: 8px;
+  width: 9px;
+  height: 9px;
   position: absolute;
   top: 2px;
   left: 2px;
-  border-radius: 8px;
+  border-radius: 50%;
   display: block;
 }
 .steps_list li.outside_circle span.answer-true {
@@ -7657,6 +7672,7 @@ input:checked + .slider:before {
   font-size: 14px;
   line-height: 14px;
   color: #bababa;
+  margin-left: 3px;
 }
 
 .step-shadow {
@@ -7770,7 +7786,8 @@ input:checked + .slider:before {
   -ms-flex-wrap: wrap;
   -o-flex-wrap: wrap;
   flex-wrap: wrap;
-
+  margin-top: 19px;
+  margin-bottom: 0px;
 }
 
 .test-question-options li {
@@ -7834,7 +7851,7 @@ input:checked + .slider:before {
   display: inline-flex;
   -ms-flex-item-align: start;
   align-self: flex-start;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
 }
 
 .test_form-quest-part {
@@ -7934,7 +7951,7 @@ input:checked + .slider:before {
 /* course test block */
 
 .course__test-mistake {
-  margin-top: 12px;
+  margin-top: -1px;
 }
 
 .course__test--select {
@@ -7964,7 +7981,8 @@ input:checked + .slider:before {
   -ms-flex-align: start;
   align-items: flex-start;
   padding-left: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
+  margin-top: 1px;
   cursor: pointer;
   border: 2px solid transparent;
   -webkit-transition: background-color ease .3s;
@@ -7985,7 +8003,7 @@ input:checked + .slider:before {
 }
 
 .course__test--button-add {
-  margin-right: 12px;
+  margin-right:0;
   padding: 15px 50px;
   border-radius: 5px;
   background-color: #181818;
@@ -7993,6 +8011,7 @@ input:checked + .slider:before {
   font-size: 14px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  margin-left: 12px;
 }
 
 .course__test--button-add:hover {
@@ -8003,13 +8022,14 @@ input:checked + .slider:before {
 }
 
 .course__test--button-take {
-  padding: 15px 50px;
+  padding: 15px 63px;
   color: #fff;
   font-size: 14px;
   border-radius: 5px;
   background-color: #e11f46;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
+  margin-left: 15px;
 }
 
 .course__test--button-take:hover {

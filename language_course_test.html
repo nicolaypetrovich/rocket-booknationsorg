@@ -197,6 +197,7 @@
                            FPR - French for Russian-speaking
                        </h2>
                        <div class="pluso" data-background="transparent" data-options="small,round,line,horizontal,counter,theme=04" data-services="google,vkontakte,linkedin,twitter,facebook"></div>
+
                    </div>
                     <div class="course_navigation">
                         <div class="course-hamburger">
@@ -250,11 +251,11 @@
 
                 </div>
                 <h4 class="courses_title">Determining the level of knowledge of the French language</h4>
-                <p class="courses_test-info">
-                    The test <span style="color:#181818;">"The test for determining the level of the French language"</span> , consisting of 28 questions.
-                    In this test,<span style="color:#181818;"> 15 </span> questions will be asked. To successfully pass the test, you must <span style="color:#181818;"> correctly answer 12 questions.</span>
-                    After answering each question, the correct answer will immediately be displayed, therefore, in this mode, the made answer will not be corrected.
-                </p>
+                <div class="wrap-text-test">
+                    <p class="courses_test-info">The test <b>"The test for determining the level of the French language"</b> , consisting of 28 questions.</p>
+                    <p class="courses_test-info">In this test,<b> 15 </b> questions will be asked. To successfully pass the test, you must <b> correctly answer 12 questions.</b></p>
+                    <p class="courses_test-info">After answering each question, the correct answer will immediately be displayed, therefore, in this mode, the made answer will not be corrected.</p>
+                </div>  
                 <div class="courses_start-test">
                     <span>If you are ready - click "Start Test"</span>
                     <a href="" class="send_btn">
@@ -345,7 +346,16 @@
         </div>
     </div>
 </div>
-
+ <script type="text/javascript">(function() {
+  if (window.pluso)if (typeof window.pluso.start == "function") return;
+  if (window.ifpluso==undefined) { window.ifpluso = 1;
+    var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+    s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+    s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+    var h=d[g]('body')[0];
+    h.appendChild(s);
+  }})();
+</script>
 </body>
 
 </html>

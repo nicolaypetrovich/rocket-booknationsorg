@@ -84,9 +84,29 @@ $(document).ready(function () {
         Получаем данные из полей type file и выводим эти данны(размер, имя) файла на странице
        */
 
+       /* <div class="uplod_file">
+            <h5 class="head_load">uploaded</h5>
+            <div class="show_video">
+                <span class="info_file-name form_js-vid_name">Name</span>
+                <span class="info_file-size form_js-vid_size">0</span>
+                <span class="info_file-mb">mb</span>
+                <span class="info_icon"><i class="fas fa-video"></i></span>
+                <span class="clear_file clear-file_vid"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="show_img active-img">
+                <span class="info_file-name form_js-img_name">Name</span>
+                <span class="info_file-size form_js-img_size">0</span>
+                <span class="info_file-mb">mb</span>
+                <span class="info_icon"><i class="fas fa-image"></i></span>
+                <span class="clear_file clear-file_img"><i class="fas fa-times"></i></span>
+            </div>
+        </div>*/
+$(".show_video").fadeOut();
+$(".show_img").fadeOut();
     $('.forum-load_vid').change(function () {
         var name = this.files[0].name;
         var size = this.files[0].size;
+        $(".show_video").fadeIn();
         if(size < 1024){
             $('.form_js-vid_size').text('0.' + Math.round(size));
         }else{
@@ -98,6 +118,7 @@ $(document).ready(function () {
     $('.forum-load_pict').change(function () {
         var name = this.files[0].name;
         var size = Math.round(this.files[0].size);
+        $(".show_img").fadeIn();
         if(size < 1024){
             $('.form_js-vid_size').text('0.' + Math.round(size));
         }else{
@@ -286,18 +307,34 @@ function init () {
   }
    const runaddFile = new addFile();
 }
+    
     // удаление нажимая на крестик //
     $('.clear-file_vid').click(function(){
         $(".forum-load_vid").replaceWith($(".forum-load_vid").val(''));
         $('.form_js-vid_size').text('0');
         $('.form_js-vid_name').text("Name");
+        $(".show_video").fadeOut();
     });
 
     $('.clear-file_img').click(function(){
         $(".forum-load_pict").replaceWith($(".forum-load_pict").val(''));
         $('.form_js-img_size').text('0');
         $('.form_js-img_name').text("Name");
+        $(".show_img").fadeOut();
+
     });
+    /*
+        var valPick = $(".forum-load_pict").val('');
+        var valVid = $(".forum-load_vid").val('');
+
+        function alerttt () {
+            console.log("dfds");
+         if ( $('.form_js-img_name').text("Name") == true && $('.form_js-vid_name').text("Name") == true) {
+            alert("dfdsf");
+        }
+    };
+*/
+
     // конец удалние нажимая на крестик //
 });
 
