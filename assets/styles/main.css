@@ -7889,12 +7889,13 @@ input:checked + .slider:before {
   border: 1px solid #bababa;
   border-collapse: collapse;
   height: 49px;
+  padding: 9px;
 }
 .test_result-table tr th span{
   position: relative;
   display: inline-block;
-  padding-left: 35px;
-  margin-left: -35px;
+  padding-left: 12px;
+  
 }
 .test_result-table tr th span:before{
   content: '';
@@ -7905,7 +7906,6 @@ input:checked + .slider:before {
   top: 50%;
   left: 0;
   margin-top: -4.5px;
-  left: 16%;
   background-image: url(../images/test-result-arrow.png);
   background-position: center 0;
   background-repeat: no-repeat;

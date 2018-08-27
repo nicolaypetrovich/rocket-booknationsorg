@@ -1436,7 +1436,7 @@
      }
     
     .d-flex {
-        display: flex !important; /*ERROR*/ 
+        /* display: flex !important; ERROR  */
     }
     
     /*Language courses end*/
@@ -2313,6 +2313,9 @@
     }
 
 }
+
+
+
 @media (max-width: 433px) {
 	.course__test--button {
 	}
@@ -2348,11 +2351,20 @@
     }
 }
 
+@media (max-width: 535px) {
+    .test_form-tabs li.tablinks {
+        margin-right: 10px;
+    }
+}
+
 
 @media (max-width: 420px) {
     .home_titles {
         font-size: 14px; 
         padding-top: 5px;
+    }
+    .test_result-table tr {
+        font-size: 12px;
     }
 	.steps_list li.outside_circle {
 		    width: 11px;
@@ -2366,6 +2378,18 @@
 	.test_form-tabs li.tablinks {
     	margin-right: 8px;
 	}
+    .steps_list li.outside_circle span.inside_circle{
+        width: 7px;
+        height: 7px;
+        top: 1px;
+        left: 1px;
+    }
+    .steps_list li:last-child {
+        font-size: 10px;
+        line-height: 14px;
+        color: #bababa;
+        margin-left: 0px;
+    }
 	.course__test--button {
 		margin-top: 20px;
 		-webkit-flex-direction: column;
