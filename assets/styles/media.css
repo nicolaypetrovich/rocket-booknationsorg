@@ -1435,9 +1435,6 @@
        flex-wrap: wrap;
      }
     
-    .d-flex {
-        /* display: flex !important; ERROR  */
-    }
     
     /*Language courses end*/
     .select_icon_popup{
@@ -1623,7 +1620,7 @@
  
  
     .event__pluso{
-        display: none !important;
+        
     }
  
     .pluso-hide{

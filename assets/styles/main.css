@@ -2285,7 +2285,7 @@ b {
   border-top: none;
   max-width: 430px;
   width: 100%;
-  padding-right: 40px;
+ 
   margin: 0 auto;
 }
 
@@ -7849,7 +7849,7 @@ input:checked + .slider:before {
   font-size: 12px;
   line-height: 20px;
   color: #bababa;
-  border-bottom: 1px solid #bababa;
+  
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -7956,6 +7956,7 @@ input:checked + .slider:before {
 
 .course__test-mistake {
   margin-top: -1px;
+  text-decoration: underline;
 }
 
 .course__test--select {
