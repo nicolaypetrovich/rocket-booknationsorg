@@ -7849,7 +7849,6 @@ input:checked + .slider:before {
   font-size: 12px;
   line-height: 20px;
   color: #bababa;
-  
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -8054,7 +8053,8 @@ input:checked + .slider:before {
   background-color: #ffffff;
   position: absolute;
   display: none;
-  right: 200px;
+  left: 50%;
+  margin-left: -200px;
   top: 150px;
 }
 
@@ -8081,7 +8081,7 @@ input:checked + .slider:before {
 
 .course__popup--correct {
   background-color: transparent;
-  padding: 11px 70px;
+  padding: 11px 54px;
   border-radius: 5px;
   border: 1px solid #bababa;
   margin-bottom: 8px;
@@ -8092,7 +8092,7 @@ input:checked + .slider:before {
 
 .course__popup--continue {
   background-color: transparent;
-  padding: 11px 23px;
+  padding: 11px 15px;
   border-radius: 5px;
   border: 1px solid #bababa;
   color: #787878;
@@ -8104,7 +8104,7 @@ input:checked + .slider:before {
 .course__popup--complete {
   margin-bottom: 15px;
   background-color: transparent;
-  padding: 11px 23px;
+  padding: 11px 15px;
   border-radius: 5px;
   border: 1px solid #bababa;
   color: #787878;
