@@ -471,6 +471,21 @@ $('.course-gallery').magnificPopup({
     });
     
 
+    // Select -> input
+
+    $('.change-select').on('change', function(){
+        var value = $(this).val();
+         $('.select-input').each(function(){
+            if ( $(this).find('span').text() == value ) {
+                $(this).addClass('show');
+                $(this).find('input').addClass('required')
+            }  else {
+                $(this).removeClass('show');
+                $(this).find('input').removeClass('required');
+            }
+         });
+    });
+    // Select -> input
 });
 
 

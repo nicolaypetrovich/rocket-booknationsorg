@@ -3819,7 +3819,6 @@ form.personal_content_field {
   width: 870px;
   height: auto;
   background: #fff;
-  transform: translateX(-50%);
   bottom: auto;
   display: none;
   opacity: 0;
@@ -3972,6 +3971,25 @@ form.personal_content_field {
 .similar_form .error,
 .similar_form .error {
   padding-top: 3px;
+}
+
+.change-select{
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #bababa;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 14px;
+  color: #787878;
+}
+
+label.select-input{
+  display: none;
+}
+
+label.select-input.show{
+  display: flex;
 }
 
 /*Popup End*/

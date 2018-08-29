@@ -22,6 +22,7 @@
 
     <script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
     <script src="assets/scripts/jQuery/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="./assets/scripts/jquery.magnific-popup.js"></script>
     <script src="./assets/scripts/Slick/slick.min.js"></script>
     <script src="./assets/scripts/clocks.js"></script>
     <script src="./assets/scripts/main.js"></script>
@@ -295,21 +296,31 @@
                         <div class="partners_form_in">
                             <div class="modal_left_side">
                                 <label>
+                                    <span class="req_field">Type</span>
+                                    <select class='change-select'>
+                                        <option selected value="Company">Company</option>
+                                        <option value="Association">Association</option>
+                                        <option value="Foundation">Foundation</option>
+                                        <option value="NGO">NGO</option>
+                                    </select>
+                                </label>
+                                <label class='select-input show'>
                                     <span class="req_field">Company</span>
                                     <input type="text" class="required">
                                 </label>
-                                <label>
+                                <label class='select-input'>
                                     <span class="req_field">Association</span>
-                                    <input type="text" class="required">
+                                    <input type="text">
                                 </label>
-                                <label>
+                                <label class='select-input'>
                                     <span class="req_field">Foundation</span>
-                                    <input type="text" class="required">
+                                    <input type="text">
                                 </label>
-                                <label>
+                                <label class='select-input'>
                                     <span class="req_field">NGO</span>
-                                    <input type="text" class="required">
+                                    <input type="text">
                                 </label>
+
                                 <label>
                                     <span class="req_field">Project name</span>
                                     <input type="text" class="required">
