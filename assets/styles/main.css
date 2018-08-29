@@ -1721,6 +1721,7 @@ b {
 
 .slideout__content p {
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .slideout__content_center {
@@ -1751,7 +1752,12 @@ b {
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
 }
-
+.fixed-aside__item .found-error-btn .slideout__button{
+  background-color: #fff;
+  color: #787878;
+  border: 1px solid #787878;
+  margin: 0 5px;
+}
 .fixed-aside__item.is-active,
 .fixed-aside__item:hover {
   -webkit-transform: translateX(-280px);
@@ -8026,14 +8032,14 @@ input:checked + .slider:before {
 }
 
 .course__test--button-take {
-  padding: 15px 63px;
+  padding: 15px 60px;
   color: #fff;
   font-size: 14px;
   border-radius: 5px;
   background-color: #e11f46;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  margin-left: 15px;
+  margin-left: 11px;
 }
 
 .course__test--button-take:hover {
@@ -8053,8 +8059,6 @@ input:checked + .slider:before {
   background-color: #ffffff;
   position: absolute;
   display: none;
-  left: 50%;
-  margin-left: -200px;
   top: 150px;
 }
 

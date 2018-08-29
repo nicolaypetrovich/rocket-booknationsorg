@@ -2329,11 +2329,12 @@
 	.course__test--button {
 	}
 	.course__test--button a{
-		padding: 15px 45px;
+		
 		margin-bottom: 5px;
 	}
-	.course__test--button-add {
+	.course__test--button-take {
 		/*margin-right: 0;*/
+        padding: 15px 60px;
 	}
 }
 @media (max-width: 580px) {
@@ -2460,6 +2461,12 @@
 
 }
 
+@media only screen and (max-width:487px){
+   
+    .course__test--button-add {
+       margin-bottom: 5px;
+    }
+  }  
 @media only screen and (max-width:350px){
    
     .course__popup {

@@ -877,20 +877,24 @@
 		<div class="fixed-aside">
 			<div class="slideout fixed-aside__item">
 				<div class="slideout__btn slideout__btn_primary">
-					<span class="slideout__btn-label">An error in the text?</span>
+					<span class="slideout__btn-label">Found an erreur?</span>
 				</div>
 				<div class="slideout__wrap">
-					<form class="slideout__content slideout__content_center">
-						<p>Something edit</p>
-						<textarea placeholder="Enter text" class="field field_area" required="required"></textarea>
+					<form class="slideout__content slideout__content_center found-error-btn">
+						<p>Mark with mouse and Press Ctrl+Enter</p>
+						
+						<button class="btn btn_primary btn_size_md slideout__button">
+							<span class="btn__label">CTRL</span>
+						</button>
+						<span>+</span>
 						<button class="btn btn_primary btn_size_md slideout__button">
 							<span class="btn__label">Enter</span>
 						</button>
-						<!--+b('ul').key-comb-->
-						<!--	+e('li').item-->
-						<!--		+btn('button', 'CTRL')._default._size_md-->
-						<!--	+e('li').item-->
-						<!--		+btn('button', 'ENTER')._default._size_md-->
+						<!-- +b('ul').key-comb
+							+e('li').item
+								+btn('button', 'CTRL')._default._size_md
+							+e('li').item
+								+btn('button', 'ENTER')._default._size_md -->
 					</form>
 				</div>
 			</div>
